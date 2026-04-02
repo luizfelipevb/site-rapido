@@ -151,10 +151,10 @@ function Plataforma() {
 
           <h4>Planos</h4>
           <ul>
-            <li>Padrão com Anúncios - 1080p Full HD - 2 Telas - Anúncios: Sim - Donwloads: Até 2 dispositivos - Assinantes Extras - Não permitido - Valor ~R$18,90</li>
-            <li>Padrão - 1080p Full HD - 2 Telas - Anúncios:  - Donwloads: Até 2 dispositivos - Assinantes Extras - Não permitido - Valor ~R$18,90</li>
-            <li>Premium ~R$55,90 (4K + múltiplas telas)</li>
-          </ul>
+            <li>Padrão com Anúncios: 1080p Full HD - 2 Telas - Anúncios: Sim - Donwloads: Até 2 dispositivos - Assinantes Extras - Não permitido - Valor ~R$20,30/mês</li><br/>
+            <li>Padrão: 1080p Full HD - 2 Telas - Anúncios: Não - Donwloads: Até 2 dispositivos - Assinantes Extras - 1 extra - Valor ~R$44,90/mês</li> <br/>
+            <li>Premium: 4K + HDR - 4 Telas - Anúncios: Não - Donwloads: Até 6 dispositivos - Assinantes Extras - 2 extra - Valor ~R$59,90/mês(4K + múltiplas telas)</li><br/>
+          </ul> <br/>
 
           <a href="https://www.netflix.com/br/" target="_blank" rel="noopener noreferrer">
             Assistir Netflix
