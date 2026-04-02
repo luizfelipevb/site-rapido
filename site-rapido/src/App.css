@@ -1,0 +1,106 @@
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+  /* fundo mais suave e moderno */
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+/* topo mais limpo */
+.topo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+/* input mais moderno */
+#pesquisa {
+  width: 500px;
+  height: 90px;
+
+  text-align: center;
+
+  border-radius: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+
+  padding: 0 15px;
+  box-sizing: border-box;
+  outline: none;
+
+  background-color: rgba(255, 255, 255, 0.08);
+  color: white;
+
+  backdrop-filter: blur(10px);
+
+  transition: 0.3s;
+
+  font-size: 120%;
+}
+
+#pesquisa::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+#pesquisa:focus {
+  border-color: #60a5fa;
+  box-shadow: 0 0 10px rgba(96, 165, 250, 0.4);
+}
+
+/* grid mais equilibrado */
+.grade {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 30px;
+}
+
+/* cards mais profissionais */
+.box {
+  height: 90px;
+
+  border-radius: 16px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+
+  cursor: pointer;
+  transition: 0.3s ease;
+
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+/* hover moderno */
+.box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+}
+
+/* cores mais harmonizadas (menos “neon agressivo”) */
+#navegador { background: #ef4444; }
+#comida { background: #f59e0b; }
+#mapa { background: #22c55e; }
+#plataforma { background: #a855f7; }
+#social { background: #3b82f6; }
+#viagem { background: #06b6d4; }
+#jogos { background: #f97316; }
+#mensagem { background: #ef4444; }
+#banco { background: #2563eb; }
+#documento { background: #fb7185; }
+#armazenamento { background: #8b5e34; }
+#midia { background: #7f1d1d; }
+#segurança { background: #111827; }
+#utilidade { background: #e5e7eb; color: #111; }
+#compressao { background: #14b8a6; }
+
+#outros {
+  grid-column: 2;
+  background: #64748b;
+}
+

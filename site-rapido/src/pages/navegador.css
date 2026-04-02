@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+.container {
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 25px;
+  font-size: 32px;
+}
+
+.lista {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+  justify-items: center;
+}
+
+/* CARD */
+.card {
+  width: 320px;
+  min-height: 520px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+  color: white;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* ÍCONE */
+.card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+}
+
+/* TÍTULO */
+.card h2 {
+  margin: 10px 0;
+  color: #60a5fa;
+}
+
+/* SUBTÍTULOS */
+.card h4 {
+  margin-top: 12px;
+  margin-bottom: 5px;
+  color: #93c5fd;
+}
+
+/* LISTA */
+.card ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+/* BOTÃO */
+.card a {
+  margin-top: auto;
+
+  display: block;
+  padding: 10px;
+
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+
+  font-weight: bold;
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.card a:hover {
+  background: linear-gradient(90deg, #1d4ed8, #2563eb);
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+.container {
+  padding: 30px;
+  text-align: center;
+  color: white;
+}
+
+h1 {
+  margin-bottom: 25px;
+}
+
+.lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* CARD UNIFICADO */
+.card {
+  width: 320px;
+  min-height: 600px;
+
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 18px;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: left;
+  color: white;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+/* ÍCONES */
+.card img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 10px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* TITULO */
+.card h2 {
+  margin: 10px 0;
+  color: #60a5fa;
+}
+
+/* SUBTITULOS */
+.card h4 {
+  margin-top: 12px;
+  margin-bottom: 5px;
+  color: #93c5fd;
+}
+
+/* LISTA */
+.card ul {
+  padding-left: 18px;
+  margin: 0;
+}
+
+/* BOTÃO FIXO NO FUNDO */
+.card a {
+  margin-top: auto;
+
+  display: block;
+  padding: 10px;
+
+  background: linear-gradient(90deg, #2563eb, #1d4ed8);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+
+  font-weight: bold;
+  text-align: center;
+
+  transition: 0.3s;
+}
+
+.card a:hover {
+  background: linear-gradient(90deg, #1d4ed8, #2563eb);
+}
+
+h2{
+  text-align: center;
+}
