@@ -1,10 +1,25 @@
-import "./Navegador.css";
+import "./plataforma.css";
+import { useState } from "react";
 
 function Plataforma() {
+  const [busca, setBusca] = useState("");
+
+  const filtrar = (titulo) => {
+  return titulo.toLowerCase().includes(busca.toLowerCase());
+};
   return (
+    
     <div className="container">
 
       <h1>Plataformas</h1>
+
+      <input
+      type="text"
+      placeholder="Buscar plataforma..."
+      value={busca}
+      onChange={(e) => setBusca(e.target.value)}
+      className="input-busca"
+    />
 
       <div className="lista">
 
@@ -14,252 +29,617 @@ function Plataforma() {
           
           <h2>Youtube</h2>
 
-          <p>Plataforma de vídeo mais usada do mundo.</p>
-          <p><strong>Uso:</strong> Estudo, entretenimento, música e tutoriais.</p>
+          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
+            ACESSAR YOUTUBE
+          </a> <br />
+
+          <legend className="legenda">DESCRIÇÃO</legend>
+
+          <p>O YouTube é uma plataforma de vídeos sob demanda e transmissões ao vivo, sendo a mais utilizada do mundo para consumo de conteúdo digital.</p><br/>
+
+          <ul>
+            <legend>Para que é usado:</legend>
+            <li>Assistir vídeos de diversos temas</li>
+            <li>Estudar com aulas e tutoriais</li>
+            <li>Ouvir música</li>
+            <li>Acompanhar criadores e canais</li>
+            <li>Assistir transmissões ao vivo</li>
+          </ul><br />
 
           <h4>Diferenciais</h4>
           <ul>
-            <li>Conteúdo gratuito</li>
-            <li>Grande variedade de temas</li>
-            <li>Funciona em qualquer dispositivo</li>
+            <li>📚 Grande variedade de conteúdo (educação, entretenimento, música, etc.)</li>
+            <li>🌎 Acessível globalmente e gratuito</li>
+            <li>📱 Funciona em praticamente qualquer dispositivo</li>
+            <li>🤖 Algoritmo de recomendação avançado</li>
+            <li>🎥 Suporte a vídeos longos, curtos (Shorts) e lives</li>
           </ul>
 
-          <h4>Plano pago (YouTube Premium)</h4>
-          <ul>
-            <li>Sem anúncios</li>
-            <li>Download offline</li>
-            <li>Reprodução em segundo plano</li>
-          </ul>
+              <h3>Planos do Youtube</h3>
+              <h4>Padrão:</h4>
+              <p><strong>Preço mensal:</strong> R$26,90.</p>
+              <p><strong>Preço Anual:</strong> R$269,00.</p>
+              <p><strong>Chave Benefícios:</strong> Sem anúncios, 2º plano, download, YouTube Music.</p>
+              <p><strong>Restrições:</strong> 1 usuário.</p> <br />
 
-          <a href="https://www.youtube.com/" target="_blank" rel="noopener noreferrer">
-            Acessar YouTube
-          </a>
+              <h4>Estudante:</h4>
+              <p><strong>Preço mensal:</strong> R$16,90.</p>
+              <p><strong>Preço Anual:</strong> Não tem plano anual para estudante.</p>
+              <p><strong>Chave Benefícios:</strong> Todos os benefícios do Individual.</p>
+              <p><strong>Restrições:</strong> Verificação via SheerID.</p> <br />
+
+              <h4>Familia:</h4>
+              <p><strong>Preço mensal:</strong> R$53,00.</p>
+              <p><strong>Preço Anual:</strong> Não tem plano anual para familia.</p>
+              <p><strong>Chave Benefícios:</strong> Até 6 usuários (1 titular + 5 membros).</p>
+              <p><strong>Restrições:</strong> Mesmo endereço.</p> <br />
+
+              <h4>Premium Lite:</h4>
+              <p><strong>Preço mensal:</strong> R$16,90.</p>
+              <p><strong>Preço Anual:</strong> Não tem plano anual para familia.</p>
+              <p><strong>Chave Benefícios:</strong> Sem anúncios em categorias selecionadas.</p>
+              <p><strong>Restrições:</strong> Sem YouTube Music, sem download.</p> <br/>
+
+              <h4>Familia:</h4>
+              <p><strong>Preço mensal:</strong> R$53,00.</p>
+              <p><strong>Preço Anual:</strong> Não tem plano anual para familia.</p>
+              <p><strong>Chave Benefícios:</strong> Até 6 usuários (1 titular + 5 membros).</p>
+              <p><strong>Restrições:</strong> Mesmo endereço.</p> <br/> <br />
+
+
+
         </div>
 
         {/* TWITCH */}
         <div className="card">
           <img src="https://img.icons8.com/color/96/twitch--v1.png" alt="Twitch"/> <br/>
-          
-          <h2>Twitch</h2>
 
-          <p>Plataforma de transmissões ao vivo.</p>
-          <p><strong>Uso:</strong> Assistir lives e interagir com streamers.</p>
+        <h2>TWITCH</h2>
+          <a href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer">
+            ACESSAR A TWITCH
+          </a><br/>
+
+          <legend className="legenda">DESCRIÇÃO</legend>
+
+
+          <p> A Twitch é uma plataforma focada em transmissões ao vivo (lives), principalmente de jogos, mas também de música, eventos, bate-papo e conteúdo criativo. </p> <br/>
+
+          <ul>
+            <legend>Para que é usado:</legend>
+            <li>Assistir transmissões ao vivo</li>
+            <li>Interagir com streamers via chat</li>   
+            <li>Acompanhar campeonatos e eventos</li>
+            <li>Criar conteúdo ao vivo</li>
+          </ul> <br />
 
           <h4>Diferenciais</h4>
+          
           <ul>
-            <li>Interação em tempo real</li>
-            <li>Comunidade ativa</li>
-            <li>Conteúdo ao vivo</li>
+            <li>💬 Interação em tempo real (chat ao vivo com o streamer)</li>
+            <li>🧑‍🤝‍🧑 Comunidade muito ativa e engajada</li>
+            <li>🔴 Foco em conteúdo ao vivo (tempo real)</li>
+            <li>🎮 Forte presença no mundo gamer e eSports</li>
+            <li>🎁 Sistema de bits e inscrições (subs) para apoiar criadores</li>
           </ul>
 
-          <h4>Plano pago</h4>
-          <ul>
-            <li>Inscrição em canais</li>
-            <li>Benefícios exclusivos</li>
-            <li>Sem anúncios em alguns canais</li>
-          </ul>
+          <h3>Planos pago</h3>
+          
 
-          <a href="https://www.twitch.tv/" target="_blank" rel="noopener noreferrer">
-            Acessar Twitch
-          </a>
+            <h4>Plano: Assinatura Tier 1</h4>
+            <p><strong>Preço Mensal:</strong> R$ 7,90 </p>
+            <p><strong>Benefícios principais:</strong> Emotes exclusivos, badge, cor no chat, sem anúncios no canal.</p>
+            <p><strong>Observações:</strong> Apoia diretamente o streamer.</p>
+           <br />
+
+          
+            <h4>Plano: Assinatura Tier 2</h4>
+            <p><strong>Preço Mensal:</strong> R$ 14,90 </p>
+            <p><strong>Benefícios principais:</strong> Todos os benefícios do Tier 1 + mais emotes.</p>
+            <p><strong>Observações:</strong> Sem observação </p>
+           <br />
+
+          
+            <h4>Plano: Assinatura Tier 3</h4>
+            <p><strong>Preço Mensal:</strong> R$ 27,90 </p>
+            <p><strong>Benefícios principais:</strong> Todos os benefícios anteriores + emotes especiais e reconhecimento.</p>
+            <p><strong>Observações: Sem observação</strong> </p>
+           <br />
+
+          
+            <h4>Plano Twitch Prime / Prime Gaming</h4>
+            <p><strong>Preço Mensal: Incluso com Amazon Prime</strong> </p>
+            <p><strong>Benefícios principais:</strong> 1 assinatura gratuita por mês (Tier 1), recompensas em jogos, emotes.</p>
+            <p><strong>Observações:</strong> Exige assinatura da Amazon Prime (R$ 19,90/mês).</p>
+           <br />
+
+          
+            <h4>Plano Twitch Turbo</h4>
+            <p><strong>Preço Mensal:</strong> R$ 26,99 </p>
+            <p><strong>Benefícios principais:</strong> Sem anúncios em toda a Twitch, armazenamento de VODs por 60 dias, emotes exclusivos.</p>
+            <p><strong>Exige assinatura da Amazon Prime (R$ 19,90/mês).</strong></p>
+            <p><strong>Observações:</strong> Não apoia streamers diretamente</p>
+           <br />
+
         </div>
 
         {/* Tiktok */}
         <div className="card">
-          <img src="https://img.icons8.com/color/96/tiktok--v1.png" alt="Tiktok"/> <br/>
+          <img src="https://imgs.search.brave.com/TprQYSZU7IRAXE774Lv2y6rLMZ5jwrzgO8pY_uXPikQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjEv/NDk1Lzk0Mi9zbWFs/bC90aWt0b2stbG9n/by1pY29uLWZyZWUt/cG5nLnBuZw" alt="Tiktok"/> <br/>
 
-          <h2>Tiktok</h2>
+      <h2>TikTok</h2>
 
-          <p>Rede social de vídeos curtos e virais.</p>
-          <p><strong>Uso:</strong> Entretenimento rápido, trends e música.</p>
+      <a href="https://www.tiktok.com/pt-BR/" target="_blank" rel="noopener noreferrer">
+      ACESSAR TIKTOK
+      </a><br/>
 
-          <h4>Diferenciais</h4>
-          <ul>
-            <li>Algoritmo inteligente</li>
-            <li>Conteúdo viral rápido</li>
-            <li>Criação simples de vídeos</li>
-          </ul>
+      <legend className="legenda">DESCRIÇÃO</legend>
+      <p>O TikTok é uma plataforma de vídeos curtos focada em entretenimento rápido, criatividade e viralização de conteúdo, sendo uma das redes sociais mais populares do mundo.</p><br/>
 
-          <a href="https://www.tiktok.com/pt-BR/" target="_blank" rel="noopener noreferrer">
-            Acessar Tiktok
-          </a>
+      <ul>
+        <legend>Para que é usado:</legend>
+        <li>Assistir vídeos curtos e virais</li>
+        <li>Criar conteúdo criativo (dança, humor, trends)</li>
+        <li>Acompanhar influenciadores</li>
+        <li>Descobrir tendências e músicas</li>
+        <li>Fazer lives e interagir com seguidores</li>
+      </ul><br />
+
+      <h4>Diferenciais</h4>
+      <ul>
+        <li>⚡ Conteúdo rápido e altamente viciante</li>
+        <li>🤖 Algoritmo extremamente preciso e personalizado</li>
+        <li>🎵 Forte integração com músicas e trends</li>
+        <li>📱 Foco total em mobile (experiência otimizada)</li>
+        <li>🚀 Alta chance de viralização mesmo com poucos seguidores</li>
+      </ul>
+
+        <h3>Planos do TikTok</h3>
+
+        <h4>Padrão (Gratuito):</h4>
+        <p><strong>Preço:</strong> Gratuito.</p>
+        <p><strong>Chave Benefícios:</strong> Acesso completo à plataforma, criação e consumo de vídeos, lives.</p>
+        <p><strong>Restrições:</strong> Presença de anúncios.</p> <br />
+
+        <h4>Moedas Virtuais:</h4>
+        <p><strong>Preço:</strong> Variável (compra dentro do app).</p>
+        <p><strong>Chave Benefícios:</strong> Envio de presentes em lives para apoiar criadores.</p>
+        <p><strong>Restrições:</strong> Uso limitado dentro da plataforma.</p> <br />
+
+        <h4>Assinaturas de Criadores:</h4>
+        <p><strong>Preço mensal:</strong> Definido pelo criador.</p>
+        <p><strong>Preço Anual:</strong> Não disponível.</p>
+        <p><strong>Chave Benefícios:</strong> Conteúdos exclusivos, badges e vantagens no chat.</p>
+        <p><strong>Restrições:</strong> Disponível apenas em canais específicos.</p> <br />
+
+        <h4>TikTok Ads (Empresas):</h4>
+        <p><strong>Preço:</strong> Variável conforme campanha.</p>
+        <p><strong>Preço Anual:</strong> Não se aplica.</p>
+        <p><strong>Chave Benefícios:</strong> Divulgação de produtos e alcance de público.</p>
+        <p><strong>Restrições:</strong> Necessário investimento em anúncios.</p> <br /> <br />
+
+
         </div>
 
         {/* Kwai */}
         <div className="card">
-          <img src="https://imgs.search.brave.com/tvNxV6zL4b2HM8LrXGh70TPBwN7sS_i4YQe-MYN8Zmk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcuZnJlZXBpay5jb20vdmV0b3Jlcy1wcmVtaXVtL2xvZ290aXBvLWt3YWktaWx1c3RyYWNhby12ZXRvcmlhbC1pY29uZS1kZS1yZWRlLXNvY2lhbF8xMTgzMzktMTU4OC5qcGc" alt="Kwai"/> <br/>
+          <img src="https://imgs.search.brave.com/0rWenEamamCgGUCLe3ADC1z_jxUlr73MWqSem-Qeo9U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudGNkbi5jb20u/YnIvaW1nL2ltZ19w/cm9kLzExMDY3ODUv/aWNvbmVfa3dhaV9h/cHBfcGxhcXVpbmhh/X2FwbGljYXRpdm9f/dmlkZW9zXzE1Mjdf/MV9iZTcxNGYxNDYw/OTFjMzgwOTNhNzFm/MzY1NjcxOWY2NC5q/cGc" alt="Kwai"/> <br/>
 
-          <h2>Kwai</h2>
-
-          <p>Plataforma de vídeos curtos semelhante ao TikTok.</p>
-          <p><strong>Uso:</strong> Vídeos rápidos e recompensas.</p>
-
-          <h4>Diferenciais</h4>
-          <ul>
-            <li>Possibilidade de ganhos</li>
-            <li>Conteúdo simples e rápido</li>
-            <li>Fácil de usar</li>
-          </ul>
+      <h2>KWAI</h2>
 
           <a href="https://www.kwai.com/" target="_blank" rel="noopener noreferrer">
-            Acessar Kwai
-          </a>
+            ACESSAR KWAI
+          </a><br/>
+
+          <legend className="legenda">DESCRIÇÃO</legend>
+
+      <p>O Kwai é uma plataforma de vídeos curtos focada em entretenimento, desafios e recompensas por engajamento, sendo bastante popular em países emergentes como o Brasil.</p><br/>
+
+      <ul>
+        <legend>Para que é usado:</legend>
+        <li>Assistir vídeos curtos e virais</li>
+        <li>Participar de desafios e trends</li>
+        <li>Ganhar recompensas por engajamento</li>
+        <li>Acompanhar criadores de conteúdo</li>
+        <li>Fazer transmissões ao vivo</li>
+      </ul><br />
+
+      <h4>Diferenciais</h4>
+      <ul>
+        <li>💰 Sistema de recompensas por uso e engajamento</li>
+        <li>📱 Interface simples e fácil de usar</li>
+        <li>🌎 Forte presença em mercados emergentes</li>
+        <li>🎥 Conteúdo leve e voltado ao entretenimento rápido</li>
+        <li>🚀 Facilidade para novos criadores crescerem</li>
+      </ul>
+
+      <h3>Planos do Kwai</h3>
+
+      <h4>Padrão (Gratuito):</h4>
+      <p><strong>Preço:</strong> Gratuito.</p>
+      <p><strong>Chave Benefícios:</strong> Acesso completo à plataforma, criação e consumo de vídeos.</p>
+      <p><strong>Restrições:</strong> Presença de anúncios.</p> <br />
+
+      <h4>Programa de Recompensas:</h4>
+      <p><strong>Preço:</strong> Gratuito.</p>
+      <p><strong>Chave Benefícios:</strong> Ganhos por assistir vídeos, convidar amigos e interagir.</p>
+      <p><strong>Restrições:</strong> Ganhos limitados e sujeitos a regras da plataforma.</p> <br />
+
+      <h4>Moedas Virtuais:</h4>
+      <p><strong>Preço:</strong> Variável (compra dentro do app).</p>
+      <p><strong>Chave Benefícios:</strong> Envio de presentes em lives para apoiar criadores.</p>
+      <p><strong>Restrições:</strong> Uso restrito dentro da plataforma.</p> <br />
+
+      <h4>Kwai Ads (Empresas):</h4>
+      <p><strong>Preço:</strong> Variável conforme campanha.</p>
+      <p><strong>Chave Benefícios:</strong> Divulgação de produtos e alcance de público.</p>
+      <p><strong>Restrições:</strong> Necessário investimento em anúncios.</p> <br /> <br />
+
         </div>
 
         {/* Crunchyroll */}
         <div className="card">
           <img src="https://upload.wikimedia.org/wikipedia/commons/0/08/Crunchyroll_Logo.png" alt="Crunchyroll"/> <br/>
           
-          <h2>Crunchyroll</h2>
-
-          <p>Streaming focado em animes.</p>
-          <p><strong>Uso:</strong> Assistir animes e lançamentos.</p>
-
-          <h4>Diferenciais</h4>
-          <ul>
-            <li>Especializado em animes</li>
-            <li>Lançamentos simultâneos</li>
-            <li>Legendas em português</li>
-          </ul>
-
-          <h4>Planos</h4>
-          <ul>
-            <li>Grátis (com anúncios)</li>
-            <li>Premium ~R$14,99/mês (sem anúncios + HD)</li>
-          </ul>
+      <h2>Crunchyroll</h2>
 
           <a href="https://www.crunchyroll.com/pt-br/" target="_blank" rel="noopener noreferrer">
-            Assistir Crunchyroll
-          </a>
+            ACESSAR CRUNCHYROLL
+          </a><br/>
+
+          <legend className="legenda">DESCRIÇÃO</legend>
+
+<p>Streaming focado em animes, doramas e conteúdos asiáticos.</p> <p><strong>Uso:</strong> Assistir animes, episódios simulcast (lançamentos simultâneos com o Japão) e conteúdos exclusivos.</p>
+
+<h4>Diferenciais</h4>
+<ul>
+  <li>Grande catálogo de animes</li>
+  <li>Lançamentos simultâneos com o Japão (simulcast)</li>
+  <li>Conteúdos exclusivos e originais</li>
+  <li>Opções de legenda e dublagem</li>
+</ul>
+
+    <h4>Planos</h4>
+    <ul>
+      <li>
+        <p>Gratuito:</p>
+        <p>Qualidade: Até 720p/1080p (variável)</p>
+        <p>Telas: 1 tela</p>
+        <p>Esse plano contém Anúncios: Sim</p>
+        <p>Quantos dispositivos com downloads disponível: Não possui download</p>
+        <p>Assinantes Extras: Não permitido</p>
+        <p>Valor do plano: Gratuito</p>
+      </li><br/>
+
+      <li>
+        <p>Fan:</p>
+        <p>Qualidade: Até 1080p (Full HD)</p>
+        <p>Telas: 1 tela simultânea</p>
+        <p>Esse plano contém Anúncios: Não</p>
+        <p>Quantos dispositivos com downloads disponível: Não possui download</p>
+        <p>Assinantes Extras: Não permitido</p>
+        <p>Valor do plano: Cerca de R$14,99/mês</p>
+      </li><br/>
+
+      <li>
+        <p>Mega Fan:</p>
+        <p>Qualidade: Até 1080p (Full HD)</p>
+        <p>Telas: 4 telas simultâneas</p>
+        <p>Esse plano contém Anúncios: Não</p>
+        <p>Quantos dispositivos com downloads disponível: 4 dispositivos</p>
+        <p>Assinantes Extras: Não permitido</p>
+        <p>Valor do plano: Cerca de R$19,99/mês</p>
+      </li><br/>
+
+      <li>
+        <p>Mega Fan (Anual):</p>
+        <p>Qualidade: Até 1080p (Full HD)</p>
+        <p>Telas: 4 telas simultâneas</p>
+        <p>Esse plano contém Anúncios: Não</p>
+        <p>Quantos dispositivos com downloads disponível: 4 dispositivos</p>
+        <p>Assinantes Extras: Não permitido</p>
+        <p>Valor do plano: Cerca de R$199,99/ano</p>
+      </li><br/>
+    </ul> <br/>
+
         </div>
 
         {/* NETFLIX */}
         <div className="card">
           <img src="https://img.icons8.com/color/96/netflix.png" alt="Netflix"/> <br/>
 
-          <h2>Netflix</h2>
+      <h2>NETFLIX</h2>
 
-          <p>Streaming de filmes e séries.</p>
-          <p><strong>Uso:</strong> Assistir conteúdos variados.</p>
+                <a href="https://www.netflix.com/br/" target="_blank" rel="noopener noreferrer">
+                  ACESSAR NETFLIX
+                </a><br/>
 
-          <h4>Diferenciais</h4>
-          <ul>
-            <li>Conteúdo exclusivo</li>
-            <li>Alta qualidade</li>
-            <li>Interface intuitiva</li>
-          </ul>
+          <legend className="legenda">DESCRIÇÃO</legend>
 
-          <h4>Planos</h4>
-          <ul>
-            <li>Padrão com Anúncios: 1080p Full HD - 2 Telas - Anúncios: Sim - Donwloads: Até 2 dispositivos - Assinantes Extras - Não permitido - Valor ~R$20,30/mês</li><br/>
-            <li>Padrão: 1080p Full HD - 2 Telas - Anúncios: Não - Donwloads: Até 2 dispositivos - Assinantes Extras - 1 extra - Valor ~R$44,90/mês</li> <br/>
-            <li>Premium: 4K + HDR - 4 Telas - Anúncios: Não - Donwloads: Até 6 dispositivos - Assinantes Extras - 2 extra - Valor ~R$59,90/mês(4K + múltiplas telas)</li><br/>
-          </ul> <br/>
+      <p>Streaming de filmes, séries e conteúdos originais.</p>
+      <p><strong>Uso:</strong> Assistir conteúdos variados sob demanda, incluindo produções exclusivas e lançamentos.</p>
 
-          <a href="https://www.netflix.com/br/" target="_blank" rel="noopener noreferrer">
-            Assistir Netflix
-          </a>
-        </div>
+      <h4>Diferenciais</h4>
+      <ul>
+        <li>🎬 Conteúdos originais exclusivos (Netflix Originals)</li>
+        <li>📺 Alta qualidade de imagem (até 4K + HDR)</li>
+        <li>📱 Disponível em diversos dispositivos</li>
+        <li>🤖 Sistema de recomendação personalizado</li>
+        <li>⬇️ Download para assistir offline</li>
+      </ul>
 
-        {/* HBO */}
-        <div className="card">
-          <img src="https://logo-teka.com/wp-content/uploads/2025/10/hbo-max-logo.svg" alt="HBOMAX"/> <br/>
-          
-          <h2>HBO MAX</h2>
+      <h4>Recursos principais</h4>
+      <ul>
+        <li>Perfis personalizados</li>
+        <li>Controle parental</li>
+        <li>Legendas e dublagens em vários idiomas</li>
+        <li>Continuação automática de episódios</li>
+        <li>Lista de favoritos</li>
+      </ul>
 
-          <p>Streaming com séries e filmes premium.</p>
-          <p><strong>Uso:</strong> Séries famosas e cinema.</p>
+      <h4>Planos</h4>
+      <ul>
+        <li>
+          <p><strong>Padrão com Anúncios:</strong></p>
+          <p>Qualidade: 1080p (Full HD)</p>
+          <p>Telas: 2 telas simultâneas</p>
+          <p>Esse plano contém anúncios: Sim</p>
+          <p>Downloads disponíveis: 2 dispositivos</p>
+          <p>Assinantes extras: Não permitido</p>
+          <p>Valor do plano: R$20,30/mês</p>
+          <p><strong>Indicado para:</strong> Quem quer economizar e não se importa com anúncios</p>
+        </li><br/>
+        
+        <li>
+          <p><strong>Padrão:</strong></p>
+          <p>Qualidade: 1080p (Full HD)</p>
+          <p>Telas: 2 telas simultâneas</p>
+          <p>Esse plano contém anúncios: Não</p>
+          <p>Downloads disponíveis: 2 dispositivos</p>
+          <p>Assinantes extras: 1 assinante extra</p>
+          <p>Valor do plano: R$44,90/mês</p>
+          <p><strong>Indicado para:</strong> Uso comum sem anúncios</p>
+        </li><br/>
 
-          <h4>Diferenciais</h4>
-          <ul>
-            <li>Produções premiadas</li>
-            <li>Alta qualidade</li>
-            <li>Conteúdo exclusivo</li>
-          </ul>
+        <li>
+          <p><strong>Premium:</strong></p>
+          <p>Qualidade: 4K + HDR</p>
+          <p>Telas: 4 telas simultâneas</p>
+          <p>Esse plano contém anúncios: Não</p>
+          <p>Downloads disponíveis: 6 dispositivos</p>
+          <p>Assinantes extras: 2 assinantes extras</p>
+          <p>Valor do plano: R$59,90/mês</p>
+          <p><strong>Indicado para:</strong> Famílias e quem quer máxima qualidade</p>
+        </li><br/>
+      </ul> <br/>
 
-          <h4>Planos</h4>
-          <ul>
-            <li>Plano básico ~R$27,90</li>
-            <li>Plano padrão ~R$34,90</li>
-          </ul>
+              </div>
 
-          <a href="https://play.hbomax.com/" target="_blank" rel="noopener noreferrer">
-            Assistir HBO
-          </a>
-        </div>
+              {/* HBO */}
+              <div className="card">
+                <img src="https://logo-teka.com/wp-content/uploads/2025/10/hbo-max-logo.svg" alt="HBOMAX"/> <br/>
+                
+      <h2>HBO MAX</h2>
 
-        {/* Prime */}
-        <div className="card">
-          <img src="https://img.icons8.com/?size=100&id=mJTj7Q9EPSVn&format=png&color=000000" alt="Prime"/> <br/>
-          
-          <h2>Amazom Prime</h2>
+                <a href="https://play.hbomax.com/" target="_blank" rel="noopener noreferrer">
+                  ACESSAR HBO MAX
+                </a><br/>
 
-          <p>Streaming da Amazon.</p>
-          <p><strong>Uso:</strong> Filmes e benefícios extras.</p>
+          <legend className="legenda">DESCRIÇÃO</legend>
 
-          <h4>Diferenciais</h4>
-          <ul>
-            <li>Inclui outros serviços</li>
-            <li>Preço acessível</li>
-            <li>Conteúdo exclusivo</li>
-          </ul>
+              <p>Streaming de filmes, séries, documentários e conteúdos da Warner Bros., HBO e DC.</p>
+              <p><strong>Uso:</strong> Assistir conteúdos premium, incluindo séries renomadas, filmes e lançamentos exclusivos.</p>
 
-          <h4>Plano</h4>
-          <ul>
-            <li>Prime ~R$14,90/mês (vídeo + frete grátis)</li>
-          </ul>
+              <h4>Diferenciais</h4>
+              <ul>
+                <li>🎬 Conteúdos exclusivos da HBO e Warner Bros.</li>
+                <li>🏆 Séries premiadas e de alta qualidade</li>
+                <li>🦸 Catálogo forte de DC (Batman, Superman, etc.)</li>
+                <li>🎥 Filmes recentes e grandes produções</li>
+                <li>📺 Alta qualidade de imagem (até 4K)</li>
+              </ul>
+
+              <h4>Recursos principais</h4>
+              <ul>
+                <li>Perfis personalizados</li>
+                <li>Controle parental</li>
+                <li>Download para assistir offline</li>
+                <li>Legendas e dublagens</li>
+                <li>Recomendações personalizadas</li>
+              </ul>
+
+              <h4>Planos</h4>
+              <ul>
+                <li>
+                  <p><strong>Básico com Anúncios:</strong></p>
+                  <p>Qualidade: Até 1080p (Full HD)</p>
+                  <p>Telas: 2 telas simultâneas</p>
+                  <p>Esse plano contém anúncios: Sim</p>
+                  <p>Downloads disponíveis: Não possui download</p>
+                  <p>Assinantes extras: Não permitido</p>
+                  <p>Valor do plano: Cerca de R$18,90/mês</p>
+                  <p><strong>Indicado para:</strong> Quem quer economizar e não se importa com anúncios</p>
+                </li><br/>
+                
+                <li>
+                  <p><strong>Padrão:</strong></p>
+                  <p>Qualidade: Até 1080p (Full HD)</p>
+                  <p>Telas: 2 telas simultâneas</p>
+                  <p>Esse plano contém anúncios: Não</p>
+                  <p>Downloads disponíveis: 2 dispositivos</p>
+                  <p>Assinantes extras: Não permitido</p>
+                  <p>Valor do plano: Cerca de R$27,90/mês</p>
+                  <p><strong>Indicado para:</strong> Uso comum sem anúncios</p>
+                </li><br/>
+
+                <li>
+                  <p><strong>Platinum (ou Premium):</strong></p>
+                  <p>Qualidade: Até 4K + HDR</p>
+                  <p>Telas: 4 telas simultâneas</p>
+                  <p>Esse plano contém anúncios: Não</p>
+                  <p>Downloads disponíveis: Até 30 downloads</p>
+                  <p>Assinantes extras: Não permitido</p>
+                  <p>Valor do plano: Cerca de R$34,90/mês</p>
+                  <p><strong>Indicado para:</strong> Quem quer máxima qualidade e mais dispositivos</p>
+                </li><br/>
+              </ul> <br/>
+              </div>
+
+              {/* Prime */}
+              <div className="card">
+                <img src="https://img.icons8.com/?size=100&id=mJTj7Q9EPSVn&format=png&color=000000" alt="Prime"/> <br/>
+                
+      <h2>PRIME VIDEO</h2>
 
           <a href="https://www.primevideo.com/" target="_blank" rel="noopener noreferrer">
-            Assistir Prime Video
-          </a>
+            ACESSAR PRIME VIDEO
+          </a><br/>
+
+          <legend className="legenda">DESCRIÇÃO</legend>
+
+      <p>Streaming de filmes, séries e conteúdos originais da Amazon.</p>
+      <p><strong>Uso:</strong> Assistir conteúdos variados, incluindo produções exclusivas e benefícios integrados ao Amazon Prime.</p>
+
+      <h4>Diferenciais</h4>
+      <ul>
+        <li>🎬 Conteúdos exclusivos (Amazon Originals)</li>
+        <li>📦 Incluso no pacote Amazon Prime (com outros benefícios)</li>
+        <li>🎥 Opção de alugar ou comprar filmes recentes</li>
+        <li>📺 Boa qualidade de imagem (até 4K)</li>
+        <li>🌎 Catálogo variado internacional</li>
+      </ul>
+
+      <h4>Recursos principais</h4>
+      <ul>
+        <li>Perfis personalizados</li>
+        <li>Download para assistir offline</li>
+        <li>Controle parental</li>
+        <li>Legendas e dublagens</li>
+        <li>Integração com canais adicionais (Paramount+, etc.)</li>
+      </ul>
+
+      <h4>Planos</h4>
+      <ul>
+        <li>
+          <p><strong>Amazon Prime:</strong></p>
+          <p>Qualidade: Até 4K + HDR</p>
+          <p>Telas: Até 3 telas simultâneas</p>
+          <p>Esse plano contém anúncios: Não (padrão atual)</p>
+          <p>Downloads disponíveis: Sim</p>
+          <p>Assinantes extras: Não necessário</p>
+          <p>Valor do plano: Cerca de R$14,90/mês</p>
+          <p><strong>Indicado para:</strong> Quem quer streaming + benefícios extras (frete, etc.)</p>
+        </li><br/>
+      </ul> <br/>
+
         </div>
 
         {/* Globo */}
         <div className="card">
-          <img src="https://imgs.search.brave.com/RvsqNviyvuRYNp9MBnGag1k9PHPdLVrgAKf2w8f6C5A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFnZXMuc2Vla2xvZ28uY29tL2xvZ28tcG5nLzUwLzIvZ2xvYm9wbGF5LWxvZ28tcG5nX3NlZWtsb2dvLTUwNDg3Mi5wbmc" alt="Globo Play"/> <br/>
+          <img src="https://imgs.search.brave.com/RvsqNviyvuRYNp9MBnGag1k9PHPdLVrgAKf2w8f6C5A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzUwLzIvZ2xvYm9w/bGF5LWxvZ28tcG5n/X3NlZWtsb2dvLTUw/NDg3Mi5wbmc" alt="Globo Play"/> <br/>
           
-          <h2>Globo Play</h2>
-
-          <p>Streaming brasileiro.</p>
-          <p><strong>Uso:</strong> Novelas e conteúdos nacionais.</p>
-
-          <h4>Diferenciais</h4>
-          <ul>
-            <li>Conteúdo brasileiro</li>
-            <li>Novelas completas</li>
-            <li>TV ao vivo</li>
-          </ul>
-
-          <h4>Planos</h4>
-          <ul>
-            <li>Básico ~R$24,90</li>
-            <li>Completo com canais ~R$49,90</li>
-          </ul>
+        <h2>GLOBO PLAY</h2>
 
           <a href="https://globoplay.globo.com/" target="_blank" rel="noopener noreferrer">
-            Assistir Globo Play
-          </a>
+            ACESSAR GLOBO PLAY
+          </a><br/>
+
+          <legend className="legenda">DESCRIÇÃO</legend>
+
+    <p>Streaming brasileiro com foco em novelas, séries, filmes e conteúdos da TV Globo.</p>
+    <p><strong>Uso:</strong> Assistir novelas, programas de TV, séries nacionais e conteúdos exclusivos.</p>
+
+    <h4>Diferenciais</h4>
+    <ul>
+      <li>📺 Conteúdos da TV Globo ao vivo</li>
+      <li>🇧🇷 Forte catálogo nacional (novelas e séries)</li>
+      <li>🎬 Conteúdos exclusivos brasileiros</li>
+      <li>📡 Opção de assistir canais ao vivo</li>
+      <li>🎥 Integração com outros serviços (Telecine, Premiere, etc.)</li>
+    </ul>
+
+    <h4>Recursos principais</h4>
+    <ul>
+      <li>Perfis personalizados</li>
+      <li>Download para assistir offline</li>
+      <li>Controle parental</li>
+      <li>Replay de programas ao vivo</li>
+      <li>Recomendações personalizadas</li>
+    </ul>
+
+    <h4>Planos</h4>
+    <ul>
+      <li>
+        <p><strong>Padrão:</strong></p>
+        <p>Qualidade: Até 1080p (Full HD)</p>
+        <p>Telas: 2 telas simultâneas</p>
+        <p>Esse plano contém anúncios: Não</p>
+        <p>Downloads disponíveis: Sim</p>
+        <p>Assinantes extras: Não permitido</p>
+        <p>Valor do plano: Cerca de R$24,90/mês</p>
+        <p><strong>Indicado para:</strong> Quem gosta de novelas e conteúdo nacional</p>
+      </li><br/>
+
+      <li>
+        <p><strong>Globoplay + Canais ao vivo:</strong></p>
+        <p>Qualidade: Até 1080p</p>
+        <p>Telas: 2 telas simultâneas</p>
+        <p>Esse plano contém anúncios: Não</p>
+        <p>Downloads disponíveis: Sim</p>
+        <p>Assinantes extras: Não permitido</p>
+        <p>Valor do plano: Cerca de R$49,90/mês</p>
+        <p><strong>Indicado para:</strong> Quem quer TV ao vivo + streaming</p>
+      </li><br/>
+    </ul> <br/>
+
+
         </div>
 
         {/* Pluto */}
         <div className="card">
-          <img src="https://imgs.search.brave.com/3AK3m_RXy9am4gZxXII3OP4tL5SDLFA_quI1vng2ZpY/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4uaWNvbnNjb3V0LmNvbS9pY29uL2ZyZWUvcG5nLTI1Ni9mcmVlLXBsdXRvLXR2LWljb24tc3ZnLWRvd25sb2FkLXBuZy0xMDY3MzQ1MS5wbmc_Zj13ZWJwJnc9MjU2" alt="Pluto"/> <br/>
+          <img src="https://imgs.search.brave.com/OYO2ShpWoSRfVVFvLpWAuw3QpoJe2KvcVkG_xdXrgm8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbHV0/by10di5hcGtnYXJh/LmNvbS91cGxvYWRz/LzIwMjEvNy9wbHV0/by10di1pY29uLmpw/Zw" alt="Pluto"/> <br/>
           
-          <h2>Pluto TV</h2>
-
-          <p>TV online gratuita.</p>
-          <p><strong>Uso:</strong> Assistir canais ao vivo grátis.</p>
-
-          <h4>Diferenciais</h4>
-          <ul>
-            <li>Totalmente gratuito</li>
-            <li>Sem cadastro</li>
-            <li>Canais ao vivo</li>
-          </ul>
+      <h2>PLUTO TV</h2>
 
           <a href="https://pluto.tv/br/live-tv?lang=pt" target="_blank" rel="noopener noreferrer">
-            Assistir Pluto TV
-          </a>
+            ACESSAR PLUTO TV
+          </a><br/>
+
+          <legend className="legenda">DESCRIÇÃO</legend>
+
+    <p>Streaming gratuito com canais ao vivo e conteúdos sob demanda.</p>
+    <p><strong>Uso:</strong> Assistir TV online grátis com programação contínua e filmes/séries.</p>
+
+    <h4>Diferenciais</h4>
+    <ul>
+      <li>💰 Totalmente gratuito</li>
+      <li>📺 Canais ao vivo 24h</li>
+      <li>🎬 Conteúdos sob demanda</li>
+      <li>🚫 Não precisa de cadastro</li>
+      <li>📱 Fácil acesso em vários dispositivos</li>
+    </ul>
+
+    <h4>Recursos principais</h4>
+    <ul>
+      <li>Guia de programação ao vivo</li>
+      <li>Conteúdo sob demanda</li>
+      <li>Compatível com Smart TVs e mobile</li>
+      <li>Interface simples</li>
+    </ul>
+
+    <h4>Planos</h4>
+    <ul>
+      <li>
+        <p><strong>Gratuito:</strong></p>
+        <p>Qualidade: Até 1080p</p>
+        <p>Telas: Varia conforme dispositivo</p>
+        <p>Esse plano contém anúncios: Sim</p>
+        <p>Downloads disponíveis: Não possui</p>
+        <p>Assinantes extras: Não necessário</p>
+        <p>Valor do plano: Gratuito</p>
+        <p><strong>Indicado para:</strong> Quem quer assistir sem pagar nada</p>
+      </li><br/>
+    </ul> <br/>
+
         </div>
 
       </div>
