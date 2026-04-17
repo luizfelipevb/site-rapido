@@ -1,0 +1,11 @@
+@echo off
+echo Tentando abrir Google Chrome...
+
+"C:\Program Files\Google\Chrome\Application\chrome.exe" https://seusite.com
+
+if %errorlevel% neq 0 (
+    echo Chrome nao encontrado. Abrindo instalador...
+    start https://www.google.com/chrome/
+)
+
+exit

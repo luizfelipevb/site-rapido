@@ -2,24 +2,12 @@ import "./plataforma.css";
 import { useState } from "react";
 
 function Plataforma() {
-  const [busca, setBusca] = useState("");
-
-  const filtrar = (titulo) => {
-  return titulo.toLowerCase().includes(busca.toLowerCase());
-};
+ 
   return (
-    
+
     <div className="container">
 
       <h1>Plataformas</h1>
-
-      <input
-      type="text"
-      placeholder="Buscar plataforma..."
-      value={busca}
-      onChange={(e) => setBusca(e.target.value)}
-      className="input-busca"
-    />
 
       <div className="lista">
 

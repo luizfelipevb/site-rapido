@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 
@@ -6,18 +7,19 @@ import Plataforma from "./pages/plataforma";
 import Social from "./pages/social";
 
 function App() {
+  const [pesquisa, setPesquisa] = useState("");
   return (
     <BrowserRouter>
 
-      {/* TOPO */}
-      <div className="topo">
-        <input
-          type="text"
-          id="pesquisa"
-          name="pesquisa"
-          placeholder="Digite o que busca"
-        />
-      </div>
+<div className="topo">
+  <input
+    type="text"
+    placeholder="Digite o que busca"
+    value={pesquisa}
+    onChange={(e) => setPesquisa(e.target.value)}
+    className="pesquisa"
+  />
+</div>
 
       {/* MENU (HOME) */}
       <Routes>
@@ -96,9 +98,9 @@ function App() {
         />
 
         {/* PÁGINAS */}
-        <Route path="/navegador" element={<Navegador />} />
-        <Route path="/plataforma" element={<Plataforma />} />
-        <Route path="/social" element={<Social />} />
+<Route path="/navegador" element={<Navegador pesquisa={pesquisa} />} />
+<Route path="/plataforma" element={<Plataforma pesquisa={pesquisa} />} />
+<Route path="/social" element={<Social pesquisa={pesquisa} />} />
 
       </Routes>
 

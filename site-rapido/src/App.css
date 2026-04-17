@@ -104,3 +104,37 @@ body {
   background: #64748b;
 }
 
+
+.topo {
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background: transparent;
+}
+
+.pesquisa {
+  width: 60%;
+  max-width: 600px;
+  padding: 12px 20px;
+
+  border-radius: 25px;
+  border: none;
+
+  outline: none;
+
+  font-size: 16px;
+
+  background: #1e293b;
+  color: white;
+
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.pesquisa::placeholder {
+  color: #94a3b8;
+}
+
+.pesquisa:focus {
+  box-shadow: 0 0 15px rgba(37, 99, 235, 0.7);
+}
