@@ -21,12 +21,12 @@ function Plataforma() {
             ACESSAR YOUTUBE
           </a> <br />
 
-          <legend className="legenda">DESCRIÇÃO</legend>
+          <h3 className="legenda">DESCRIÇÃO</h3>
 
           <p>O YouTube é uma plataforma de vídeos sob demanda e transmissões ao vivo, sendo a mais utilizada do mundo para consumo de conteúdo digital.</p><br/>
 
+          <p><strong>Para que é usado:</strong></p>
           <ul>
-            <legend>Para que é usado:</legend>
             <li>Assistir vídeos de diversos temas</li>
             <li>Estudar com aulas e tutoriais</li>
             <li>Ouvir música</li>
@@ -68,14 +68,6 @@ function Plataforma() {
               <p><strong>Chave Benefícios:</strong> Sem anúncios em categorias selecionadas.</p>
               <p><strong>Restrições:</strong> Sem YouTube Music, sem download.</p> <br/>
 
-              <h4>Familia:</h4>
-              <p><strong>Preço mensal:</strong> R$53,00.</p>
-              <p><strong>Preço Anual:</strong> Não tem plano anual para familia.</p>
-              <p><strong>Chave Benefícios:</strong> Até 6 usuários (1 titular + 5 membros).</p>
-              <p><strong>Restrições:</strong> Mesmo endereço.</p> <br/> <br />
-
-
-
         </div>
 
         {/* TWITCH */}
@@ -87,13 +79,13 @@ function Plataforma() {
             ACESSAR A TWITCH
           </a><br/>
 
-          <legend className="legenda">DESCRIÇÃO</legend>
+          <h3 className="legenda">DESCRIÇÃO</h3>
 
 
           <p> A Twitch é uma plataforma focada em transmissões ao vivo (lives), principalmente de jogos, mas também de música, eventos, bate-papo e conteúdo criativo. </p> <br/>
 
+          <p><strong>Para que é usado:</strong></p>
           <ul>
-            <legend>Para que é usado:</legend>
             <li>Assistir transmissões ao vivo</li>
             <li>Interagir com streamers via chat</li>   
             <li>Acompanhar campeonatos e eventos</li>
@@ -160,11 +152,11 @@ function Plataforma() {
       ACESSAR TIKTOK
       </a><br/>
 
-      <legend className="legenda">DESCRIÇÃO</legend>
+      <h3 className="legenda">DESCRIÇÃO</h3>
       <p>O TikTok é uma plataforma de vídeos curtos focada em entretenimento rápido, criatividade e viralização de conteúdo, sendo uma das redes sociais mais populares do mundo.</p><br/>
 
+      <p><strong>Para que é usado:</strong></p>
       <ul>
-        <legend>Para que é usado:</legend>
         <li>Assistir vídeos curtos e virais</li>
         <li>Criar conteúdo criativo (dança, humor, trends)</li>
         <li>Acompanhar influenciadores</li>
@@ -218,12 +210,12 @@ function Plataforma() {
             ACESSAR KWAI
           </a><br/>
 
-          <legend className="legenda">DESCRIÇÃO</legend>
+          <h3 className="legenda">DESCRIÇÃO</h3>
 
       <p>O Kwai é uma plataforma de vídeos curtos focada em entretenimento, desafios e recompensas por engajamento, sendo bastante popular em países emergentes como o Brasil.</p><br/>
 
+      <p><strong>Para que é usado:</strong></p>
       <ul>
-        <legend>Para que é usado:</legend>
         <li>Assistir vídeos curtos e virais</li>
         <li>Participar de desafios e trends</li>
         <li>Ganhar recompensas por engajamento</li>
@@ -274,7 +266,7 @@ function Plataforma() {
             ACESSAR CRUNCHYROLL
           </a><br/>
 
-          <legend className="legenda">DESCRIÇÃO</legend>
+          <h3 className="legenda">DESCRIÇÃO</h3>
 
 <p>Streaming focado em animes, doramas e conteúdos asiáticos.</p> <p><strong>Uso:</strong> Assistir animes, episódios simulcast (lançamentos simultâneos com o Japão) e conteúdos exclusivos.</p>
 
@@ -288,8 +280,8 @@ function Plataforma() {
 
     <h4>Planos</h4>
     <ul>
+      <h4>Gratuito:</h4>
       <li>
-        <p>Gratuito:</p>
         <p>Qualidade: Até 720p/1080p (variável)</p>
         <p>Telas: 1 tela</p>
         <p>Esse plano contém Anúncios: Sim</p>
@@ -298,8 +290,8 @@ function Plataforma() {
         <p>Valor do plano: Gratuito</p>
       </li><br/>
 
+      <h4>Fan:</h4>
       <li>
-        <p>Fan:</p>
         <p>Qualidade: Até 1080p (Full HD)</p>
         <p>Telas: 1 tela simultânea</p>
         <p>Esse plano contém Anúncios: Não</p>
@@ -308,8 +300,8 @@ function Plataforma() {
         <p>Valor do plano: Cerca de R$14,99/mês</p>
       </li><br/>
 
+      <h4>Mega Fan:</h4>
       <li>
-        <p>Mega Fan:</p>
         <p>Qualidade: Até 1080p (Full HD)</p>
         <p>Telas: 4 telas simultâneas</p>
         <p>Esse plano contém Anúncios: Não</p>
@@ -318,8 +310,8 @@ function Plataforma() {
         <p>Valor do plano: Cerca de R$19,99/mês</p>
       </li><br/>
 
+      <h4>Mega Fan (Anual):</h4>
       <li>
-        <p>Mega Fan (Anual):</p>
         <p>Qualidade: Até 1080p (Full HD)</p>
         <p>Telas: 4 telas simultâneas</p>
         <p>Esse plano contém Anúncios: Não</p>
@@ -333,18 +325,44 @@ function Plataforma() {
 
         {/* NETFLIX */}
         <div className="card">
-          <img src="https://img.icons8.com/color/96/netflix.png" alt="Netflix"/> <br/>
+          <img src="https://img.icons8.com/color/96/netflix.png" alt="Netflix" />
 
-      <h2>NETFLIX</h2>
+          <h2>NETFLIX</h2>
 
-                <a href="https://www.netflix.com/br/" target="_blank" rel="noopener noreferrer">
-                  ACESSAR NETFLIX
-                </a><br/>
+          <a href="https://www.netflix.com/br/" target="_blank" rel="noopener noreferrer">
+            ACESSAR NETFLIX
+          </a>
 
-          <legend className="legenda">DESCRIÇÃO</legend>
+          <h3 className="legenda">DESCRIÇÃO</h3>
 
-      <p>Streaming de filmes, séries e conteúdos originais.</p>
-      <p><strong>Uso:</strong> Assistir conteúdos variados sob demanda, incluindo produções exclusivas e lançamentos.</p>
+          <p>Streaming de filmes, séries e conteúdos originais.</p>
+
+          <p>
+            <strong>Uso:</strong> Assistir conteúdos variados sob demanda, incluindo produções exclusivas e lançamentos.
+          </p>
+
+          <h4>Alguns conteúdos exclusivos da Netflix:</h4>
+
+          <div className="detalhes">
+            <ul className="filme">
+              <li><strong>Filmes:</strong></li>
+              <li>Alerta Vermelho</li>
+              <li>Não Olhe para Cima</li>
+              <li>Bird Box</li>
+              <li>Agente Oculto</li>
+              <li>Resgate</li>
+            </ul>
+
+            <ul className="series">
+              <li><strong>Séries:</strong></li>
+              <li>One Piece</li>
+              <li>Round 6 (Squid Game)</li>
+              <li>La Casa de Papel</li>
+              <li>Stranger Things</li>
+              <li>The Witcher</li>
+            </ul>
+          </div>
+
 
       <h4>Diferenciais</h4>
       <ul>
@@ -412,10 +430,28 @@ function Plataforma() {
                   ACESSAR HBO MAX
                 </a><br/>
 
-          <legend className="legenda">DESCRIÇÃO</legend>
+          <h3 className="legenda">DESCRIÇÃO</h3>
 
               <p>Streaming de filmes, séries, documentários e conteúdos da Warner Bros., HBO e DC.</p>
               <p><strong>Uso:</strong> Assistir conteúdos premium, incluindo séries renomadas, filmes e lançamentos exclusivos.</p>
+
+          <h4 style={{ textAlign: "left" }}>Alguns conteúdo exclusivo da netflix:</h4>
+                <div className="detalhes">
+                <ul className="filme"><b>Filmes:</b>
+                  <li>Duna (Dune)</li>
+                  <li>The Batman</li>
+                  <li>Coringa (Joker)</li>
+                  <li>Matrix Resurrections</li>
+                  <li>Godzilla vs. Kong</li>
+                </ul>
+                <ul className="series"><b>Series:</b>
+                  <li>Game of Thrones</li>
+                  <li>House of the Dragon</li>
+                  <li>Succession</li>
+                  <li>Chernobyl</li>
+                  <li>The Witcher</li>
+                  </ul>
+                </div>
 
               <h4>Diferenciais</h4>
               <ul>
@@ -482,7 +518,7 @@ function Plataforma() {
             ACESSAR PRIME VIDEO
           </a><br/>
 
-          <legend className="legenda">DESCRIÇÃO</legend>
+          <h3 className="legenda">DESCRIÇÃO</h3>
 
       <p>Streaming de filmes, séries e conteúdos originais da Amazon.</p>
       <p><strong>Uso:</strong> Assistir conteúdos variados, incluindo produções exclusivas e benefícios integrados ao Amazon Prime.</p>
@@ -531,7 +567,7 @@ function Plataforma() {
             ACESSAR GLOBO PLAY
           </a><br/>
 
-          <legend className="legenda">DESCRIÇÃO</legend>
+          <h3 className="legenda">DESCRIÇÃO</h3>
 
     <p>Streaming brasileiro com foco em novelas, séries, filmes e conteúdos da TV Globo.</p>
     <p><strong>Uso:</strong> Assistir novelas, programas de TV, séries nacionais e conteúdos exclusivos.</p>
@@ -592,7 +628,7 @@ function Plataforma() {
             ACESSAR PLUTO TV
           </a><br/>
 
-          <legend className="legenda">DESCRIÇÃO</legend>
+          <h3 className="legenda">DESCRIÇÃO</h3>
 
     <p>Streaming gratuito com canais ao vivo e conteúdos sob demanda.</p>
     <p><strong>Uso:</strong> Assistir TV online grátis com programação contínua e filmes/séries.</p>

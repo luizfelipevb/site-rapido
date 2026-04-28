@@ -86,7 +86,7 @@ BAIXAR GOOGLE CHROME
 
   <h2>MOZILLA FIREFOX</h2>
 
-  <a href="https://download.mozilla.org/?product=firefox-latest&os=win&lang=pt-BR" target="_blank" rel="noreferrer">
+  <a href="https://www.firefox.com/thanks/" target="_blank" rel="noreferrer">
     INSTALAR FIREFOX
   </a><br />
 
@@ -153,7 +153,7 @@ BAIXAR GOOGLE CHROME
     className="acesso"
   >
     ACESSAR MICROSOFT EDGE
-  </button>
+  </button> <br />
 
 <p>Navegador da Microsoft baseado no mesmo motor do Chrome, com melhor otimização para Windows e integração com serviços Microsoft.</p>
 
@@ -254,7 +254,7 @@ BAIXAR GOOGLE CHROME
       
       <h2>OPERA GX</h2>
 
-      <a href="https://www.opera.com/gx" target="_blank" rel="noreferrer">
+      <a href="https://www.opera.com/pt-br/computer/thanks?ni=eapgx&os=windows" target="_blank" rel="noreferrer">
         INSTALAR OPERA GX
       </a><br />
 
@@ -308,7 +308,7 @@ BAIXAR GOOGLE CHROME
 
           <a href="https://laptop-updates.brave.com/latest/winx64" target="_blank" rel="noreferrer">
             INSTALAR BRAVE
-          </a>
+          </a><br />
 <p>Um navegador focado em privacidade máxima, com bloqueio automático de anúncios e rastreadores, garantindo navegação rápida e segura.</p>
 
 <p><strong>Motor:</strong> Blink</p>
@@ -341,7 +341,11 @@ BAIXAR GOOGLE CHROME
   <li><strong>Vs Opera:</strong> Brave bloqueia mais rastreadores</li>
   <li><strong>Vs Firefox:</strong> Brave é mais automático, Firefox mais configurável</li>
   <li><strong>Vs Opera GX:</strong> Brave prioriza privacidade e bloqueio de rastreadores; Opera GX prioriza performance e customização</li>
+  <li><strong>Vs Safari:</strong> Brave é mais agressivo no bloqueio de anúncios e rastreadores; Safari é mais otimizado e eficiente em dispositivos Apple</li>
 </ul>
+
+<h4>Resumo direto</h4>
+<p>👉 Ideal para quem quer <strong>máxima privacidade e navegação sem anúncios</strong>, sem precisar configurar nada.</p>
         </div>
 
         {/* SAFARI */}

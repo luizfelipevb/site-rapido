@@ -162,3 +162,13 @@
     -2px -2px 0 black, /* Canto superior esquerdo */
     2px -2px 0 black;  /* Canto superior direito */
 }
+
+.detalhes {
+  display: flex;
+  gap: 40px; /* espaço entre as colunas */
+}
+
+.detalhes ol {
+  list-style: none;
+  padding: 0;
+}
