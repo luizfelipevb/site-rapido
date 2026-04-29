@@ -43,7 +43,7 @@ h1 {
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 
 /* ÍCONE */
@@ -110,7 +110,7 @@ h1 {
 
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
 }
 
 /* ÍCONES */
@@ -141,8 +141,7 @@ h1 {
   margin: 0;
 }
 
-
-h2{
+h2 {
   text-align: center;
 }
 
@@ -167,14 +166,14 @@ h2{
   transition: 0.3s;
 
   /* 🔥 ISSO QUE FALTAVA */
-      text-shadow: 
-    2px 2px 0 black,   /* Canto inferior direito */
-    -2px 2px 0 black,  /* Canto inferior esquerdo */
-    -2px -2px 0 black, /* Canto superior esquerdo */
-    2px -2px 0 black;  /* Canto superior direito */
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
 }
 
-.card button{
+.card button {
   padding: 15px;
   font-size: 18px;
 }

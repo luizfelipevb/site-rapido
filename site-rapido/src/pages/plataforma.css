@@ -12,21 +12,21 @@
   min-height: 100vh;
   color: white;
   font-family: Arial, Helvetica, sans-serif;
-      text-shadow: 
-    2px 2px 0 black,   /* Canto inferior direito */
-    -2px 2px 0 black,  /* Canto inferior esquerdo */
-    -2px -2px 0 black, /* Canto superior esquerdo */
-    2px -2px 0 black;  /* Canto superior direito */
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
 }
 
 /* TÍTULO */
 .container h1 {
   margin-bottom: 20px;
-      text-shadow: 
-    2px 2px 0 black,   /* Canto inferior direito */
-    -2px 2px 0 black,  /* Canto inferior esquerdo */
-    -2px -2px 0 black, /* Canto superior esquerdo */
-    2px -2px 0 black;  /* Canto superior direito */
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
 }
 
 /* LISTA (GRID SIMPLES) */
@@ -35,11 +35,11 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-      text-shadow: 
-    2px 2px 0 black,   /* Canto inferior direito */
-    -2px 2px 0 black,  /* Canto inferior esquerdo */
-    -2px -2px 0 black, /* Canto superior esquerdo */
-    2px -2px 0 black;  /* Canto superior direito */
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
 }
 
 /* CARD */
@@ -49,11 +49,11 @@
   border-radius: 10px;
   padding: 15px;
   border: 1px solid #333;
-      text-shadow: 
-    2px 2px 0 black,   /* Canto inferior direito */
-    -2px 2px 0 black,  /* Canto inferior esquerdo */
-    -2px -2px 0 black, /* Canto superior esquerdo */
-    2px -2px 0 black;  /* Canto superior direito */
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
 
   /* 👇 AQUI É O MAIS IMPORTANTE */
   max-height: 500px;
@@ -68,7 +68,6 @@
 .card::-webkit-scrollbar-thumb {
   background: #555;
   border-radius: 10px;
-  
 }
 
 /* IMAGEM */
@@ -81,60 +80,60 @@
 /* TEXTOS */
 .card h2 {
   margin-bottom: 10px;
-      text-shadow: 
-    2px 2px 0 black,   /* Canto inferior direito */
-    -2px 2px 0 black,  /* Canto inferior esquerdo */
-    -2px -2px 0 black, /* Canto superior esquerdo */
-    2px -2px 0 black;  /* Canto superior direito */
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
 }
 
 .card h3 {
   margin-top: 10px;
-      text-shadow: 
-    2px 2px 0 black,   /* Canto inferior direito */
-    -2px 2px 0 black,  /* Canto inferior esquerdo */
-    -2px -2px 0 black, /* Canto superior esquerdo */
-    2px -2px 0 black;  /* Canto superior direito */
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
 }
 
 .card h4 {
   margin-top: 8px;
-      text-shadow: 
-    2px 2px 0 black,   /* Canto inferior direito */
-    -2px 2px 0 black,  /* Canto inferior esquerdo */
-    -2px -2px 0 black, /* Canto superior esquerdo */
-    2px -2px 0 black;  /* Canto superior direito */
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
 }
 
 .card p {
   font-size: 14px;
   margin-bottom: 5px;
-      text-shadow: 
-    2px 2px 0 black,   /* Canto inferior direito */
-    -2px 2px 0 black,  /* Canto inferior esquerdo */
-    -2px -2px 0 black, /* Canto superior esquerdo */
-    2px -2px 0 black;  /* Canto superior direito */
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
 }
 
 /* LISTAS */
 .card ul {
   margin-left: 15px;
   margin-bottom: 10px;
-      text-shadow: 
-    2px 2px 0 black,   /* Canto inferior direito */
-    -2px 2px 0 black,  /* Canto inferior esquerdo */
-    -2px -2px 0 black, /* Canto superior esquerdo */
-    2px -2px 0 black;  /* Canto superior direito */
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
 }
 
 .card li {
   font-size: 14px;
   margin-bottom: 3px;
-      text-shadow: 
-    2px 2px 0 black,   /* Canto inferior direito */
-    -2px 2px 0 black,  /* Canto inferior esquerdo */
-    -2px -2px 0 black, /* Canto superior esquerdo */
-    2px -2px 0 black;  /* Canto superior direito */
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
 }
 
 /* BOTÃO */
@@ -147,28 +146,35 @@
   color: white;
   text-decoration: none;
   border-radius: 5px;
-  
 }
 
 .card a:hover {
   background-color: darkred;
 }
 
-.legenda{
-    text-align: center;
-    text-shadow: 
-    2px 2px 0 black,   /* Canto inferior direito */
-    -2px 2px 0 black,  /* Canto inferior esquerdo */
-    -2px -2px 0 black, /* Canto superior esquerdo */
-    2px -2px 0 black;  /* Canto superior direito */
+.legenda {
+  text-align: center;
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
 }
 
 .detalhes {
-  display: flex;
-  gap: 40px; /* espaço entre as colunas */
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 👈 2 colunas fixas */
+  gap: 15px;
+  justify-items: center; /* centraliza conteúdo */
 }
 
 .detalhes ol {
-  list-style: none;
+  width: 100%;
+  max-width: 130px; /* 👈 impede estourar o card */
   padding: 0;
+  margin: 0;
+}
+
+.detalhes li {
+  word-break: break-word;
 }
