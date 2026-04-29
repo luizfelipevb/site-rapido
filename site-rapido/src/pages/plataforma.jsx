@@ -435,7 +435,7 @@ function Plataforma() {
               <p>Streaming de filmes, séries, documentários e conteúdos da Warner Bros., HBO e DC.</p>
               <p><strong>Uso:</strong> Assistir conteúdos premium, incluindo séries renomadas, filmes e lançamentos exclusivos.</p>
 
-          <h4 style={{ textAlign: "left" }}>Alguns conteúdo exclusivo da netflix:</h4>
+          <h4 style={{ textAlign: "left" }}>Alguns conteúdo exclusivo da HBO MAX:</h4>
                 <div className="detalhes">
                 <ul className="filme"><b>Filmes:</b>
                   <li>Duna (Dune)</li>
@@ -523,6 +523,32 @@ function Plataforma() {
       <p>Streaming de filmes, séries e conteúdos originais da Amazon.</p>
       <p><strong>Uso:</strong> Assistir conteúdos variados, incluindo produções exclusivas e benefícios integrados ao Amazon Prime.</p>
 
+          <h4 style={{ textAlign: "left" }}>Alguns conteúdo exclusivo da Prime Video:</h4>
+                <div className="detalhes">
+                <ul className="filme"><b>Filmes:</b>
+                  <li>The Tomorrow War</li>
+                  <li>Borat: Fita de Cinema Seguinte</li>
+                  <li>Saltburn</li>
+                  <li>Air: A História por Trás do Logo</li>
+                </ul>
+                <ul className="series"><b>Series:</b>
+                  <li>The Boys (uma das mais famosas)</li>
+                  <li>Invincible (animação adulta de super-heróis)</li>
+                  <li>Jack Ryan</li>
+                  <li>O Senhor dos Anéis: Os Anéis de Poder</li>
+                  <li>Reacher</li>
+                  </ul>
+                </div>
+
+              <h4>Diferenciais</h4>
+              <ul>
+                <li>🎬 Conteúdos exclusivos da HBO e Warner Bros.</li>
+                <li>🏆 Séries premiadas e de alta qualidade</li>
+                <li>🦸 Catálogo forte de DC (Batman, Superman, etc.)</li>
+                <li>🎥 Filmes recentes e grandes produções</li>
+                <li>📺 Alta qualidade de imagem (até 4K)</li>
+              </ul>
+
       <h4>Diferenciais</h4>
       <ul>
         <li>🎬 Conteúdos exclusivos (Amazon Originals)</li>
@@ -571,6 +597,34 @@ function Plataforma() {
 
     <p>Streaming brasileiro com foco em novelas, séries, filmes e conteúdos da TV Globo.</p>
     <p><strong>Uso:</strong> Assistir novelas, programas de TV, séries nacionais e conteúdos exclusivos.</p>
+
+              <h4 style={{ textAlign: "left" }} >
+                Alguns conteúdos exclusivos do Globoplay:
+              </h4>
+
+              <div className="detalhes">
+                <ul className="filme">
+                  <li><strong>Séries e produções originais</strong></li>
+                  <li>Verdades Secretas</li>
+                  <li>As Five</li>
+                  <li>Arcanjo Renegado</li>
+                </ul>
+
+                <ul className="series">
+                  <li><strong>Novelas exclusivas ou antecipadas</strong></li>
+                  <li>Todas as Flores</li>
+                  <li>Verdades Secretas 2</li>
+                </ul>
+              </div>
+
+              <h4>Diferenciais</h4>
+              <ul>
+                <li>🎬 Conteúdos exclusivos da HBO e Warner Bros.</li>
+                <li>🏆 Séries premiadas e de alta qualidade</li>
+                <li>🦸 Catálogo forte de DC (Batman, Superman, etc.)</li>
+                <li>🎥 Filmes recentes e grandes produções</li>
+                <li>📺 Alta qualidade de imagem (até 4K)</li>
+              </ul>
 
     <h4>Diferenciais</h4>
     <ul>
@@ -632,6 +686,28 @@ function Plataforma() {
 
     <p>Streaming gratuito com canais ao vivo e conteúdos sob demanda.</p>
     <p><strong>Uso:</strong> Assistir TV online grátis com programação contínua e filmes/séries.</p>
+
+    <h4 style={{ textAlign: "left" }}>
+      Alguns conteúdos que tem no Pluto TV:
+    </h4>
+
+    <div className="detalhes">
+      <ul className="serie">
+        <li><strong>Conteúdos MAIS FAMOSOS na Pluto TV</strong></li>
+        <li>South Park</li>
+        <li>Naruto</li>
+        <li>iCarly</li>
+        <li>Kenan & Kel</li>
+        <li>Bob Esponja</li>
+      </ul>
+
+      <ul className="filme">
+        <li><strong>Filmes conhecidos (variam bastante)</strong></li>
+        <li>Os Mercenários</li>
+        <li>Guerra Mundial Z</li>
+        <li>Atividade Paranormal</li>
+      </ul>
+    </div>
 
     <h4>Diferenciais</h4>
     <ul>
