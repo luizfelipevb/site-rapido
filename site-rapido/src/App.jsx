@@ -10,25 +10,22 @@ function App() {
   const [pesquisa, setPesquisa] = useState("");
   return (
     <BrowserRouter>
-
-<div className="topo">
-  <input
-    type="text"
-    placeholder="Digite o que busca"
-    value={pesquisa}
-    onChange={(e) => setPesquisa(e.target.value)}
-    className="pesquisa"
-  />
-</div>
+      <div className="topo">
+        <input
+          type="text"
+          placeholder="Digite o que busca"
+          value={pesquisa}
+          onChange={(e) => setPesquisa(e.target.value)}
+          className="pesquisa"
+        />
+      </div>
 
       {/* MENU (HOME) */}
       <Routes>
-
         <Route
           path="/"
           element={
             <div className="grade">
-
               <Link to="/navegador" className="box" id="navegador">
                 Navegador
               </Link>
@@ -92,18 +89,18 @@ function App() {
               <Link to="/outros" className="box" id="outros">
                 Outros...
               </Link>
-
             </div>
           }
         />
 
         {/* PÁGINAS */}
-<Route path="/navegador" element={<Navegador pesquisa={pesquisa} />} />
-<Route path="/plataforma" element={<Plataforma pesquisa={pesquisa} />} />
-<Route path="/social" element={<Social pesquisa={pesquisa} />} />
-
+        <Route path="/navegador" element={<Navegador pesquisa={pesquisa} />} />
+        <Route
+          path="/plataforma"
+          element={<Plataforma pesquisa={pesquisa} />}
+        />
+        <Route path="/social" element={<Social pesquisa={pesquisa} />} />
       </Routes>
-
     </BrowserRouter>
   );
 }
