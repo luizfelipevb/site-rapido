@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import "./social.css";
 function Social({ pesquisa }) {
   const termo = pesquisa.toLowerCase();
   return (
@@ -168,7 +168,7 @@ function Social({ pesquisa }) {
           <br /> <br />
         </div>
 
-        {/* TWITCH */}
+        {/* Facebook */}
         <div className="card">
           <img
             src="https://imgs.search.brave.com/tlnlhdziNBMTtVW8qZByQNfgW6mEEJWfLPS6TSSNQ2c/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaWNvbi1pY29u/cy5jb20vMjIyNC9Q/TkcvNTEyL2ZhY2Vi/b29rX2xvZ29faWNv/bl8xMzQ0NDYucG5n"
@@ -346,109 +346,85 @@ function Social({ pesquisa }) {
           <br /> <br />
         </div>
 
-        {/* Kwai */}
+        {/* Snapchat */}
         <div className="card">
           <img
-            src="https://imgs.search.brave.com/2vvNKjxgbDURJcn4Iged8xjaYV6LyDe1fcvbzYc_A40/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly93d3cu/c3ZncmVwby5jb20v/c2hvdy80NDgyNDAv/bWljcm9zb2Z0LXRl/YW1zLnN2Zw"
-            alt="Teams"
+            src="https://upload.wikimedia.org/wikipedia/en/c/c4/Snapchat_logo.svg"
+            alt="snapchat"
           />{" "}
           <br />
-          <h2>Microsoft Teams</h2>
+          <h2>SNAPCHAT</h2>
           <a
-            href="https://www.microsoft.com/pt-br/microsoft-teams/"
+            href="https://www.snapchat.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR TEAMS
-          </a>{" "}
+            ACESSAR O SNAPCHAT
+          </a>
           <br />
           <legend className="legenda">DESCRIÇÃO</legend>
           <p>
-            O Microsoft Teams é uma plataforma de comunicação e colaboração que
-            integra chat, reuniões online, chamadas e compartilhamento de
-            arquivos, sendo muito utilizada por empresas e instituições de
-            ensino.
+            O Snapchat é uma rede social focada no compartilhamento de fotos e vídeos
+            temporários, conhecidos como "Snaps", que desaparecem após serem
+            visualizados, sendo muito popular entre jovens.
           </p>
           <br />
           <ul>
             <legend>Para que é usado:</legend>
-            <li>Realizar reuniões e aulas online</li>
-            <li>Conversar via chat em equipe</li>
-            <li>Compartilhar arquivos e documentos</li>
-            <li>Organizar equipes e projetos</li>
-            <li>Fazer chamadas de voz e vídeo</li>
+            <li>Enviar fotos e vídeos que desaparecem</li>
+            <li>Conversar com amigos por chat</li>
+            <li>Postar Stories que somem após 24 horas</li>
+            <li>Usar filtros e lentes divertidas</li>
+            <li>Explorar conteúdos na aba Discover</li>
           </ul>
           <br />
           <h4>Diferenciais</h4>
           <ul>
-            <li>💼 Integração com ferramentas do Microsoft 365</li>
-            <li>🎥 Reuniões online com qualidade e estabilidade</li>
-            <li>📁 Compartilhamento e edição de arquivos em tempo real</li>
-            <li>👥 Organização por equipes e canais</li>
-            <li>🔒 Segurança e controle corporativo</li>
+            <li>👻 Conteúdos temporários (desaparecem automaticamente)</li>
+            <li>🎭 Filtros e lentes de realidade aumentada</li>
+            <li>📸 Foco em fotos e vídeos rápidos do dia a dia</li>
+            <li>💬 Chat integrado com notificações em tempo real</li>
+            <li>🗺️ Snap Map para ver localização de amigos</li>
           </ul>
-          <h3>Planos do Microsoft Teams</h3>
+          <h3>Planos do Snapchat</h3>
           <h4>Padrão (Gratuito):</h4>
           <p>
             <strong>Preço:</strong> Gratuito.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Chat, reuniões com limite de
-            tempo, compartilhamento de arquivos.
+            <strong>Chave Benefícios:</strong> Envio de snaps, stories, chat e uso de filtros.
           </p>
           <p>
-            <strong>Restrições:</strong> Recursos limitados em relação aos
-            planos pagos.
+            <strong>Restrições:</strong> Presença de anúncios.
           </p>{" "}
           <br />
-          <h4>Microsoft 365 Business Basic:</h4>
+          <h4>Snapchat+:</h4>
           <p>
-            <strong>Preço mensal:</strong> Cerca de R$30,00 por usuário.
+            <strong>Preço mensal:</strong> Aproximadamente R$ 20,00 (pode variar).
           </p>
           <p>
-            <strong>Preço Anual:</strong> Cobrança anual por usuário.
+            <strong>Chave Benefícios:</strong> Recursos exclusivos como personalização de ícones,
+            acesso antecipado a novidades e mais opções de interação.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Reuniões mais longas, gravação,
-            armazenamento em nuvem e integração completa.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Pago por usuário.
+            <strong>Restrições:</strong> Não remove completamente anúncios.
           </p>{" "}
           <br />
-          <h4>Microsoft 365 Business Standard:</h4>
+          <h4>Publicidade (Snap Ads):</h4>
           <p>
-            <strong>Preço mensal:</strong> Cerca de R$60,00 por usuário.
+            <strong>Preço:</strong> Variável conforme campanha.
           </p>
           <p>
-            <strong>Preço Anual:</strong> Cobrança anual por usuário.
+            <strong>Chave Benefícios:</strong> Divulgação de produtos com foco em público jovem,
+            formatos interativos e criativos.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Inclui aplicativos Office (Word,
-            Excel, etc.) + todos recursos do Teams.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Valor mais elevado.
-          </p>{" "}
-          <br />
-          <h4>Microsoft 365 Enterprise:</h4>
-          <p>
-            <strong>Preço:</strong> Variável conforme plano corporativo.
-          </p>
-          <p>
-            <strong>Preço Anual:</strong> Não se aplica diretamente.
-          </p>
-          <p>
-            <strong>Chave Benefícios:</strong> Segurança avançada, controle
-            administrativo e recursos corporativos completos.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Voltado para grandes empresas.
+            <strong>Restrições:</strong> Necessário investimento financeiro.
           </p>{" "}
           <br /> <br />
         </div>
 
-        {/* Crunchyroll */}
+        {/* Discord */}
         <div className="card">
           <img
             src="https://imgs.search.brave.com/6yHvHQMor_PrKrTCDAsuj2V6IW18dk2XwOiD7BUaMQ8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni8yMTExLzIxMTEz/NzAucG5nP3NlbXQ9/YWlzX3doaXRlX2xh/YmVs"
@@ -548,300 +524,319 @@ function Social({ pesquisa }) {
           <br /> <br />
         </div>
 
-        {/* HBO */}
+        {/* Telegram */}
         <div className="card">
           <img
-            src="https://logo-teka.com/wp-content/uploads/2025/10/hbo-max-logo.svg"
-            alt="HBOMAX"
+            src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
+            alt="telegram"
           />{" "}
           <br />
-          <h2>HBO MAX</h2>
+          <h2>TELEGRAM</h2>
           <a
-            href="https://play.hbomax.com/"
+            href="https://telegram.org/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR HBO MAX
+            ACESSAR O TELEGRAM
           </a>
           <br />
           <legend className="legenda">DESCRIÇÃO</legend>
           <p>
-            Streaming de filmes, séries, documentários e conteúdos da Warner
-            Bros., HBO e DC.
+            O Telegram é um aplicativo de mensagens instantâneas focado em velocidade,
+            segurança e privacidade, permitindo conversas, grupos e canais com grande
+            capacidade de participantes.
           </p>
-          <p>
-            <strong>Uso:</strong> Assistir conteúdos premium, incluindo séries
-            renomadas, filmes e lançamentos exclusivos.
-          </p>
+          <br />
+          <ul>
+            <legend>Para que é usado:</legend>
+            <li>Enviar mensagens rápidas e seguras</li>
+            <li>Criar grupos com milhares de participantes</li>
+            <li>Acompanhar canais de conteúdo e notícias</li>
+            <li>Compartilhar arquivos grandes</li>
+            <li>Utilizar bots automatizados</li>
+          </ul>
+          <br />
           <h4>Diferenciais</h4>
           <ul>
-            <li>🎬 Conteúdos exclusivos da HBO e Warner Bros.</li>
-            <li>🏆 Séries premiadas e de alta qualidade</li>
-            <li>🦸 Catálogo forte de DC (Batman, Superman, etc.)</li>
-            <li>🎥 Filmes recentes e grandes produções</li>
-            <li>📺 Alta qualidade de imagem (até 4K)</li>
+            <li>🔐 Foco em privacidade e segurança</li>
+            <li>👥 Grupos com até centenas de milhares de membros</li>
+            <li>📢 Canais para transmissão de conteúdo</li>
+            <li>🤖 Bots automatizados para diversas funções</li>
+            <li>☁️ Armazenamento em nuvem sem ocupar espaço do celular</li>
           </ul>
-          <h4>Recursos principais</h4>
-          <ul>
-            <li>Perfis personalizados</li>
-            <li>Controle parental</li>
-            <li>Download para assistir offline</li>
-            <li>Legendas e dublagens</li>
-            <li>Recomendações personalizadas</li>
-          </ul>
-          <h4>Planos</h4>
-          <ul>
-            <li>
-              <p>
-                <strong>Básico com Anúncios:</strong>
-              </p>
-              <p>Qualidade: Até 1080p (Full HD)</p>
-              <p>Telas: 2 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Sim</p>
-              <p>Downloads disponíveis: Não possui download</p>
-              <p>Assinantes extras: Não permitido</p>
-              <p>Valor do plano: Cerca de R$18,90/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Quem quer economizar e não se
-                importa com anúncios
-              </p>
-            </li>
-            <br />
-
-            <li>
-              <p>
-                <strong>Padrão:</strong>
-              </p>
-              <p>Qualidade: Até 1080p (Full HD)</p>
-              <p>Telas: 2 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Não</p>
-              <p>Downloads disponíveis: 2 dispositivos</p>
-              <p>Assinantes extras: Não permitido</p>
-              <p>Valor do plano: Cerca de R$27,90/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Uso comum sem anúncios
-              </p>
-            </li>
-            <br />
-
-            <li>
-              <p>
-                <strong>Platinum (ou Premium):</strong>
-              </p>
-              <p>Qualidade: Até 4K + HDR</p>
-              <p>Telas: 4 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Não</p>
-              <p>Downloads disponíveis: Até 30 downloads</p>
-              <p>Assinantes extras: Não permitido</p>
-              <p>Valor do plano: Cerca de R$34,90/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Quem quer máxima qualidade e
-                mais dispositivos
-              </p>
-            </li>
-            <br />
-          </ul>{" "}
+          <h3>Planos do Telegram</h3>
+          <h4>Padrão (Gratuito):</h4>
+          <p>
+            <strong>Preço:</strong> Gratuito.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong> Mensagens ilimitadas, grupos, canais,
+            envio de arquivos e uso de bots.
+          </p>
+          <p>
+            <strong>Restrições:</strong> Algumas limitações em tamanho de upload e recursos avançados.
+          </p>{" "}
           <br />
+          <h4>Telegram Premium:</h4>
+          <p>
+            <strong>Preço mensal:</strong> Aproximadamente R$ 20,00 (pode variar).
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong> Upload de arquivos maiores, downloads mais rápidos,
+            stickers exclusivos e recursos adicionais.
+          </p>
+          <p>
+            <strong>Restrições:</strong> Recursos extras disponíveis apenas para assinantes.
+          </p>{" "}
+          <br />
+          <h4>Publicidade:</h4>
+          <p>
+            <strong>Preço:</strong> Variável.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong> Divulgação em canais públicos com grande alcance.
+          </p>
+          <p>
+            <strong>Restrições:</strong> Anúncios aparecem apenas em grandes canais.
+          </p>{" "}
+          <br /> <br />
         </div>
 
-        {/* Prime */}
+        {/* Twitter */}
         <div className="card">
           <img
-            src="https://img.icons8.com/?size=100&id=mJTj7Q9EPSVn&format=png&color=000000"
-            alt="Prime"
+            src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
+            alt="twitter"
           />{" "}
           <br />
-          <h2>PRIME VIDEO</h2>
+          <h2>TWITTER (X)</h2>
           <a
-            href="https://www.primevideo.com/"
+            href="https://x.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR PRIME VIDEO
+            ACESSAR O TWITTER
           </a>
           <br />
           <legend className="legenda">DESCRIÇÃO</legend>
-          <p>Streaming de filmes, séries e conteúdos originais da Amazon.</p>
           <p>
-            <strong>Uso:</strong> Assistir conteúdos variados, incluindo
-            produções exclusivas e benefícios integrados ao Amazon Prime.
+            O Twitter (atualmente chamado de X) é uma rede social focada em mensagens
+            curtas, conhecidas como tweets, permitindo compartilhar opiniões,
+            notícias e interagir em tempo real com pessoas do mundo todo.
           </p>
+          <br />
+          <ul>
+            <legend>Para que é usado:</legend>
+            <li>Compartilhar pensamentos rápidos e atualizações</li>
+            <li>Acompanhar notícias em tempo real</li>
+            <li>Interagir com pessoas, marcas e influenciadores</li>
+            <li>Participar de discussões e tendências (#hashtags)</li>
+            <li>Divulgar conteúdos e opiniões</li>
+          </ul>
+          <br />
           <h4>Diferenciais</h4>
           <ul>
-            <li>🎬 Conteúdos exclusivos (Amazon Originals)</li>
-            <li>📦 Incluso no pacote Amazon Prime (com outros benefícios)</li>
-            <li>🎥 Opção de alugar ou comprar filmes recentes</li>
-            <li>📺 Boa qualidade de imagem (até 4K)</li>
-            <li>🌎 Catálogo variado internacional</li>
+            <li>⚡ Informação em tempo real</li>
+            <li># Uso forte de hashtags para tendências</li>
+            <li>🌍 Alcance global rápido</li>
+            <li>💬 Interação direta com qualquer usuário</li>
+            <li>🧵 Threads para conteúdos mais longos</li>
           </ul>
-          <h4>Recursos principais</h4>
-          <ul>
-            <li>Perfis personalizados</li>
-            <li>Download para assistir offline</li>
-            <li>Controle parental</li>
-            <li>Legendas e dublagens</li>
-            <li>Integração com canais adicionais (Paramount+, etc.)</li>
-          </ul>
-          <h4>Planos</h4>
-          <ul>
-            <li>
-              <p>
-                <strong>Amazon Prime:</strong>
-              </p>
-              <p>Qualidade: Até 4K + HDR</p>
-              <p>Telas: Até 3 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Não (padrão atual)</p>
-              <p>Downloads disponíveis: Sim</p>
-              <p>Assinantes extras: Não necessário</p>
-              <p>Valor do plano: Cerca de R$14,90/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Quem quer streaming + benefícios
-                extras (frete, etc.)
-              </p>
-            </li>
-            <br />
-          </ul>{" "}
+          <h3>Planos do Twitter (X)</h3>
+          <h4>Padrão (Gratuito):</h4>
+          <p>
+            <strong>Preço:</strong> Gratuito.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong> Postagens, curtidas, comentários e
+            acesso ao conteúdo da plataforma.
+          </p>
+          <p>
+            <strong>Restrições:</strong> Presença de anúncios e algumas limitações.
+          </p>{" "}
           <br />
+          <h4>X Premium (Antigo Twitter Blue):</h4>
+          <p>
+            <strong>Preço mensal:</strong> Aproximadamente R$40 a R$60 (varia por região).
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong> Selo de verificação, edição de posts,
+            menos anúncios e maior alcance.
+          </p>
+          <p>
+            <strong>Restrições:</strong> Requer assinatura paga.
+          </p>{" "}
+          <br />
+          <h4>Anúncios (Twitter Ads):</h4>
+          <p>
+            <strong>Preço:</strong> Variável conforme campanha.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong> Divulgação de conteúdos e alcance de
+            público segmentado.
+          </p>
+          <p>
+            <strong>Restrições:</strong> Necessário investimento financeiro.
+          </p>{" "}
+          <br /> <br />
         </div>
 
-        {/* Globo */}
+        {/* LinkedIn */}
         <div className="card">
           <img
-            src="https://imgs.search.brave.com/RvsqNviyvuRYNp9MBnGag1k9PHPdLVrgAKf2w8f6C5A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzUwLzIvZ2xvYm9w/bGF5LWxvZ28tcG5n/X3NlZWtsb2dvLTUw/NDg3Mi5wbmc"
-            alt="Globo Play"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Lr-7Eun1rzHDm1vsAokNksXIzbOET7f3TA&s"
+            alt="linkedin"
           />{" "}
           <br />
-          <h2>GLOBO PLAY</h2>
+          <h2>LINKEDIN</h2>
           <a
-            href="https://globoplay.globo.com/"
+            href="https://www.linkedin.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR GLOBO PLAY
+            ACESSAR O LINKEDIN
           </a>
           <br />
           <legend className="legenda">DESCRIÇÃO</legend>
           <p>
-            Streaming brasileiro com foco em novelas, séries, filmes e conteúdos
-            da TV Globo.
+            O LinkedIn é uma rede social profissional voltada para conexões de trabalho,
+            networking e oportunidades de carreira, sendo amplamente utilizado por
+            empresas, recrutadores e profissionais do mundo todo.
           </p>
-          <p>
-            <strong>Uso:</strong> Assistir novelas, programas de TV, séries
-            nacionais e conteúdos exclusivos.
-          </p>
+          <br />
+          <ul>
+            <legend>Para que é usado:</legend>
+            <li>Criar e manter um perfil profissional (currículo online)</li>
+            <li>Conectar-se com profissionais e empresas</li>
+            <li>Buscar vagas de emprego</li>
+            <li>Compartilhar conteúdos profissionais</li>
+            <li>Fazer networking e desenvolver carreira</li>
+          </ul>
+          <br />
           <h4>Diferenciais</h4>
           <ul>
-            <li>📺 Conteúdos da TV Globo ao vivo</li>
-            <li>🇧🇷 Forte catálogo nacional (novelas e séries)</li>
-            <li>🎬 Conteúdos exclusivos brasileiros</li>
-            <li>📡 Opção de assistir canais ao vivo</li>
-            <li>
-              🎥 Integração com outros serviços (Telecine, Premiere, etc.)
-            </li>
+            <li>💼 Foco total no mercado de trabalho</li>
+            <li>🤝 Networking profissional qualificado</li>
+            <li>📄 Perfil funciona como currículo online</li>
+            <li>🔍 Ferramentas avançadas de busca de emprego</li>
+            <li>📊 Insights e conteúdos sobre carreira</li>
           </ul>
-          <h4>Recursos principais</h4>
-          <ul>
-            <li>Perfis personalizados</li>
-            <li>Download para assistir offline</li>
-            <li>Controle parental</li>
-            <li>Replay de programas ao vivo</li>
-            <li>Recomendações personalizadas</li>
-          </ul>
-          <h4>Planos</h4>
-          <ul>
-            <li>
-              <p>
-                <strong>Padrão:</strong>
-              </p>
-              <p>Qualidade: Até 1080p (Full HD)</p>
-              <p>Telas: 2 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Não</p>
-              <p>Downloads disponíveis: Sim</p>
-              <p>Assinantes extras: Não permitido</p>
-              <p>Valor do plano: Cerca de R$24,90/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Quem gosta de novelas e conteúdo
-                nacional
-              </p>
-            </li>
-            <br />
-
-            <li>
-              <p>
-                <strong>Globoplay + Canais ao vivo:</strong>
-              </p>
-              <p>Qualidade: Até 1080p</p>
-              <p>Telas: 2 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Não</p>
-              <p>Downloads disponíveis: Sim</p>
-              <p>Assinantes extras: Não permitido</p>
-              <p>Valor do plano: Cerca de R$49,90/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Quem quer TV ao vivo + streaming
-              </p>
-            </li>
-            <br />
-          </ul>{" "}
+          <h3>Planos do LinkedIn</h3>
+          <h4>Padrão (Gratuito):</h4>
+          <p>
+            <strong>Preço:</strong> Gratuito.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong> Criar perfil, conectar-se com pessoas,
+            candidatar-se a vagas e interagir com conteúdos.
+          </p>
+          <p>
+            <strong>Restrições:</strong> Limitações em pesquisas avançadas e mensagens.
+          </p>{" "}
           <br />
+          <h4>LinkedIn Premium:</h4>
+          <p>
+            <strong>Preço mensal:</strong> Aproximadamente R$60 a R$150 (varia por plano).
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong> Ver quem visitou seu perfil, enviar
+            mensagens diretas (InMail), cursos e destaque em candidaturas.
+          </p>
+          <p>
+            <strong>Restrições:</strong> Requer assinatura paga.
+          </p>{" "}
+          <br />
+          <h4>LinkedIn Recruiter / Business:</h4>
+          <p>
+            <strong>Preço:</strong> Variável conforme plano.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong> Ferramentas avançadas para recrutamento,
+            geração de leads e análise de candidatos.
+          </p>
+          <p>
+            <strong>Restrições:</strong> Focado em empresas e profissionais de RH.
+          </p>{" "}
+          <br /> <br />
         </div>
 
-        {/* Pluto */}
+        {/* Reddit */}
         <div className="card">
           <img
-            src="https://imgs.search.brave.com/OYO2ShpWoSRfVVFvLpWAuw3QpoJe2KvcVkG_xdXrgm8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbHV0/by10di5hcGtnYXJh/LmNvbS91cGxvYWRz/LzIwMjEvNy9wbHV0/by10di1pY29uLmpw/Zw"
-            alt="Pluto"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGJk69iN6ZOn7krG0d_wtH01MR0CIjDuTAGg&s"
+            alt="reddit"
           />{" "}
           <br />
-          <h2>PLUTO TV</h2>
+          <h2>REDDIT</h2>
           <a
-            href="https://pluto.tv/br/live-tv?lang=pt"
+            href="https://www.reddit.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR PLUTO TV
+            ACESSAR O REDDIT
           </a>
           <br />
           <legend className="legenda">DESCRIÇÃO</legend>
-          <p>Streaming gratuito com canais ao vivo e conteúdos sob demanda.</p>
           <p>
-            <strong>Uso:</strong> Assistir TV online grátis com programação
-            contínua e filmes/séries.
+            O Reddit é uma plataforma de comunidades online onde usuários compartilham
+            conteúdos, discutem temas variados e votam em postagens, organizadas em
+            fóruns chamados "subreddits".
           </p>
+          <br />
+          <ul>
+            <legend>Para que é usado:</legend>
+            <li>Participar de comunidades (subreddits)</li>
+            <li>Compartilhar links, imagens e textos</li>
+            <li>Discutir diversos assuntos</li>
+            <li>Votar em conteúdos (upvote e downvote)</li>
+            <li>Acompanhar tendências e notícias</li>
+          </ul>
+          <br />
           <h4>Diferenciais</h4>
           <ul>
-            <li>💰 Totalmente gratuito</li>
-            <li>📺 Canais ao vivo 24h</li>
-            <li>🎬 Conteúdos sob demanda</li>
-            <li>🚫 Não precisa de cadastro</li>
-            <li>📱 Fácil acesso em vários dispositivos</li>
+            <li>📌 Organização por comunidades específicas (subreddits)</li>
+            <li>👍 Sistema de votos que destaca os melhores conteúdos</li>
+            <li>🌎 Grande variedade de temas e discussões</li>
+            <li>🧠 Conteúdo gerado pela comunidade</li>
+            <li>🎭 Possibilidade de anonimato</li>
           </ul>
-          <h4>Recursos principais</h4>
-          <ul>
-            <li>Guia de programação ao vivo</li>
-            <li>Conteúdo sob demanda</li>
-            <li>Compatível com Smart TVs e mobile</li>
-            <li>Interface simples</li>
-          </ul>
-          <h4>Planos</h4>
-          <ul>
-            <li>
-              <p>
-                <strong>Gratuito:</strong>
-              </p>
-              <p>Qualidade: Até 1080p</p>
-              <p>Telas: Varia conforme dispositivo</p>
-              <p>Esse plano contém anúncios: Sim</p>
-              <p>Downloads disponíveis: Não possui</p>
-              <p>Assinantes extras: Não necessário</p>
-              <p>Valor do plano: Gratuito</p>
-              <p>
-                <strong>Indicado para:</strong> Quem quer assistir sem pagar
-                nada
-              </p>
-            </li>
-            <br />
-          </ul>{" "}
+          <h3>Planos do Reddit</h3>
+          <h4>Padrão (Gratuito):</h4>
+          <p>
+            <strong>Preço:</strong> Gratuito.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong> Acesso a comunidades, postagens,
+            comentários e interação completa.
+          </p>
+          <p>
+            <strong>Restrições:</strong> Presença de anúncios.
+          </p>{" "}
           <br />
+          <h4>Reddit Premium:</h4>
+          <p>
+            <strong>Preço mensal:</strong> Aproximadamente US$ 5,99 (pode variar).
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong> Navegação sem anúncios, acesso ao
+            r/lounge e moedas para recompensas.
+          </p>
+          <p>
+            <strong>Restrições:</strong> Recursos exclusivos apenas para assinantes.
+          </p>{" "}
+          <br />
+          <h4>Publicidade (Reddit Ads):</h4>
+          <p>
+            <strong>Preço:</strong> Variável conforme campanha.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong> Alcance segmentado por interesses e
+            comunidades específicas.
+          </p>
+          <p>
+            <strong>Restrições:</strong> Necessário investimento financeiro.
+          </p>{" "}
+          <br /> <br />
         </div>
       </div>
     </div>

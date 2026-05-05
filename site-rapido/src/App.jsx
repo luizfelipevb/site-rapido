@@ -2,9 +2,12 @@ import { useState } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 
-import Navegador from "./pages/navegador";
-import Plataforma from "./pages/plataforma";
-import Social from "./pages/social";
+import Navegador from "./pages/navegador/navegador";
+import Plataforma from "./pages/plataforma/plataforma";
+import Social from "./pages/social/social";
+import Viagem from "./pages/viagem/viagem";
+import Comida from "./pages/comida/comida";
+import Jogos from "./pages/jogos/jogos";
 
 function App() {
   const [pesquisa, setPesquisa] = useState("");
@@ -100,6 +103,9 @@ function App() {
           element={<Plataforma pesquisa={pesquisa} />}
         />
         <Route path="/social" element={<Social pesquisa={pesquisa} />} />
+        <Route path="/viagem" element={<Viagem pesquisa={pesquisa} />} />
+        <Route path="/comida" element={<Comida pesquisa={pesquisa} />} />
+        <Route path="/jogos" element={<Jogos pesquisa={pesquisa} />} />
       </Routes>
     </BrowserRouter>
   );
