@@ -57,16 +57,71 @@ function Jogos({ pesquisa }) {
     }, 1500);
   };
 
-  {/*Battle.net */}
-  const abrirBattle = () => {
+const abrirBattle = () => {
   const instalador =
-    "https://www.blizzard.com/download/confirmation?product=bnetdesk";
+    "https://downloader.battle.net/download/getInstallerForGame?os=win&gameProgram=BATTLENET_APP&version=Live";
 
   window.location.href = "battlenet://";
 
   setTimeout(() => {
     const escolha = window.confirm(
       "Não foi localizado o Battle.net no seu computador.\nDeseja baixar o instalador oficial?"
+    );
+
+    if (escolha) {
+      const link = document.createElement("a");
+      link.href = instalador;
+      link.download = "BattleNetSetup.exe";
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+  }, 1500);
+};
+
+const abrirGooglePlayGames = () => {
+  const instalador = "https://play.google.com/googleplaygames";
+
+  let abriuApp = false;
+
+  const onBlur = () => {
+    abriuApp = true;
+  };
+
+  window.addEventListener("blur", onBlur);
+
+  // tenta abrir o app
+  window.location.href = "com.google.play.games://";
+
+  setTimeout(() => {
+    window.removeEventListener("blur", onBlur);
+
+    if (!abriuApp) {
+      const escolha = window.confirm(
+        "Google Play Games não foi encontrado.\nDeseja abrir a página de download?"
+      );
+
+      if (escolha) {
+        // aqui você decide:
+        window.open(instalador, "_blank"); // pode bloquear
+        // ou:
+        // window.location.href = instalador; // nunca bloqueia
+      }
+    }
+  }, 2000);
+};
+
+{/* Xbox App */}
+const abrirXbox = () => {
+  const instalador =
+    "https://www.xbox.com/pt-BR/apps/xbox-app-for-pc";
+
+  // tenta abrir app Xbox
+  window.location.href = "ms-xbox://";
+
+  setTimeout(() => {
+    const escolha = window.confirm(
+      "Não foi localizado o Xbox App no seu computador.\nDeseja baixar o instalador oficial?"
     );
 
     if (escolha) {
@@ -760,325 +815,424 @@ function Jogos({ pesquisa }) {
 
 </div>
 
-        {/* Crunchyroll */}
-        <div className="card">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/0/08/Crunchyroll_Logo.png"
-            alt="Crunchyroll"
-          />{" "}
-          <br />
-          <h2>Crunchyroll</h2>
-          <a
-            href="https://www.crunchyroll.com/pt-br/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ACESSAR CRUNCHYROLL
-          </a>
-          <br />
-          <h3 className="legenda">DESCRIÇÃO</h3>
-          <p>Streaming focado em animes, doramas e conteúdos asiáticos.</p>{" "}
-          <p>
-            <strong>Uso:</strong> Assistir animes, episódios simulcast
-            (lançamentos simultâneos com o Japão) e conteúdos exclusivos.
-          </p>
-          <h4>Diferenciais</h4>
-          <ul>
-            <li>Grande catálogo de animes</li>
-            <li>Lançamentos simultâneos com o Japão (simulcast)</li>
-            <li>Conteúdos exclusivos e originais</li>
-            <li>Opções de legenda e dublagem</li>
-          </ul>
-          <h4>Planos</h4>
-          <ul>
-            <h4>Gratuito:</h4>
-            <li>
-              <p>Qualidade: Até 720p/1080p (variável)</p>
-              <p>Telas: 1 tela</p>
-              <p>Esse plano contém Anúncios: Sim</p>
-              <p>
-                Quantos dispositivos com downloads disponível: Não possui
-                download
-              </p>
-              <p>Assinantes Extras: Não permitido</p>
-              <p>Valor do plano: Gratuito</p>
-            </li>
-            <br />
+{/* GOOGLE PLAY GAMES (PC) CARD */}
+<div className="card">
+  <img
+    src="https://img.icons8.com/?size=100&id=22988&format=png&color=000000"
+    alt="Google Play Games"
 
-            <h4>Fan:</h4>
-            <li>
-              <p>Qualidade: Até 1080p (Full HD)</p>
-              <p>Telas: 1 tela simultânea</p>
-              <p>Esse plano contém Anúncios: Não</p>
-              <p>
-                Quantos dispositivos com downloads disponível: Não possui
-                download
-              </p>
-              <p>Assinantes Extras: Não permitido</p>
-              <p>Valor do plano: Cerca de R$14,99/mês</p>
-            </li>
-            <br />
+  />
 
-            <h4>Mega Fan:</h4>
-            <li>
-              <p>Qualidade: Até 1080p (Full HD)</p>
-              <p>Telas: 4 telas simultâneas</p>
-              <p>Esse plano contém Anúncios: Não</p>
-              <p>
-                Quantos dispositivos com downloads disponível: 4 dispositivos
-              </p>
-              <p>Assinantes Extras: Não permitido</p>
-              <p>Valor do plano: Cerca de R$19,99/mês</p>
-            </li>
-            <br />
+  <h2>GOOGLE PLAY GAMES (PC)</h2>
 
-            <h4>Mega Fan (Anual):</h4>
-            <li>
-              <p>Qualidade: Até 1080p (Full HD)</p>
-              <p>Telas: 4 telas simultâneas</p>
-              <p>Esse plano contém Anúncios: Não</p>
-              <p>
-                Quantos dispositivos com downloads disponível: 4 dispositivos
-              </p>
-              <p>Assinantes Extras: Não permitido</p>
-              <p>Valor do plano: Cerca de R$199,99/ano</p>
-            </li>
-            <br />
-          </ul>{" "}
-          <br />
-        </div>
+  {/* 1 - SITE */}
+  <button
+    className="btn-maps"
+    onClick={() =>
+      window.open("https://play.google.com/googleplaygames", "_blank")
+    }
+  >
+    🌐 ACESSAR SITE DO GOOGLE PLAY GAMES
+  </button>
 
-        {/* NETFLIX */}
-        <div className="card">
-          <img
-            src="https://img.icons8.com/color/96/netflix.png"
-            alt="Netflix"
-          />
-          <h2>NETFLIX</h2>
-          <a
-            href="https://www.netflix.com/br/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ACESSAR NETFLIX
-          </a>
-          <h3 className="legenda">DESCRIÇÃO</h3>
-          <p>Streaming de filmes, séries e conteúdos originais.</p>
-          <p>
-            <strong>Uso:</strong> Assistir conteúdos variados sob demanda,
-            incluindo produções exclusivas e lançamentos.
-          </p>
-          <h4>Alguns conteúdos exclusivos da Netflix:</h4>
-          <div className="detalhes">
-            <ul className="filme">
-              <li>
-                <strong>Filmes:</strong>
-              </li>
-              <li>Alerta Vermelho</li>
-              <li>Não Olhe para Cima</li>
-              <li>Bird Box</li>
-              <li>Agente Oculto</li>
-              <li>Resgate</li>
-            </ul>
+  {/* 2 - ABRIR / INSTALAR */}
+  <button className="btn-maps" onClick={abrirGooglePlayGames}>
+    🚀 ABRIR / INSTALAR GOOGLE PLAY GAMES
+  </button>
 
-            <ul className="series">
-              <li>
-                <strong>Séries:</strong>
-              </li>
-              <li>One Piece</li>
-              <li>Round 6 (Squid Game)</li>
-              <li>La Casa de Papel</li>
-              <li>Stranger Things</li>
-              <li>The Witcher</li>
-            </ul>
-          </div>
-          <h4>Diferenciais</h4>
-          <ul>
-            <li>🎬 Conteúdos originais exclusivos (Netflix Originals)</li>
-            <li>📺 Alta qualidade de imagem (até 4K + HDR)</li>
-            <li>📱 Disponível em diversos dispositivos</li>
-            <li>🤖 Sistema de recomendação personalizado</li>
-            <li>⬇️ Download para assistir offline</li>
-          </ul>
-          <h4>Recursos principais</h4>
-          <ul>
-            <li>Perfis personalizados</li>
-            <li>Controle parental</li>
-            <li>Legendas e dublagens em vários idiomas</li>
-            <li>Continuação automática de episódios</li>
-            <li>Lista de favoritos</li>
-          </ul>
-          <h4>Planos</h4>
-          <ul>
-            <li>
-              <p>
-                <strong>Padrão com Anúncios:</strong>
-              </p>
-              <p>Qualidade: 1080p (Full HD)</p>
-              <p>Telas: 2 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Sim</p>
-              <p>Downloads disponíveis: 2 dispositivos</p>
-              <p>Assinantes extras: Não permitido</p>
-              <p>Valor do plano: R$20,30/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Quem quer economizar e não se
-                importa com anúncios
-              </p>
-            </li>
-            <br />
+  <br />
 
-            <li>
-              <p>
-                <strong>Padrão:</strong>
-              </p>
-              <p>Qualidade: 1080p (Full HD)</p>
-              <p>Telas: 2 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Não</p>
-              <p>Downloads disponíveis: 2 dispositivos</p>
-              <p>Assinantes extras: 1 assinante extra</p>
-              <p>Valor do plano: R$44,90/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Uso comum sem anúncios
-              </p>
-            </li>
-            <br />
+  <h3 className="legenda">DESCRIÇÃO</h3>
 
-            <li>
-              <p>
-                <strong>Premium:</strong>
-              </p>
-              <p>Qualidade: 4K + HDR</p>
-              <p>Telas: 4 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Não</p>
-              <p>Downloads disponíveis: 6 dispositivos</p>
-              <p>Assinantes extras: 2 assinantes extras</p>
-              <p>Valor do plano: R$59,90/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Famílias e quem quer máxima
-                qualidade
-              </p>
-            </li>
-            <br />
-          </ul>{" "}
-          <br />
-        </div>
+  <p>
+    O Google Play Games para PC é a plataforma da Google que permite jogar
+    jogos de celular diretamente no computador, com melhor desempenho,
+    controles de teclado e mouse, e sincronização com sua conta.
+  </p>
 
-        {/* HBO */}
-        <div className="card">
-          <img
-            src="https://logo-teka.com/wp-content/uploads/2025/10/hbo-max-logo.svg"
-            alt="HBOMAX"
-          />{" "}
-          <br />
-          <h2>HBO MAX</h2>
-          <a
-            href="https://play.hbomax.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ACESSAR HBO MAX
-          </a>
-          <br />
-          <h3 className="legenda">DESCRIÇÃO</h3>
-          <p>
-            Streaming de filmes, séries, documentários e conteúdos da Warner
-            Bros., HBO e DC.
-          </p>
-          <p>
-            <strong>Uso:</strong> Assistir conteúdos premium, incluindo séries
-            renomadas, filmes e lançamentos exclusivos.
-          </p>
-          <h4 style={{ textAlign: "left" }}>
-            Alguns conteúdo exclusivo da HBO MAX:
-          </h4>
-          <div className="detalhes">
-            <ul className="filme">
-              <b>Filmes:</b>
-              <li>Duna (Dune)</li>
-              <li>The Batman</li>
-              <li>Coringa (Joker)</li>
-              <li>Matrix Resurrections</li>
-              <li>Godzilla vs. Kong</li>
-            </ul>
-            <ul className="series">
-              <b>Series:</b>
-              <li>Game of Thrones</li>
-              <li>House of the Dragon</li>
-              <li>Succession</li>
-              <li>Chernobyl</li>
-              <li>The Witcher</li>
-            </ul>
-          </div>
-          <h4>Diferenciais</h4>
-          <ul>
-            <li>🎬 Conteúdos exclusivos da HBO e Warner Bros.</li>
-            <li>🏆 Séries premiadas e de alta qualidade</li>
-            <li>🦸 Catálogo forte de DC (Batman, Superman, etc.)</li>
-            <li>🎥 Filmes recentes e grandes produções</li>
-            <li>📺 Alta qualidade de imagem (até 4K)</li>
-          </ul>
-          <h4>Recursos principais</h4>
-          <ul>
-            <li>Perfis personalizados</li>
-            <li>Controle parental</li>
-            <li>Download para assistir offline</li>
-            <li>Legendas e dublagens</li>
-            <li>Recomendações personalizadas</li>
-          </ul>
-          <h4>Planos</h4>
-          <ul>
-            <li>
-              <p>
-                <strong>Básico com Anúncios:</strong>
-              </p>
-              <p>Qualidade: Até 1080p (Full HD)</p>
-              <p>Telas: 2 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Sim</p>
-              <p>Downloads disponíveis: Não possui download</p>
-              <p>Assinantes extras: Não permitido</p>
-              <p>Valor do plano: Cerca de R$18,90/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Quem quer economizar e não se
-                importa com anúncios
-              </p>
-            </li>
-            <br />
+  <br />
 
-            <li>
-              <p>
-                <strong>Padrão:</strong>
-              </p>
-              <p>Qualidade: Até 1080p (Full HD)</p>
-              <p>Telas: 2 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Não</p>
-              <p>Downloads disponíveis: 2 dispositivos</p>
-              <p>Assinantes extras: Não permitido</p>
-              <p>Valor do plano: Cerca de R$27,90/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Uso comum sem anúncios
-              </p>
-            </li>
-            <br />
+  <p><strong>Para que é usado:</strong></p>
 
-            <li>
-              <p>
-                <strong>Platinum (ou Premium):</strong>
-              </p>
-              <p>Qualidade: Até 4K + HDR</p>
-              <p>Telas: 4 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Não</p>
-              <p>Downloads disponíveis: Até 30 downloads</p>
-              <p>Assinantes extras: Não permitido</p>
-              <p>Valor do plano: Cerca de R$34,90/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Quem quer máxima qualidade e
-                mais dispositivos
-              </p>
-            </li>
-            <br />
-          </ul>{" "}
-          <br />
-        </div>
+  <ul>
+    <li>Jogar jogos mobile no PC</li>
+    <li>Sincronizar progresso entre celular e computador</li>
+    <li>Melhorar desempenho e gráficos dos jogos</li>
+    <li>Usar teclado e mouse em jogos mobile</li>
+    <li>Centralizar jogos Android no PC</li>
+  </ul>
+
+  <br />
+
+  <h4>Diferenciais</h4>
+
+  <ul>
+    <li>📱 Jogos mobile no PC</li>
+    <li>🔄 Sincronização com conta Google</li>
+    <li>🎮 Suporte a teclado e mouse</li>
+    <li>⚡ Melhor desempenho que celular</li>
+    <li>☁️ Progresso salvo na nuvem</li>
+  </ul>
+
+  <br />
+
+  <h4>Como funciona</h4>
+
+  <ul>
+    <li>📥 Instala o Google Play Games no PC</li>
+    <li>🔑 Faz login com conta Google</li>
+    <li>📲 Escolhe jogos disponíveis</li>
+    <li>🎮 Joga com teclado/mouse</li>
+    <li>🔄 Progresso sincronizado</li>
+  </ul>
+
+  <br />
+
+  <h4>Formas de pagamento</h4>
+
+  <ul>
+    <li>💳 Cartão de crédito</li>
+    <li>📱 Saldo Google Play</li>
+    <li>🎁 Gift Cards Google Play</li>
+    <li>💰 PayPal (em alguns casos)</li>
+  </ul>
+
+  <br />
+
+  <h4>Funcionalidades avançadas</h4>
+
+  <ul>
+    <li>🖥️ Execução de jogos mobile no PC</li>
+    <li>⌨️ Controles personalizados</li>
+    <li>☁️ Cloud Save</li>
+    <li>📊 Sincronização de progresso</li>
+  </ul>
+
+  <br />
+
+  <h4>Segurança</h4>
+
+  <ul>
+    <li>🔐 Conta Google protegida</li>
+    <li>🛡️ Sistema oficial da Google</li>
+    <li>💳 Pagamentos seguros</li>
+  </ul>
+
+  <br />
+
+  <h4>Diferenciais importantes</h4>
+
+  <ul>
+    <li>📱 Integração total com Android</li>
+    <li>🖥️ Jogos mobile no PC sem emulador pesado</li>
+    <li>🌎 Plataforma oficial Google</li>
+  </ul>
+
+  <br />
+
+  <h4>Vantagens</h4>
+
+  <ul>
+    <li>✔ Joga mobile no PC com melhor desempenho</li>
+    <li>✔ Sincronização automática</li>
+    <li>✔ Interface simples</li>
+    <li>✔ Gratuito</li>
+  </ul>
+
+  <h4>Desvantagens</h4>
+
+  <ul>
+    <li>❌ Biblioteca limitada no PC</li>
+    <li>❌ Nem todos jogos mobile disponíveis</li>
+    <li>❌ Não substitui plataformas como Steam</li>
+  </ul>
+
+  <br />
+
+  <h4>Planos</h4>
+
+  <p>
+    O Google Play Games é gratuito. Você paga apenas por compras dentro dos jogos.
+  </p>
+
+  <br />
+
+  <h4>Modelo de uso</h4>
+
+  <ul>
+    <li>🆓 Uso gratuito</li>
+    <li>💸 Compras dentro dos jogos</li>
+  </ul>
+
+  <br />
+
+  <h4>Como economizar</h4>
+
+  <ul>
+    <li>🎁 Eventos com recompensas</li>
+    <li>💰 Promoções dentro dos jogos</li>
+    <li>🎮 Jogos gratuitos</li>
+  </ul>
+
+  <br />
+
+  <h4>Para quem é indicado</h4>
+
+  <ul>
+    <li>✔ Quem joga jogos mobile</li>
+    <li>✔ Quem quer jogar no PC com mais desempenho</li>
+    <li>✔ Usuários Android</li>
+    <li>✔ Jogadores casuais</li>
+  </ul>
+
+  <br />
+
+  <h3>⚔️ Comparação com outras plataformas</h3>
+
+  <ul>
+    <li>
+      <strong>Vs Steam:</strong> Google Play roda jogos mobile;
+      Steam é focado em jogos de PC completos
+    </li>
+    <li>
+      <strong>Vs Epic Games:</strong> Google Play é mobile;
+      Epic tem jogos AAA e gratuitos semanais
+    </li>
+    <li>
+      <strong>Vs Battle.net:</strong> Google Play é casual/mobile;
+      Battle.net foca em jogos competitivos
+    </li>
+    <li>
+      <strong>Vs Emuladores (BlueStacks, etc):</strong> Google Play é oficial e mais leve;
+      emuladores têm mais compatibilidade
+    </li>
+  </ul>
+
+  <br />
+
+  <h3>📌 Resumo</h3>
+
+  <p>
+    O Google Play Games para PC é uma solução oficial da Google para levar jogos
+    mobile ao computador, oferecendo melhor desempenho e integração com sua conta.
+  </p>
+
+  <p>
+    É ideal para quem joga no celular e quer continuar no PC com mais conforto,
+    mas não substitui plataformas tradicionais como Steam ou Epic Games.
+  </p>
+
+</div>
+
+{/* XBOX GAME PASS (PC) CARD */}
+<div className="card">
+  <img
+    src="https://uhf.microsoft.com/images/xbox/RW8TP2.png"
+    alt="Xbox Game Pass"
+    style={{ width: "150px" }}
+  />
+
+  <h2>XBOX GAME PASS (PC)</h2>
+
+  {/* 1 - SITE */}
+  <button
+    className="btn-maps"
+    onClick={() =>
+      window.open("https://www.xbox.com/pt-BR/xbox-game-pass/pc-game-pass", "_blank")
+    }
+  >
+    🌐 ACESSAR GAME PASS
+  </button>
+
+  {/* 2 - ABRIR / INSTALAR */}
+  <button className="btn-maps" onClick={abrirXbox}>
+    🚀 ABRIR / INSTALAR XBOX APP
+  </button>
+
+  <br />
+
+  <h3 className="legenda">DESCRIÇÃO</h3>
+
+  <p>
+    O Xbox Game Pass para PC é um serviço de assinatura da Microsoft que
+    oferece acesso a uma biblioteca rotativa de jogos por um valor mensal,
+    incluindo lançamentos no dia um e títulos populares.
+  </p>
+
+  <br />
+
+  <p><strong>Para que é usado:</strong></p>
+
+  <ul>
+    <li>Acessar centenas de jogos por assinatura</li>
+    <li>Baixar e jogar jogos no PC</li>
+    <li>Testar jogos sem comprar</li>
+    <li>Jogar lançamentos no dia de estreia</li>
+    <li>Gerenciar biblioteca via Xbox App</li>
+  </ul>
+
+  <br />
+
+  <h4>Diferenciais</h4>
+
+  <ul>
+    <li>🎮 Biblioteca por assinatura</li>
+    <li>🚀 Jogos no lançamento (Day One)</li>
+    <li>💰 Custo-benefício alto</li>
+    <li>🌎 Integração com ecossistema Xbox</li>
+    <li>☁️ Cloud Gaming (em alguns planos)</li>
+  </ul>
+
+  <br />
+
+  <h4>Como funciona</h4>
+
+  <ul>
+    <li>📥 Instala o Xbox App</li>
+    <li>🧾 Assina o Game Pass</li>
+    <li>📚 Escolhe jogos da biblioteca</li>
+    <li>⬇️ Baixa e joga</li>
+    <li>🔄 Jogos entram e saem do catálogo</li>
+  </ul>
+
+  <br />
+
+  <h4>Formas de pagamento</h4>
+
+  <ul>
+    <li>💳 Cartão de crédito</li>
+    <li>💳 Cartão de débito</li>
+    <li>💰 PayPal</li>
+    <li>🎁 Gift Cards Xbox</li>
+  </ul>
+
+  <br />
+
+  <h4>Funcionalidades avançadas</h4>
+
+  <ul>
+    <li>☁️ Cloud Gaming (xCloud)</li>
+    <li>👥 Integração com amigos Xbox</li>
+    <li>🎮 Suporte a controle</li>
+    <li>📊 Conquistas Xbox</li>
+  </ul>
+
+  <br />
+
+  <h4>Segurança</h4>
+
+  <ul>
+    <li>🔐 Conta Microsoft protegida</li>
+    <li>🛡️ Autenticação em duas etapas</li>
+    <li>💳 Pagamentos seguros</li>
+  </ul>
+
+  <br />
+
+  <h4>Diferenciais importantes</h4>
+
+  <ul>
+    <li>🚀 Lançamentos no dia 1</li>
+    <li>🎮 Grande variedade de jogos</li>
+    <li>💸 Excelente custo-benefício</li>
+  </ul>
+
+  <br />
+
+  <h4>Vantagens</h4>
+
+  <ul>
+    <li>✔ Acesso a muitos jogos pagando pouco</li>
+    <li>✔ Lançamentos inclusos</li>
+    <li>✔ Ideal para testar jogos</li>
+    <li>✔ Integração com Xbox</li>
+  </ul>
+
+  <h4>Desvantagens</h4>
+
+  <ul>
+    <li>❌ Precisa pagar mensalmente</li>
+    <li>❌ Jogos podem sair do catálogo</li>
+    <li>❌ Não possui todos os jogos do mercado</li>
+  </ul>
+
+  <br />
+
+  <h4>Planos</h4>
+
+  <p>
+    O Xbox Game Pass funciona por assinatura mensal, com diferentes planos
+    (PC Game Pass, Ultimate, etc.).
+  </p>
+
+  <br />
+
+  <h4>Modelo de uso</h4>
+
+  <ul>
+    <li>📅 Assinatura mensal</li>
+    <li>🎮 Acesso à biblioteca enquanto ativo</li>
+  </ul>
+
+  <br />
+
+  <h4>Como economizar</h4>
+
+  <ul>
+    <li>🎁 Promoções iniciais (R$1 ou descontos)</li>
+    <li>🎮 Testar jogos sem comprar</li>
+    <li>📅 Assinar apenas quando for jogar</li>
+  </ul>
+
+  <br />
+
+  <h4>Para quem é indicado</h4>
+
+  <ul>
+    <li>✔ Quem joga muitos jogos diferentes</li>
+    <li>✔ Quem quer economizar</li>
+    <li>✔ Quem gosta de lançamentos</li>
+    <li>✔ Jogadores de PC e Xbox</li>
+  </ul>
+
+  <br />
+
+  <h3>⚔️ Comparação com outras plataformas</h3>
+
+  <ul>
+    <li>
+      <strong>Vs Steam:</strong> Game Pass é por assinatura;
+      Steam exige compra de cada jogo
+    </li>
+    <li>
+      <strong>Vs Epic Games:</strong> Game Pass tem catálogo por assinatura;
+      Epic oferece jogos grátis semanais
+    </li>
+    <li>
+      <strong>Vs Battle.net:</strong> Game Pass tem variedade;
+      Battle.net foca nos jogos da Blizzard
+    </li>
+    <li>
+      <strong>Vs Google Play Games:</strong> Game Pass tem jogos de PC completos;
+      Google Play é focado em jogos mobile
+    </li>
+  </ul>
+
+  <br />
+
+  <h3>📌 Resumo</h3>
+
+  <p>
+    O Xbox Game Pass para PC é uma das opções mais econômicas para jogar,
+    oferecendo acesso a centenas de jogos por assinatura e lançamentos no dia um.
+  </p>
+
+  <p>
+    É ideal para quem gosta de variedade e quer jogar sem precisar comprar cada jogo,
+    funcionando como um “Netflix dos games”.
+  </p>
+
+</div>
 
         {/* Prime */}
         <div className="card">
