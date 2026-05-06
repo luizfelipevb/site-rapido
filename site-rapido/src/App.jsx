@@ -8,6 +8,7 @@ import Social from "./pages/social/social";
 import Viagem from "./pages/viagem/viagem";
 import Comida from "./pages/comida/comida";
 import Jogos from "./pages/jogos/jogos";
+import Mapa from "./pages/mapa/mapa";
 
 function App() {
   const [pesquisa, setPesquisa] = useState("");
@@ -106,6 +107,7 @@ function App() {
         <Route path="/viagem" element={<Viagem pesquisa={pesquisa} />} />
         <Route path="/comida" element={<Comida pesquisa={pesquisa} />} />
         <Route path="/jogos" element={<Jogos pesquisa={pesquisa} />} />
+        <Route path="/mapa" element={<Mapa pesquisa={pesquisa} />} />
       </Routes>
     </BrowserRouter>
   );

@@ -183,7 +183,7 @@ function Viagem({pesquisa}) {
         {/* Maxim */}
         <div className="card">
           <img
-            src="https://play-lh.googleusercontent.com/lGQePQ3aoXAFcb4SFXCiC9x1YoYXNXFgxnNIc_MKn_WSfaKOhV77EglimsUmJctp0b0"
+            src="https://imgs.search.brave.com/sEmYkm_G-bFJq8NpF7L4nlUblKk03VB8QjHo2fyr3Rg/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wbGF5/LWxoLmdvb2dsZXVz/ZXJjb250ZW50LmNv/bS9Ebl9wZk5mSU9L/WldlWlNZSWxQSGUt/YnVaa0FjdF9BUGdj/emhrWE41RGFvcjYt/emhaY0pvcUgwVVJK/REdDeUZhZ1I0PXcy/NDAtaDQ4MC1ydw"
             alt="Maxim"
           />
 
