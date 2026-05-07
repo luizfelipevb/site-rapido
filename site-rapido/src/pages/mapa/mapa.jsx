@@ -1,3 +1,5 @@
+import "./mapa.css";
+
 function Mapa({ pesquisa }) {
   const termo = (pesquisa || "").toLowerCase();
 
@@ -128,13 +130,25 @@ function Mapa({ pesquisa }) {
               <strong>Vs Waze:</strong> Google Maps é mais completo; Waze é
               melhor para trânsito em tempo real
             </li>
+
             <li>
-              <strong>Vs Apple Maps:</strong> Google Maps tem mais dados; Apple
-              Maps é mais simples e privado
+              <strong>Vs Google Earth:</strong> Google Maps é focado em
+              navegação; Google Earth é focado em exploração 3D
             </li>
+
             <li>
-              <strong>Vs Here WeGo:</strong> Google Maps tem mais recursos; Here
-              é mais leve
+              <strong>Vs HERE WeGo:</strong> Google Maps possui mais recursos;
+              HERE WeGo funciona melhor offline
+            </li>
+
+            <li>
+              <strong>Vs Moovit:</strong> Google Maps é mais completo no geral;
+              Moovit é melhor em transporte público
+            </li>
+
+            <li>
+              <strong>Vs Correios:</strong> Google Maps é navegação; Correios é
+              rastreamento e logística
             </li>
           </ul>
 
@@ -295,16 +309,28 @@ function Mapa({ pesquisa }) {
 
           <ul>
             <li>
-              <strong>Vs Google Maps:</strong> Waze é melhor para trânsito em
-              tempo real; Google Maps é mais completo em geral
+              <strong>Vs Google Maps:</strong> Waze é melhor para evitar
+              trânsito; Google Maps é mais completo
             </li>
+
             <li>
-              <strong>Vs Apple Maps:</strong> Waze é mais dinâmico; Apple Maps é
-              mais simples e limpo
+              <strong>Vs Google Earth:</strong> Waze é navegação em tempo real;
+              Google Earth é exploração visual
             </li>
+
             <li>
-              <strong>Vs Here WeGo:</strong> Waze é mais inteligente em rotas;
-              Here funciona melhor offline
+              <strong>Vs HERE WeGo:</strong> Waze possui trânsito mais
+              inteligente; HERE WeGo funciona melhor offline
+            </li>
+
+            <li>
+              <strong>Vs Moovit:</strong> Waze é focado em carros; Moovit é
+              focado em transporte público
+            </li>
+
+            <li>
+              <strong>Vs Uber:</strong> Waze ajuda na navegação; Uber oferece
+              transporte particular
             </li>
           </ul>
 
@@ -478,16 +504,28 @@ function Mapa({ pesquisa }) {
 
           <ul>
             <li>
-              <strong>Vs Google Maps:</strong> Earth é melhor para visualização
-              3D; Maps é melhor para navegação
+              <strong>Vs Google Maps:</strong> Google Earth é melhor para
+              visualização 3D; Google Maps é melhor para navegação
             </li>
+
             <li>
-              <strong>Vs Waze:</strong> Earth é para exploração; Waze é para
-              trânsito
+              <strong>Vs Waze:</strong> Google Earth é exploração; Waze é
+              trânsito em tempo real
             </li>
+
             <li>
-              <strong>Vs Apple Maps:</strong> Earth tem melhor 3D global; Apple
-              Maps é mais focado em navegação
+              <strong>Vs HERE WeGo:</strong> Google Earth possui visualização
+              avançada; HERE WeGo é melhor para rotas offline
+            </li>
+
+            <li>
+              <strong>Vs Moovit:</strong> Google Earth explora cidades em 3D;
+              Moovit ajuda no transporte urbano
+            </li>
+
+            <li>
+              <strong>Vs Maps.me:</strong> Google Earth é mais visual; Maps.me é
+              mais leve e offline
             </li>
           </ul>
 
@@ -665,16 +703,28 @@ function Mapa({ pesquisa }) {
 
           <ul>
             <li>
-              <strong>Vs Google Maps:</strong> HERE é melhor offline; Google
-              Maps é mais completo
+              <strong>Vs Google Maps:</strong> HERE WeGo é melhor offline;
+              Google Maps possui mais funcionalidades
             </li>
+
             <li>
-              <strong>Vs Waze:</strong> HERE é mais estável; Waze é melhor para
-              trânsito
+              <strong>Vs Waze:</strong> HERE WeGo é mais leve; Waze é mais
+              eficiente no trânsito
             </li>
+
             <li>
-              <strong>Vs Google Earth:</strong> HERE é navegação; Earth é
-              exploração
+              <strong>Vs Google Earth:</strong> HERE WeGo é navegação; Google
+              Earth é exploração 3D
+            </li>
+
+            <li>
+              <strong>Vs Moovit:</strong> HERE WeGo é melhor para uso offline;
+              Moovit é melhor para transporte público
+            </li>
+
+            <li>
+              <strong>Vs Maps.me:</strong> HERE WeGo possui navegação mais
+              moderna; Maps.me é mais simples e leve
             </li>
           </ul>
 
@@ -700,6 +750,403 @@ function Mapa({ pesquisa }) {
           <p>
             Ele não tem tantos recursos quanto o Google Maps, mas compensa com
             simplicidade e eficiência.
+          </p>
+        </div>
+
+        {/* CORREIOS CARD */}
+        <div className="card">
+          <img
+            src="https://imgs.search.brave.com/xkQPTq_X9XGcOby_uXlA27hCgSyugM0OPIZcbvU1mds/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZTEwNGQwZWEy/NzJlNGE5NzZlNjlh/ZDcyMDZiMmViMDI4/Yjg1YWQyYzZlZjIx/Nzk5YjA1MzFjYjFh/NjRmZDA0NS93d3cu/Y29ycmVpb3MuY29t/LmJyLw"
+            alt="Correios"
+          />
+
+          <h2>CORREIOS</h2>
+
+          {/* SITE */}
+          <button
+            className="btn-maps"
+            onClick={() =>
+              window.open("https://rastreamento.correios.com.br/", "_blank")
+            }
+          >
+            📦 RASTREAR ENCOMENDA
+          </button>
+
+          <br />
+
+          <p>
+            Plataforma oficial dos Correios para rastreamento de encomendas,
+            envio de objetos e serviços postais em todo o Brasil.
+          </p>
+
+          <br />
+
+          <h3 className="legenda">DESCRIÇÃO</h3>
+
+          <p>
+            Os Correios são a principal empresa de logística e entregas do
+            Brasil, oferecendo serviços de envio, rastreamento de encomendas,
+            Sedex, PAC e entregas internacionais. O sistema permite acompanhar
+            pedidos em tempo real utilizando o código de rastreio.
+          </p>
+
+          <br />
+
+          <p>
+            <strong>Para que é usado:</strong>
+          </p>
+
+          <ul>
+            <li>📦 Rastrear encomendas</li>
+            <li>🚚 Acompanhar entregas em tempo real</li>
+            <li>📮 Enviar cartas e pacotes</li>
+            <li>🌎 Entregas nacionais e internacionais</li>
+            <li>💰 Calcular fretes</li>
+            <li>🏢 Encontrar agências próximas</li>
+          </ul>
+
+          <br />
+
+          <h4>Diferenciais</h4>
+
+          <ul>
+            <li>📦 Rastreamento oficial</li>
+            <li>🚀 Entrega para todo Brasil</li>
+            <li>📍 Atualizações de localização</li>
+            <li>🌎 Serviços internacionais</li>
+            <li>💳 Diversas modalidades de envio</li>
+          </ul>
+
+          <br />
+
+          <h4>Como funciona</h4>
+
+          <ul>
+            <li>📦 Recebe código de rastreio</li>
+            <li>🔍 Digita no site dos Correios</li>
+            <li>📍 Sistema mostra localização</li>
+            <li>🚚 Acompanha até a entrega</li>
+          </ul>
+
+          <br />
+
+          <h4>Funcionalidades avançadas</h4>
+
+          <ul>
+            <li>📱 Rastreamento pelo celular</li>
+            <li>🔔 Notificações de atualização</li>
+            <li>📦 Histórico de movimentações</li>
+            <li>📍 Consulta de CEP</li>
+            <li>💰 Simulação de frete</li>
+          </ul>
+
+          <br />
+
+          <h4>Segurança</h4>
+
+          <ul>
+            <li>🔐 Sistema oficial dos Correios</li>
+            <li>🛡️ Rastreamento seguro</li>
+            <li>📦 Proteção de encomendas</li>
+          </ul>
+
+          <br />
+
+          <h4>Vantagens</h4>
+
+          <ul>
+            <li>✔ Cobertura nacional</li>
+            <li>✔ Rastreamento gratuito</li>
+            <li>✔ Fácil de usar</li>
+            <li>✔ Entregas internacionais</li>
+          </ul>
+
+          <h4>Desvantagens</h4>
+
+          <ul>
+            <li>❌ Algumas entregas podem atrasar</li>
+            <li>❌ Atualizações nem sempre instantâneas</li>
+            <li>❌ Dependência de dias úteis</li>
+          </ul>
+
+          <br />
+
+          <h4>Principais serviços</h4>
+
+          <ul>
+            <li>⚡ Sedex → entrega rápida</li>
+            <li>📦 PAC → envio econômico</li>
+            <li>🌎 Internacional → envios fora do Brasil</li>
+            <li>📬 Mini Envios → encomendas pequenas</li>
+          </ul>
+
+          <br />
+
+          <h4>Para quem é indicado</h4>
+
+          <ul>
+            <li>✔ Compradores online</li>
+            <li>✔ Lojas virtuais</li>
+            <li>✔ Empresas</li>
+            <li>✔ Pessoas que enviam encomendas</li>
+          </ul>
+
+          <br />
+
+          <h3>⚔️ Comparação com outras transportadoras</h3>
+
+          <ul>
+            <li>
+              <strong>Vs Google Maps:</strong> Correios é focado em logística;
+              Google Maps é navegação e localização
+            </li>
+
+            <li>
+              <strong>Vs Waze:</strong> Correios rastreia encomendas; Waze
+              mostra trânsito em tempo real
+            </li>
+
+            <li>
+              <strong>Vs Uber:</strong> Correios realiza entregas de objetos;
+              Uber realiza transporte de passageiros
+            </li>
+
+            <li>
+              <strong>Vs Jadlog:</strong> Correios possui maior cobertura
+              nacional; Jadlog é mais focada em logística privada
+            </li>
+
+            <li>
+              <strong>Vs Mercado Envios:</strong> Correios atende qualquer
+              pessoa; Mercado Envios é focado no Mercado Livre
+            </li>
+          </ul>
+
+          <br />
+
+          <h3>🧠 Diferença principal</h3>
+
+          <ul>
+            <li>📦 Correios → MAIOR COBERTURA DO BRASIL</li>
+            <li>🚚 Transportadoras → MAIS FOCO EM LOGÍSTICA PRIVADA</li>
+          </ul>
+
+          <br />
+
+          <h3>📌 Resumo</h3>
+
+          <p>
+            Os Correios são a principal plataforma de entregas e rastreamento do
+            Brasil, sendo a opção mais popular para acompanhar encomendas e
+            realizar envios.
+          </p>
+
+          <p>
+            O serviço possui grande cobertura nacional e permite rastrear
+            pedidos de forma simples utilizando o código de rastreio.
+          </p>
+        </div>
+        {/* MOOVIT CARD */}
+        <div className="card">
+          <img
+            src="https://imgs.search.brave.com/DCPpXnPnxLWw4LYG6M1MSwNjMxxvZrPT4qpEvAKIvzk/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9taXIt/czMtY2RuLWNmLmJl/aGFuY2UubmV0L3By/b2plY3RzLzQwNC80/MzEzZGExMzY2MTQz/NTkuWTNKdmNDd3pN/elkzTERJMk16TXNN/Q3d3LmpwZw"
+            alt="Moovit"
+          />
+
+          <h2>MOOVIT</h2>
+
+          {/* SITE */}
+          <button
+            className="btn-maps"
+            onClick={() => window.open("https://moovitapp.com/", "_blank")}
+          >
+            🚍 ACESSAR MOOVIT
+          </button>
+
+          <br />
+
+          <p>
+            Aplicativo de mobilidade urbana focado em transporte público,
+            mostrando ônibus, metrô, trem e rotas em tempo real.
+          </p>
+
+          <br />
+
+          <h3 className="legenda">DESCRIÇÃO</h3>
+
+          <p>
+            O Moovit é um dos aplicativos de transporte público mais populares
+            do mundo, utilizado para planejar rotas utilizando ônibus, metrô,
+            trem, VLT, bicicletas e outros meios de transporte urbano. Ele
+            mostra horários, linhas, alertas e localização em tempo real de
+            diversos transportes públicos.
+          </p>
+
+          <br />
+
+          <p>
+            <strong>Para que é usado:</strong>
+          </p>
+
+          <ul>
+            <li>🚌 Ver horários de ônibus</li>
+            <li>🚇 Navegação em transporte público</li>
+            <li>🚆 Consultar linhas de trem e metrô</li>
+            <li>📍 Planejar rotas urbanas</li>
+            <li>🚶 Direções passo a passo</li>
+            <li>⏱️ Ver chegada em tempo real</li>
+          </ul>
+
+          <br />
+
+          <h4>Diferenciais</h4>
+
+          <ul>
+            <li>🚍 Foco total em transporte público</li>
+            <li>📡 Informações em tempo real</li>
+            <li>🧭 Rotas multimodais inteligentes</li>
+            <li>📍 Alertas de embarque e desembarque</li>
+            <li>🌎 Funciona em milhares de cidades</li>
+          </ul>
+
+          <br />
+
+          <h4>Como funciona</h4>
+
+          <ul>
+            <li>📱 Abre o aplicativo</li>
+            <li>📍 Define origem e destino</li>
+            <li>🗺️ O Moovit calcula as melhores rotas</li>
+            <li>🚍 Acompanha o transporte em tempo real</li>
+          </ul>
+
+          <br />
+
+          <h4>Funcionalidades avançadas</h4>
+
+          <ul>
+            <li>📡 Rastreamento em tempo real</li>
+            <li>🔔 Alertas de atraso e mudanças</li>
+            <li>📍 Aviso para descer no ponto certo</li>
+            <li>🚲 Rotas com bicicletas</li>
+            <li>🧠 Planejamento multimodal</li>
+            <li>📶 Mapas offline em algumas regiões</li>
+          </ul>
+
+          <br />
+
+          <h4>Segurança</h4>
+
+          <ul>
+            <li>🔐 Conta protegida</li>
+            <li>📍 Compartilhamento de localização opcional</li>
+            <li>🛡️ Navegação guiada em tempo real</li>
+          </ul>
+
+          <br />
+
+          <h4>Vantagens</h4>
+
+          <ul>
+            <li>✔ Excelente para ônibus e metrô</li>
+            <li>✔ Muito usado no Brasil</li>
+            <li>✔ Rotas detalhadas</li>
+            <li>✔ Informações em tempo real</li>
+            <li>✔ Fácil de usar</li>
+          </ul>
+
+          <h4>Desvantagens</h4>
+
+          <ul>
+            <li>❌ Possui anúncios na versão gratuita</li>
+            <li>❌ Algumas cidades têm dados imprecisos</li>
+            <li>❌ Pode depender da colaboração da comunidade</li>
+          </ul>
+
+          <br />
+
+          <h4>Planos</h4>
+
+          <ul>
+            <li>🆓 Versão gratuita</li>
+            <li>⭐ Moovit Premium sem anúncios</li>
+          </ul>
+
+          <br />
+
+          <h4>Modelo de uso</h4>
+
+          <ul>
+            <li>📱 Aplicativo mobile</li>
+            <li>🌎 Cobertura global</li>
+            <li>🚍 Foco em mobilidade urbana</li>
+          </ul>
+
+          <br />
+
+          <h4>Para quem é indicado</h4>
+
+          <ul>
+            <li>✔ Quem usa ônibus diariamente</li>
+            <li>✔ Usuários de metrô e trem</li>
+            <li>✔ Pessoas sem carro</li>
+            <li>✔ Quem depende de transporte público</li>
+          </ul>
+
+          <br />
+
+          <h3>⚔️ Comparação com outros apps</h3>
+
+          <ul>
+            <li>
+              <strong>Vs Google Maps:</strong> Moovit é melhor para transporte
+              público; Google Maps é mais completo
+            </li>
+
+            <li>
+              <strong>Vs Waze:</strong> Moovit é focado em ônibus e metrô; Waze
+              é melhor para carros
+            </li>
+
+            <li>
+              <strong>Vs Google Earth:</strong> Moovit é mobilidade urbana;
+              Google Earth é exploração 3D
+            </li>
+
+            <li>
+              <strong>Vs HERE WeGo:</strong> Moovit possui mais recursos
+              urbanos; HERE WeGo funciona melhor offline
+            </li>
+
+            <li>
+              <strong>Vs Cittamobi:</strong> Moovit possui cobertura global;
+              Cittamobi é mais popular em algumas cidades brasileiras
+            </li>
+          </ul>
+
+          <br />
+
+          <h3>🧠 Diferença principal</h3>
+
+          <ul>
+            <li>🚍 Moovit → FOCO TOTAL EM TRANSPORTE PÚBLICO</li>
+            <li>🗺️ Google Maps → MAIS COMPLETO</li>
+            <li>🚗 Waze → MELHOR PARA TRÂNSITO</li>
+          </ul>
+
+          <br />
+
+          <h3>📌 Resumo</h3>
+
+          <p>
+            O Moovit é um dos melhores aplicativos para quem utiliza transporte
+            público diariamente, oferecendo rotas inteligentes, horários e
+            localização em tempo real.
+          </p>
+
+          <p>
+            Ele é extremamente popular no Brasil e muito útil para ônibus,
+            metrôs e trens em grandes cidades.
           </p>
         </div>
       </div>

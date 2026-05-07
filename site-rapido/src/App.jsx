@@ -9,6 +9,7 @@ import Viagem from "./pages/viagem/viagem";
 import Comida from "./pages/comida/comida";
 import Jogos from "./pages/jogos/jogos";
 import Mapa from "./pages/mapa/mapa";
+import Mensagem from "./pages/mensagem/mensagem";
 
 function App() {
   const [pesquisa, setPesquisa] = useState("");
@@ -108,6 +109,7 @@ function App() {
         <Route path="/comida" element={<Comida pesquisa={pesquisa} />} />
         <Route path="/jogos" element={<Jogos pesquisa={pesquisa} />} />
         <Route path="/mapa" element={<Mapa pesquisa={pesquisa} />} />
+        <Route path="/mensagem" element={<Mensagem pesquisa={pesquisa} />} />
       </Routes>
     </BrowserRouter>
   );
