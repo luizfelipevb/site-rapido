@@ -1,3 +1,5 @@
+import "./banco.css";
+
 function Banco({ pesquisa }) {
   const termo = pesquisa.toLowerCase();
   return (
