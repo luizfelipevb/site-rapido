@@ -23,7 +23,7 @@ function Social({ pesquisa }) {
             ACESSAR INSTAGRAM
           </a>{" "}
           <br />
-          <legend className="legenda">DESCRIÇÃO</legend>
+          <h4 className="legenda">DESCRIÇÃO</h4>
           <p>
             O Instagram é uma rede social focada no compartilhamento de fotos,
             vídeos e stories, sendo uma das plataformas mais populares do mundo
@@ -31,7 +31,7 @@ function Social({ pesquisa }) {
           </p>
           <br />
           <ul>
-            <legend>Para que é usado:</legend>
+            <h4>Para que é usado:</h4>
             <li>Postar fotos e vídeos</li>
             <li>Assistir conteúdos no feed e Reels</li>
             <li>Interagir com amigos e seguidores</li>
@@ -64,7 +64,6 @@ function Social({ pesquisa }) {
           <p>
             <strong>Preço mensal:</strong> Definido pelo criador.
           </p>
-          4
           <p>
             <strong>Chave Benefícios:</strong> Conteúdos exclusivos, lives
             privadas e badges.
@@ -102,7 +101,7 @@ function Social({ pesquisa }) {
             ACESSAR WHATSAPP
           </a>{" "}
           <br />
-          <legend className="legenda">DESCRIÇÃO</legend>
+          <h4 className="legenda">DESCRIÇÃO</h4>
           <p>
             O WhatsApp é um aplicativo de mensagens instantâneas que permite
             enviar textos, áudios, imagens, vídeos e realizar chamadas de voz e
@@ -110,7 +109,7 @@ function Social({ pesquisa }) {
           </p>
           <br />
           <ul>
-            <legend>Para que é usado:</legend>
+            <h4>Para que é usado:</h4>
             <li>Enviar mensagens de texto em tempo real</li>
             <li>Realizar chamadas de voz e vídeo</li>
             <li>Compartilhar arquivos (fotos, vídeos, documentos)</li>
@@ -184,7 +183,7 @@ function Social({ pesquisa }) {
             ACESSAR O FACEBOOK
           </a>
           <br />
-          <legend className="legenda">DESCRIÇÃO</legend>
+          <h4 className="legenda">DESCRIÇÃO</h4>
           <p>
             O Facebook é uma rede social voltada para conexão entre pessoas,
             compartilhamento de conteúdos e interação em comunidades, sendo uma
@@ -192,7 +191,7 @@ function Social({ pesquisa }) {
           </p>
           <br />
           <ul>
-            <legend>Para que é usado:</legend>
+            <h4>Para que é usado:</h4>
             <li>Conectar-se com amigos e familiares</li>
             <li>Compartilhar fotos, vídeos e textos</li>
             <li>Participar de grupos e comunidades</li>
@@ -264,7 +263,7 @@ function Social({ pesquisa }) {
             ACESSAR TIKTOK
           </a>
           <br />
-          <legend className="legenda">DESCRIÇÃO</legend>
+          <h4 className="legenda">DESCRIÇÃO</h4>
           <p>
             O TikTok é uma plataforma de vídeos curtos focada em entretenimento
             rápido, criatividade e viralização de conteúdo, sendo uma das redes
@@ -272,7 +271,7 @@ function Social({ pesquisa }) {
           </p>
           <br />
           <ul>
-            <legend>Para que é usado:</legend>
+            <h4>Para que é usado:</h4>
             <li>Assistir vídeos curtos e virais</li>
             <li>Criar conteúdo criativo (dança, humor, trends)</li>
             <li>Acompanhar influenciadores</li>
@@ -362,15 +361,15 @@ function Social({ pesquisa }) {
             ACESSAR O SNAPCHAT
           </a>
           <br />
-          <legend className="legenda">DESCRIÇÃO</legend>
+          <h4 className="legenda">DESCRIÇÃO</h4>
           <p>
-            O Snapchat é uma rede social focada no compartilhamento de fotos e vídeos
-            temporários, conhecidos como "Snaps", que desaparecem após serem
-            visualizados, sendo muito popular entre jovens.
+            O Snapchat é uma rede social focada no compartilhamento de fotos e
+            vídeos temporários, conhecidos como "Snaps", que desaparecem após
+            serem visualizados, sendo muito popular entre jovens.
           </p>
           <br />
           <ul>
-            <legend>Para que é usado:</legend>
+            <h4>Para que é usado:</h4>
             <li>Enviar fotos e vídeos que desaparecem</li>
             <li>Conversar com amigos por chat</li>
             <li>Postar Stories que somem após 24 horas</li>
@@ -392,7 +391,8 @@ function Social({ pesquisa }) {
             <strong>Preço:</strong> Gratuito.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Envio de snaps, stories, chat e uso de filtros.
+            <strong>Chave Benefícios:</strong> Envio de snaps, stories, chat e
+            uso de filtros.
           </p>
           <p>
             <strong>Restrições:</strong> Presença de anúncios.
@@ -400,11 +400,13 @@ function Social({ pesquisa }) {
           <br />
           <h4>Snapchat+:</h4>
           <p>
-            <strong>Preço mensal:</strong> Aproximadamente R$ 20,00 (pode variar).
+            <strong>Preço mensal:</strong> Aproximadamente R$ 20,00 (pode
+            variar).
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Recursos exclusivos como personalização de ícones,
-            acesso antecipado a novidades e mais opções de interação.
+            <strong>Chave Benefícios:</strong> Recursos exclusivos como
+            personalização de ícones, acesso antecipado a novidades e mais
+            opções de interação.
           </p>
           <p>
             <strong>Restrições:</strong> Não remove completamente anúncios.
@@ -415,8 +417,8 @@ function Social({ pesquisa }) {
             <strong>Preço:</strong> Variável conforme campanha.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Divulgação de produtos com foco em público jovem,
-            formatos interativos e criativos.
+            <strong>Chave Benefícios:</strong> Divulgação de produtos com foco
+            em público jovem, formatos interativos e criativos.
           </p>
           <p>
             <strong>Restrições:</strong> Necessário investimento financeiro.
@@ -428,7 +430,7 @@ function Social({ pesquisa }) {
         <div className="card">
           <img
             src="https://imgs.search.brave.com/6yHvHQMor_PrKrTCDAsuj2V6IW18dk2XwOiD7BUaMQ8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni8yMTExLzIxMTEz/NzAucG5nP3NlbXQ9/YWlzX3doaXRlX2xh/YmVs"
-            alt="Crunchyroll"
+            alt="Discord"
           />{" "}
           <br />
           <h2>Discord</h2>
@@ -440,7 +442,7 @@ function Social({ pesquisa }) {
             ACESSAR DISCORD
           </a>{" "}
           <br />
-          <legend className="legenda">DESCRIÇÃO</legend>
+          <h4 className="legenda">DESCRIÇÃO</h4>
           <p>
             O Discord é uma plataforma de comunicação que permite conversar por
             texto, voz e vídeo em servidores organizados por comunidades, sendo
@@ -448,7 +450,7 @@ function Social({ pesquisa }) {
           </p>
           <br />
           <ul>
-            <legend>Para que é usado:</legend>
+            <h4>Para que é usado:</h4>
             <li>Conversar por chat de texto</li>
             <li>Fazer chamadas de voz e vídeo</li>
             <li>Criar e participar de servidores</li>
@@ -540,15 +542,15 @@ function Social({ pesquisa }) {
             ACESSAR O TELEGRAM
           </a>
           <br />
-          <legend className="legenda">DESCRIÇÃO</legend>
+          <h4 className="legenda">DESCRIÇÃO</h4>
           <p>
-            O Telegram é um aplicativo de mensagens instantâneas focado em velocidade,
-            segurança e privacidade, permitindo conversas, grupos e canais com grande
-            capacidade de participantes.
+            O Telegram é um aplicativo de mensagens instantâneas focado em
+            velocidade, segurança e privacidade, permitindo conversas, grupos e
+            canais com grande capacidade de participantes.
           </p>
           <br />
           <ul>
-            <legend>Para que é usado:</legend>
+            <h4>Para que é usado:</h4>
             <li>Enviar mensagens rápidas e seguras</li>
             <li>Criar grupos com milhares de participantes</li>
             <li>Acompanhar canais de conteúdo e notícias</li>
@@ -570,23 +572,26 @@ function Social({ pesquisa }) {
             <strong>Preço:</strong> Gratuito.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Mensagens ilimitadas, grupos, canais,
-            envio de arquivos e uso de bots.
+            <strong>Chave Benefícios:</strong> Mensagens ilimitadas, grupos,
+            canais, envio de arquivos e uso de bots.
           </p>
           <p>
-            <strong>Restrições:</strong> Algumas limitações em tamanho de upload e recursos avançados.
+            <strong>Restrições:</strong> Algumas limitações em tamanho de upload
+            e recursos avançados.
           </p>{" "}
           <br />
           <h4>Telegram Premium:</h4>
           <p>
-            <strong>Preço mensal:</strong> Aproximadamente R$ 20,00 (pode variar).
+            <strong>Preço mensal:</strong> Aproximadamente R$ 20,00 (pode
+            variar).
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Upload de arquivos maiores, downloads mais rápidos,
-            stickers exclusivos e recursos adicionais.
+            <strong>Chave Benefícios:</strong> Upload de arquivos maiores,
+            downloads mais rápidos, stickers exclusivos e recursos adicionais.
           </p>
           <p>
-            <strong>Restrições:</strong> Recursos extras disponíveis apenas para assinantes.
+            <strong>Restrições:</strong> Recursos extras disponíveis apenas para
+            assinantes.
           </p>{" "}
           <br />
           <h4>Publicidade:</h4>
@@ -594,10 +599,12 @@ function Social({ pesquisa }) {
             <strong>Preço:</strong> Variável.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Divulgação em canais públicos com grande alcance.
+            <strong>Chave Benefícios:</strong> Divulgação em canais públicos com
+            grande alcance.
           </p>
           <p>
-            <strong>Restrições:</strong> Anúncios aparecem apenas em grandes canais.
+            <strong>Restrições:</strong> Anúncios aparecem apenas em grandes
+            canais.
           </p>{" "}
           <br /> <br />
         </div>
@@ -610,23 +617,20 @@ function Social({ pesquisa }) {
           />{" "}
           <br />
           <h2>TWITTER (X)</h2>
-          <a
-            href="https://x.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
+          <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
             ACESSAR O TWITTER
           </a>
           <br />
-          <legend className="legenda">DESCRIÇÃO</legend>
+          <h4 className="legenda">DESCRIÇÃO</h4>
           <p>
-            O Twitter (atualmente chamado de X) é uma rede social focada em mensagens
-            curtas, conhecidas como tweets, permitindo compartilhar opiniões,
-            notícias e interagir em tempo real com pessoas do mundo todo.
+            O Twitter (atualmente chamado de X) é uma rede social focada em
+            mensagens curtas, conhecidas como tweets, permitindo compartilhar
+            opiniões, notícias e interagir em tempo real com pessoas do mundo
+            todo.
           </p>
           <br />
           <ul>
-            <legend>Para que é usado:</legend>
+            <h4>Para que é usado:</h4>
             <li>Compartilhar pensamentos rápidos e atualizações</li>
             <li>Acompanhar notícias em tempo real</li>
             <li>Interagir com pessoas, marcas e influenciadores</li>
@@ -648,20 +652,22 @@ function Social({ pesquisa }) {
             <strong>Preço:</strong> Gratuito.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Postagens, curtidas, comentários e
-            acesso ao conteúdo da plataforma.
+            <strong>Chave Benefícios:</strong> Postagens, curtidas, comentários
+            e acesso ao conteúdo da plataforma.
           </p>
           <p>
-            <strong>Restrições:</strong> Presença de anúncios e algumas limitações.
+            <strong>Restrições:</strong> Presença de anúncios e algumas
+            limitações.
           </p>{" "}
           <br />
           <h4>X Premium (Antigo Twitter Blue):</h4>
           <p>
-            <strong>Preço mensal:</strong> Aproximadamente R$40 a R$60 (varia por região).
+            <strong>Preço mensal:</strong> Aproximadamente R$40 a R$60 (varia
+            por região).
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Selo de verificação, edição de posts,
-            menos anúncios e maior alcance.
+            <strong>Chave Benefícios:</strong> Selo de verificação, edição de
+            posts, menos anúncios e maior alcance.
           </p>
           <p>
             <strong>Restrições:</strong> Requer assinatura paga.
@@ -672,8 +678,8 @@ function Social({ pesquisa }) {
             <strong>Preço:</strong> Variável conforme campanha.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Divulgação de conteúdos e alcance de
-            público segmentado.
+            <strong>Chave Benefícios:</strong> Divulgação de conteúdos e alcance
+            de público segmentado.
           </p>
           <p>
             <strong>Restrições:</strong> Necessário investimento financeiro.
@@ -697,15 +703,15 @@ function Social({ pesquisa }) {
             ACESSAR O LINKEDIN
           </a>
           <br />
-          <legend className="legenda">DESCRIÇÃO</legend>
+          <h4 className="legenda">DESCRIÇÃO</h4>
           <p>
-            O LinkedIn é uma rede social profissional voltada para conexões de trabalho,
-            networking e oportunidades de carreira, sendo amplamente utilizado por
-            empresas, recrutadores e profissionais do mundo todo.
+            O LinkedIn é uma rede social profissional voltada para conexões de
+            trabalho, networking e oportunidades de carreira, sendo amplamente
+            utilizado por empresas, recrutadores e profissionais do mundo todo.
           </p>
           <br />
           <ul>
-            <legend>Para que é usado:</legend>
+            <h4>Para que é usado:</h4>
             <li>Criar e manter um perfil profissional (currículo online)</li>
             <li>Conectar-se com profissionais e empresas</li>
             <li>Buscar vagas de emprego</li>
@@ -727,20 +733,23 @@ function Social({ pesquisa }) {
             <strong>Preço:</strong> Gratuito.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Criar perfil, conectar-se com pessoas,
-            candidatar-se a vagas e interagir com conteúdos.
+            <strong>Chave Benefícios:</strong> Criar perfil, conectar-se com
+            pessoas, candidatar-se a vagas e interagir com conteúdos.
           </p>
           <p>
-            <strong>Restrições:</strong> Limitações em pesquisas avançadas e mensagens.
+            <strong>Restrições:</strong> Limitações em pesquisas avançadas e
+            mensagens.
           </p>{" "}
           <br />
           <h4>LinkedIn Premium:</h4>
           <p>
-            <strong>Preço mensal:</strong> Aproximadamente R$60 a R$150 (varia por plano).
+            <strong>Preço mensal:</strong> Aproximadamente R$60 a R$150 (varia
+            por plano).
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Ver quem visitou seu perfil, enviar
-            mensagens diretas (InMail), cursos e destaque em candidaturas.
+            <strong>Chave Benefícios:</strong> Ver quem visitou seu perfil,
+            enviar mensagens diretas (InMail), cursos e destaque em
+            candidaturas.
           </p>
           <p>
             <strong>Restrições:</strong> Requer assinatura paga.
@@ -751,11 +760,12 @@ function Social({ pesquisa }) {
             <strong>Preço:</strong> Variável conforme plano.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Ferramentas avançadas para recrutamento,
-            geração de leads e análise de candidatos.
+            <strong>Chave Benefícios:</strong> Ferramentas avançadas para
+            recrutamento, geração de leads e análise de candidatos.
           </p>
           <p>
-            <strong>Restrições:</strong> Focado em empresas e profissionais de RH.
+            <strong>Restrições:</strong> Focado em empresas e profissionais de
+            RH.
           </p>{" "}
           <br /> <br />
         </div>
@@ -776,15 +786,15 @@ function Social({ pesquisa }) {
             ACESSAR O REDDIT
           </a>
           <br />
-          <legend className="legenda">DESCRIÇÃO</legend>
+          <h4 className="legenda">DESCRIÇÃO</h4>
           <p>
-            O Reddit é uma plataforma de comunidades online onde usuários compartilham
-            conteúdos, discutem temas variados e votam em postagens, organizadas em
-            fóruns chamados "subreddits".
+            O Reddit é uma plataforma de comunidades online onde usuários
+            compartilham conteúdos, discutem temas variados e votam em
+            postagens, organizadas em fóruns chamados "subreddits".
           </p>
           <br />
           <ul>
-            <legend>Para que é usado:</legend>
+            <h4>Para que é usado:</h4>
             <li>Participar de comunidades (subreddits)</li>
             <li>Compartilhar links, imagens e textos</li>
             <li>Discutir diversos assuntos</li>
@@ -815,14 +825,16 @@ function Social({ pesquisa }) {
           <br />
           <h4>Reddit Premium:</h4>
           <p>
-            <strong>Preço mensal:</strong> Aproximadamente US$ 5,99 (pode variar).
+            <strong>Preço mensal:</strong> Aproximadamente US$ 5,99 (pode
+            variar).
           </p>
           <p>
             <strong>Chave Benefícios:</strong> Navegação sem anúncios, acesso ao
             r/lounge e moedas para recompensas.
           </p>
           <p>
-            <strong>Restrições:</strong> Recursos exclusivos apenas para assinantes.
+            <strong>Restrições:</strong> Recursos exclusivos apenas para
+            assinantes.
           </p>{" "}
           <br />
           <h4>Publicidade (Reddit Ads):</h4>
@@ -830,8 +842,8 @@ function Social({ pesquisa }) {
             <strong>Preço:</strong> Variável conforme campanha.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Alcance segmentado por interesses e
-            comunidades específicas.
+            <strong>Chave Benefícios:</strong> Alcance segmentado por interesses
+            e comunidades específicas.
           </p>
           <p>
             <strong>Restrições:</strong> Necessário investimento financeiro.
