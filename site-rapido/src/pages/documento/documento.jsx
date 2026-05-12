@@ -1,3 +1,5 @@
+import "./documento.css";
+
 function Documento({ pesquisa }) {
   const termo = pesquisa.toLowerCase();
   return (
@@ -867,7 +869,7 @@ function Documento({ pesquisa }) {
         {/* NOTEPAD++ */}
         <div className="card">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Notepadplusplus.svg"
+            src="https://imgs.search.brave.com/H0_KBYgzbfT-GZD0xRmedMAWpyiwmcqGJRKIu3ZBlyI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZnJlZWltYWdl/cy5jb20vZmljL2lt/YWdlcy9pY29ucy8y/NTYxLzFzdF9teF9p/c180Yy8yNTYvbm90/ZXBhZC5wbmc_aA"
             alt="Notepad++"
           />
           <br />
@@ -882,16 +884,14 @@ function Documento({ pesquisa }) {
           >
             ACESSAR SITE OFICIAL
           </a>
-          <br />
 
           <a
-            href="https://notepad-plus-plus.org/downloads/"
+            href="https://github.com/notepad-plus-plus/notepad-plus-plus/releases/download/v8.9.5/npp.8.9.5.Installer.x64.exe"
             target="_blank"
             rel="noopener noreferrer"
           >
             INSTALAR NOTEPAD++
           </a>
-          <br />
           <br />
 
           <h3 className="legenda">DESCRIÇÃO</h3>
