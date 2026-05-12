@@ -5,846 +5,983 @@ function Documento({ pesquisa }) {
       <h1>Documentos</h1>
 
       <div className="lista">
-{/* PACOTE OFFICE */}
-<div className="card">
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
-    alt="Microsoft Office"
-  />
-  <br />
-
-  <h2>MICROSOFT OFFICE / MICROSOFT 365</h2>
-
-  {/* BOTÕES */}
-  <a
-    href="https://www.microsoft.com/pt-br/microsoft-365"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    ACESSAR OFFICE ONLINE
-  </a>
-  <br />
-
-  <a
-    href="https://go.microsoft.com/fwlink/?linkid=2264705&clcid=0x416&culture=pt-br&country=br"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    INSTALAR OFFICE
-  </a>
-  <br /><br />
-
-  <h3 className="legenda">DESCRIÇÃO</h3>
-
-  <p>
-    O Microsoft Office (atualmente Microsoft 365) é um pacote de aplicativos de
-    produtividade usado para criação de documentos, planilhas, apresentações e
-    comunicação, sendo um dos mais utilizados no mundo.
-  </p>
-  <br />
-
-  <p>
-    <strong>Para que é usado:</strong>
-  </p>
-
-  <ul>
-    <li>Criar documentos de texto</li>
-    <li>Fazer planilhas e cálculos</li>
-    <li>Montar apresentações</li>
-    <li>Gerenciar e-mails</li>
-    <li>Armazenar arquivos na nuvem</li>
-    <li>Trabalhar em equipe online</li>
-  </ul>
-  <br />
-
-  <h4>Principais Aplicativos</h4>
-
-  <ul>
-    <li>📄 Word – criação de textos e documentos</li>
-    <li>📊 Excel – planilhas e cálculos</li>
-    <li>📽️ PowerPoint – apresentações</li>
-    <li>📧 Outlook – e-mails e calendário</li>
-    <li>☁️ OneDrive – armazenamento em nuvem</li>
-    <li>💬 Teams – comunicação e reuniões</li>
-  </ul>
-
-  <br />
-
-  <h4>Diferenciais</h4>
-
-  <ul>
-    <li>📱 Funciona em PC, celular e navegador</li>
-    <li>☁️ Integração completa com a nuvem (OneDrive)</li>
-    <li>🤝 Colaboração em tempo real</li>
-    <li>🧠 Recursos com inteligência artificial (Copilot)</li>
-    <li>🔒 Segurança e confiabilidade empresarial</li>
-    <li>🌎 Padrão global em empresas e escolas</li>
-  </ul>
-
-  <h3>Planos do Microsoft 365</h3>
-
-  <h4>Gratuito (Online):</h4>
-  <p>
-    <strong>Preço:</strong> Gratuito.
-  </p>
-  <p>
-    <strong>Benefícios:</strong> Versões básicas do Word, Excel e PowerPoint no navegador.
-  </p>
-  <p>
-    <strong>Restrições:</strong> Recursos limitados e depende de internet.
-  </p>
-  <br />
-
-  <h4>Microsoft 365 Personal:</h4>
-  <p>
-    <strong>Preço mensal:</strong> Cerca de R$36,00.
-  </p>
-  <p>
-    <strong>Preço anual:</strong> Cerca de R$359,00.
-  </p>
-  <p>
-    <strong>Benefícios:</strong> Todos os apps completos + 1TB no OneDrive.
-  </p>
-  <p>
-    <strong>Restrições:</strong> Uso para 1 pessoa.
-  </p>
-  <br />
-
-  <h4>Microsoft 365 Family:</h4>
-  <p>
-    <strong>Preço mensal:</strong> Cerca de R$45,00.
-  </p>
-  <p>
-    <strong>Preço anual:</strong> Cerca de R$449,00.
-  </p>
-  <p>
-    <strong>Benefícios:</strong> Até 6 usuários com 1TB para cada.
-  </p>
-  <p>
-    <strong>Restrições:</strong> Compartilhamento entre familiares.
-  </p>
-  <br />
-
-  <h4>Microsoft 365 Business:</h4>
-  <p>
-    <strong>Preço:</strong> Variável (dependendo do plano).
-  </p>
-  <p>
-    <strong>Benefícios:</strong> Ferramentas empresariais, e-mail profissional e segurança avançada.
-  </p>
-  <p>
-    <strong>Restrições:</strong> Voltado para empresas.
-  </p>
-  <br />
-
-  <h3>Outros Recursos</h3>
-
-  <ul>
-    <li>📂 Salvamento automático na nuvem</li>
-    <li>🔄 Sincronização entre dispositivos</li>
-    <li>📝 Modelos prontos (currículo, relatórios, etc.)</li>
-    <li>📊 Ferramentas avançadas no Excel</li>
-    <li>🎨 Design automático no PowerPoint</li>
-    <li>🤖 Assistente inteligente (Copilot IA)</li>
-  </ul>
-
-  <br />
-
-  <h3>Disponibilidade</h3>
-
-  <p>
-    <strong>Plataformas:</strong> Windows, Mac, Android, iOS e navegador
-  </p>
-
-  <p>
-    <strong>Modo de uso:</strong> Online e offline (dependendo do plano)
-  </p>
-
-  <br />
-</div>
-
-        {/* Facebook */}
+        {/* PACOTE OFFICE */}
         <div className="card">
           <img
-            src="https://imgs.search.brave.com/tlnlhdziNBMTtVW8qZByQNfgW6mEEJWfLPS6TSSNQ2c/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaWNvbi1pY29u/cy5jb20vMjIyNC9Q/TkcvNTEyL2ZhY2Vi/b29rX2xvZ29faWNv/bl8xMzQ0NDYucG5n"
-            alt="facebook"
-          />{" "}
+            src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+            alt="Microsoft Office"
+          />
           <br />
-          <h2>FACEBOOK</h2>
+
+          <h2>MICROSOFT OFFICE / MICROSOFT 365</h2>
+
+          {/* BOTÕES */}
           <a
-            href="https://www.facebook.com/?locale=pt_BR"
+            href="https://www.microsoft.com/pt-br/microsoft-365"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR O FACEBOOK
+            ACESSAR OFFICE ONLINE
           </a>
-          <br />
-          <h4 className="legenda">DESCRIÇÃO</h4>
-          <p>
-            O Facebook é uma rede social voltada para conexão entre pessoas,
-            compartilhamento de conteúdos e interação em comunidades, sendo uma
-            das plataformas mais antigas e populares do mundo.
-          </p>
-          <br />
-          <ul>
-            <h4>Para que é usado:</h4>
-            <li>Conectar-se com amigos e familiares</li>
-            <li>Compartilhar fotos, vídeos e textos</li>
-            <li>Participar de grupos e comunidades</li>
-            <li>Acompanhar páginas e notícias</li>
-            <li>Comprar e vender produtos (Marketplace)</li>
-          </ul>
-          <br />
-          <h4>Diferenciais</h4>
-          <ul>
-            <li>👥 Grande base de usuários no mundo inteiro</li>
-            <li>📢 Criação de páginas para empresas e criadores</li>
-            <li>🛒 Marketplace integrado para compras e vendas</li>
-            <li>📺 Facebook Watch para vídeos e transmissões</li>
-            <li>💬 Grupos e comunidades altamente ativos</li>
-          </ul>
-          <h3>Planos do Facebook</h3>
-          <h4>Padrão (Gratuito):</h4>
-          <p>
-            <strong>Preço:</strong> Gratuito.
-          </p>
-          <p>
-            <strong>Chave Benefícios:</strong> Acesso completo à rede social,
-            publicação e interação com conteúdos.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Presença de anúncios.
-          </p>{" "}
-          <br />
-          <h4>Assinaturas de Criadores:</h4>
-          <p>
-            <strong>Preço mensal:</strong> Definido pelo criador.
-          </p>
-          <p>
-            <strong>Chave Benefícios:</strong> Conteúdos exclusivos, badges e
-            vantagens para seguidores.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Disponível apenas para páginas
-            elegíveis.
-          </p>{" "}
-          <br />
-          <h4>Facebook Ads (Empresas):</h4>
-          <p>
-            <strong>Preço:</strong> Variável conforme campanha.
-          </p>
-          <p>
-            <strong>Chave Benefícios:</strong> Divulgação de produtos,
-            segmentação avançada de público e aumento de alcance.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Necessário investimento financeiro.
-          </p>{" "}
-          <br /> <br />
-        </div>
 
-        {/* Tiktok */}
-        <div className="card">
-          <img
-            src="https://imgs.search.brave.com/TprQYSZU7IRAXE774Lv2y6rLMZ5jwrzgO8pY_uXPikQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjEv/NDk1Lzk0Mi9zbWFs/bC90aWt0b2stbG9n/by1pY29uLWZyZWUt/cG5nLnBuZw"
-            alt="Tiktok"
-          />{" "}
-          <br />
-          <h2>TIKTOK</h2>
           <a
-            href="https://www.tiktok.com/pt-BR/"
+            href="https://go.microsoft.com/fwlink/?linkid=2264705&clcid=0x416&culture=pt-br&country=br"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR TIKTOK
+            INSTALAR OFFICE
           </a>
+
           <br />
-          <h4 className="legenda">DESCRIÇÃO</h4>
+
+          <h3 className="legenda">DESCRIÇÃO</h3>
+
           <p>
-            O TikTok é uma plataforma de vídeos curtos focada em entretenimento
-            rápido, criatividade e viralização de conteúdo, sendo uma das redes
-            sociais mais populares do mundo.
+            O Microsoft Office (atualmente Microsoft 365) é um pacote de
+            aplicativos de produtividade usado para criação de documentos,
+            planilhas, apresentações e comunicação, sendo um dos mais utilizados
+            no mundo.
           </p>
           <br />
+
+          <p>
+            <strong>Para que é usado:</strong>
+          </p>
+
           <ul>
-            <h4>Para que é usado:</h4>
-            <li>Assistir vídeos curtos e virais</li>
-            <li>Criar conteúdo criativo (dança, humor, trends)</li>
-            <li>Acompanhar influenciadores</li>
-            <li>Descobrir tendências e músicas</li>
-            <li>Fazer lives e interagir com seguidores</li>
+            <li>Criar documentos de texto</li>
+            <li>Fazer planilhas e cálculos</li>
+            <li>Montar apresentações</li>
+            <li>Gerenciar e-mails</li>
+            <li>Armazenar arquivos na nuvem</li>
+            <li>Trabalhar em equipe online</li>
           </ul>
           <br />
-          <h4>Diferenciais</h4>
+
+          <h4>Principais Aplicativos</h4>
+
           <ul>
-            <li>⚡ Conteúdo rápido e altamente viciante</li>
-            <li>🤖 Algoritmo extremamente preciso e personalizado</li>
-            <li>🎵 Forte integração com músicas e trends</li>
-            <li>📱 Foco total em mobile (experiência otimizada)</li>
-            <li>🚀 Alta chance de viralização mesmo com poucos seguidores</li>
+            <li>📄 Word – criação de textos e documentos</li>
+            <li>📊 Excel – planilhas e cálculos</li>
+            <li>📽️ PowerPoint – apresentações</li>
+            <li>📧 Outlook – e-mails e calendário</li>
+            <li>☁️ OneDrive – armazenamento em nuvem</li>
+            <li>💬 Teams – comunicação e reuniões</li>
           </ul>
-          <h3>Planos do TikTok</h3>
-          <h4>Padrão (Gratuito):</h4>
+
+          <br />
+
+          <h4>Diferenciais</h4>
+
+          <ul>
+            <li>📱 Funciona em PC, celular e navegador</li>
+            <li>☁️ Integração completa com a nuvem (OneDrive)</li>
+            <li>🤝 Colaboração em tempo real</li>
+            <li>🧠 Recursos com inteligência artificial (Copilot)</li>
+            <li>🔒 Segurança e confiabilidade empresarial</li>
+            <li>🌎 Padrão global em empresas e escolas</li>
+          </ul>
+
+          <h3>Planos do Microsoft 365</h3>
+
+          <h4>Gratuito (Online):</h4>
           <p>
             <strong>Preço:</strong> Gratuito.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Acesso completo à plataforma,
-            criação e consumo de vídeos, lives.
+            <strong>Benefícios:</strong> Versões básicas do Word, Excel e
+            PowerPoint no navegador.
           </p>
           <p>
-            <strong>Restrições:</strong> Presença de anúncios.
-          </p>{" "}
+            <strong>Restrições:</strong> Recursos limitados e depende de
+            internet.
+          </p>
           <br />
-          <h4>Moedas Virtuais:</h4>
+
+          <h4>Microsoft 365 Personal:</h4>
           <p>
-            <strong>Preço:</strong> Variável (compra dentro do app).
+            <strong>Preço mensal:</strong> Cerca de R$36,00.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Envio de presentes em lives para
-            apoiar criadores.
+            <strong>Preço anual:</strong> Cerca de R$359,00.
           </p>
           <p>
-            <strong>Restrições:</strong> Uso limitado dentro da plataforma.
-          </p>{" "}
+            <strong>Benefícios:</strong> Todos os apps completos + 1TB no
+            OneDrive.
+          </p>
+          <p>
+            <strong>Restrições:</strong> Uso para 1 pessoa.
+          </p>
           <br />
-          <h4>Assinaturas de Criadores:</h4>
+
+          <h4>Microsoft 365 Family:</h4>
           <p>
-            <strong>Preço mensal:</strong> Definido pelo criador.
+            <strong>Preço mensal:</strong> Cerca de R$45,00.
           </p>
           <p>
-            <strong>Preço Anual:</strong> Não disponível.
+            <strong>Preço anual:</strong> Cerca de R$449,00.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Conteúdos exclusivos, badges e
-            vantagens no chat.
+            <strong>Benefícios:</strong> Até 6 usuários com 1TB para cada.
           </p>
           <p>
-            <strong>Restrições:</strong> Disponível apenas em canais
-            específicos.
-          </p>{" "}
+            <strong>Restrições:</strong> Compartilhamento entre familiares.
+          </p>
           <br />
-          <h4>TikTok Ads (Empresas):</h4>
+
+          <h4>Microsoft 365 Business:</h4>
           <p>
-            <strong>Preço:</strong> Variável conforme campanha.
+            <strong>Preço:</strong> Variável (dependendo do plano).
           </p>
           <p>
-            <strong>Preço Anual:</strong> Não se aplica.
+            <strong>Benefícios:</strong> Ferramentas empresariais, e-mail
+            profissional e segurança avançada.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Divulgação de produtos e alcance
-            de público.
+            <strong>Restrições:</strong> Voltado para empresas.
           </p>
+          <br />
+
+          <h3>Outros Recursos</h3>
+
+          <ul>
+            <li>📂 Salvamento automático na nuvem</li>
+            <li>🔄 Sincronização entre dispositivos</li>
+            <li>📝 Modelos prontos (currículo, relatórios, etc.)</li>
+            <li>📊 Ferramentas avançadas no Excel</li>
+            <li>🎨 Design automático no PowerPoint</li>
+            <li>🤖 Assistente inteligente (Copilot IA)</li>
+          </ul>
+
+          <br />
+
+          <h3>Disponibilidade</h3>
+
           <p>
-            <strong>Restrições:</strong> Necessário investimento em anúncios.
-          </p>{" "}
-          <br /> <br />
+            <strong>Plataformas:</strong> Windows, Mac, Android, iOS e navegador
+          </p>
+
+          <p>
+            <strong>Modo de uso:</strong> Online e offline (dependendo do plano)
+          </p>
+
+          <br />
         </div>
 
-        {/* Snapchat */}
+        {/* FOXIT PDF READER */}
         <div className="card">
           <img
-            src="https://upload.wikimedia.org/wikipedia/en/c/c4/Snapchat_logo.svg"
-            alt="snapchat"
-          />{" "}
+            src="https://imgs.search.brave.com/f1kKCJD8UBxtG86BwJyOF3pJ__CqMkJeRbx7uEDg8jM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/aWNvbnM4LmNvbS9j/b2xvci8xMjAwL2Zv/eGl0LXJlYWRlci5q/cGc"
+            alt="Foxit PDF Reader"
+          />
           <br />
-          <h2>SNAPCHAT</h2>
+
+          <h2>FOXIT PDF READER</h2>
+
+          {/* BOTÕES */}
           <a
-            href="https://www.snapchat.com/"
+            href="https://www.foxit.com/pdf-reader/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR O SNAPCHAT
+            ACESSAR SITE OFICIAL
           </a>
+
           <br />
-          <h4 className="legenda">DESCRIÇÃO</h4>
+
+          <h3 className="legenda">DESCRIÇÃO</h3>
+
           <p>
-            O Snapchat é uma rede social focada no compartilhamento de fotos e
-            vídeos temporários, conhecidos como "Snaps", que desaparecem após
-            serem visualizados, sendo muito popular entre jovens.
+            O Foxit PDF Reader é um leitor e editor de arquivos PDF conhecido
+            por ser leve, rápido e possuir diversos recursos avançados para
+            leitura, anotações, assinatura e organização de documentos digitais.
           </p>
           <br />
+
+          <p>
+            <strong>Para que é usado:</strong>
+          </p>
+
           <ul>
-            <h4>Para que é usado:</h4>
-            <li>Enviar fotos e vídeos que desaparecem</li>
-            <li>Conversar com amigos por chat</li>
-            <li>Postar Stories que somem após 24 horas</li>
-            <li>Usar filtros e lentes divertidas</li>
-            <li>Explorar conteúdos na aba Discover</li>
+            <li>Abrir arquivos PDF</li>
+            <li>Ler documentos digitais</li>
+            <li>Fazer anotações em PDFs</li>
+            <li>Assinar documentos eletronicamente</li>
+            <li>Preencher formulários PDF</li>
+            <li>Imprimir documentos</li>
           </ul>
           <br />
-          <h4>Diferenciais</h4>
+
+          <h4>Principais Recursos</h4>
+
           <ul>
-            <li>👻 Conteúdos temporários (desaparecem automaticamente)</li>
-            <li>🎭 Filtros e lentes de realidade aumentada</li>
-            <li>📸 Foco em fotos e vídeos rápidos do dia a dia</li>
-            <li>💬 Chat integrado com notificações em tempo real</li>
-            <li>🗺️ Snap Map para ver localização de amigos</li>
+            <li>📄 Leitura rápida de PDFs</li>
+            <li>✍️ Ferramentas de comentários e marcações</li>
+            <li>🖊️ Assinatura digital</li>
+            <li>📑 Organização de páginas</li>
+            <li>🔍 Busca de palavras no documento</li>
+            <li>☁️ Integração com serviços em nuvem</li>
           </ul>
-          <h3>Planos do Snapchat</h3>
-          <h4>Padrão (Gratuito):</h4>
+
+          <br />
+
+          <h4>Diferenciais</h4>
+
+          <ul>
+            <li>⚡ Mais leve e rápido que muitos concorrentes</li>
+            <li>💻 Interface simples e moderna</li>
+            <li>🔒 Recursos de segurança para documentos</li>
+            <li>📝 Compatibilidade com formulários PDF</li>
+            <li>📂 Boa integração com armazenamento online</li>
+            <li>🌎 Muito utilizado em empresas e escritórios</li>
+          </ul>
+
+          <h3>Versões do Foxit PDF Reader</h3>
+
+          <h4>Foxit PDF Reader Gratuito:</h4>
           <p>
             <strong>Preço:</strong> Gratuito.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Envio de snaps, stories, chat e
-            uso de filtros.
+            <strong>Benefícios:</strong> Leitura de PDFs, anotações e
+            ferramentas básicas.
           </p>
           <p>
-            <strong>Restrições:</strong> Presença de anúncios.
-          </p>{" "}
+            <strong>Restrições:</strong> Recursos avançados limitados.
+          </p>
           <br />
-          <h4>Snapchat+:</h4>
+
+          <h4>Foxit PDF Editor:</h4>
           <p>
-            <strong>Preço mensal:</strong> Aproximadamente R$ 20,00 (pode
-            variar).
+            <strong>Preço mensal:</strong> Cerca de R$55,00 por mês.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Recursos exclusivos como
-            personalização de ícones, acesso antecipado a novidades e mais
-            opções de interação.
+            <strong>Preço anual:</strong> Cerca de R$550,00 por ano.
           </p>
           <p>
-            <strong>Restrições:</strong> Não remove completamente anúncios.
-          </p>{" "}
+            <strong>Benefícios:</strong> Edição completa de PDFs, conversão,
+            organização de páginas e recursos profissionais.
+          </p>
+          <p>
+            <strong>Restrições:</strong> Necessário pagamento para liberar
+            funções premium.
+          </p>
           <br />
-          <h4>Publicidade (Snap Ads):</h4>
+          <h3>Outros Recursos</h3>
+
+          <ul>
+            <li>📂 Conversão de arquivos para PDF</li>
+            <li>🖨️ Impressão avançada de documentos</li>
+            <li>🔐 Proteção com senha</li>
+            <li>📋 Copiar e selecionar textos facilmente</li>
+            <li>📱 Compatibilidade com dispositivos móveis</li>
+            <li>☁️ Compartilhamento online de documentos</li>
+          </ul>
+
+          <br />
+
+          <h3>Disponibilidade</h3>
+
           <p>
-            <strong>Preço:</strong> Variável conforme campanha.
+            <strong>Plataformas:</strong> Windows, Mac, Android, iOS e navegador
           </p>
+
           <p>
-            <strong>Chave Benefícios:</strong> Divulgação de produtos com foco
-            em público jovem, formatos interativos e criativos.
+            <strong>Modo de uso:</strong> Online e offline
           </p>
-          <p>
-            <strong>Restrições:</strong> Necessário investimento financeiro.
-          </p>{" "}
-          <br /> <br />
+
+          <br />
         </div>
 
-        {/* Discord */}
+        {/* ADOBE ACROBAT READER */}
         <div className="card">
           <img
-            src="https://imgs.search.brave.com/6yHvHQMor_PrKrTCDAsuj2V6IW18dk2XwOiD7BUaMQ8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni8yMTExLzIxMTEz/NzAucG5nP3NlbXQ9/YWlzX3doaXRlX2xh/YmVs"
-            alt="Discord"
-          />{" "}
+            src="https://imgs.search.brave.com/nhueKw5y-vLJKfSvryI-RVtIrKoNss6F-w0HJ03uwDc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi80LzQyL0Fk/b2JlX0Fjcm9iYXRf/RENfbG9nb18yMDIw/LnN2Zy8yNTBweC1B/ZG9iZV9BY3JvYmF0/X0RDX2xvZ29fMjAy/MC5zdmcucG5n"
+            alt="Adobe Acrobat Reader"
+          />
           <br />
-          <h2>Discord</h2>
+
+          <h2>ADOBE ACROBAT READER</h2>
+
+          {/* BOTÕES */}
           <a
-            href="https://discord.com/"
+            href="https://www.adobe.com/br/acrobat/pdf-reader.html"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR DISCORD
-          </a>{" "}
+            ACESSAR SITE OFICIAL
+          </a>
           <br />
-          <h4 className="legenda">DESCRIÇÃO</h4>
+
+          <h3 className="legenda">DESCRIÇÃO</h3>
+
           <p>
-            O Discord é uma plataforma de comunicação que permite conversar por
-            texto, voz e vídeo em servidores organizados por comunidades, sendo
-            muito popular entre gamers e grupos online.
+            O Adobe Acrobat Reader é o leitor de PDF mais popular do mundo,
+            desenvolvido pela Adobe, criadora do formato PDF. Ele permite
+            visualizar, imprimir, assinar e interagir com documentos digitais de
+            forma segura e profissional.
           </p>
           <br />
+
+          <p>
+            <strong>Para que é usado:</strong>
+          </p>
+
           <ul>
-            <h4>Para que é usado:</h4>
-            <li>Conversar por chat de texto</li>
-            <li>Fazer chamadas de voz e vídeo</li>
-            <li>Criar e participar de servidores</li>
-            <li>Organizar comunidades e grupos</li>
-            <li>Compartilhar tela e conteúdos</li>
+            <li>Abrir arquivos PDF</li>
+            <li>Ler documentos digitais</li>
+            <li>Imprimir PDFs</li>
+            <li>Assinar documentos eletronicamente</li>
+            <li>Preencher formulários PDF</li>
+            <li>Compartilhar documentos online</li>
           </ul>
           <br />
-          <h4>Diferenciais</h4>
+
+          <h4>Principais Recursos</h4>
+
           <ul>
-            <li>🎮 Muito popular entre gamers e comunidades online</li>
-            <li>🔊 Canais de voz com baixa latência</li>
-            <li>📂 Organização por servidores e canais</li>
-            <li>🧩 Suporte a bots e automações</li>
-            <li>💻 Funciona em PC, celular e navegador</li>
+            <li>📄 Visualização de PDFs</li>
+            <li>✍️ Comentários e anotações</li>
+            <li>🖊️ Assinatura digital</li>
+            <li>📑 Preenchimento de formulários</li>
+            <li>🔍 Busca rápida em documentos</li>
+            <li>☁️ Integração com Adobe Cloud</li>
           </ul>
-          <h3>Planos do Discord</h3>
-          <h4>Padrão (Gratuito):</h4>
+
+          <br />
+
+          <h4>Diferenciais</h4>
+
+          <ul>
+            <li>🌎 Criador oficial do formato PDF</li>
+            <li>🔒 Alta segurança para documentos</li>
+            <li>💻 Compatibilidade com praticamente qualquer PDF</li>
+            <li>📱 Funciona em computador e celular</li>
+            <li>☁️ Sincronização com a nuvem Adobe</li>
+            <li>🏢 Muito utilizado em empresas e instituições</li>
+          </ul>
+
+          <h3>Versões do Adobe Acrobat</h3>
+
+          <h4>Adobe Acrobat Reader Gratuito:</h4>
           <p>
             <strong>Preço:</strong> Gratuito.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Chat, chamadas de voz/vídeo,
-            criação de servidores.
+            <strong>Benefícios:</strong> Leitura de PDFs, impressão, comentários
+            e assinatura básica.
           </p>
           <p>
-            <strong>Restrições:</strong> Limitações em upload de arquivos e
-            qualidade de transmissão.
-          </p>{" "}
+            <strong>Restrições:</strong> Não permite edição avançada de PDFs.
+          </p>
           <br />
-          <h4>Nitro Basic:</h4>
+
+          <h4>Adobe Acrobat Standard:</h4>
           <p>
-            <strong>Preço mensal:</strong> Aproximadamente R$10 (pode variar).
+            <strong>Preço mensal:</strong> Cerca de R$80,00 por mês.
           </p>
           <p>
-            <strong>Preço Anual:</strong> Aproximadamente R$99,99.
+            <strong>Preço anual:</strong> Cerca de R$780,00 por ano.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Upload maior de arquivos, emojis
-            personalizados e melhorias básicas.
+            <strong>Benefícios:</strong> Edição de PDFs, conversão de arquivos e
+            organização de páginas.
           </p>
           <p>
-            <strong>Restrições:</strong> Recursos limitados comparado ao Nitro
-            completo.
-          </p>{" "}
+            <strong>Restrições:</strong> Disponível apenas para Windows.
+          </p>
           <br />
-          <h4>Nitro:</h4>
+
+          <h4>Adobe Acrobat Pro:</h4>
           <p>
-            <strong>Preço mensal:</strong> Cerca de R$24,99 (pode variar).
+            <strong>Preço mensal:</strong> Cerca de R$120,00 por mês.
           </p>
           <p>
-            <strong>Preço Anual:</strong> Aproximadamente R$249,99.
+            <strong>Preço anual:</strong> Cerca de R$1.150,00 por ano.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Upload maior, streaming em alta
-            qualidade, perfil personalizado e boosts.
+            <strong>Benefícios:</strong> Recursos profissionais completos para
+            edição, proteção e criação de PDFs.
           </p>
           <p>
-            <strong>Restrições:</strong> Custo mais elevado.
-          </p>{" "}
+            <strong>Restrições:</strong> Plano mais caro voltado para uso
+            profissional.
+          </p>
           <br />
-          <h4>Server Boost:</h4>
+
+          <h3>Outros Recursos</h3>
+
+          <ul>
+            <li>📂 Conversão de Word, Excel e imagens para PDF</li>
+            <li>🔐 Proteção de documentos com senha</li>
+            <li>📋 Copiar e selecionar textos facilmente</li>
+            <li>🖨️ Impressão avançada</li>
+            <li>📱 Aplicativo mobile completo</li>
+            <li>🤝 Compartilhamento e colaboração online</li>
+          </ul>
+
+          <br />
+
+          <h3>Disponibilidade</h3>
+
           <p>
-            <strong>Preço:</strong> Variável (compra de boosts).
+            <strong>Plataformas:</strong> Windows, Mac, Android, iOS e navegador
           </p>
+
           <p>
-            <strong>Chave Benefícios:</strong> Melhoria no servidor (qualidade
-            de áudio, emojis extras, recursos exclusivos).
+            <strong>Modo de uso:</strong> Online e offline
           </p>
-          <p>
-            <strong>Restrições:</strong> Benefícios aplicados apenas ao servidor
-            impulsionado.
-          </p>{" "}
-          <br /> <br />
+
+          <br />
         </div>
 
-        {/* Telegram */}
+        {/* LIBREOFFICE */}
         <div className="card">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
-            alt="telegram"
-          />{" "}
+            src="https://upload.wikimedia.org/wikipedia/commons/0/02/LibreOffice_Logo_Flat.svg"
+            alt="LibreOffice"
+            style={{ width: "250px" }}
+          />
           <br />
-          <h2>TELEGRAM</h2>
+
+          <h2>LIBREOFFICE</h2>
+
+          {/* BOTÕES */}
           <a
-            href="https://telegram.org/"
+            href="https://pt-br.libreoffice.org/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR O TELEGRAM
+            ACESSAR SITE OFICIAL
           </a>
-          <br />
-          <h4 className="legenda">DESCRIÇÃO</h4>
-          <p>
-            O Telegram é um aplicativo de mensagens instantâneas focado em
-            velocidade, segurança e privacidade, permitindo conversas, grupos e
-            canais com grande capacidade de participantes.
-          </p>
-          <br />
-          <ul>
-            <h4>Para que é usado:</h4>
-            <li>Enviar mensagens rápidas e seguras</li>
-            <li>Criar grupos com milhares de participantes</li>
-            <li>Acompanhar canais de conteúdo e notícias</li>
-            <li>Compartilhar arquivos grandes</li>
-            <li>Utilizar bots automatizados</li>
-          </ul>
-          <br />
-          <h4>Diferenciais</h4>
-          <ul>
-            <li>🔐 Foco em privacidade e segurança</li>
-            <li>👥 Grupos com até centenas de milhares de membros</li>
-            <li>📢 Canais para transmissão de conteúdo</li>
-            <li>🤖 Bots automatizados para diversas funções</li>
-            <li>☁️ Armazenamento em nuvem sem ocupar espaço do celular</li>
-          </ul>
-          <h3>Planos do Telegram</h3>
-          <h4>Padrão (Gratuito):</h4>
-          <p>
-            <strong>Preço:</strong> Gratuito.
-          </p>
-          <p>
-            <strong>Chave Benefícios:</strong> Mensagens ilimitadas, grupos,
-            canais, envio de arquivos e uso de bots.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Algumas limitações em tamanho de upload
-            e recursos avançados.
-          </p>{" "}
-          <br />
-          <h4>Telegram Premium:</h4>
-          <p>
-            <strong>Preço mensal:</strong> Aproximadamente R$ 20,00 (pode
-            variar).
-          </p>
-          <p>
-            <strong>Chave Benefícios:</strong> Upload de arquivos maiores,
-            downloads mais rápidos, stickers exclusivos e recursos adicionais.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Recursos extras disponíveis apenas para
-            assinantes.
-          </p>{" "}
-          <br />
-          <h4>Publicidade:</h4>
-          <p>
-            <strong>Preço:</strong> Variável.
-          </p>
-          <p>
-            <strong>Chave Benefícios:</strong> Divulgação em canais públicos com
-            grande alcance.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Anúncios aparecem apenas em grandes
-            canais.
-          </p>{" "}
-          <br /> <br />
-        </div>
 
-        {/* Twitter */}
-        <div className="card">
-          <img
-            src="https://cdn-icons-png.flaticon.com/512/145/145812.png"
-            alt="twitter"
-          />{" "}
-          <br />
-          <h2>TWITTER (X)</h2>
-          <a href="https://x.com/" target="_blank" rel="noopener noreferrer">
-            ACESSAR O TWITTER
-          </a>
-          <br />
-          <h4 className="legenda">DESCRIÇÃO</h4>
-          <p>
-            O Twitter (atualmente chamado de X) é uma rede social focada em
-            mensagens curtas, conhecidas como tweets, permitindo compartilhar
-            opiniões, notícias e interagir em tempo real com pessoas do mundo
-            todo.
-          </p>
-          <br />
-          <ul>
-            <h4>Para que é usado:</h4>
-            <li>Compartilhar pensamentos rápidos e atualizações</li>
-            <li>Acompanhar notícias em tempo real</li>
-            <li>Interagir com pessoas, marcas e influenciadores</li>
-            <li>Participar de discussões e tendências (#hashtags)</li>
-            <li>Divulgar conteúdos e opiniões</li>
-          </ul>
-          <br />
-          <h4>Diferenciais</h4>
-          <ul>
-            <li>⚡ Informação em tempo real</li>
-            <li># Uso forte de hashtags para tendências</li>
-            <li>🌍 Alcance global rápido</li>
-            <li>💬 Interação direta com qualquer usuário</li>
-            <li>🧵 Threads para conteúdos mais longos</li>
-          </ul>
-          <h3>Planos do Twitter (X)</h3>
-          <h4>Padrão (Gratuito):</h4>
-          <p>
-            <strong>Preço:</strong> Gratuito.
-          </p>
-          <p>
-            <strong>Chave Benefícios:</strong> Postagens, curtidas, comentários
-            e acesso ao conteúdo da plataforma.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Presença de anúncios e algumas
-            limitações.
-          </p>{" "}
-          <br />
-          <h4>X Premium (Antigo Twitter Blue):</h4>
-          <p>
-            <strong>Preço mensal:</strong> Aproximadamente R$40 a R$60 (varia
-            por região).
-          </p>
-          <p>
-            <strong>Chave Benefícios:</strong> Selo de verificação, edição de
-            posts, menos anúncios e maior alcance.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Requer assinatura paga.
-          </p>{" "}
-          <br />
-          <h4>Anúncios (Twitter Ads):</h4>
-          <p>
-            <strong>Preço:</strong> Variável conforme campanha.
-          </p>
-          <p>
-            <strong>Chave Benefícios:</strong> Divulgação de conteúdos e alcance
-            de público segmentado.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Necessário investimento financeiro.
-          </p>{" "}
-          <br /> <br />
-        </div>
-
-        {/* LinkedIn */}
-        <div className="card">
-          <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6Lr-7Eun1rzHDm1vsAokNksXIzbOET7f3TA&s"
-            alt="linkedin"
-          />{" "}
-          <br />
-          <h2>LINKEDIN</h2>
           <a
-            href="https://www.linkedin.com/"
+            href="https://download.documentfoundation.org/libreoffice/stable/26.2.3/win/x86_64/LibreOffice_26.2.3_Win_x86-64.msi"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR O LINKEDIN
+            INSTALAR LIBREOFFICE
           </a>
           <br />
-          <h4 className="legenda">DESCRIÇÃO</h4>
+
+          <h3 className="legenda">DESCRIÇÃO</h3>
+
           <p>
-            O LinkedIn é uma rede social profissional voltada para conexões de
-            trabalho, networking e oportunidades de carreira, sendo amplamente
-            utilizado por empresas, recrutadores e profissionais do mundo todo.
+            O LibreOffice é um pacote de aplicativos de escritório gratuito e de
+            código aberto, utilizado para criação de documentos, planilhas,
+            apresentações e muito mais. Ele é uma das principais alternativas
+            gratuitas ao Microsoft Office.
           </p>
           <br />
+
+          <p>
+            <strong>Para que é usado:</strong>
+          </p>
+
           <ul>
-            <h4>Para que é usado:</h4>
-            <li>Criar e manter um perfil profissional (currículo online)</li>
-            <li>Conectar-se com profissionais e empresas</li>
-            <li>Buscar vagas de emprego</li>
-            <li>Compartilhar conteúdos profissionais</li>
-            <li>Fazer networking e desenvolver carreira</li>
+            <li>Criar documentos de texto</li>
+            <li>Fazer planilhas e cálculos</li>
+            <li>Montar apresentações</li>
+            <li>Criar bancos de dados</li>
+            <li>Produzir desenhos e diagramas</li>
+            <li>Editar fórmulas matemáticas</li>
           </ul>
           <br />
-          <h4>Diferenciais</h4>
+
+          <h4>Principais Aplicativos</h4>
+
           <ul>
-            <li>💼 Foco total no mercado de trabalho</li>
-            <li>🤝 Networking profissional qualificado</li>
-            <li>📄 Perfil funciona como currículo online</li>
-            <li>🔍 Ferramentas avançadas de busca de emprego</li>
-            <li>📊 Insights e conteúdos sobre carreira</li>
+            <li>📄 LibreOffice Writer — alternativa gratuita ao Word</li>
+            <li>📊 LibreOffice Calc — alternativa gratuita ao Excel</li>
+            <li>📽️ LibreOffice Impress — alternativa gratuita ao PowerPoint</li>
+            <li>🗂️ LibreOffice Base — gerenciamento de bancos de dados</li>
+            <li>🎨 LibreOffice Draw — criação de diagramas e desenhos</li>
+            <li>➗ LibreOffice Math — editor de fórmulas matemáticas</li>
           </ul>
-          <h3>Planos do LinkedIn</h3>
-          <h4>Padrão (Gratuito):</h4>
+
+          <br />
+
+          <h4>Diferenciais</h4>
+
+          <ul>
+            <li>🆓 Totalmente gratuito</li>
+            <li>💻 Funciona offline</li>
+            <li>🌎 Código aberto (Open Source)</li>
+            <li>📂 Compatível com arquivos do Microsoft Office</li>
+            <li>⚡ Leve e rápido em muitos computadores</li>
+            <li>🔒 Sem necessidade de assinatura</li>
+          </ul>
+
+          <h3>Versões do LibreOffice</h3>
+
+          <h4>LibreOffice Community:</h4>
           <p>
             <strong>Preço:</strong> Gratuito.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Criar perfil, conectar-se com
-            pessoas, candidatar-se a vagas e interagir com conteúdos.
+            <strong>Benefícios:</strong> Pacote completo de escritório sem
+            custo.
           </p>
           <p>
-            <strong>Restrições:</strong> Limitações em pesquisas avançadas e
-            mensagens.
-          </p>{" "}
+            <strong>Restrições:</strong> Suporte oficial limitado à comunidade.
+          </p>
           <br />
-          <h4>LinkedIn Premium:</h4>
+
+          <h4>LibreOffice Enterprise:</h4>
           <p>
-            <strong>Preço mensal:</strong> Aproximadamente R$60 a R$150 (varia
-            por plano).
+            <strong>Preço:</strong> Variável dependendo da empresa fornecedora.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Ver quem visitou seu perfil,
-            enviar mensagens diretas (InMail), cursos e destaque em
-            candidaturas.
+            <strong>Benefícios:</strong> Suporte técnico profissional e recursos
+            corporativos.
           </p>
           <p>
-            <strong>Restrições:</strong> Requer assinatura paga.
-          </p>{" "}
+            <strong>Restrições:</strong> Voltado principalmente para empresas.
+          </p>
           <br />
-          <h4>LinkedIn Recruiter / Business:</h4>
+
+          <h3>Outros Recursos</h3>
+
+          <ul>
+            <li>📂 Exportação direta para PDF</li>
+            <li>📝 Modelos prontos de documentos</li>
+            <li>🔄 Atualizações constantes da comunidade</li>
+            <li>🌐 Suporte para diversos idiomas</li>
+            <li>💾 Compatibilidade com formatos antigos e modernos</li>
+            <li>🧩 Possibilidade de instalar extensões adicionais</li>
+          </ul>
+
+          <br />
+
+          <h3>Disponibilidade</h3>
+
           <p>
-            <strong>Preço:</strong> Variável conforme plano.
+            <strong>Plataformas:</strong> Windows, Linux e Mac
           </p>
+
           <p>
-            <strong>Chave Benefícios:</strong> Ferramentas avançadas para
-            recrutamento, geração de leads e análise de candidatos.
+            <strong>Modo de uso:</strong> Offline
           </p>
-          <p>
-            <strong>Restrições:</strong> Focado em empresas e profissionais de
-            RH.
-          </p>{" "}
-          <br /> <br />
+
+          <br />
         </div>
 
-        {/* Reddit */}
+        {/* WPS OFFICE */}
         <div className="card">
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGJk69iN6ZOn7krG0d_wtH01MR0CIjDuTAGg&s"
-            alt="reddit"
-          />{" "}
+            src="https://imgs.search.brave.com/HfRtEzWrSV5pE-QW3Xlg4nrnimq3DufhG64M6lB8HMM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTc1ZDg3MmZm/NWM5OWM5MjA1Mjgx/YTczNmQyMzA3ODFm/ZDhmYzg1OTBiN2Yy/ZjU1NDYyMWY5YTY3/MWQ4NTUxZi9ici53/cHMuY29tLw"
+            alt="WPS Office"
+          />
           <br />
-          <h2>REDDIT</h2>
+
+          <h2>WPS OFFICE</h2>
+
+          {/* BOTÕES */}
           <a
-            href="https://www.reddit.com/"
+            href="https://www.wps.com/pt-BR/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR O REDDIT
+            ACESSAR SITE OFICIAL
+          </a>
+          <a
+            href="//wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/onlinesetup/distsrc/200.1087/wpsinst/wps_office_inst.exe"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            INSTALAR WPS OFFICE
           </a>
           <br />
-          <h4 className="legenda">DESCRIÇÃO</h4>
+
+          <h3 className="legenda">DESCRIÇÃO</h3>
+
           <p>
-            O Reddit é uma plataforma de comunidades online onde usuários
-            compartilham conteúdos, discutem temas variados e votam em
-            postagens, organizadas em fóruns chamados "subreddits".
+            O WPS Office é um pacote de aplicativos de escritório desenvolvido
+            pela Kingsoft, conhecido por sua interface parecida com o Microsoft
+            Office, leveza e compatibilidade com documentos do Word, Excel e
+            PowerPoint.
           </p>
           <br />
+
+          <p>
+            <strong>Para que é usado:</strong>
+          </p>
+
           <ul>
-            <h4>Para que é usado:</h4>
-            <li>Participar de comunidades (subreddits)</li>
-            <li>Compartilhar links, imagens e textos</li>
-            <li>Discutir diversos assuntos</li>
-            <li>Votar em conteúdos (upvote e downvote)</li>
-            <li>Acompanhar tendências e notícias</li>
+            <li>Criar documentos de texto</li>
+            <li>Fazer planilhas e cálculos</li>
+            <li>Montar apresentações</li>
+            <li>Abrir e editar arquivos PDF</li>
+            <li>Armazenar arquivos na nuvem</li>
+            <li>Trabalhar com documentos online</li>
           </ul>
           <br />
-          <h4>Diferenciais</h4>
+
+          <h4>Principais Aplicativos</h4>
+
           <ul>
-            <li>📌 Organização por comunidades específicas (subreddits)</li>
-            <li>👍 Sistema de votos que destaca os melhores conteúdos</li>
-            <li>🌎 Grande variedade de temas e discussões</li>
-            <li>🧠 Conteúdo gerado pela comunidade</li>
-            <li>🎭 Possibilidade de anonimato</li>
+            <li>📄 WPS Writer — alternativa ao Word</li>
+            <li>📊 WPS Spreadsheets — alternativa ao Excel</li>
+            <li>📽️ WPS Presentation — alternativa ao PowerPoint</li>
+            <li>📑 WPS PDF — leitor e editor de PDFs</li>
+            <li>☁️ WPS Cloud — armazenamento em nuvem</li>
+            <li>🧰 Ferramentas integradas de produtividade</li>
           </ul>
-          <h3>Planos do Reddit</h3>
-          <h4>Padrão (Gratuito):</h4>
+
+          <br />
+
+          <h4>Diferenciais</h4>
+
+          <ul>
+            <li>💻 Interface muito parecida com Microsoft Office</li>
+            <li>⚡ Leve e rápido em computadores mais fracos</li>
+            <li>📂 Alta compatibilidade com arquivos Office</li>
+            <li>🆓 Possui versão gratuita completa</li>
+            <li>📱 Funciona em PC e celular</li>
+            <li>☁️ Integração com armazenamento em nuvem</li>
+          </ul>
+
+          <h3>Versões do WPS Office</h3>
+
+          <h4>WPS Office Gratuito:</h4>
           <p>
             <strong>Preço:</strong> Gratuito.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Acesso a comunidades, postagens,
-            comentários e interação completa.
+            <strong>Benefícios:</strong> Pacote completo de escritório com
+            recursos básicos.
           </p>
           <p>
-            <strong>Restrições:</strong> Presença de anúncios.
-          </p>{" "}
+            <strong>Restrições:</strong> Exibe anúncios e possui funções premium
+            bloqueadas.
+          </p>
           <br />
-          <h4>Reddit Premium:</h4>
+
+          <h4>WPS Office Premium:</h4>
           <p>
-            <strong>Preço mensal:</strong> Aproximadamente US$ 5,99 (pode
-            variar).
+            <strong>Preço mensal:</strong> Cerca de R$25,00 por mês.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Navegação sem anúncios, acesso ao
-            r/lounge e moedas para recompensas.
+            <strong>Preço anual:</strong> Cerca de R$120,00 por ano.
           </p>
           <p>
-            <strong>Restrições:</strong> Recursos exclusivos apenas para
-            assinantes.
-          </p>{" "}
+            <strong>Benefícios:</strong> Recursos avançados, sem anúncios e
+            ferramentas extras para PDF.
+          </p>
+          <p>
+            <strong>Restrições:</strong> Necessário pagamento mensal ou anual.
+          </p>
           <br />
-          <h4>Publicidade (Reddit Ads):</h4>
+
+          <h4>WPS Office Business:</h4>
           <p>
-            <strong>Preço:</strong> Variável conforme campanha.
+            <strong>Preço:</strong> Sob consulta.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Alcance segmentado por interesses
-            e comunidades específicas.
+            <strong>Benefícios:</strong> Recursos corporativos, gerenciamento de
+            equipes e suporte empresarial.
           </p>
           <p>
-            <strong>Restrições:</strong> Necessário investimento financeiro.
-          </p>{" "}
-          <br /> <br />
+            <strong>Restrições:</strong> Voltado para empresas e organizações.
+          </p>
+          <br />
+
+          <h3>Outros Recursos</h3>
+
+          <ul>
+            <li>📂 Conversão de arquivos para PDF</li>
+            <li>🔄 Sincronização entre dispositivos</li>
+            <li>📝 Modelos prontos de currículo e documentos</li>
+            <li>🎨 Interface moderna com temas</li>
+            <li>☁️ Backup de arquivos na nuvem</li>
+            <li>📱 Aplicativo mobile completo</li>
+          </ul>
+
+          <br />
+
+          <h3>Disponibilidade</h3>
+
+          <p>
+            <strong>Plataformas:</strong> Windows, Linux, Mac, Android, iOS e
+            navegador
+          </p>
+
+          <p>
+            <strong>Modo de uso:</strong> Online e offline
+          </p>
+
+          <br />
+        </div>
+
+        {/* GOOGLE DOCUMENTOS */}
+        <div className="card">
+          <img
+            src="https://imgs.search.brave.com/zlsbBK_6rFRM1baiok1ZdDF_QAoY9IIlaluWTI2L0yI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbnNjb3V0LmNv/bS9pY29uL2ZyZWUv/cG5nLTI1Ni9mcmVl/LWRvY3VtZW50b3Mt/Z29vZ2xlLTQ2MTc5/OC5wbmc_Zj13ZWJw/Jnc9MTI4"
+            alt="Google Documentos"
+          />
+          <br />
+
+          <h2>GOOGLE DOCUMENTOS (GOOGLE DOCS)</h2>
+
+          {/* BOTÕES */}
+          <a
+            href="https://docs.google.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ACESSAR GOOGLE DOCUMENTOS
+          </a>
+
+          <a
+            href="https://workspace.google.com/products/docs/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            SAIBA MAIS
+          </a>
+          <br />
+
+          <h3 className="legenda">DESCRIÇÃO</h3>
+
+          <p>
+            O Google Documentos (Google Docs) é um editor de textos online do
+            Google utilizado para criar, editar e compartilhar documentos
+            diretamente no navegador, sem necessidade de instalação.
+          </p>
+          <br />
+
+          <p>
+            <strong>Para que é usado:</strong>
+          </p>
+
+          <ul>
+            <li>Criar documentos de texto</li>
+            <li>Editar trabalhos e relatórios</li>
+            <li>Compartilhar arquivos online</li>
+            <li>Trabalhar em equipe em tempo real</li>
+            <li>Salvar documentos automaticamente na nuvem</li>
+            <li>Exportar arquivos em vários formatos</li>
+          </ul>
+          <br />
+
+          <h4>Principais Recursos</h4>
+
+          <ul>
+            <li>📄 Editor de texto online completo</li>
+            <li>☁️ Salvamento automático no Google Drive</li>
+            <li>🤝 Colaboração em tempo real</li>
+            <li>💬 Comentários e sugestões em documentos</li>
+            <li>📝 Modelos prontos de documentos</li>
+            <li>📂 Exportação para PDF, Word e outros formatos</li>
+          </ul>
+
+          <br />
+
+          <h4>Diferenciais</h4>
+
+          <ul>
+            <li>🌎 Funciona diretamente no navegador</li>
+            <li>🆓 Gratuito para contas Google</li>
+            <li>📱 Compatível com computador e celular</li>
+            <li>⚡ Salvamento automático instantâneo</li>
+            <li>☁️ Integração total com Google Drive</li>
+            <li>🤖 Recursos inteligentes do Google</li>
+          </ul>
+
+          <h3>Planos do Google Documentos</h3>
+
+          <h4>Conta Google Gratuita:</h4>
+          <p>
+            <strong>Preço:</strong> Gratuito.
+          </p>
+          <p>
+            <strong>Benefícios:</strong> Uso completo do Google Docs com
+            armazenamento no Google Drive.
+          </p>
+          <p>
+            <strong>Restrições:</strong> Espaço limitado no armazenamento
+            gratuito.
+          </p>
+          <br />
+
+          <h4>Google Workspace Business Starter:</h4>
+          <p>
+            <strong>Preço mensal:</strong> Cerca de R$32,00 por usuário.
+          </p>
+          <p>
+            <strong>Preço anual:</strong> Cerca de R$384,00 por usuário.
+          </p>
+          <p>
+            <strong>Benefícios:</strong> Mais armazenamento, colaboração
+            empresarial e e-mail profissional.
+          </p>
+          <p>
+            <strong>Restrições:</strong> Voltado para empresas e equipes.
+          </p>
+          <br />
+
+          <h4>Google Workspace Business Standard:</h4>
+          <p>
+            <strong>Preço mensal:</strong> Cerca de R$64,00 por usuário.
+          </p>
+          <p>
+            <strong>Preço anual:</strong> Cerca de R$768,00 por usuário.
+          </p>
+          <p>
+            <strong>Benefícios:</strong> Mais espaço em nuvem e ferramentas
+            avançadas de colaboração.
+          </p>
+          <p>
+            <strong>Restrições:</strong> Recursos mais avançados apenas em
+            planos superiores.
+          </p>
+          <br />
+
+          <h3>Outros Recursos</h3>
+
+          <ul>
+            <li>📂 Histórico completo de versões</li>
+            <li>🔄 Sincronização automática entre dispositivos</li>
+            <li>📱 Aplicativo para Android e iPhone</li>
+            <li>🖨️ Impressão direta pelo navegador</li>
+            <li>🎨 Diversos modelos prontos</li>
+            <li>🔒 Segurança e backup na nuvem Google</li>
+          </ul>
+
+          <br />
+
+          <h3>Disponibilidade</h3>
+
+          <p>
+            <strong>Plataformas:</strong> Windows, Mac, Linux, Android, iOS e
+            navegador
+          </p>
+
+          <p>
+            <strong>Modo de uso:</strong> Principalmente online
+          </p>
+
+          <br />
+        </div>
+
+        {/* NOTEPAD++ */}
+        <div className="card">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/6/6a/Notepadplusplus.svg"
+            alt="Notepad++"
+          />
+          <br />
+
+          <h2>NOTEPAD++</h2>
+
+          {/* BOTÕES */}
+          <a
+            href="https://notepad-plus-plus.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ACESSAR SITE OFICIAL
+          </a>
+          <br />
+
+          <a
+            href="https://notepad-plus-plus.org/downloads/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            INSTALAR NOTEPAD++
+          </a>
+          <br />
+          <br />
+
+          <h3 className="legenda">DESCRIÇÃO</h3>
+
+          <p>
+            O Notepad++ é um editor de texto avançado e gratuito voltado
+            principalmente para programação e edição de códigos. Ele é conhecido
+            por ser leve, rápido e possuir suporte para diversas linguagens de
+            programação.
+          </p>
+          <br />
+
+          <p>
+            <strong>Para que é usado:</strong>
+          </p>
+
+          <ul>
+            <li>Editar códigos de programação</li>
+            <li>Criar arquivos de texto avançados</li>
+            <li>Desenvolver sites e scripts</li>
+            <li>Organizar anotações técnicas</li>
+            <li>Modificar arquivos de configuração</li>
+            <li>Visualizar códigos com destaque de sintaxe</li>
+          </ul>
+          <br />
+
+          <h4>Principais Recursos</h4>
+
+          <ul>
+            <li>💻 Suporte para várias linguagens de programação</li>
+            <li>🎨 Destaque de sintaxe colorido</li>
+            <li>📂 Sistema de abas múltiplas</li>
+            <li>🔍 Busca e substituição avançada</li>
+            <li>⚡ Alto desempenho e leveza</li>
+            <li>🧩 Suporte para plugins e extensões</li>
+          </ul>
+
+          <br />
+
+          <h4>Diferenciais</h4>
+
+          <ul>
+            <li>🆓 Totalmente gratuito</li>
+            <li>⚡ Muito leve e rápido</li>
+            <li>💾 Baixo consumo de memória</li>
+            <li>🛠️ Grande quantidade de plugins</li>
+            <li>🌎 Muito utilizado por programadores</li>
+            <li>📄 Ideal para edição rápida de arquivos</li>
+          </ul>
+
+          <h3>Versões do Notepad++</h3>
+
+          <h4>Versão Gratuita:</h4>
+          <p>
+            <strong>Preço:</strong> Gratuito.
+          </p>
+          <p>
+            <strong>Benefícios:</strong> Todos os principais recursos liberados
+            gratuitamente.
+          </p>
+          <p>
+            <strong>Restrições:</strong> Disponível oficialmente apenas para
+            Windows.
+          </p>
+          <br />
+
+          <h3>Outros Recursos</h3>
+
+          <ul>
+            <li>📂 Compatibilidade com diversos formatos de arquivo</li>
+            <li>📝 Auto salvamento e backup</li>
+            <li>🔄 Comparação de arquivos via plugins</li>
+            <li>🌙 Suporte para tema escuro</li>
+            <li>📋 Edição simultânea de múltiplos documentos</li>
+            <li>🧠 Suporte para macros e automações</li>
+          </ul>
+
+          <br />
+
+          <h3>Disponibilidade</h3>
+
+          <p>
+            <strong>Plataformas:</strong> Windows
+          </p>
+
+          <p>
+            <strong>Modo de uso:</strong> Offline
+          </p>
+
+          <br />
         </div>
       </div>
     </div>
