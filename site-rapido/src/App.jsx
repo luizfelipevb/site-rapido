@@ -14,6 +14,7 @@ import Banco from "./pages/banco/banco";
 import Documento from "./pages/documento/documento";
 import Armazenamento from "./pages/armazenamento/armazenamento";
 import Midia from "./pages/midia/midia";
+import Seguranca from "./pages/seguranca/seguranca";
 
 function App() {
   const [pesquisa, setPesquisa] = useState("");
@@ -118,6 +119,7 @@ function App() {
         <Route path="/documento" element={<Documento pesquisa={pesquisa} />} />
         <Route path="/armazenamento" element={<Armazenamento pesquisa={pesquisa} />} />
         <Route path="/midia" element={<Midia pesquisa={pesquisa} />} />
+        <Route path="/seguranca" element={<Seguranca pesquisa={pesquisa} />} />
       </Routes>
     </BrowserRouter>
   );

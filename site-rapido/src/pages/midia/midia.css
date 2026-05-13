@@ -1,0 +1,181 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CONTAINER */
+.container {
+  padding: 30px;
+  background-color: #111;
+  min-height: 100vh;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
+}
+
+/* TÍTULO */
+.container h1 {
+  margin-bottom: 20px;
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
+}
+
+/* LISTA (GRID SIMPLES) */
+.lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
+}
+
+/* CARD */
+.card {
+  width: 320px;
+  background-color: #1c1c1c;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #333;
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
+
+  /* 👇 AQUI É O MAIS IMPORTANTE */
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+/* SCROLL DISCRETO */
+.card::-webkit-scrollbar {
+  width: 6px;
+}
+
+.card::-webkit-scrollbar-thumb {
+  background: #555;
+  border-radius: 10px;
+}
+
+/* IMAGEM */
+.card img {
+  width: 60px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* TEXTOS */
+.card h2 {
+  margin-bottom: 10px;
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
+}
+
+.card h3 {
+  margin-top: 10px;
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
+}
+
+.card h4 {
+  margin-top: 8px;
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
+}
+
+.card p {
+  font-size: 14px;
+  margin-bottom: 5px;
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
+}
+
+/* LISTAS */
+.card ul {
+  padding-left: 20px;
+  margin-bottom: 10px;
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
+}
+
+.card li {
+  font-size: 14px;
+  margin-bottom: 3px;
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
+}
+
+/* BOTÃO */
+.card a {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  padding: 10px;
+  background-color: red;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.card a:hover {
+  transform: translateY(-2px) scale(1.03);
+  box-shadow: 0 6px 14px rgba(0, 170, 255, 0.4);
+}
+
+.legenda {
+  text-align: center;
+  text-shadow:
+    2px 2px 0 black,
+    /* Canto inferior direito */ -2px 2px 0 black,
+    /* Canto inferior esquerdo */ -2px -2px 0 black,
+    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
+}
+
+.detalhes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 👈 2 colunas fixas */
+  gap: 15px;
+  justify-items: center; /* centraliza conteúdo */
+}
+
+.detalhes ol {
+  width: 100%;
+  max-width: 130px; /* 👈 impede estourar o card */
+  padding: 0;
+  margin: 0;
+}
+
+.detalhes li {
+  word-break: break-word;
+}
