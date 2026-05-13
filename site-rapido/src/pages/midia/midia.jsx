@@ -253,24 +253,32 @@ function Midia({ pesquisa }) {
   <br />
 </div>
 
-        {/* MICROSOFT ONEDRIVE */}
+
+        {/* KMPLAYER */}
         <div className="card">
           <img
-            src="data:image/png;base64,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"
-            alt="Microsoft OneDrive"
-            style={{ width: "100px", height: "100px" }}
+            src="https://imgs.search.brave.com/J_u6RvOCqH1-AoyvWbxxkZ26Ow-S1BzIb9opLU9Qozw/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZGYwZjgyMTRh/MjJlMDU2OTI5ODM5/OGY5ZDdmZTgzNTRj/Yzk1OGM3NWI5ZjFl/YzdmYjYzZTVjZWNm/NWUxNTY2OS93d3cu/a21wbGF5ZXIuY29t/Lw"
+            alt="KMPlayer"
           />
           <br />
 
-          <h2>MICROSOFT ONEDRIVE</h2>
+          <h2>KMPLAYER</h2>
 
           {/* BOTÕES */}
           <a
-            href="https://onedrive.live.com/login/pt-br/"
+            href="https://www.kmplayer.com/home"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR ONEDRIVE
+            ACESSAR KMPLAYER
+          </a>
+
+          <a
+            href="https://dn.kmplayer.com/Dn/kmp32/415d/KMPlayer_4.2.3.34.exe"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            INSTALAR KMPLAYER
           </a>
 
           <br />
@@ -278,9 +286,9 @@ function Midia({ pesquisa }) {
           <h3 className="legenda">DESCRIÇÃO</h3>
 
           <p>
-            O Microsoft OneDrive é o serviço de armazenamento em nuvem da
-            Microsoft utilizado para salvar, sincronizar e compartilhar arquivos
-            entre dispositivos com integração total ao Windows e Microsoft 365.
+            O KMPlayer é um reprodutor de mídia conhecido por sua grande
+            compatibilidade com formatos de vídeo e áudio, além de oferecer
+            recursos avançados de reprodução e personalização.
           </p>
 
           <br />
@@ -290,12 +298,12 @@ function Midia({ pesquisa }) {
           </p>
 
           <ul>
-            <li>Salvar arquivos na nuvem</li>
-            <li>Fazer backup automático do computador</li>
-            <li>Sincronizar documentos entre dispositivos</li>
-            <li>Compartilhar arquivos e pastas</li>
-            <li>Armazenar fotos e vídeos</li>
-            <li>Trabalhar online com Microsoft 365</li>
+            <li>Reproduzir vídeos e músicas</li>
+            <li>Abrir arquivos multimídia variados</li>
+            <li>Assistir vídeos em alta qualidade</li>
+            <li>Executar DVDs e streams online</li>
+            <li>Utilizar legendas avançadas</li>
+            <li>Personalizar reprodução de mídia</li>
           </ul>
 
           <br />
@@ -303,12 +311,12 @@ function Midia({ pesquisa }) {
           <h4>Principais Recursos</h4>
 
           <ul>
-            <li>☁️ Armazenamento em nuvem Microsoft</li>
-            <li>📄 Integração com Word, Excel e PowerPoint</li>
-            <li>🖥️ Backup automático da área de trabalho</li>
-            <li>📱 Sincronização entre PC e celular</li>
-            <li>🔗 Compartilhamento de arquivos por link</li>
-            <li>🛡️ Cofre Pessoal com proteção extra</li>
+            <li>🎬 Reprodução de vídeos HD, Full HD e 4K</li>
+            <li>🎵 Player completo para áudio e vídeo</li>
+            <li>📝 Compatibilidade com múltiplos formatos de legenda</li>
+            <li>⚡ Suporte à aceleração de hardware</li>
+            <li>📡 Reprodução de streams online</li>
+            <li>🎨 Interface personalizável</li>
           </ul>
 
           <br />
@@ -316,78 +324,46 @@ function Midia({ pesquisa }) {
           <h4>Diferenciais</h4>
 
           <ul>
-            <li>🪟 Integração nativa com Windows</li>
-            <li>🔄 Sincronização automática em tempo real</li>
-            <li>🤝 Colaboração online com Microsoft 365</li>
-            <li>🔒 Segurança avançada e criptografia</li>
-            <li>📂 Backup automático de pastas importantes</li>
-            <li>🌎 Acesso remoto de qualquer lugar</li>
+            <li>📂 Compatibilidade com muitos formatos</li>
+            <li>⚡ Reprodução fluida de vídeos pesados</li>
+            <li>🎚️ Grande quantidade de configurações avançadas</li>
+            <li>📝 Recursos completos para legendas</li>
+            <li>💻 Muito utilizado em PCs Windows</li>
+            <li>🌎 Disponível em várias plataformas</li>
           </ul>
 
-          <h3>Planos do OneDrive</h3>
+          <h3>Formatos Compatíveis</h3>
 
-          <h4>Gratuito:</h4>
-          <p>
-            <strong>Preço:</strong> Gratuito.
-          </p>
-          <p>
-            <strong>Benefícios:</strong> 5GB de armazenamento grátis.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Espaço limitado para backups grandes.
-          </p>
-
-          <br />
-
-          <h4>OneDrive Standalone 100GB:</h4>
-          <p>
-            <strong>Preço mensal:</strong> Cerca de R$12,00.
-          </p>
-          <p>
-            <strong>Benefícios:</strong> 100GB de armazenamento em nuvem.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Não inclui aplicativos do Office.
-          </p>
-
-          <br />
-
-          <h4>Microsoft 365 Personal:</h4>
-          <p>
-            <strong>Preço mensal:</strong> Cerca de R$36,00.
-          </p>
-          <p>
-            <strong>Benefícios:</strong> 1TB no OneDrive + apps Office
-            completos.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Uso individual.
-          </p>
-
-          <br />
-
-          <h4>Microsoft 365 Family:</h4>
-          <p>
-            <strong>Preço mensal:</strong> Cerca de R$45,00.
-          </p>
-          <p>
-            <strong>Benefícios:</strong> Até 6 usuários com 1TB cada.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Compartilhamento familiar.
-          </p>
+          <ul>
+            <li>🎥 MP4, MKV, AVI, MOV, FLV e WMV</li>
+            <li>🎵 MP3, WAV, AAC, FLAC e OGG</li>
+            <li>📝 Legendas SRT, ASS, SSA e SUB</li>
+            <li>📀 DVD e vídeos em Blu-ray</li>
+            <li>📡 IPTV e transmissões online</li>
+          </ul>
 
           <br />
 
           <h3>Outros Recursos</h3>
 
           <ul>
-            <li>📂 Recuperação de arquivos excluídos</li>
-            <li>🕒 Histórico de versões de documentos</li>
-            <li>📷 Backup automático de fotos do celular</li>
-            <li>🧠 Pesquisa inteligente de arquivos</li>
-            <li>💻 Integração com Windows Explorer</li>
-            <li>🔐 Proteção contra ransomware</li>
+            <li>📸 Captura de tela de vídeos</li>
+            <li>⏩ Controle de velocidade de reprodução</li>
+            <li>🎚️ Equalizador de áudio</li>
+            <li>🔊 Ajuste fino de áudio e vídeo</li>
+            <li>🎨 Skins e temas personalizados</li>
+            <li>📺 Reprodução em múltiplas janelas</li>
+          </ul>
+
+          <br />
+
+          <h3>Pontos Importantes</h3>
+
+          <ul>
+            <li>💡 Ideal para usuários avançados</li>
+            <li>🛠️ Possui muitas opções de configuração</li>
+            <li>⚠️ Algumas versões podem incluir anúncios</li>
+            <li>📂 Excelente compatibilidade com arquivos antigos</li>
           </ul>
 
           <br />
@@ -395,337 +371,142 @@ function Midia({ pesquisa }) {
           <h3>Disponibilidade</h3>
 
           <p>
-            <strong>Plataformas:</strong> Windows, Mac, Android, iOS e navegador
+            <strong>Plataformas:</strong> Windows, Android e iOS
           </p>
 
           <p>
-            <strong>Modo de uso:</strong> Online e sincronização offline
+            <strong>Modo de uso:</strong> Offline e online
           </p>
 
           <br />
         </div>
 
-        {/* ICLOUD DRIVE */}
-        <div className="card">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
-            alt="iCloud Drive"
-          />
-          <br />
+{/* POTPLAYER */}
+<div className="card">
+  <img
+    src="https://upload.wikimedia.org/wikipedia/commons/8/8b/PotPlayer_logo.png"
+    alt="PotPlayer"
+  />
+  <br />
 
-          <h2>APPLE ICLOUD DRIVE</h2>
+  <h2>POTPLAYER</h2>
 
-          {/* BOTÕES */}
-          <a
-            href="https://www.icloud.com/iclouddrive/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ACESSAR ICLOUD DRIVE
-          </a>
+  {/* BOTÕES */}
+  <a
+    href="https://potplayer.daum.net/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    ACESSAR POTPLAYER
+  </a>
 
-          <a
-            href="https://www.microsoft.com/store/apps/9PKTQ5699M62"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ACESSAR SITE PARA INSTALAR ICLOUD
-          </a>
+  <a
+    href="https://t1.daumcdn.net/potplayer/PotPlayer/Version/Latest/PotPlayerSetup64.exe"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    INSTALAR POTPLAYER
+  </a>
 
-          <br />
+  <br />
 
-          <h3 className="legenda">DESCRIÇÃO</h3>
+  <h3 className="legenda">DESCRIÇÃO</h3>
 
-          <p>
-            O iCloud Drive é o serviço de armazenamento em nuvem da Apple,
-            utilizado para salvar, sincronizar e acessar arquivos entre iPhone,
-            iPad, Mac e Windows de forma integrada ao ecossistema Apple.
-          </p>
+  <p>
+    O PotPlayer é um reprodutor multimídia avançado para Windows,
+    conhecido pela alta performance, qualidade de reprodução e enorme
+    quantidade de recursos para vídeos, músicas e transmissões.
+  </p>
 
-          <br />
+  <br />
 
-          <p>
-            <strong>Para que é usado:</strong>
-          </p>
+  <p>
+    <strong>Para que é usado:</strong>
+  </p>
 
-          <ul>
-            <li>Salvar arquivos na nuvem</li>
-            <li>Fazer backup de fotos e documentos</li>
-            <li>Sincronizar arquivos entre dispositivos Apple</li>
-            <li>Compartilhar arquivos e pastas</li>
-            <li>Armazenar backups do iPhone e iPad</li>
-            <li>Acessar arquivos pelo navegador</li>
-          </ul>
+  <ul>
+    <li>Reproduzir vídeos e músicas</li>
+    <li>Abrir arquivos em alta qualidade</li>
+    <li>Executar vídeos 4K, 8K e HDR</li>
+    <li>Assistir streams e IPTV</li>
+    <li>Usar legendas avançadas</li>
+    <li>Capturar imagens e gravações</li>
+  </ul>
 
-          <br />
+  <br />
 
-          <h4>Principais Recursos</h4>
+  <h4>Principais Recursos</h4>
 
-          <ul>
-            <li>☁️ Armazenamento em nuvem Apple</li>
-            <li>📱 Sincronização automática entre dispositivos</li>
-            <li>📷 Backup do iPhone e fotos no iCloud</li>
-            <li>📄 Integração com Pages, Numbers e Keynote</li>
-            <li>🔗 Compartilhamento de arquivos e pastas</li>
-            <li>🔒 Segurança e criptografia Apple</li>
-          </ul>
+  <ul>
+    <li>🎬 Reprodução em 4K, 8K e HDR</li>
+    <li>🎵 Suporte para diversos formatos de áudio</li>
+    <li>🧩 Compatibilidade avançada com legendas</li>
+    <li>⚡ Aceleração por GPU</li>
+    <li>📡 Reprodução de streams online e IPTV</li>
+    <li>🎚️ Ajustes avançados de vídeo e áudio</li>
+  </ul>
 
-          <br />
+  <br />
 
-          <h4>Diferenciais</h4>
+  <h4>Diferenciais</h4>
 
-          <ul>
-            <li>🍎 Integração total com iPhone, iPad e Mac</li>
-            <li>🔄 Sincronização automática em tempo real</li>
-            <li>📷 Backup automático de fotos e vídeos</li>
-            <li>🛡️ Proteção avançada de dados</li>
-            <li>📂 Organização simples e intuitiva</li>
-            <li>🌎 Acesso via navegador ou aplicativo</li>
-          </ul>
+  <ul>
+    <li>⚡ Muito rápido e leve</li>
+    <li>🎨 Extremamente personalizável</li>
+    <li>🛠️ Recursos avançados para usuários experientes</li>
+    <li>📂 Compatível com quase todos os formatos</li>
+    <li>🖥️ Excelente desempenho em PCs fortes</li>
+    <li>🎥 Ótima qualidade de imagem</li>
+  </ul>
 
-          <h3>Planos do iCloud+</h3>
+  <h3>Formatos Compatíveis</h3>
 
-          <h4>Gratuito:</h4>
-          <p>
-            <strong>Preço:</strong> Gratuito.
-          </p>
-          <p>
-            <strong>Benefícios:</strong> 5GB de armazenamento grátis.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Espaço limitado para fotos e backups.
-          </p>
+  <ul>
+    <li>🎥 MP4, MKV, AVI, MOV, WMV e FLV</li>
+    <li>🎵 MP3, WAV, FLAC, AAC e OGG</li>
+    <li>📀 DVD e Blu-ray</li>
+    <li>📝 Legendas SRT, ASS e SUB</li>
+    <li>📡 IPTV, HTTP e streams online</li>
+  </ul>
 
-          <br />
+  <br />
 
-          <h4>iCloud+ 50GB:</h4>
-          <p>
-            <strong>Preço mensal:</strong> Cerca de R$4,90.
-          </p>
-          <p>
-            <strong>Benefícios:</strong> Mais espaço para fotos, arquivos e
-            backups.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Plano individual básico.
-          </p>
+  <h3>Outros Recursos</h3>
 
-          <br />
+  <ul>
+    <li>📸 Captura de tela durante vídeos</li>
+    <li>🎞️ Reprodução quadro a quadro</li>
+    <li>🎚️ Equalizador de áudio avançado</li>
+    <li>⏩ Controle de velocidade</li>
+    <li>🎨 Temas e skins personalizados</li>
+    <li>🔊 Sincronização de áudio e legendas</li>
+  </ul>
 
-          <h4>iCloud+ 200GB:</h4>
-          <p>
-            <strong>Preço mensal:</strong> Cerca de R$14,90.
-          </p>
-          <p>
-            <strong>Benefícios:</strong> Compartilhamento familiar e maior
-            espaço.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Dependência do ecossistema Apple.
-          </p>
+  <br />
 
-          <br />
+  <h3>Pontos Importantes</h3>
 
-          <h4>iCloud+ 2TB:</h4>
-          <p>
-            <strong>Preço mensal:</strong> Cerca de R$49,90.
-          </p>
-          <p>
-            <strong>Benefícios:</strong> Grande capacidade para fotos, vídeos e
-            backups completos.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Valor mais elevado.
-          </p>
+  <ul>
+    <li>💡 Ideal para vídeos pesados e alta qualidade</li>
+    <li>🛠️ Possui muitas configurações avançadas</li>
+    <li>🔒 Seguro quando baixado do site oficial</li>
+    <li>🖥️ Exclusivo para Windows</li>
+  </ul>
 
-          <br />
+  <br />
 
-          <h3>Outros Recursos</h3>
+  <h3>Disponibilidade</h3>
 
-          <ul>
-            <li>📂 Recuperação de arquivos apagados</li>
-            <li>📷 Biblioteca de Fotos do iCloud</li>
-            <li>📱 Backup automático do iPhone</li>
-            <li>🔑 Chaves e senhas sincronizadas</li>
-            <li>📍 Buscar iPhone integrado</li>
-            <li>✉️ Recursos privados do iCloud+</li>
-          </ul>
+  <p>
+    <strong>Plataformas:</strong> Windows
+  </p>
 
-          <br />
+  <p>
+    <strong>Modo de uso:</strong> Offline e online
+  </p>
 
-          <h3>Disponibilidade</h3>
-
-          <p>
-            <strong>Plataformas:</strong> iPhone, iPad, Mac, Windows e navegador
-          </p>
-
-          <p>
-            <strong>Modo de uso:</strong> Online e sincronização automática
-          </p>
-
-          <br />
-        </div>
-
-        {/* DROPBOX */}
-        <div className="card">
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/7/78/Dropbox_Icon.svg"
-            alt="Dropbox"
-          />
-          <br />
-
-          <h2>DROPBOX</h2>
-
-          {/* BOTÕES */}
-          <a
-            href="https://www.dropbox.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ACESSAR DROPBOX
-          </a>
-
-          <a
-            href="https://www.dropbox.com/download?os=win&plat=win"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            INSTALAR DROPBOX
-          </a>
-
-          <br />
-
-          <h3 className="legenda">DESCRIÇÃO</h3>
-
-          <p>
-            O Dropbox é um serviço de armazenamento em nuvem utilizado para
-            salvar, sincronizar e compartilhar arquivos entre computadores,
-            celulares e navegadores com foco em praticidade e colaboração.
-          </p>
-
-          <br />
-
-          <p>
-            <strong>Para que é usado:</strong>
-          </p>
-
-          <ul>
-            <li>Salvar arquivos na nuvem</li>
-            <li>Compartilhar arquivos e pastas</li>
-            <li>Sincronizar documentos entre dispositivos</li>
-            <li>Fazer backup automático de arquivos</li>
-            <li>Enviar arquivos grandes por link</li>
-            <li>Trabalhar em equipe online</li>
-          </ul>
-
-          <br />
-
-          <h4>Principais Recursos</h4>
-
-          <ul>
-            <li>☁️ Armazenamento em nuvem</li>
-            <li>🔄 Sincronização automática de arquivos</li>
-            <li>🔗 Compartilhamento rápido por links</li>
-            <li>📂 Backup automático de pastas</li>
-            <li>📱 Acesso em celular e computador</li>
-            <li>🧾 Histórico e recuperação de arquivos</li>
-          </ul>
-
-          <br />
-
-          <h4>Diferenciais</h4>
-
-          <ul>
-            <li>⚡ Sincronização rápida e estável</li>
-            <li>🤝 Ótimo para trabalho em equipe</li>
-            <li>📤 Compartilhamento simples de arquivos grandes</li>
-            <li>🔒 Segurança e criptografia avançada</li>
-            <li>💻 Compatível com várias plataformas</li>
-            <li>🌎 Acesso remoto de qualquer lugar</li>
-          </ul>
-
-          <h3>Planos do Dropbox</h3>
-
-          <h4>Dropbox Basic:</h4>
-          <p>
-            <strong>Preço:</strong> Gratuito.
-          </p>
-          <p>
-            <strong>Benefícios:</strong> 2GB de armazenamento grátis.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Espaço bastante limitado.
-          </p>
-
-          <br />
-
-          <h4>Dropbox Plus:</h4>
-          <p>
-            <strong>Preço mensal:</strong> Cerca de R$50,00.
-          </p>
-          <p>
-            <strong>Benefícios:</strong> 2TB de armazenamento e recuperação de
-            arquivos.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Plano individual.
-          </p>
-
-          <br />
-
-          <h4>Dropbox Family:</h4>
-          <p>
-            <strong>Preço mensal:</strong> Cerca de R$65,00.
-          </p>
-          <p>
-            <strong>Benefícios:</strong> Compartilhamento para até 6 pessoas.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Voltado para uso familiar.
-          </p>
-
-          <br />
-
-          <h4>Dropbox Business:</h4>
-          <p>
-            <strong>Preço:</strong> Variável conforme o plano.
-          </p>
-          <p>
-            <strong>Benefícios:</strong> Recursos empresariais, administração de
-            equipe e segurança avançada.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Focado em empresas e equipes.
-          </p>
-
-          <br />
-
-          <h3>Outros Recursos</h3>
-
-          <ul>
-            <li>📂 Recuperação de arquivos excluídos</li>
-            <li>🕒 Histórico de versões</li>
-            <li>📤 Dropbox Transfer para arquivos grandes</li>
-            <li>📝 Assinatura digital integrada</li>
-            <li>📱 Upload automático de fotos</li>
-            <li>🔍 Pesquisa inteligente de arquivos</li>
-          </ul>
-
-          <br />
-
-          <h3>Disponibilidade</h3>
-
-          <p>
-            <strong>Plataformas:</strong> Windows, Mac, Linux, Android, iOS e
-            navegador
-          </p>
-
-          <p>
-            <strong>Modo de uso:</strong> Online e sincronização offline
-          </p>
-
-          <br />
-        </div>
+  <br />
+</div>
 
         {/* MEGA */}
         <div className="card">
