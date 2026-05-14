@@ -557,7 +557,7 @@ function Mapa({ pesquisa }) {
         {/* HERE WEGO CARD */}
         <div className="card">
           <img
-            src="https://play-lh.googleusercontent.com/-bhi_ljcXMvf3lKXcma-Ho1D9Ck9Fu2Cf1KXC5mwW4gJFG8SAFt1KCD8ctodcnlpi00=w480-h960-rw"
+            src="https://imgs.search.brave.com/x1P1Yxm39Hs7x6m8hJvw8tCdJwMEJNf-9iwmp0-RH14/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvZmQ5NTc4NTAx/OWRlZDc3OWRhMTUw/YTM0YjA0YzE2MzEy/NmMzYTc4YzU4NDZm/NmM0YWQ4NTdiYjc1/ZDI0ZjBmYS93ZWdv/LmhlcmUuY29tLw"
             alt="HERE WeGo"
           />
 

@@ -1068,7 +1068,7 @@ function Outros({ pesquisa }) {
         {/* DITTO */}
         <div className="card">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Ditto_icon.svg"
+            src="https://a.fsdn.com/allura/p/ditto-cp/icon?1606147009?&w=90"
             alt="Ditto"
           />
           <br />

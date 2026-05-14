@@ -331,108 +331,111 @@ function Navegador({ pesquisa }) {
           </div>
         )}
         {/* OPERA */}
-        <div className="card">
-          <img
-            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opera/opera-original.svg"
-            alt="Opera"
-          />
+{(!termo || "opera navegador vpn browser".includes(termo)) && (
+  <div className="card">
+    <img
+      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opera/opera-original.svg"
+      alt="Opera"
+    />
 
-          <h2>OPERA</h2>
+    <h2>OPERA</h2>
 
-          <a
-            href="https://download.opera.com/download/get/?partner=www&opsys=Windows"
-            target="_blank"
-            rel="noreferrer"
-          >
-            INSTALAR OPERA
-          </a>
-          <br />
+    <a
+      href="https://download.opera.com/download/get/?partner=www&opsys=Windows"
+      target="_blank"
+      rel="noreferrer"
+    >
+      INSTALAR OPERA
+    </a>
+    <br />
 
-          <p>
-            Um navegador moderno focado em praticidade, trazendo diversos
-            recursos integrados que eliminam a necessidade de extensões.
-          </p>
+    <p>
+      Um navegador moderno focado em praticidade, trazendo diversos
+      recursos integrados que eliminam a necessidade de extensões.
+    </p>
 
-          <p>
-            <strong>Motor:</strong> Blink
-          </p>
-          <p>
-            <strong>Empresa:</strong> Opera Software
-          </p>
-          <p>
-            <strong>Velocidade:</strong> Alta 🚀
-          </p>
-          <p>
-            <strong>Uso de RAM:</strong> Médio
-          </p>
-          <p>
-            <strong>Segurança:</strong> Boa
-          </p>
-          <p>
-            <strong>Privacidade:</strong> Média
-          </p>
-          <p>
-            <strong>Compatibilidade:</strong> Alta
-          </p>
-          <p>
-            <strong>Extensões:</strong> Compatível com Chrome
-          </p>
-          <p>
-            <strong>Extras:</strong> VPN integrada, bloqueador de anúncios,
-            mensageiros embutidos
-          </p>
+    <p>
+      <strong>Motor:</strong> Blink
+    </p>
+    <p>
+      <strong>Empresa:</strong> Opera Software
+    </p>
+    <p>
+      <strong>Velocidade:</strong> Alta 🚀
+    </p>
+    <p>
+      <strong>Uso de RAM:</strong> Médio
+    </p>
+    <p>
+      <strong>Segurança:</strong> Boa
+    </p>
+    <p>
+      <strong>Privacidade:</strong> Média
+    </p>
+    <p>
+      <strong>Compatibilidade:</strong> Alta
+    </p>
+    <p>
+      <strong>Extensões:</strong> Compatível com Chrome
+    </p>
+    <p>
+      <strong>Extras:</strong> VPN integrada, bloqueador de anúncios,
+      mensageiros embutidos
+    </p>
 
-          <h4>Vantagens</h4>
-          <ul>
-            <li>VPN gratuita integrada</li>
-            <li>Bloqueador de anúncios nativo</li>
-            <li>Consome menos RAM que Chrome</li>
-            <li>Recursos extras sem precisar instalar extensões</li>
-          </ul>
+    <h4>Vantagens</h4>
+    <ul>
+      <li>VPN gratuita integrada</li>
+      <li>Bloqueador de anúncios nativo</li>
+      <li>Consome menos RAM que Chrome</li>
+      <li>Recursos extras sem precisar instalar extensões</li>
+    </ul>
 
-          <h4>Desvantagens</h4>
-          <ul>
-            <li>VPN limitada</li>
-            <li>Menos popular</li>
-            <li>Privacidade não é o foco principal</li>
-          </ul>
+    <h4>Desvantagens</h4>
+    <ul>
+      <li>VPN limitada</li>
+      <li>Menos popular</li>
+      <li>Privacidade não é o foco principal</li>
+    </ul>
 
-          <h4>Diferenças</h4>
-          <ul>
-            <li>
-              <strong>Vs Chrome:</strong> Opera oferece mais recursos prontos;
-              Chrome é mais confiável e padrão
-            </li>
-            <li>
-              <strong>Vs Edge:</strong> Edge é mais leve; Opera tem mais funções
-            </li>
-            <li>
-              <strong>Vs Firefox:</strong> Opera é mais compatível; Firefox mais
-              privado
-            </li>
-            <li>
-              <strong>Vs Opera:</strong> GX é versão gamer com mais controle e
-              visual customizado
-            </li>
-            <li>
-              <strong>Vs Brave:</strong> Brave foca em segurança; Opera em
-              conveniência
-            </li>
-            <li>
-              <strong>Vs Safari:</strong> Opera é multiplataforma; Safari é
-              limitado à Apple
-            </li>
-          </ul>
+    <h4>Diferenças</h4>
+    <ul>
+      <li>
+        <strong>Vs Chrome:</strong> Opera oferece mais recursos prontos;
+        Chrome é mais confiável e padrão
+      </li>
+      <li>
+        <strong>Vs Edge:</strong> Edge é mais leve; Opera tem mais funções
+      </li>
+      <li>
+        <strong>Vs Firefox:</strong> Opera é mais compatível; Firefox mais
+        privado
+      </li>
+      <li>
+        <strong>Vs Opera:</strong> GX é versão gamer com mais controle e
+        visual customizado
+      </li>
+      <li>
+        <strong>Vs Brave:</strong> Brave foca em segurança; Opera em
+        conveniência
+      </li>
+      <li>
+        <strong>Vs Safari:</strong> Opera é multiplataforma; Safari é
+        limitado à Apple
+      </li>
+    </ul>
 
-          <h4>Resumo direto</h4>
-          <p>
-            👉 Melhor para quem quer{" "}
-            <strong>tudo pronto (VPN, adblock, etc.) sem instalar nada</strong>.
-          </p>
-        </div>
+    <h4>Resumo direto</h4>
+    <p>
+      👉 Melhor para quem quer{" "}
+      <strong>tudo pronto (VPN, adblock, etc.) sem instalar nada</strong>.
+    </p>
+  </div>
+)}
 
         {/* OPERA GX */}
-        <div className="card">
+{(!termo || "opera gx gamer navegador browser jogos".includes(termo)) && (
+  <div className="card">
           <img
             src="https://imgs.search.brave.com/daClEOQcAo9Oinyg2pZa3X5-yFCJt2TRDavCgITzafE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaWNvbi1pY29u/cy5jb20vMjU1Mi9Q/TkcvNTEyL29wZXJh/X2d4X2Jyb3dzZXJf/bG9nb19pY29uXzE1/Mjk3Ni5wbmc"
             alt="Opera GX"
@@ -532,10 +535,11 @@ function Navegador({ pesquisa }) {
             👉 Melhor para quem quer{" "}
             <strong>controlar o desempenho do navegador enquanto joga</strong>.
           </p>
-        </div>
+        </div>)}
 
         {/* BRAVE */}
-        <div className="card">
+{(!termo || "brave navegador privacidade adblock browser".includes(termo)) && (
+  <div className="card">
           <img
             src="https://img.icons8.com/?size=100&id=ZAPJV5FAO4PW&format=png&color=000000"
             alt="Brave"
@@ -628,10 +632,11 @@ function Navegador({ pesquisa }) {
             <strong>máxima privacidade e navegação sem anúncios</strong>, sem
             precisar configurar nada.
           </p>
-        </div>
+        </div>)}
 
         {/* SAFARI */}
-        <div className="card">
+{(!termo || "safari apple navegador ios mac browser".includes(termo)) && (
+  <div className="card">
           <img
             src="https://img.icons8.com/?size=100&id=63801&format=png&color=000000"
             alt="Safari"
@@ -727,7 +732,7 @@ function Navegador({ pesquisa }) {
             👉 Ideal para quem usa{" "}
             <strong>Mac/iPhone e quer máximo desempenho com bateria</strong>.
           </p>
-        </div>
+        </div>)}
       </div>
     </div>
   );
