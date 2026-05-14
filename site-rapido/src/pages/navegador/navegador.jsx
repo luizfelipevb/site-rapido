@@ -1,6 +1,7 @@
 import "./navegador.css"; // importa o CSS específico para o componente Navegador
 
-const abrirOuInstalarEdge = () => { // define função que tenta abrir o Edge ou direciona à instalação
+const abrirOuInstalarEdge = () => {
+  // define função que tenta abrir o Edge ou direciona à instalação
   // Tenta abrir no Edge
   window.location.href = "microsoft-edge:https://www.microsoft.com/edge";
 

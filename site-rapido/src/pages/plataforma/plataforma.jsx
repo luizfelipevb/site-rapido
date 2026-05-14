@@ -1,7 +1,7 @@
 import "./plataforma.css";
 import { useState } from "react";
 
-function Plataforma({pesquisa}) {
+function Plataforma({ pesquisa }) {
   const termo = pesquisa.toLowerCase();
   return (
     <div className="container">

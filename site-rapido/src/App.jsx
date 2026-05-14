@@ -15,6 +15,9 @@ import Documento from "./pages/documento/documento";
 import Armazenamento from "./pages/armazenamento/armazenamento";
 import Midia from "./pages/midia/midia";
 import Seguranca from "./pages/seguranca/seguranca";
+import Utilidade from "./pages/utilidade/utilidade";
+import Compressao from "./pages/compressao/compressao";
+import Outros from "./pages/outro/outros";
 
 function App() {
   const [pesquisa, setPesquisa] = useState("");
@@ -117,9 +120,18 @@ function App() {
         <Route path="/mensagem" element={<Mensagem pesquisa={pesquisa} />} />
         <Route path="/banco" element={<Banco pesquisa={pesquisa} />} />
         <Route path="/documento" element={<Documento pesquisa={pesquisa} />} />
-        <Route path="/armazenamento" element={<Armazenamento pesquisa={pesquisa} />} />
+        <Route
+          path="/armazenamento"
+          element={<Armazenamento pesquisa={pesquisa} />}
+        />
         <Route path="/midia" element={<Midia pesquisa={pesquisa} />} />
         <Route path="/seguranca" element={<Seguranca pesquisa={pesquisa} />} />
+        <Route path="/utilidade" element={<Utilidade pesquisa={pesquisa} />} />
+        <Route
+          path="/compressao"
+          element={<Compressao pesquisa={pesquisa} />}
+        />
+        <Route path="/outros" element={<Outros pesquisa={pesquisa} />} />
       </Routes>
     </BrowserRouter>
   );

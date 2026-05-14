@@ -905,14 +905,14 @@ function Comida({ pesquisa }) {
                     "restaurantes padarias mercados lanchonetes fast food pizzarias";
 
                   const url = `https://www.google.com/maps/search/${encodeURIComponent(
-                    query
+                    query,
                   )}/@${latitude},${longitude},15z`;
 
                   window.open(url, "_blank");
                 },
                 () => {
                   alert("Permissão de localização negada.");
-                }
+                },
               );
             }}
           >

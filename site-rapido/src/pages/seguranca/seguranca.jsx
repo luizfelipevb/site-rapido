@@ -1,1067 +1,2039 @@
-function Seguranca({pesquisa}) {
+import "./seguranca.css";
+
+function Seguranca({ pesquisa }) {
   const termo = pesquisa.toLowerCase();
   return (
     <div className="container">
       <h1>Segurança</h1>
 
       <div className="lista">
-        {/* YOUTUBE */}
+        {/* MICROSOFT DEFENDER */}
         <div className="card">
           <img
-            src="https://img.icons8.com/color/96/youtube-play.png"
-            alt="Youtube"
-          />
-          <br />
-
-          <h2>Youtube</h2>
-
-          <a
-            href="https://www.youtube.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {" "}
-            ACESSAR YOUTUBE{" "}
-          </a>
-          <br />
-
-          <h3 className="legenda">DESCRIÇÃO</h3>
-
-          <p>
-            O YouTube é uma plataforma de vídeos sob demanda e transmissões ao
-            vivo, sendo a mais utilizada do mundo para consumo de conteúdo
-            digital.
-          </p>
-          <br />
-
-          <p>
-            <strong>Para que é usado:</strong>
-          </p>
-
-          <ul>
-            <li>Assistir vídeos de diversos temas</li>
-            <li>Estudar com aulas e tutoriais</li>
-            <li>Ouvir música</li>
-            <li>Acompanhar criadores e canais</li>
-            <li>Assistir transmissões ao vivo</li>
-          </ul>
-          <br />
-
-          <h4>Diferenciais</h4>
-
-          <ul>
-            <li>
-              📚 Grande variedade de conteúdo (educação, entretenimento, música,
-              etc.)
-            </li>
-            <li>🌎 Acessível globalmente e gratuito</li>
-            <li>📱 Funciona em praticamente qualquer dispositivo</li>
-            <li>🤖 Algoritmo de recomendação avançado</li>
-            <li>🎥 Suporte a vídeos longos, curtos (Shorts) e lives</li>
-          </ul>
-
-          <h3>Planos do Youtube</h3>
-          <h4>Padrão:</h4>
-          <p>
-            <strong>Preço mensal:</strong> R$26,90.
-          </p>
-          <p>
-            <strong>Preço Anual:</strong> R$269,00.
-          </p>
-          <p>
-            <strong>Chave Benefícios:</strong> Sem anúncios, 2º plano, download,
-            YouTube Music.
-          </p>
-          <p>
-            <strong>Restrições:</strong> 1 usuário.
-          </p>
-          <br />
-
-          <h4>Estudante:</h4>
-          <p>
-            <strong>Preço mensal:</strong> R$16,90.
-          </p>
-          <p>
-            <strong>Preço Anual:</strong> Não tem plano anual para estudante.
-          </p>
-          <p>
-            <strong>Chave Benefícios:</strong> Todos os benefícios do
-            Individual.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Verificação via SheerID.
-          </p>
-          <br />
-
-          <h4>Familia:</h4>
-          <p>
-            <strong>Preço mensal:</strong> R$53,00.
-          </p>
-          <p>
-            <strong>Preço Anual:</strong> Não tem plano anual para familia.
-          </p>
-          <p>
-            <strong>Chave Benefícios:</strong> Até 6 usuários (1 titular + 5
-            membros).
-          </p>
-          <p>
-            <strong>Restrições:</strong> Mesmo endereço.
-          </p>
-          <br />
-
-          <h4>Premium Lite:</h4>
-          <p>
-            <strong>Preço mensal:</strong> R$16,90.
-          </p>
-          <p>
-            <strong>Preço Anual:</strong> Não tem plano anual para familia.
-          </p>
-          <p>
-            <strong>Chave Benefícios:</strong> Sem anúncios em categorias
-            selecionadas.
-          </p>
-          <p>
-            <strong>Restrições:</strong> Sem YouTube Music, sem download.
-          </p>
-          <br />
-        </div>
-
-        {/* TWITCH */}
-        <div className="card">
-          <img
-            src="https://img.icons8.com/color/96/twitch--v1.png"
-            alt="Twitch"
-          />
-          <br />
-
-          <h2>TWITCH</h2>
-          <a
-            href="https://www.twitch.tv/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ACESSAR A TWITCH
-          </a>
-          <br />
-
-          <h3 className="legenda">DESCRIÇÃO</h3>
-
-          <p>
-            A Twitch é uma plataforma focada em transmissões ao vivo (lives),
-            principalmente de jogos, mas também de música, eventos, bate-papo e
-            conteúdo criativo.
-          </p>
-          <br />
-
-          <p>
-            <strong>Para que é usado:</strong>
-          </p>
-
-          <ul>
-            <li>Assistir transmissões ao vivo</li>
-            <li>Interagir com streamers via chat</li>
-            <li>Acompanhar campeonatos e eventos</li>
-            <li>Criar conteúdo ao vivo</li>
-          </ul>
-          <br />
-
-          <h4>Diferenciais</h4>
-
-          <ul>
-            <li>💬 Interação em tempo real (chat ao vivo com o streamer)</li>
-            <li>🧑‍🤝‍🧑 Comunidade muito ativa e engajada</li>
-            <li>🔴 Foco em conteúdo ao vivo (tempo real)</li>
-            <li>🎮 Forte presença no mundo gamer e eSports</li>
-            <li>
-              🎁 Sistema de bits e inscrições (subs) para apoiar criadores
-            </li>
-          </ul>
-
-          <h3>Planos pago</h3>
-
-          <h4>Plano: Assinatura Tier 1</h4>
-          <p>
-            <strong>Preço Mensal:</strong> R$ 7,90{" "}
-          </p>
-          <p>
-            <strong>Benefícios principais:</strong> Emotes exclusivos, badge,
-            cor no chat, sem anúncios no canal.
-          </p>
-          <p>
-            <strong>Observações:</strong> Apoia diretamente o streamer.
-          </p>
-          <br />
-
-          <h4>Plano: Assinatura Tier 2</h4>
-          <p>
-            <strong>Preço Mensal:</strong> R$ 14,90{" "}
-          </p>
-          <p>
-            <strong>Benefícios principais:</strong> Todos os benefícios do Tier
-            1 + mais emotes.
-          </p>
-          <p>
-            <strong>Observações:</strong> Sem observação{" "}
-          </p>
-          <br />
-
-          <h4>Plano: Assinatura Tier 3</h4>
-          <p>
-            <strong>Preço Mensal:</strong> R$ 27,90{" "}
-          </p>
-          <p>
-            <strong>Benefícios principais:</strong> Todos os benefícios
-            anteriores + emotes especiais e reconhecimento.
-          </p>
-          <p>
-            <strong>Observações: Sem observação</strong>
-          </p>
-          <br />
-
-          <h4>Plano Twitch Prime / Prime Gaming</h4>
-          <p>
-            <strong>Preço Mensal: Incluso com Amazon Prime</strong>{" "}
-          </p>
-          <p>
-            <strong>Benefícios principais:</strong> 1 assinatura gratuita por
-            mês (Tier 1), recompensas em jogos, emotes.
-          </p>
-          <p>
-            <strong>Observações:</strong> Exige assinatura da Amazon Prime (R$
-            19,90/mês).
-          </p>
-          <br />
-
-          <h4>Plano Twitch Turbo</h4>
-          <p>
-            <strong>Preço Mensal:</strong> R$ 26,99{" "}
-          </p>
-          <p>
-            <strong>Benefícios principais:</strong> Sem anúncios em toda a
-            Twitch, armazenamento de VODs por 60 dias, emotes exclusivos.
-          </p>
-          <p>
-            <strong>Exige assinatura da Amazon Prime (R$ 19,90/mês).</strong>
-          </p>
-          <p>
-            <strong>Observações:</strong> Não apoia streamers diretamente
-          </p>
-          <br />
-        </div>
-
-        {/* Tiktok */}
-        <div className="card">
-          <img
-            src="https://imgs.search.brave.com/TprQYSZU7IRAXE774Lv2y6rLMZ5jwrzgO8pY_uXPikQ/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9zdGF0/aWMudmVjdGVlenku/Y29tL3N5c3RlbS9y/ZXNvdXJjZXMvdGh1/bWJuYWlscy8wMjEv/NDk1Lzk0Mi9zbWFs/bC90aWt0b2stbG9n/by1pY29uLWZyZWUt/cG5nLnBuZw"
-            alt="Tiktok"
+            src="https://img.icons8.com/?size=100&id=YztviYmQLfhl&format=png&color=000000"
+            alt="Microsoft Defender"
+            style={{ height: "auto" }}
           />{" "}
           <br />
-          <h2>TikTok</h2>
+          <h2>MICROSOFT DEFENDER</h2>
           <a
-            href="https://www.tiktok.com/pt-BR/"
+            href="https://support.microsoft.com/pt-BR/defender/getting-started-with-microsoft-defender"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR TIKTOK
+            ACESSAR MICROSOFT DEFENDER
+          </a>
+          <a href="windowsdefender:" target="_blank" rel="noopener noreferrer">
+            ABRIR WINDOWS DEFENDER
           </a>
           <br />
-          <h3 className="legenda">DESCRIÇÃO</h3>
+          <h4 className="legenda">DESCRIÇÃO</h4>
           <p>
-            O TikTok é uma plataforma de vídeos curtos focada em entretenimento
-            rápido, criatividade e viralização de conteúdo, sendo uma das redes
-            sociais mais populares do mundo.
+            O Microsoft Defender é a solução de segurança oficial da Microsoft,
+            integrada ao Windows, desenvolvida para proteger computadores contra
+            vírus, malwares, ransomwares, ameaças online e aplicativos perigosos
+            em tempo real.
           </p>
           <br />
-          <p>
-            <strong>Para que é usado:</strong>
-          </p>
           <ul>
-            <li>Assistir vídeos curtos e virais</li>
-            <li>Criar conteúdo criativo (dança, humor, trends)</li>
-            <li>Acompanhar influenciadores</li>
-            <li>Descobrir tendências e músicas</li>
-            <li>Fazer lives e interagir com seguidores</li>
+            <h4>Para que é usado:</h4>
+
+            <li>Proteger o computador contra vírus e malwares</li>
+            <li>Bloquear ransomwares e ameaças online</li>
+            <li>Monitorar segurança em tempo real</li>
+            <li>Realizar verificações automáticas</li>
+            <li>Proteger navegação e downloads</li>
+            <li>Gerenciar firewall e segurança do Windows</li>
           </ul>
           <br />
           <h4>Diferenciais</h4>
           <ul>
-            <li>⚡ Conteúdo rápido e altamente viciante</li>
-            <li>🤖 Algoritmo extremamente preciso e personalizado</li>
-            <li>🎵 Forte integração com músicas e trends</li>
-            <li>📱 Foco total em mobile (experiência otimizada)</li>
-            <li>🚀 Alta chance de viralização mesmo com poucos seguidores</li>
+            <li>🛡️ Integrado nativamente ao Windows</li>
+            <li>🆓 Totalmente gratuito</li>
+            <li>⚡ Leve e otimizado para o sistema</li>
+            <li>☁️ Proteção inteligente baseada em nuvem</li>
+            <li>🔄 Atualizações automáticas de segurança</li>
+            <li>🔒 Proteção em tempo real contra ameaças</li>
           </ul>
-          <h3>Planos do TikTok</h3>
-          <h4>Padrão (Gratuito):</h4>
+          <h3>Recursos do Microsoft Defender</h3>
+          <h4>Proteção em Tempo Real:</h4>
           <p>
-            <strong>Preço:</strong> Gratuito.
+            <strong>Função:</strong> Detecta e bloqueia ameaças automaticamente
+            enquanto o computador está sendo utilizado.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Acesso completo à plataforma,
-            criação e consumo de vídeos, lives.
+            <strong>Benefícios:</strong> Proteção contínua contra vírus,
+            spywares e aplicativos perigosos.
           </p>
           <p>
-            <strong>Restrições:</strong> Presença de anúncios.
-          </p>{" "}
+            <strong>Restrições:</strong> Pode consumir mais recursos durante
+            verificações completas.
+          </p>
           <br />
-          <h4>Moedas Virtuais:</h4>
+          <h4>Proteção Contra Ransomware:</h4>
           <p>
-            <strong>Preço:</strong> Variável (compra dentro do app).
+            <strong>Função:</strong> Protege arquivos importantes contra
+            programas que tentam criptografar dados.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Envio de presentes em lives para
-            apoiar criadores.
+            <strong>Benefícios:</strong> Segurança adicional para documentos e
+            pastas pessoais.
           </p>
           <p>
-            <strong>Restrições:</strong> Uso limitado dentro da plataforma.
-          </p>{" "}
+            <strong>Restrições:</strong> Algumas funções exigem configuração
+            manual.
+          </p>
           <br />
-          <h4>Assinaturas de Criadores:</h4>
+          <h4>Firewall do Windows:</h4>
           <p>
-            <strong>Preço mensal:</strong> Definido pelo criador.
+            <strong>Função:</strong> Controla conexões de rede e bloqueia
+            acessos suspeitos.
           </p>
           <p>
-            <strong>Preço Anual:</strong> Não disponível.
+            <strong>Benefícios:</strong> Proteção contra invasões e acessos não
+            autorizados.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Conteúdos exclusivos, badges e
-            vantagens no chat.
+            <strong>Restrições:</strong> Configurações avançadas podem ser
+            complexas.
           </p>
-          <p>
-            <strong>Restrições:</strong> Disponível apenas em canais
-            específicos.
-          </p>{" "}
           <br />
-          <h4>TikTok Ads (Empresas):</h4>
+          <h4>Proteção Baseada em Nuvem:</h4>
           <p>
-            <strong>Preço:</strong> Variável conforme campanha.
+            <strong>Função:</strong> Utiliza servidores Microsoft para
+            identificar ameaças recentes rapidamente.
           </p>
           <p>
-            <strong>Preço Anual:</strong> Não se aplica.
+            <strong>Benefícios:</strong> Maior velocidade na detecção de vírus
+            novos.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Divulgação de produtos e alcance
-            de público.
+            <strong>Restrições:</strong> Requer conexão com internet para
+            funcionar totalmente.
+          </p>
+          <br />
+          <h3>Proteções Disponíveis</h3>
+          <ul>
+            <li>🦠 Vírus e trojans</li>
+            <li>🔐 Ransomwares</li>
+            <li>🎣 Sites falsos e phishing</li>
+            <li>📧 Downloads suspeitos</li>
+            <li>⚠️ Aplicativos perigosos</li>
+            <li>🌐 Ameaças online e exploits</li>
+          </ul>
+          <br />
+          <h3>Outros Recursos</h3>
+          <ul>
+            <li>📊 Histórico de ameaças detectadas</li>
+            <li>🧹 Quarentena automática de arquivos</li>
+            <li>🔄 Atualizações automáticas</li>
+            <li>🔑 Controle de aplicativos e navegador</li>
+            <li>🖥️ Segurança do dispositivo</li>
+            <li>👨‍👩‍👧 Recursos de proteção familiar</li>
+          </ul>
+          <br />
+          <h3>Pontos Importantes</h3>
+          <ul>
+            <li>💡 Já vem instalado no Windows 10 e 11</li>
+            <li>🔒 Muito utilizado em residências e empresas</li>
+            <li>⚡ Funciona automaticamente em segundo plano</li>
+            <li>🛠️ Compatível com outros recursos de segurança da Microsoft</li>
+          </ul>
+          <br />
+          <h3>Disponibilidade</h3>
+          <p>
+            <strong>Plataformas:</strong> Windows, Android, iOS e Web
           </p>
           <p>
-            <strong>Restrições:</strong> Necessário investimento em anúncios.
-          </p>{" "}
+            <strong>Modo de uso:</strong> Online e offline
+          </p>
           <br /> <br />
         </div>
 
-        {/* Kwai */}
+        {/* BITDEFENDER FREE */}
         <div className="card">
           <img
-            src="https://imgs.search.brave.com/0rWenEamamCgGUCLe3ADC1z_jxUlr73MWqSem-Qeo9U/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMudGNkbi5jb20u/YnIvaW1nL2ltZ19w/cm9kLzExMDY3ODUv/aWNvbmVfa3dhaV9h/cHBfcGxhcXVpbmhh/X2FwbGljYXRpdm9f/dmlkZW9zXzE1Mjdf/MV9iZTcxNGYxNDYw/OTFjMzgwOTNhNzFm/MzY1NjcxOWY2NC5q/cGc"
-            alt="Kwai"
+            src="https://www.bitdefender.com/adobe/dynamicmedia/deliver/dm-aid--ff62d212-3a6d-4993-841c-7458d12cdf2f/bitdefender-blue-logo-png.png?width=1920&quality=85&preferwebp=true"
+            alt="Bitdefender Free"
+            style={{ margin: "16px auto", width: "250px", height: "auto" }}
           />{" "}
           <br />
-          <h2>KWAI</h2>
+          <h2>BITDEFENDER FREE</h2>
+          {/* BOTÕES */}
           <a
-            href="https://www.kwai.com/"
+            href="https://www.bitdefender.com/pt-br/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR KWAI
+            ACESSAR BITDEFENDER
+          </a>
+          <a
+            href="https://www.bitdefender.com/en-us/consumer/thank-you"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            INSTALAR BITDEFENDER
           </a>
           <br />
-          <h3 className="legenda">DESCRIÇÃO</h3>
+          <h4 className="legenda">DESCRIÇÃO</h4>
           <p>
-            O Kwai é uma plataforma de vídeos curtos focada em entretenimento,
-            desafios e recompensas por engajamento, sendo bastante popular em
-            países emergentes como o Brasil.
+            O Bitdefender Free é um antivírus gratuito extremamente conhecido
+            por oferecer proteção inteligente e automática contra vírus,
+            ransomwares, spywares, phishing, ataques online e softwares
+            perigosos, tudo com baixo consumo de recursos do computador.
+          </p>
+          <p>
+            A plataforma utiliza inteligência artificial, proteção em nuvem e
+            análise comportamental para identificar ameaças modernas
+            rapidamente, sendo considerada uma das melhores soluções de
+            segurança do mercado.
           </p>
           <br />
+          <h3>Recursos do Bitdefender</h3>
+          <h4>🛡️ Proteção em Tempo Real</h4>
           <p>
-            <strong>Para que é usado:</strong>
+            O Bitdefender monitora continuamente o sistema para identificar
+            vírus, ransomwares, spywares, trojans e ameaças modernas antes que
+            afetem o computador ou os dados do usuário.
           </p>
+          <br />
+          <h4>🔐 Proteção Anti-Ransomware</h4>
+          <p>
+            Detecta comportamentos suspeitos e impede ataques que tentam
+            criptografar arquivos, protegendo documentos, fotos e dados
+            importantes.
+          </p>
+          <br />
+          <h4>🌐 Proteção Web e Anti-Phishing</h4>
+          <p>
+            Analisa páginas acessadas em tempo real para bloquear sites falsos,
+            golpes bancários, phishing, downloads perigosos e links maliciosos.
+          </p>
+          <br />
+          <h4>☁️ Proteção em Nuvem</h4>
+          <p>
+            Utiliza tecnologia baseada em nuvem para identificar ameaças
+            rapidamente sem consumir muitos recursos do computador.
+          </p>
+          <br />
+          <h4>🤖 Inteligência Artificial Avançada</h4>
+          <p>
+            O sistema utiliza IA e análise comportamental para detectar ameaças
+            desconhecidas, atividades suspeitas e softwares perigosos
+            automaticamente.
+          </p>
+          <br />
+          <h4>🔥 Firewall Inteligente</h4>
+          <p>
+            Os planos premium contam com firewall avançado para monitorar
+            conexões de rede e bloquear acessos suspeitos ao dispositivo.
+          </p>
+          <br />
+          <h4>💳 Safepay</h4>
+          <p>
+            O Bitdefender possui um navegador protegido para operações bancárias
+            e compras online, aumentando a segurança durante pagamentos.
+          </p>
+          <br />
+          <h4>🌐 VPN Integrada</h4>
+          <p>
+            Alguns planos incluem VPN para aumentar privacidade e segurança
+            durante a navegação, principalmente em redes Wi-Fi públicas.
+          </p>
+          <br />
+          <h4>🔑 Gerenciador de Senhas</h4>
+          <p>
+            Permite armazenar senhas de forma segura, organizar logins e
+            proteger credenciais importantes do usuário.
+          </p>
+          <br />
+          <h4>🎥 Proteção de Webcam</h4>
+          <p>
+            Impede acessos não autorizados à câmera, ajudando a proteger a
+            privacidade contra espionagem.
+          </p>
+          <br />
+          <h4>🎙️ Proteção de Microfone</h4>
+          <p>
+            Monitora tentativas suspeitas de utilização do microfone por
+            aplicativos e ameaças digitais.
+          </p>
+          <br />
+          <h4>📂 Quarentena Automática</h4>
+          <p>
+            Arquivos infectados ou suspeitos são isolados automaticamente para
+            evitar danos ao sistema.
+          </p>
+          <br />
+          <h4>⚡ Otimização de Desempenho</h4>
+          <p>
+            Inclui ferramentas que ajudam a melhorar desempenho, reduzir
+            lentidão e otimizar o funcionamento do computador.
+          </p>
+          <br />
+          <h4>📊 Relatórios de Segurança</h4>
+          <p>
+            Exibe informações detalhadas sobre ameaças detectadas, status da
+            proteção e verificações realizadas no sistema.
+          </p>
+          <br />
+          <h4>🔄 Atualizações Automáticas</h4>
+          <p>
+            Mantém o antivírus atualizado constantemente para proteger contra
+            novas ameaças e ataques digitais.
+          </p>
+          <br />
           <ul>
-            <li>Assistir vídeos curtos e virais</li>
-            <li>Participar de desafios e trends</li>
-            <li>Ganhar recompensas por engajamento</li>
-            <li>Acompanhar criadores de conteúdo</li>
-            <li>Fazer transmissões ao vivo</li>
+            <h4>Para que é usado:</h4>
+
+            <li>Proteger o computador contra vírus e malwares</li>
+            <li>Bloquear ransomwares e ataques online</li>
+            <li>Detectar downloads perigosos</li>
+            <li>Monitorar arquivos em tempo real</li>
+            <li>Evitar roubo de dados pessoais</li>
+            <li>Bloquear phishing e sites falsos</li>
+            <li>Verificar dispositivos automaticamente</li>
+            <li>Proteger navegação na internet</li>
+            <li>Evitar instalação de programas suspeitos</li>
+            <li>Identificar ameaças modernas automaticamente</li>
           </ul>
           <br />
           <h4>Diferenciais</h4>
           <ul>
-            <li>💰 Sistema de recompensas por uso e engajamento</li>
-            <li>📱 Interface simples e fácil de usar</li>
-            <li>🌎 Forte presença em mercados emergentes</li>
-            <li>🎥 Conteúdo leve e voltado ao entretenimento rápido</li>
-            <li>🚀 Facilidade para novos criadores crescerem</li>
+            <li>🛡️ Excelente taxa de detecção de ameaças</li>
+            <li>⚡ Baixo impacto no desempenho do PC</li>
+            <li>🤖 Inteligência artificial avançada</li>
+            <li>☁️ Proteção baseada em nuvem</li>
+            <li>🔄 Atualizações automáticas constantes</li>
+            <li>🔒 Proteção em tempo real altamente eficiente</li>
+            <li>🖥️ Interface moderna e simples</li>
+            <li>📡 Defesa contra ameaças online modernas</li>
+            <li>💡 Funciona silenciosamente em segundo plano</li>
+            <li>🌎 Muito utilizado mundialmente</li>
           </ul>
-          <h3>Planos do Kwai</h3>
-          <h4>Padrão (Gratuito):</h4>
+          <br />
+          <h3>Principais Recursos</h3>
+          <ul>
+            <li>🛡️ Proteção em tempo real</li>
+            <li>☁️ Scanner inteligente em nuvem</li>
+            <li>🔐 Proteção contra ransomware</li>
+            <li>🌐 Proteção web e anti-phishing</li>
+            <li>📂 Quarentena automática</li>
+            <li>⚡ Verificação rápida e completa</li>
+            <li>🧹 Remoção automática de ameaças</li>
+            <li>🔍 Análise comportamental de aplicativos</li>
+            <li>📊 Relatórios de segurança</li>
+            <li>🔄 Atualizações automáticas</li>
+          </ul>
+          <br />
+          <h3>Proteções Disponíveis</h3>
+          <ul>
+            <li>🦠 Vírus e trojans</li>
+            <li>🔐 Ransomwares</li>
+            <li>🎣 Sites falsos e phishing</li>
+            <li>🕵️ Spywares e keyloggers</li>
+            <li>⚠️ Aplicativos suspeitos</li>
+            <li>📧 Downloads perigosos</li>
+            <li>🌐 Exploits e ameaças online</li>
+            <li>💻 Ataques em tempo real</li>
+            <li>☁️ Ameaças modernas via internet</li>
+          </ul>
+          <br />
+          <h3>Planos do Bitdefender</h3>
+          {/* FREE */}
+          <h4>Bitdefender Free</h4>
           <p>
             <strong>Preço:</strong> Gratuito.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Acesso completo à plataforma,
-            criação e consumo de vídeos.
+            <strong>Dispositivos:</strong> Normalmente 1 dispositivo por
+            instalação.
           </p>
           <p>
-            <strong>Restrições:</strong> Presença de anúncios.
-          </p>{" "}
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🛡️ Proteção em tempo real</li>
+            <li>🔐 Defesa contra ransomware</li>
+            <li>🌐 Proteção contra phishing</li>
+            <li>⚡ Baixo consumo de recursos</li>
+            <li>☁️ Scanner inteligente em nuvem</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong> Não possui VPN ilimitada, firewall
+            avançado, proteção webcam ou recursos premium completos.
+          </p>
           <br />
-          <h4>Programa de Recompensas:</h4>
+          {/* ANTIVIRUS PLUS */}
+          <h4>Bitdefender Antivirus Plus</h4>
           <p>
-            <strong>Preço:</strong> Gratuito.
+            <strong>Preço mensal:</strong> Aproximadamente R$ 15 a R$ 30 por mês
+            (varia conforme promoções e quantidade de dispositivos).
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Ganhos por assistir vídeos,
-            convidar amigos e interagir.
+            <strong>Preço anual:</strong> Aproximadamente R$ 80 a R$ 180 por
+            ano.
           </p>
           <p>
-            <strong>Restrições:</strong> Ganhos limitados e sujeitos a regras da
-            plataforma.
-          </p>{" "}
+            <strong>Dispositivos:</strong> 1 até 10 dispositivos Windows.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🛡️ Proteção avançada contra vírus</li>
+            <li>🌐 Anti-phishing e proteção web</li>
+            <li>💳 Proteção para compras bancárias</li>
+            <li>🔐 Defesa contra ransomware</li>
+            <li>⚡ Melhor desempenho e otimização</li>
+            <li>☁️ VPN limitada inclusa</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong> VPN possui limite diário na maioria dos
+            planos.
+          </p>
           <br />
-          <h4>Moedas Virtuais:</h4>
+          {/* INTERNET SECURITY */}
+          <h4>Bitdefender Internet Security</h4>
           <p>
-            <strong>Preço:</strong> Variável (compra dentro do app).
+            <strong>Preço mensal:</strong> Aproximadamente R$ 20 a R$ 40 por
+            mês.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Envio de presentes em lives para
-            apoiar criadores.
+            <strong>Preço anual:</strong> Aproximadamente R$ 120 a R$ 250 por
+            ano.
           </p>
           <p>
-            <strong>Restrições:</strong> Uso restrito dentro da plataforma.
-          </p>{" "}
+            <strong>Dispositivos:</strong> Até 10 dispositivos Windows.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🔥 Firewall avançado</li>
+            <li>🎥 Proteção de webcam e microfone</li>
+            <li>👨‍👩‍👧 Controle parental</li>
+            <li>🛡️ Segurança extra contra ataques online</li>
+            <li>🔐 Proteção bancária Safepay</li>
+            <li>📂 Proteção contra roubo de dados</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong> Focado principalmente em Windows.
+          </p>
           <br />
-          <h4>Kwai Ads (Empresas):</h4>
+          {/* TOTAL SECURITY */}
+          <h4>Bitdefender Total Security</h4>
           <p>
-            <strong>Preço:</strong> Variável conforme campanha.
+            <strong>Preço mensal:</strong> Aproximadamente R$ 25 a R$ 50 por
+            mês.
           </p>
           <p>
-            <strong>Chave Benefícios:</strong> Divulgação de produtos e alcance
-            de público.
+            <strong>Preço anual:</strong> Aproximadamente R$ 150 a R$ 320 por
+            ano.
           </p>
           <p>
-            <strong>Restrições:</strong> Necessário investimento em anúncios.
-          </p>{" "}
+            <strong>Dispositivos:</strong> Até 5 ou 10 dispositivos.
+          </p>
+          <p>
+            <strong>Plataformas:</strong> Windows, Android, Mac e iOS.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🌎 Proteção multiplataforma</li>
+            <li>⚡ Ferramentas de otimização do sistema</li>
+            <li>🔐 Segurança avançada completa</li>
+            <li>📱 Proteção para celular</li>
+            <li>🔥 Firewall e anti-ransomware avançado</li>
+            <li>🎥 Proteção webcam e microfone</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong> Alguns recursos variam entre
+            plataformas.
+          </p>
+          <br />
+          {/* PREMIUM SECURITY */}
+          <h4>Bitdefender Premium Security</h4>
+          <p>
+            <strong>Preço mensal:</strong> Aproximadamente R$ 40 a R$ 80 por
+            mês.
+          </p>
+          <p>
+            <strong>Preço anual:</strong> Aproximadamente R$ 250 a R$ 500 por
+            ano.
+          </p>
+          <p>
+            <strong>Dispositivos:</strong> Até 10 dispositivos.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🌐 VPN ilimitada</li>
+            <li>🔑 Gerenciador de senhas</li>
+            <li>🛡️ Máxima proteção Bitdefender</li>
+            <li>📱 Segurança multiplataforma completa</li>
+            <li>🔥 Recursos premium avançados</li>
+            <li>☁️ Proteção online reforçada</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong> Plano mais caro da plataforma.
+          </p>
+          <br />
+          <h3>Pontos Importantes</h3>
+          <ul>
+            <li>💡 Excelente para usuários iniciantes e avançados</li>
+            <li>⚡ Muito leve para computadores fracos</li>
+            <li>🔒 Seguro quando baixado do site oficial</li>
+            <li>🌎 Um dos antivírus mais respeitados do mundo</li>
+            <li>☁️ Forte foco em proteção inteligente em nuvem</li>
+            <li>🛠️ Recursos premium disponíveis nos planos pagos</li>
+            <li>📡 Proteção constante contra ameaças modernas</li>
+          </ul>
+          <br />
+          <h3>Disponibilidade</h3>
+          <p>
+            <strong>Plataformas:</strong> Windows, Android, Mac e iOS
+          </p>
+          <p>
+            <strong>Modo de uso:</strong> Online e offline
+          </p>
           <br /> <br />
         </div>
 
-        {/* Crunchyroll */}
+        {/* AVAST SECURITY */}
         <div className="card">
           <img
-            src="https://upload.wikimedia.org/wikipedia/commons/0/08/Crunchyroll_Logo.png"
-            alt="Crunchyroll"
-          />{" "}
-          <br />
-          <h2>Crunchyroll</h2>
-          <a
-            href="https://www.crunchyroll.com/pt-br/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            ACESSAR CRUNCHYROLL
-          </a>
-          <br />
-          <h3 className="legenda">DESCRIÇÃO</h3>
-          <p>Streaming focado em animes, doramas e conteúdos asiáticos.</p>{" "}
-          <p>
-            <strong>Uso:</strong> Assistir animes, episódios simulcast
-            (lançamentos simultâneos com o Japão) e conteúdos exclusivos.
-          </p>
-          <h4>Diferenciais</h4>
-          <ul>
-            <li>Grande catálogo de animes</li>
-            <li>Lançamentos simultâneos com o Japão (simulcast)</li>
-            <li>Conteúdos exclusivos e originais</li>
-            <li>Opções de legenda e dublagem</li>
-          </ul>
-          <h4>Planos</h4>
-          <ul>
-            <h4>Gratuito:</h4>
-            <li>
-              <p>Qualidade: Até 720p/1080p (variável)</p>
-              <p>Telas: 1 tela</p>
-              <p>Esse plano contém Anúncios: Sim</p>
-              <p>
-                Quantos dispositivos com downloads disponível: Não possui
-                download
-              </p>
-              <p>Assinantes Extras: Não permitido</p>
-              <p>Valor do plano: Gratuito</p>
-            </li>
-            <br />
-
-            <h4>Fan:</h4>
-            <li>
-              <p>Qualidade: Até 1080p (Full HD)</p>
-              <p>Telas: 1 tela simultânea</p>
-              <p>Esse plano contém Anúncios: Não</p>
-              <p>
-                Quantos dispositivos com downloads disponível: Não possui
-                download
-              </p>
-              <p>Assinantes Extras: Não permitido</p>
-              <p>Valor do plano: Cerca de R$14,99/mês</p>
-            </li>
-            <br />
-
-            <h4>Mega Fan:</h4>
-            <li>
-              <p>Qualidade: Até 1080p (Full HD)</p>
-              <p>Telas: 4 telas simultâneas</p>
-              <p>Esse plano contém Anúncios: Não</p>
-              <p>
-                Quantos dispositivos com downloads disponível: 4 dispositivos
-              </p>
-              <p>Assinantes Extras: Não permitido</p>
-              <p>Valor do plano: Cerca de R$19,99/mês</p>
-            </li>
-            <br />
-
-            <h4>Mega Fan (Anual):</h4>
-            <li>
-              <p>Qualidade: Até 1080p (Full HD)</p>
-              <p>Telas: 4 telas simultâneas</p>
-              <p>Esse plano contém Anúncios: Não</p>
-              <p>
-                Quantos dispositivos com downloads disponível: 4 dispositivos
-              </p>
-              <p>Assinantes Extras: Não permitido</p>
-              <p>Valor do plano: Cerca de R$199,99/ano</p>
-            </li>
-            <br />
-          </ul>{" "}
-          <br />
-        </div>
-
-        {/* NETFLIX */}
-        <div className="card">
-          <img
-            src="https://img.icons8.com/color/96/netflix.png"
-            alt="Netflix"
+            src="https://img.icons8.com/?size=100&id=jmzcPp7tABkZ&format=png&color=000000"
+            alt="Avast Security"
           />
-          <h2>NETFLIX</h2>
+          <br />
+          <h2>AVAST SECURITY</h2>
+          {/* BOTÕES */}
           <a
-            href="https://www.netflix.com/br/"
+            href="https://www.avast.com/pt-br/index"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR NETFLIX
+            ACESSAR AVAST
           </a>
-          <h3 className="legenda">DESCRIÇÃO</h3>
-          <p>Streaming de filmes, séries e conteúdos originais.</p>
+          <a
+            href="https://www.avast.com/pt-br/download-thank-you.php?product=AVAST-ONE-MOD-WIN-AV-FAD&locale=pt-br&direct=1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            INSTALAR AVAST
+          </a>
+          <br />
+          <h4 className="legenda">DESCRIÇÃO</h4>
           <p>
-            <strong>Uso:</strong> Assistir conteúdos variados sob demanda,
-            incluindo produções exclusivas e lançamentos.
+            O Avast é um dos antivírus mais populares do mundo, desenvolvido
+            para proteger computadores, celulares e dispositivos contra vírus,
+            ransomwares, spywares, phishing, hackers e ameaças online modernas.
           </p>
-          <h4>Alguns conteúdos exclusivos da Netflix:</h4>
-          <div className="detalhes">
-            <ul className="filme">
-              <li>
-                <strong>Filmes:</strong>
-              </li>
-              <li>Alerta Vermelho</li>
-              <li>Não Olhe para Cima</li>
-              <li>Bird Box</li>
-              <li>Agente Oculto</li>
-              <li>Resgate</li>
-            </ul>
+          <p>
+            A plataforma utiliza inteligência artificial, proteção em nuvem e
+            análise comportamental para detectar ameaças em tempo real,
+            oferecendo proteção tanto para usuários comuns quanto para ambientes
+            mais avançados.
+          </p>
+          <br />
+          <ul>
+            <h4>Para que é usado:</h4>
 
-            <ul className="series">
-              <li>
-                <strong>Séries:</strong>
-              </li>
-              <li>One Piece</li>
-              <li>Round 6 (Squid Game)</li>
-              <li>La Casa de Papel</li>
-              <li>Stranger Things</li>
-              <li>The Witcher</li>
-            </ul>
-          </div>
+            <li>Proteger contra vírus e malwares</li>
+            <li>Bloquear ransomwares</li>
+            <li>Evitar ataques hackers</li>
+            <li>Proteger navegação online</li>
+            <li>Bloquear phishing e sites falsos</li>
+            <li>Proteger compras e bancos online</li>
+            <li>Monitorar aplicativos suspeitos</li>
+            <li>Escanear arquivos automaticamente</li>
+            <li>Melhorar segurança do sistema</li>
+            <li>Evitar roubo de dados pessoais</li>
+          </ul>
+          <br />
           <h4>Diferenciais</h4>
           <ul>
-            <li>🎬 Conteúdos originais exclusivos (Netflix Originals)</li>
-            <li>📺 Alta qualidade de imagem (até 4K + HDR)</li>
-            <li>📱 Disponível em diversos dispositivos</li>
-            <li>🤖 Sistema de recomendação personalizado</li>
-            <li>⬇️ Download para assistir offline</li>
+            <li>🛡️ Excelente proteção em tempo real</li>
+            <li>⚡ Baixo impacto no desempenho</li>
+            <li>🤖 Inteligência artificial avançada</li>
+            <li>☁️ Proteção inteligente em nuvem</li>
+            <li>🌐 Navegação protegida</li>
+            <li>🔒 Recursos extras de privacidade</li>
+            <li>💻 Interface moderna e intuitiva</li>
+            <li>📡 Atualizações constantes</li>
+            <li>🔥 Firewall nos planos premium</li>
+            <li>🌎 Muito popular mundialmente</li>
           </ul>
-          <h4>Recursos principais</h4>
-          <ul>
-            <li>Perfis personalizados</li>
-            <li>Controle parental</li>
-            <li>Legendas e dublagens em vários idiomas</li>
-            <li>Continuação automática de episódios</li>
-            <li>Lista de favoritos</li>
-          </ul>
-          <h4>Planos</h4>
-          <ul>
-            <li>
-              <p>
-                <strong>Padrão com Anúncios:</strong>
-              </p>
-              <p>Qualidade: 1080p (Full HD)</p>
-              <p>Telas: 2 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Sim</p>
-              <p>Downloads disponíveis: 2 dispositivos</p>
-              <p>Assinantes extras: Não permitido</p>
-              <p>Valor do plano: R$20,30/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Quem quer economizar e não se
-                importa com anúncios
-              </p>
-            </li>
-            <br />
-
-            <li>
-              <p>
-                <strong>Padrão:</strong>
-              </p>
-              <p>Qualidade: 1080p (Full HD)</p>
-              <p>Telas: 2 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Não</p>
-              <p>Downloads disponíveis: 2 dispositivos</p>
-              <p>Assinantes extras: 1 assinante extra</p>
-              <p>Valor do plano: R$44,90/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Uso comum sem anúncios
-              </p>
-            </li>
-            <br />
-
-            <li>
-              <p>
-                <strong>Premium:</strong>
-              </p>
-              <p>Qualidade: 4K + HDR</p>
-              <p>Telas: 4 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Não</p>
-              <p>Downloads disponíveis: 6 dispositivos</p>
-              <p>Assinantes extras: 2 assinantes extras</p>
-              <p>Valor do plano: R$59,90/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Famílias e quem quer máxima
-                qualidade
-              </p>
-            </li>
-            <br />
-          </ul>{" "}
           <br />
+          <h3>Principais Recursos</h3>
+          <ul>
+            <li>🛡️ Proteção em tempo real</li>
+            <li>🔐 Anti-ransomware</li>
+            <li>🌐 Anti-phishing e proteção web</li>
+            <li>🔥 Firewall inteligente</li>
+            <li>☁️ Proteção baseada em nuvem</li>
+            <li>💳 Segurança bancária online</li>
+            <li>📂 Quarentena automática</li>
+            <li>⚡ Verificação rápida e completa</li>
+            <li>📊 Relatórios de segurança</li>
+            <li>🔄 Atualizações automáticas</li>
+          </ul>
+          <br />
+          <h3>Recursos do Avast</h3>
+          <h4>🛡️ Proteção em Tempo Real</h4>
+          <p>
+            O Avast monitora continuamente o sistema para detectar vírus,
+            ransomwares, spywares, trojans e ameaças modernas automaticamente.
+          </p>
+          <br />
+          <h4>🔐 Proteção Anti-Ransomware</h4>
+          <p>
+            Bloqueia tentativas de criptografia maliciosa e protege arquivos
+            pessoais contra ransomwares.
+          </p>
+          <br />
+          <h4>🌐 Proteção Web e Anti-Phishing</h4>
+          <p>
+            Detecta páginas falsas, golpes online, downloads perigosos e sites
+            maliciosos em tempo real.
+          </p>
+          <br />
+          <h4>☁️ Proteção em Nuvem</h4>
+          <p>
+            Utiliza servidores inteligentes em nuvem para detectar ameaças
+            modernas rapidamente sem pesar no sistema.
+          </p>
+          <br />
+          <h4>🤖 Inteligência Artificial</h4>
+          <p>
+            O sistema usa IA e análise comportamental para identificar
+            aplicativos suspeitos e atividades perigosas automaticamente.
+          </p>
+          <br />
+          <h4>🔥 Firewall Inteligente</h4>
+          <p>
+            Disponível nos planos premium, ajuda a bloquear conexões suspeitas e
+            tentativas de invasão.
+          </p>
+          <br />
+          <h4>💳 Modo Banco</h4>
+          <p>
+            Cria um ambiente protegido para acessar bancos, realizar pagamentos
+            e compras online com maior segurança.
+          </p>
+          <br />
+          <h4>🌐 VPN Integrada</h4>
+          <p>
+            Alguns planos incluem VPN para aumentar privacidade e proteção
+            durante navegação em redes públicas.
+          </p>
+          <br />
+          <h4>🔑 Gerenciador de Senhas</h4>
+          <p>
+            Permite salvar senhas com segurança e organizar logins importantes.
+          </p>
+          <br />
+          <h4>🎥 Proteção de Webcam</h4>
+          <p>
+            Impede acessos não autorizados à câmera do computador por
+            aplicativos ou invasores.
+          </p>
+          <br />
+          <h4>📂 Quarentena Automática</h4>
+          <p>
+            Arquivos perigosos são isolados automaticamente para impedir danos
+            ao sistema.
+          </p>
+          <br />
+          <h4>⚡ Otimização de Sistema</h4>
+          <p>
+            Inclui ferramentas para melhorar desempenho, remover arquivos
+            inúteis e reduzir lentidão.
+          </p>
+          <br />
+          <h4>🔄 Atualizações Automáticas</h4>
+          <p>Mantém a base de vírus e proteção constantemente atualizada.</p>
+          <br />
+          <h3>Proteções Disponíveis</h3>
+          <ul>
+            <li>🦠 Vírus e trojans</li>
+            <li>🔐 Ransomwares</li>
+            <li>🎣 Phishing e golpes online</li>
+            <li>🕵️ Spywares e keyloggers</li>
+            <li>⚠️ Aplicativos maliciosos</li>
+            <li>🌐 Exploits e ameaças online</li>
+            <li>💻 Invasões e ameaças de rede</li>
+            <li>📧 Downloads perigosos</li>
+            <li>☁️ Ameaças modernas via internet</li>
+          </ul>
+          <br />
+          <h3>Planos do Avast</h3>
+          {/* FREE */}
+          <h4>Avast Free Antivirus</h4>
+          <p>
+            <strong>Preço:</strong> Gratuito.
+          </p>
+          <p>
+            <strong>Dispositivos:</strong> Uso pessoal básico.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🛡️ Antivírus gratuito</li>
+            <li>🌐 Proteção web básica</li>
+            <li>☁️ Proteção em nuvem</li>
+            <li>⚡ Baixo consumo de recursos</li>
+            <li>🔄 Atualizações automáticas</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong> Recursos premium limitados e anúncios
+            internos ocasionais.
+          </p>
+          <br />
+          {/* PREMIUM SECURITY */}
+          <h4>Avast Premium Security</h4>
+          <p>
+            <strong>Preço mensal:</strong> Aproximadamente R$ 15 a R$ 40.
+          </p>
+          <p>
+            <strong>Preço anual:</strong> Aproximadamente R$ 100 a R$ 300.
+          </p>
+          <p>
+            <strong>Dispositivos:</strong> 1 até 10 dispositivos.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🛡️ Proteção avançada completa</li>
+            <li>🔥 Firewall inteligente</li>
+            <li>🎥 Proteção de webcam</li>
+            <li>🌐 Anti-phishing avançado</li>
+            <li>💳 Segurança bancária</li>
+            <li>🔐 Proteção contra ransomwares</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong> VPN não inclusa em alguns planos.
+          </p>
+          <br />
+          {/* ULTIMATE */}
+          <h4>Avast Ultimate</h4>
+          <p>
+            <strong>Preço mensal:</strong> Aproximadamente R$ 30 a R$ 70.
+          </p>
+          <p>
+            <strong>Preço anual:</strong> Aproximadamente R$ 200 a R$ 500.
+          </p>
+          <p>
+            <strong>Dispositivos:</strong> Até 10 dispositivos.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🌐 VPN Premium ilimitada</li>
+            <li>🧹 Avast Cleanup Premium</li>
+            <li>🔑 Gerenciador de senhas</li>
+            <li>🛡️ Proteção máxima Avast</li>
+            <li>⚡ Otimização avançada</li>
+            <li>📱 Segurança multiplataforma</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong> Plano mais caro da plataforma.
+          </p>
+          <br />
+          <h3>Ferramentas Extras</h3>
+          <ul>
+            <li>🌐 Avast SecureLine VPN</li>
+            <li>🧹 Avast Cleanup Premium</li>
+            <li>🔑 Avast Passwords</li>
+            <li>💻 Driver Updater</li>
+            <li>📡 Monitoramento de ameaças</li>
+            <li>🔥 Firewall avançado</li>
+          </ul>
+          <br />
+          <h3>Pontos Importantes</h3>
+          <ul>
+            <li>💡 Muito conhecido mundialmente</li>
+            <li>⚡ Considerado leve e eficiente</li>
+            <li>🔒 Boa proteção contra ameaças modernas</li>
+            <li>🌎 Disponível em diversos países</li>
+            <li>☁️ Forte integração com proteção em nuvem</li>
+            <li>📡 Atualizações constantes de segurança</li>
+            <li>🛠️ Excelente para usuários domésticos</li>
+          </ul>
+          <br />
+          <h3>Disponibilidade</h3>
+          <p>
+            <strong>Plataformas:</strong> Windows, Android, Mac e iOS
+          </p>
+          <p>
+            <strong>Modo de uso:</strong> Online e offline
+          </p>
+          <br /> <br />
         </div>
 
-        {/* HBO */}
+        {/* AVG ANTIVIRUS FREE */}
         <div className="card">
           <img
-            src="https://logo-teka.com/wp-content/uploads/2025/10/hbo-max-logo.svg"
-            alt="HBOMAX"
-          />{" "}
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAMAAABF0y+mAAABvFBMVEVHcEzZfSvjlC7qlzD1sTj0sDn2tDv4uTv4tjv4tzv0sDr5uDrdhy3fiTDsoDX6vDzsqDXYkjXWjDIzb5Iku+7wojfxqjj6vDzOpFAHYo4EaJIIapQJcJsMeaYNf6wNg7EJapIIbZcIa5S7XBMHbpgKbIVXW3EIdKDgjS56WlQIfasGeqjbai3cgS3TbSicRjMMirsQi7oYoNIPodMGm84Jjb/acCzXfCrVdygQlMQTmsvRQCbUYSvTcynOZyASoNMip9gIlMfXUSMyoM+ucTItiVKxVCzURyA6dJ13ZHyaTULHNR7DHxvCJx5TkDhemDeFizJwbyV4iiwgcG4uYonQPRvUSSJimDdQpEZ2rDp6rDpqnDVnnDd3qDmBrjpvozhLcURyMy+YExOwFBW1GhncWSLjZSNfmTZUiTKiAw7ocCTtfCUAhbhFiTZBkUPteiQmfUdFjj06h0MohlS+GR3ILR80d0ksfTk/hzQ+hjg6gTUzgUMmfUdTWT4VdUI3dVGJBQsTc0Iofj41gTc3i00zh0Iuj1y/FhzQPSDeWyNImkPAGB1OoUQ2nVQAlm/CGRu/Fx3UChG+Fx3DIh6MIO3AAAAAlHRSTlMAcP8gyv9Flf+AWLT/m///82L/BAOc/9z//////////+r/qP95Nf/////+xpz/////35ttSBr//////pz////+/+z/7/9Y0f////////////////////QqWH6f5v/////////////+s/f//v+x///yT5P////9jcve//////////9rrvL/4//e6fL/m////3FEEO/KlsXC7AAAAgNJREFUeAFEzkWCFEEQheH/ZUlXjwvOCO6+Qjbolg12MU7BliUHwN3ddby9uySoRL90jRD6J4071abxnxhUVqC0P8uUSGl9XHgGc2K56lbpjHSSxqAQ8jAvdlBzFcIOdHsIiKzI8yI0YhdCTl4Ju7SGRlt4UepvVBwKoZqwwCgdGGygmBSIKTUDgqbLoihb7E0VURcFFP2ZslKShEwrfQFs+RTFopT2t6RRef5b+oBop5gxAS03WkUGbXFEPWeIiDT+1lAct8eqigTmQoipDQMp9AJKY9VYBAvSO0dpZAnPHq0FWuWZLb4aHBzeolNS2qslDmuVia2UC9bQXiWvptMSAv501+zwg03qq6Ww7JIuyBMyR14fVel7kU0JnkThSMOJkuEl6gkvlPX2ubhhMpOc5Ys1i7viDx26GAYbaDWU1zGYjvy9kW873r3eRimMpXad0vSAhCZm++FZEWURECZFMRYBA8JzKxt4ZgIXxHm+YnBwUHjWYIFttmPodWbgoJ//OryfBJ61IsvA5b1e2KZkZu32KBMsADuGPlgb10mriZXqjWYzG2Pcfd/EtsPPWsdebyTsxbOjA9/B//bpB6sq/SGE5i6vuY37GDv3fWJiypUmpqdJrvjDbXa2dYDwQQ34wW81dj06JRDb5OYIX77kv59rZ+D6J9eYyFAw6RGjFQ8DADFO2Z5ZRDSEAAAAAElFTkSuQmCC"
+            alt="AVG Antivirus Free"
+          />
           <br />
-          <h2>HBO MAX</h2>
+          <h2>AVG ANTIVIRUS FREE</h2>
+          {/* BOTÕES */}
           <a
-            href="https://play.hbomax.com/"
+            href="https://www.avg.com/pt-br/homepage"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR HBO MAX
+            ACESSAR AVG
+          </a>
+          <a
+            href="https://www.avg.com/pt-br/download-thank-you.php?product=FREEGSR-FAD"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            INSTALAR AVG
           </a>
           <br />
-          <h3 className="legenda">DESCRIÇÃO</h3>
+          <h4 className="legenda">DESCRIÇÃO</h4>
           <p>
-            Streaming de filmes, séries, documentários e conteúdos da Warner
-            Bros., HBO e DC.
+            O AVG Antivirus Free é um antivírus gratuito focado em proteção
+            contra vírus, malwares, ransomwares, spywares, phishing e ameaças
+            online modernas, sendo bastante conhecido pela leveza e facilidade
+            de uso.
           </p>
           <p>
-            <strong>Uso:</strong> Assistir conteúdos premium, incluindo séries
-            renomadas, filmes e lançamentos exclusivos.
+            Desenvolvido pela AVG Technologies, o software utiliza inteligência
+            artificial, análise comportamental e proteção em nuvem para
+            identificar ameaças em tempo real.
           </p>
-          <h4 style={{ textAlign: "left" }}>
-            Alguns conteúdo exclusivo da HBO MAX:
-          </h4>
-          <div className="detalhes">
-            <ul className="filme">
-              <b>Filmes:</b>
-              <li>Duna (Dune)</li>
-              <li>The Batman</li>
-              <li>Coringa (Joker)</li>
-              <li>Matrix Resurrections</li>
-              <li>Godzilla vs. Kong</li>
-            </ul>
-            <ul className="series">
-              <b>Series:</b>
-              <li>Game of Thrones</li>
-              <li>House of the Dragon</li>
-              <li>Succession</li>
-              <li>Chernobyl</li>
-              <li>The Witcher</li>
-            </ul>
-          </div>
+          <br />
+          <ul>
+            <h4>Para que é usado:</h4>
+
+            <li>Proteger contra vírus e malwares</li>
+            <li>Bloquear ransomwares</li>
+            <li>Evitar golpes online e phishing</li>
+            <li>Escanear arquivos automaticamente</li>
+            <li>Proteger navegação na internet</li>
+            <li>Monitorar atividades suspeitas</li>
+            <li>Melhorar segurança do computador</li>
+            <li>Bloquear downloads perigosos</li>
+            <li>Detectar ameaças em tempo real</li>
+            <li>Proteger dados pessoais</li>
+          </ul>
+          <br />
           <h4>Diferenciais</h4>
           <ul>
-            <li>🎬 Conteúdos exclusivos da HBO e Warner Bros.</li>
-            <li>🏆 Séries premiadas e de alta qualidade</li>
-            <li>🦸 Catálogo forte de DC (Batman, Superman, etc.)</li>
-            <li>🎥 Filmes recentes e grandes produções</li>
-            <li>📺 Alta qualidade de imagem (até 4K)</li>
+            <li>🛡️ Excelente proteção gratuita</li>
+            <li>⚡ Leve e rápido</li>
+            <li>☁️ Proteção baseada em nuvem</li>
+            <li>🤖 Inteligência artificial integrada</li>
+            <li>🌐 Navegação protegida</li>
+            <li>📡 Atualizações automáticas</li>
+            <li>💻 Interface simples e moderna</li>
+            <li>🔒 Boa proteção contra phishing</li>
+            <li>🌎 Muito popular mundialmente</li>
+            <li>🧹 Ferramentas extras de otimização</li>
           </ul>
-          <h4>Recursos principais</h4>
-          <ul>
-            <li>Perfis personalizados</li>
-            <li>Controle parental</li>
-            <li>Download para assistir offline</li>
-            <li>Legendas e dublagens</li>
-            <li>Recomendações personalizadas</li>
-          </ul>
-          <h4>Planos</h4>
-          <ul>
-            <li>
-              <p>
-                <strong>Básico com Anúncios:</strong>
-              </p>
-              <p>Qualidade: Até 1080p (Full HD)</p>
-              <p>Telas: 2 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Sim</p>
-              <p>Downloads disponíveis: Não possui download</p>
-              <p>Assinantes extras: Não permitido</p>
-              <p>Valor do plano: Cerca de R$18,90/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Quem quer economizar e não se
-                importa com anúncios
-              </p>
-            </li>
-            <br />
-
-            <li>
-              <p>
-                <strong>Padrão:</strong>
-              </p>
-              <p>Qualidade: Até 1080p (Full HD)</p>
-              <p>Telas: 2 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Não</p>
-              <p>Downloads disponíveis: 2 dispositivos</p>
-              <p>Assinantes extras: Não permitido</p>
-              <p>Valor do plano: Cerca de R$27,90/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Uso comum sem anúncios
-              </p>
-            </li>
-            <br />
-
-            <li>
-              <p>
-                <strong>Platinum (ou Premium):</strong>
-              </p>
-              <p>Qualidade: Até 4K + HDR</p>
-              <p>Telas: 4 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Não</p>
-              <p>Downloads disponíveis: Até 30 downloads</p>
-              <p>Assinantes extras: Não permitido</p>
-              <p>Valor do plano: Cerca de R$34,90/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Quem quer máxima qualidade e
-                mais dispositivos
-              </p>
-            </li>
-            <br />
-          </ul>{" "}
           <br />
+          <h3>Principais Recursos</h3>
+          <ul>
+            <li>🛡️ Proteção em tempo real</li>
+            <li>🔐 Anti-ransomware</li>
+            <li>🌐 Proteção web</li>
+            <li>🎣 Anti-phishing</li>
+            <li>☁️ Proteção em nuvem</li>
+            <li>📂 Quarentena automática</li>
+            <li>⚡ Verificação inteligente</li>
+            <li>🤖 Detecção comportamental</li>
+            <li>🔄 Atualizações automáticas</li>
+            <li>📊 Relatórios de segurança</li>
+          </ul>
+          <br />
+          <h3>Recursos do AVG</h3>
+          <h4>🛡️ Proteção em Tempo Real</h4>
+          <p>
+            O AVG monitora constantemente o computador para detectar vírus,
+            spywares, trojans, ransomwares e ameaças modernas automaticamente.
+          </p>
+          <br />
+          <h4>🔐 Proteção Anti-Ransomware</h4>
+          <p>
+            Ajuda a impedir ataques que tentam criptografar arquivos pessoais e
+            documentos importantes.
+          </p>
+          <br />
+          <h4>🌐 Proteção Web</h4>
+          <p>
+            Analisa sites acessados para bloquear páginas perigosas, golpes
+            online, downloads suspeitos e links maliciosos.
+          </p>
+          <br />
+          <h4>🎣 Anti-Phishing</h4>
+          <p>
+            Detecta páginas falsas que tentam roubar senhas, dados bancários e
+            informações pessoais.
+          </p>
+          <br />
+          <h4>☁️ Proteção em Nuvem</h4>
+          <p>
+            Utiliza servidores inteligentes em nuvem para identificar novas
+            ameaças rapidamente sem comprometer o desempenho do sistema.
+          </p>
+          <br />
+          <h4>🤖 Inteligência Artificial</h4>
+          <p>
+            Usa análise comportamental e IA para detectar atividades suspeitas e
+            ameaças desconhecidas automaticamente.
+          </p>
+          <br />
+          <h4>📂 Quarentena Automática</h4>
+          <p>
+            Arquivos perigosos são isolados automaticamente para evitar danos ao
+            computador e aos dados do usuário.
+          </p>
+          <br />
+          <h4>⚡ Escaneamento Inteligente</h4>
+          <p>
+            Realiza verificações rápidas e profundas no sistema para localizar
+            ameaças, aplicativos suspeitos e arquivos perigosos.
+          </p>
+          <br />
+          <h4>🔄 Atualizações Automáticas</h4>
+          <p>
+            Mantém a base de proteção sempre atualizada contra novas ameaças
+            digitais.
+          </p>
+          <br />
+          <h4>📊 Relatórios de Segurança</h4>
+          <p>
+            Exibe informações detalhadas sobre ameaças detectadas e status da
+            proteção.
+          </p>
+          <br />
+          <h3>Proteções Disponíveis</h3>
+          <ul>
+            <li>🦠 Vírus e malwares</li>
+            <li>🔐 Ransomwares</li>
+            <li>🎣 Phishing</li>
+            <li>🕵️ Spywares</li>
+            <li>⚠️ Aplicativos perigosos</li>
+            <li>🌐 Sites maliciosos</li>
+            <li>📧 Downloads suspeitos</li>
+            <li>💻 Exploits e ameaças online</li>
+            <li>☁️ Ameaças modernas via internet</li>
+          </ul>
+          <br />
+          <h3>Planos do AVG</h3>
+          {/* FREE */}
+          <h4>AVG Antivirus Free</h4>
+          <p>
+            <strong>Preço:</strong> Gratuito.
+          </p>
+          <p>
+            <strong>Dispositivos:</strong> Uso pessoal básico.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🛡️ Antivírus gratuito</li>
+            <li>🌐 Proteção web básica</li>
+            <li>☁️ Proteção em nuvem</li>
+            <li>⚡ Leve e rápido</li>
+            <li>🔄 Atualizações automáticas</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong> Recursos premium limitados e presença
+            de anúncios internos.
+          </p>
+          <br />
+          {/* INTERNET SECURITY */}
+          <h4>AVG Internet Security</h4>
+          <p>
+            <strong>Preço mensal:</strong> Aproximadamente R$ 10 a R$ 30.
+          </p>
+          <p>
+            <strong>Preço anual:</strong> Aproximadamente R$ 80 a R$ 250.
+          </p>
+          <p>
+            <strong>Dispositivos:</strong> 1 até 10 dispositivos.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🔥 Firewall inteligente</li>
+            <li>🎥 Proteção de webcam</li>
+            <li>🔐 Proteção anti-ransomware avançada</li>
+            <li>🌐 Segurança para navegação</li>
+            <li>💳 Proteção bancária online</li>
+            <li>📧 Proteção contra golpes por e-mail</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong> VPN vendida separadamente.
+          </p>
+          <br />
+          {/* ULTIMATE */}
+          <h4>AVG Ultimate</h4>
+          <p>
+            <strong>Preço mensal:</strong> Aproximadamente R$ 25 a R$ 60.
+          </p>
+          <p>
+            <strong>Preço anual:</strong> Aproximadamente R$ 180 a R$ 450.
+          </p>
+          <p>
+            <strong>Dispositivos:</strong> Até 10 dispositivos.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🌐 VPN integrada</li>
+            <li>🧹 AVG TuneUp</li>
+            <li>🛡️ Proteção avançada completa</li>
+            <li>⚡ Otimização do sistema</li>
+            <li>🔒 Recursos extras de privacidade</li>
+            <li>📱 Segurança multiplataforma</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong> Plano premium mais caro.
+          </p>
+          <br />
+          <h3>Ferramentas Extras</h3>
+          <ul>
+            <li>🌐 AVG Secure VPN</li>
+            <li>🧹 AVG TuneUp</li>
+            <li>🔥 Firewall avançado</li>
+            <li>🔑 Proteção de senhas</li>
+            <li>📡 Monitoramento de ameaças</li>
+            <li>💻 Otimização de desempenho</li>
+          </ul>
+          <br />
+          <h3>Pontos Importantes</h3>
+          <ul>
+            <li>💡 Muito conhecido mundialmente</li>
+            <li>⚡ Considerado leve e eficiente</li>
+            <li>🛡️ Boa proteção gratuita</li>
+            <li>🔒 Forte proteção web</li>
+            <li>☁️ Integração com proteção em nuvem</li>
+            <li>📡 Atualizações frequentes</li>
+            <li>🧹 Recursos extras de otimização</li>
+            <li>💻 Bom para usuários domésticos</li>
+          </ul>
+          <br />
+          <h3>Disponibilidade</h3>
+          <p>
+            <strong>Plataformas:</strong> Windows, Android, Mac e iOS
+          </p>
+          <p>
+            <strong>Modo de uso:</strong> Online e offline
+          </p>
+          <br /> <br />
         </div>
 
-        {/* Prime */}
+        {/* MALWAREBYTES */}
         <div className="card">
           <img
-            src="https://img.icons8.com/?size=100&id=mJTj7Q9EPSVn&format=png&color=000000"
-            alt="Prime"
-          />{" "}
+            src="https://img.icons8.com/?size=100&id=rHq5s3KDkFej&format=png&color=000000"
+            alt="Malwarebytes"
+          />
           <br />
-          <h2>PRIME VIDEO</h2>
+          <h2>MALWAREBYTES</h2>
+          {/* BOTÕES */}
           <a
-            href="https://www.primevideo.com/"
+            href="https://www.malwarebytes.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR PRIME VIDEO
+            ACESSAR MALWAREBYTES
+          </a>
+          <a
+            href="https://www.malwarebytes.com/mwb-download/thankyou"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            INSTALAR MALWAREBYTES
           </a>
           <br />
-          <h3 className="legenda">DESCRIÇÃO</h3>
-          <p>Streaming de filmes, séries e conteúdos originais da Amazon.</p>
+          <h4 className="legenda">DESCRIÇÃO</h4>
           <p>
-            <strong>Uso:</strong> Assistir conteúdos variados, incluindo
-            produções exclusivas e benefícios integrados ao Amazon Prime.
+            O Malwarebytes é um software de segurança focado na remoção e
+            proteção contra malwares, ransomwares, spywares, adwares, trojans e
+            ameaças modernas da internet.
           </p>
-          <h4 style={{ textAlign: "left" }}>
-            Alguns conteúdo exclusivo da Prime Video:
-          </h4>
-          <div className="detalhes">
-            <ul className="filme">
-              <b>Filmes:</b>
-              <li>The Tomorrow War</li>
-              <li>Borat: Fita de Cinema Seguinte</li>
-              <li>Saltburn</li>
-              <li>Air: A História por Trás do Logo</li>
-            </ul>
-            <ul className="series">
-              <b>Series:</b>
-              <li>The Boys (uma das mais famosas)</li>
-              <li>Invincible (animação adulta de super-heróis)</li>
-              <li>Jack Ryan</li>
-              <li>O Senhor dos Anéis: Os Anéis de Poder</li>
-              <li>Reacher</li>
-            </ul>
-          </div>
-          <h4>Diferenciais</h4>
+          <p>
+            Muito conhecido por sua eficiência na detecção de ameaças difíceis,
+            o Malwarebytes é amplamente utilizado tanto como antivírus principal
+            quanto como ferramenta complementar de segurança.
+          </p>
+          <br />
           <ul>
-            <li>🎬 Conteúdos exclusivos (Amazon Originals)</li>
-            <li>📦 Incluso no pacote Amazon Prime (com outros benefícios)</li>
-            <li>🎥 Opção de alugar ou comprar filmes recentes</li>
-            <li>📺 Boa qualidade de imagem (até 4K)</li>
-            <li>🌎 Catálogo variado internacional</li>
-          </ul>
-          <h4>Recursos principais</h4>
-          <ul>
-            <li>Perfis personalizados</li>
-            <li>Download para assistir offline</li>
-            <li>Controle parental</li>
-            <li>Legendas e dublagens</li>
-            <li>Integração com canais adicionais (Paramount+, etc.)</li>
-          </ul>
-          <h4>Planos</h4>
-          <ul>
-            <li>
-              <p>
-                <strong>Amazon Prime:</strong>
-              </p>
-              <p>Qualidade: Até 4K + HDR</p>
-              <p>Telas: Até 3 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Não (padrão atual)</p>
-              <p>Downloads disponíveis: Sim</p>
-              <p>Assinantes extras: Não necessário</p>
-              <p>Valor do plano: Cerca de R$14,90/mês ou R$119,00/ano</p>
-              <p>
-                <strong>Indicado para:</strong> Quem quer streaming + benefícios
-                extras (frete, jogos, música, etc.)
-              </p>
-            </li>
-            <br />
+            <h4>Para que é usado:</h4>
 
-            <li>
-              <p>
-                <strong>Canais adicionais:</strong>
-              </p>
-              <p>Qualidade: Varia (geralmente até 4K)</p>
-              <p>Telas: Depende do canal</p>
-              <p>Esse plano contém anúncios: Pode variar</p>
-              <p>Downloads disponíveis: Depende do canal</p>
-              <p>Assinantes extras: Não se aplica</p>
-              <p>
-                Valor do plano: A partir de cerca de R$14,90/mês (por canal)
-              </p>
-              <p>
-                <strong>Indicado para:</strong> Quem quer conteúdos específicos
-                (Paramount+, Telecine, etc.)
-              </p>
-            </li>
-            <br />
-
-            <li>
-              <p>
-                <strong>Aluguel / Compra de filmes:</strong>
-              </p>
-              <p>Qualidade: Até 4K</p>
-              <p>Telas: Geralmente 1–2 dispositivos</p>
-              <p>Esse plano contém anúncios: Não</p>
-              <p>Downloads disponíveis: Sim (tempo limitado)</p>
-              <p>Assinantes extras: Não se aplica</p>
-              <p>Valor: Varia (aprox. R$7,90 a R$49,90 por título)</p>
-              <p>
-                <strong>Indicado para:</strong> Assistir lançamentos fora do
-                catálogo
-              </p>
-            </li>
-            <br />
+            <li>Remover vírus e malwares</li>
+            <li>Detectar ransomwares</li>
+            <li>Bloquear spywares e trojans</li>
+            <li>Eliminar adwares e pop-ups</li>
+            <li>Proteger navegação online</li>
+            <li>Bloquear phishing</li>
+            <li>Escanear arquivos suspeitos</li>
+            <li>Melhorar segurança do sistema</li>
+            <li>Proteger dados pessoais</li>
+            <li>Detectar ameaças avançadas</li>
           </ul>
           <br />
+          <h4>Diferenciais</h4>
+          <ul>
+            <li>🛡️ Excelente detecção de malwares</li>
+            <li>⚡ Muito leve e rápido</li>
+            <li>🤖 Inteligência artificial integrada</li>
+            <li>☁️ Proteção baseada em nuvem</li>
+            <li>🔐 Forte proteção anti-ransomware</li>
+            <li>🌐 Navegação protegida</li>
+            <li>💻 Interface moderna e simples</li>
+            <li>📡 Atualizações constantes</li>
+            <li>🔍 Ótimo para escaneamentos avançados</li>
+            <li>🌎 Muito popular mundialmente</li>
+          </ul>
+          <br />
+          <h3>Principais Recursos</h3>
+          <ul>
+            <li>🛡️ Proteção em tempo real</li>
+            <li>🔐 Anti-ransomware</li>
+            <li>🌐 Proteção web</li>
+            <li>🎣 Anti-phishing</li>
+            <li>☁️ Proteção em nuvem</li>
+            <li>⚡ Escaneamento rápido</li>
+            <li>📂 Quarentena automática</li>
+            <li>🤖 Análise comportamental</li>
+            <li>🔄 Atualizações automáticas</li>
+            <li>📊 Relatórios de segurança</li>
+          </ul>
+          <br />
+          <h3>Recursos do Malwarebytes</h3>
+          <h4>🛡️ Proteção em Tempo Real</h4>
+          <p>
+            O Malwarebytes monitora continuamente o computador para detectar
+            ameaças, atividades suspeitas e programas perigosos.
+          </p>
+          <br />
+          <h4>🔐 Proteção Anti-Ransomware</h4>
+          <p>
+            Bloqueia ataques que tentam sequestrar arquivos pessoais e
+            criptografar dados importantes.
+          </p>
+          <br />
+          <h4>🌐 Proteção Web</h4>
+          <p>
+            Analisa páginas acessadas para bloquear sites maliciosos, golpes
+            online, downloads perigosos e links suspeitos.
+          </p>
+          <br />
+          <h4>🎣 Anti-Phishing</h4>
+          <p>
+            Detecta páginas falsas que tentam roubar senhas, dados bancários e
+            informações pessoais.
+          </p>
+          <br />
+          <h4>☁️ Proteção em Nuvem</h4>
+          <p>
+            Utiliza inteligência em nuvem para identificar ameaças modernas
+            rapidamente sem afetar muito o desempenho do sistema.
+          </p>
+          <br />
+          <h4>🤖 Inteligência Artificial</h4>
+          <p>
+            Usa IA e análise comportamental para identificar ameaças
+            desconhecidas e aplicativos suspeitos automaticamente.
+          </p>
+          <br />
+          <h4>⚡ Escaneamento Inteligente</h4>
+          <p>
+            Realiza verificações rápidas e profundas para localizar malwares
+            escondidos, spywares e ameaças avançadas.
+          </p>
+          <br />
+          <h4>📂 Quarentena Automática</h4>
+          <p>
+            Arquivos suspeitos são isolados automaticamente para evitar danos ao
+            sistema operacional.
+          </p>
+          <br />
+          <h4>🔄 Atualizações Automáticas</h4>
+          <p>
+            Mantém a base de ameaças sempre atualizada contra novos vírus e
+            ataques modernos.
+          </p>
+          <br />
+          <h4>📊 Relatórios de Segurança</h4>
+          <p>
+            Exibe informações detalhadas sobre ameaças, verificações realizadas
+            e status da proteção.
+          </p>
+          <br />
+          <h3>Proteções Disponíveis</h3>
+          <ul>
+            <li>🦠 Vírus e malwares</li>
+            <li>🔐 Ransomwares</li>
+            <li>🎣 Phishing</li>
+            <li>🕵️ Spywares</li>
+            <li>⚠️ Trojans</li>
+            <li>🌐 Sites maliciosos</li>
+            <li>📧 Downloads perigosos</li>
+            <li>💻 Exploits e ameaças online</li>
+            <li>📢 Adwares e pop-ups</li>
+          </ul>
+          <br />
+          <h3>Planos do Malwarebytes</h3>
+          {/* FREE */}
+          <h4>Malwarebytes Free</h4>
+          <p>
+            <strong>Preço:</strong> Gratuito.
+          </p>
+          <p>
+            <strong>Dispositivos:</strong> Uso pessoal básico.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🔍 Escaneamento manual</li>
+            <li>🛡️ Remoção de malwares</li>
+            <li>⚡ Verificações rápidas</li>
+            <li>📂 Quarentena de ameaças</li>
+            <li>🧹 Limpeza do sistema</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong> Não possui proteção em tempo real
+            permanente.
+          </p>
+          <br />
+          {/* PREMIUM */}
+          <h4>Malwarebytes Premium</h4>
+          <p>
+            <strong>Preço mensal:</strong> Aproximadamente R$ 15 a R$ 35.
+          </p>
+          <p>
+            <strong>Preço anual:</strong> Aproximadamente R$ 120 a R$ 300.
+          </p>
+          <p>
+            <strong>Dispositivos:</strong> 1 até 5 dispositivos.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🛡️ Proteção em tempo real</li>
+            <li>🔐 Anti-ransomware avançado</li>
+            <li>🌐 Proteção web completa</li>
+            <li>🎣 Anti-phishing</li>
+            <li>🤖 Detecção inteligente</li>
+            <li>☁️ Proteção baseada em nuvem</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong> Recursos VPN vendidos separadamente.
+          </p>
+          <br />
+          {/* PREMIUM + PRIVACY */}
+          <h4>Malwarebytes Premium + Privacy VPN</h4>
+          <p>
+            <strong>Preço mensal:</strong> Aproximadamente R$ 25 a R$ 60.
+          </p>
+          <p>
+            <strong>Preço anual:</strong> Aproximadamente R$ 250 a R$ 500.
+          </p>
+          <p>
+            <strong>Dispositivos:</strong> Até 5 dispositivos.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🌐 VPN integrada</li>
+            <li>🛡️ Proteção avançada completa</li>
+            <li>🔒 Navegação privada</li>
+            <li>⚡ Segurança em redes públicas</li>
+            <li>🤖 Proteção inteligente</li>
+            <li>📱 Segurança multiplataforma</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong> Plano mais caro da plataforma.
+          </p>
+          <br />
+          <h3>Ferramentas Extras</h3>
+          <ul>
+            <li>🌐 Malwarebytes Privacy VPN</li>
+            <li>🔍 Escaneamento avançado</li>
+            <li>📂 Quarentena automática</li>
+            <li>🤖 Proteção baseada em IA</li>
+            <li>📡 Monitoramento de ameaças</li>
+            <li>🛡️ Proteção em tempo real</li>
+          </ul>
+          <br />
+          <h3>Pontos Importantes</h3>
+          <ul>
+            <li>💡 Muito eficiente contra malwares</li>
+            <li>⚡ Considerado leve e rápido</li>
+            <li>🔐 Forte proteção anti-ransomware</li>
+            <li>🧹 Excelente para remover ameaças difíceis</li>
+            <li>🌎 Muito conhecido mundialmente</li>
+            <li>📡 Atualizações frequentes</li>
+            <li>💻 Interface moderna e simples</li>
+            <li>🛠️ Muito usado como antivírus complementar</li>
+          </ul>
+          <br />
+          <h3>Disponibilidade</h3>
+          <p>
+            <strong>Plataformas:</strong> Windows, Mac, Android, iOS e
+            Chromebook
+          </p>
+          <p>
+            <strong>Modo de uso:</strong> Online e offline
+          </p>
+          <br /> <br />
         </div>
 
-        {/* Globo */}
+        {/* UBLOCK ORIGIN */}
         <div className="card">
           <img
-            src="https://imgs.search.brave.com/RvsqNviyvuRYNp9MBnGag1k9PHPdLVrgAKf2w8f6C5A/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Vla2xvZ28u/Y29tL2xvZ28tcG5n/LzUwLzIvZ2xvYm9w/bGF5LWxvZ28tcG5n/X3NlZWtsb2dvLTUw/NDg3Mi5wbmc"
-            alt="Globo Play"
-          />{" "}
+            src="https://upload.wikimedia.org/wikipedia/commons/0/05/UBlock_Origin.svg"
+            alt="uBlock Origin"
+          />
           <br />
-          <h2>GLOBO PLAY</h2>
+          <h2>UBLOCK ORIGIN</h2>
+          {/* BOTÕES */}
           <a
-            href="https://globoplay.globo.com/"
+            href="https://ublockorigin.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR GLOBO PLAY
+            ACESSAR UBLOCK ORIGIN
+          </a>
+          <a
+            href="https://chromewebstore.google.com/detail/ublock-origin/cjpalhdlnbpafiamejdnhcphjbkeiagm"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            INSTALAR UBLOCK ORIGIN
           </a>
           <br />
-          <h3 className="legenda">DESCRIÇÃO</h3>
+          <h4 className="legenda">DESCRIÇÃO</h4>
           <p>
-            Streaming brasileiro com foco em novelas, séries, filmes e conteúdos
-            da TV Globo.
+            O uBlock Origin é uma extensão gratuita e de código aberto focada em
+            bloqueio de anúncios, rastreadores, pop-ups e conteúdos indesejados
+            durante a navegação.
           </p>
           <p>
-            <strong>Uso:</strong> Assistir novelas, programas de TV, séries
-            nacionais e conteúdos exclusivos.
+            Considerado um dos melhores bloqueadores de anúncios do mundo, o
+            uBlock Origin é conhecido por consumir pouca memória e oferecer
+            proteção avançada contra propagandas invasivas e rastreamento
+            online.
           </p>
-          <h4 style={{ textAlign: "left" }}>
-            Alguns conteúdos exclusivos do Globoplay:
-          </h4>
-          <div className="detalhes">
-            <ul className="filme">
-              <b>Séries e produções originais:</b>
-              <li>Verdades Secretas</li>
-              <li>As Five</li>
-              <li>Arcanjo Renegado</li>
-            </ul>
-
-            <ul className="series">
-              <b>Novelas exclusivas ou antecipadas</b>
-              <li>Todas as Flores</li>
-              <li>Verdades Secretas 2</li>
-            </ul>
-          </div>
-          <h4>Diferenciais</h4>
-          <ul>
-            <li>🎬 Conteúdos exclusivos da HBO e Warner Bros.</li>
-            <li>🏆 Séries premiadas e de alta qualidade</li>
-            <li>🦸 Catálogo forte de DC (Batman, Superman, etc.)</li>
-            <li>🎥 Filmes recentes e grandes produções</li>
-            <li>📺 Alta qualidade de imagem (até 4K)</li>
-          </ul>
-          <h4>Diferenciais</h4>
-          <ul>
-            <li>📺 Conteúdos da TV Globo ao vivo</li>
-            <li>🇧🇷 Forte catálogo nacional (novelas e séries)</li>
-            <li>🎬 Conteúdos exclusivos brasileiros</li>
-            <li>📡 Opção de assistir canais ao vivo</li>
-            <li>
-              🎥 Integração com outros serviços (Telecine, Premiere, etc.)
-            </li>
-          </ul>
-          <h4>Recursos principais</h4>
-          <ul>
-            <li>Perfis personalizados</li>
-            <li>Download para assistir offline</li>
-            <li>Controle parental</li>
-            <li>Replay de programas ao vivo</li>
-            <li>Recomendações personalizadas</li>
-          </ul>
-          <h4>Planos</h4>
-          <ul>
-            <li>
-              <p>
-                <strong>Padrão:</strong>
-              </p>
-              <p>Qualidade: Até 1080p (Full HD)</p>
-              <p>Telas: 2 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Não</p>
-              <p>Downloads disponíveis: Sim</p>
-              <p>Assinantes extras: Não permitido</p>
-              <p>Valor do plano: Cerca de R$24,90/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Quem gosta de novelas e conteúdo
-                nacional
-              </p>
-            </li>
-            <br />
-
-            <li>
-              <p>
-                <strong>Globoplay + Canais ao vivo:</strong>
-              </p>
-              <p>Qualidade: Até 1080p</p>
-              <p>Telas: 2 telas simultâneas</p>
-              <p>Esse plano contém anúncios: Não</p>
-              <p>Downloads disponíveis: Sim</p>
-              <p>Assinantes extras: Não permitido</p>
-              <p>Valor do plano: Cerca de R$49,90/mês</p>
-              <p>
-                <strong>Indicado para:</strong> Quem quer TV ao vivo + streaming
-              </p>
-            </li>
-            <br />
-          </ul>{" "}
           <br />
+          <ul>
+            <h4>Para que é usado:</h4>
+
+            <li>Bloquear anúncios em sites</li>
+            <li>Remover pop-ups invasivos</li>
+            <li>Bloquear rastreadores online</li>
+            <li>Melhorar privacidade na internet</li>
+            <li>Acelerar carregamento de páginas</li>
+            <li>Reduzir consumo de internet</li>
+            <li>Bloquear scripts maliciosos</li>
+            <li>Filtrar elementos indesejados</li>
+            <li>Melhorar experiência de navegação</li>
+            <li>Proteger contra alguns sites perigosos</li>
+          </ul>
+          <br />
+          <h4>Diferenciais</h4>
+          <ul>
+            <li>🆓 Totalmente gratuito</li>
+            <li>🔓 Código aberto (Open Source)</li>
+            <li>⚡ Extremamente leve</li>
+            <li>🚫 Excelente bloqueio de anúncios</li>
+            <li>🛡️ Ajuda na proteção de privacidade</li>
+            <li>🌐 Compatível com vários navegadores</li>
+            <li>🔍 Filtros altamente personalizáveis</li>
+            <li>📉 Consome pouca memória RAM</li>
+            <li>🚀 Pode deixar sites mais rápidos</li>
+            <li>🌎 Muito popular mundialmente</li>
+          </ul>
+          <br />
+          <h3>Principais Recursos</h3>
+          <ul>
+            <li>🚫 Bloqueio de anúncios</li>
+            <li>🛡️ Proteção contra rastreadores</li>
+            <li>🌐 Bloqueio de scripts maliciosos</li>
+            <li>⚡ Navegação mais rápida</li>
+            <li>📂 Filtros personalizados</li>
+            <li>🎯 Controle avançado de elementos</li>
+            <li>🔒 Maior privacidade online</li>
+            <li>📉 Redução de consumo de dados</li>
+            <li>🔄 Atualizações automáticas</li>
+            <li>💻 Compatibilidade multiplataforma</li>
+          </ul>
+          <br />
+          <h3>Recursos do uBlock Origin</h3>
+          <h4>🚫 Bloqueador de Anúncios</h4>
+          <p>
+            Remove anúncios em sites, vídeos, banners, pop-ups e propagandas
+            invasivas automaticamente durante a navegação.
+          </p>
+          <br />
+          <h4>🛡️ Proteção Contra Rastreamento</h4>
+          <p>
+            Bloqueia rastreadores online que monitoram atividades, hábitos de
+            navegação e coleta de dados pessoais.
+          </p>
+          <br />
+          <h4>🌐 Bloqueio de Scripts</h4>
+          <p>
+            Pode impedir scripts suspeitos, mineração de criptomoedas e
+            conteúdos potencialmente perigosos.
+          </p>
+          <br />
+          <h4>⚡ Navegação Mais Rápida</h4>
+          <p>
+            Ao bloquear anúncios e scripts desnecessários, o carregamento de
+            páginas pode ficar significativamente mais rápido.
+          </p>
+          <br />
+          <h4>📂 Filtros Personalizados</h4>
+          <p>
+            Permite utilizar listas de filtros avançadas para controlar
+            exatamente quais elementos serão bloqueados.
+          </p>
+          <br />
+          <h4>🎯 Seletor de Elementos</h4>
+          <p>
+            Usuários podem remover manualmente partes específicas de páginas,
+            como banners e elementos indesejados.
+          </p>
+          <br />
+          <h4>📉 Economia de Recursos</h4>
+          <p>
+            O uBlock Origin é conhecido por consumir pouca memória RAM e poucos
+            recursos do sistema.
+          </p>
+          <br />
+          <h4>🔒 Privacidade Aprimorada</h4>
+          <p>
+            Ajuda a reduzir coleta de dados, cookies invasivos e monitoramento
+            de navegação.
+          </p>
+          <br />
+          <h4>🔄 Atualizações Automáticas</h4>
+          <p>
+            As listas de bloqueio são atualizadas frequentemente para melhorar
+            proteção e eficiência.
+          </p>
+          <br />
+          <h3>O Que o uBlock Origin Bloqueia</h3>
+          <ul>
+            <li>📢 Anúncios em sites</li>
+            <li>🎥 Propagandas em vídeos</li>
+            <li>🪟 Pop-ups invasivos</li>
+            <li>🕵️ Rastreadores online</li>
+            <li>⚠️ Scripts suspeitos</li>
+            <li>⛏️ Mineradores de criptomoedas</li>
+            <li>📡 Conexões maliciosas</li>
+            <li>🍪 Cookies invasivos</li>
+          </ul>
+          <br />
+          <h3>Planos do uBlock Origin</h3>
+          <h4>uBlock Origin</h4>
+          <p>
+            <strong>Preço:</strong> Gratuito.
+          </p>
+          <p>
+            <strong>Licença:</strong> Open Source.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🚫 Bloqueio avançado de anúncios</li>
+            <li>🛡️ Proteção de privacidade</li>
+            <li>⚡ Navegação mais rápida</li>
+            <li>📂 Filtros personalizáveis</li>
+            <li>🌐 Compatibilidade com navegadores</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong> Não possui suporte técnico premium
+            oficial.
+          </p>
+          <br />
+          <h3>Navegadores Compatíveis</h3>
+          <ul>
+            <li>🌐 Google Chrome</li>
+            <li>🦊 Mozilla Firefox</li>
+            <li>🟦 Microsoft Edge</li>
+            <li>🧭 Opera</li>
+            <li>🛡️ Brave Browser</li>
+          </ul>
+          <br />
+          <h3>Ferramentas Extras</h3>
+          <ul>
+            <li>🎯 Seletor de elementos</li>
+            <li>📂 Importação de filtros</li>
+            <li>🛡️ Proteção anti-rastreamento</li>
+            <li>⚡ Modo avançado</li>
+            <li>🌐 Controle de scripts</li>
+            <li>🔄 Atualização automática de filtros</li>
+          </ul>
+          <br />
+          <h3>Pontos Importantes</h3>
+          <ul>
+            <li>💡 Considerado um dos melhores adblockers</li>
+            <li>⚡ Muito leve comparado a concorrentes</li>
+            <li>🔒 Excelente para privacidade online</li>
+            <li>🧹 Remove muitos anúncios invasivos</li>
+            <li>🌎 Extremamente popular mundialmente</li>
+            <li>🔓 Código aberto e gratuito</li>
+            <li>💻 Fácil de instalar e usar</li>
+            <li>🚀 Pode melhorar desempenho da navegação</li>
+          </ul>
+          <br />
+          <h3>Disponibilidade</h3>
+          <p>
+            <strong>Plataformas:</strong> Navegadores para Windows, Linux e Mac
+          </p>
+          <p>
+            <strong>Modo de uso:</strong> Online
+          </p>
+          <br /> <br />
         </div>
 
-        {/* Pluto */}
+        {/* AVIRA FREE SECURITY */}
         <div className="card">
           <img
-            src="https://imgs.search.brave.com/OYO2ShpWoSRfVVFvLpWAuw3QpoJe2KvcVkG_xdXrgm8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9wbHV0/by10di5hcGtnYXJh/LmNvbS91cGxvYWRz/LzIwMjEvNy9wbHV0/by10di1pY29uLmpw/Zw"
-            alt="Pluto"
-          />{" "}
+            src="https://imgs.search.brave.com/F1g2gehtmz4q3S_Mn1TLST_L1lF1w4Sqx9dY_tVMqxs/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wbGF5/LWxoLmdvb2dsZXVz/ZXJjb250ZW50LmNv/bS92RGdHMDNCdUhf/ZThKVU9BM2F1YS03/R1ZnckZ2LVdLeC1j/UU9wYUZydFk0cURh/MjNlV0xZVTR5MEpK/NFdlWXU3WnJrPXMy/NTYtcnc"
+            alt="Avira Free Security"
+            style={{ margin: "33px auto", height: "auto" }}
+          />
           <br />
-          <h2>PLUTO TV</h2>
+          <h2>AVIRA FREE SECURITY</h2>
+          {/* BOTÕES */}
           <a
-            href="https://pluto.tv/br/live-tv?lang=pt"
+            href="https://www.avira.com/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            ACESSAR PLUTO TV
+            ACESSAR AVIRA
+          </a>
+          <a
+            href="https://www.avira.com/en/start-download/product/2262/-I12e2mvtstLKUkGnG-U3eKJ0v4AM94lDY0eCg2ZeeRMAXyeS4YYmsvxtf-rJOk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            INSTALAR AVIRA
           </a>
           <br />
-          <h3 className="legenda">DESCRIÇÃO</h3>
-          <p>Streaming gratuito com canais ao vivo e conteúdos sob demanda.</p>
+          <h4 className="legenda">DESCRIÇÃO</h4>
           <p>
-            <strong>Uso:</strong> Assistir TV online grátis com programação
-            contínua e filmes/séries.
+            O Avira Free Security é um pacote gratuito de segurança digital
+            desenvolvido pela Avira, focado em proteção contra vírus, malwares,
+            ransomwares, ameaças online e otimização do computador.
           </p>
-          <h4 style={{ textAlign: "left" }}>
-            Alguns conteúdos que tem no Pluto TV:
-          </h4>
-          <div className="detalhes">
-            <ul className="serie">
-              <b>Conteúdos MAIS FAMOSOS na Pluto TV</b>
-              <li>South Park</li>
-              <li>Naruto</li>
-              <li>iCarly</li>
-              <li>Kenan & Kel</li>
-              <li>Bob Esponja</li>
-            </ul>
+          <p>
+            Muito conhecido mundialmente, o Avira combina antivírus, ferramentas
+            de privacidade e otimização em um único aplicativo, oferecendo
+            proteção leve e eficiente para usuários domésticos.
+          </p>
+          <br />
+          <ul>
+            <h4>Para que é usado:</h4>
 
-            <ul className="filme">
-              <b>Filmes conhecidos (variam bastante)</b>
-              <li>Os Mercenários</li>
-              <li>Guerra Mundial Z</li>
-              <li>Atividade Paranormal</li>
-            </ul>
-          </div>
+            <li>Proteger contra vírus e malwares</li>
+            <li>Bloquear ransomwares</li>
+            <li>Evitar sites perigosos</li>
+            <li>Proteger navegação online</li>
+            <li>Melhorar privacidade digital</li>
+            <li>Otimizar desempenho do PC</li>
+            <li>Remover arquivos desnecessários</li>
+            <li>Atualizar programas automaticamente</li>
+            <li>Verificar vulnerabilidades do sistema</li>
+            <li>Proteger dados pessoais</li>
+          </ul>
+          <br />
           <h4>Diferenciais</h4>
           <ul>
-            <li>💰 Totalmente gratuito</li>
-            <li>📺 Canais ao vivo 24h</li>
-            <li>🎬 Conteúdos sob demanda</li>
-            <li>🚫 Não precisa de cadastro</li>
-            <li>📱 Fácil acesso em vários dispositivos</li>
+            <li>🆓 Versão gratuita bastante completa</li>
+            <li>⚡ Antivírus leve e rápido</li>
+            <li>🛡️ Proteção em tempo real</li>
+            <li>🌐 Segurança para navegação online</li>
+            <li>🔒 Ferramentas extras de privacidade</li>
+            <li>🚀 Recursos de otimização do sistema</li>
+            <li>☁️ Tecnologia baseada em nuvem</li>
+            <li>📡 Atualizações automáticas</li>
+            <li>🌎 Muito conhecido mundialmente</li>
+            <li>💻 Interface moderna e simples</li>
           </ul>
-          <h4>Recursos principais</h4>
-          <ul>
-            <li>Guia de programação ao vivo</li>
-            <li>Conteúdo sob demanda</li>
-            <li>Compatível com Smart TVs e mobile</li>
-            <li>Interface simples</li>
-          </ul>
-          <h4>Planos</h4>
-          <ul>
-            <li>
-              <p>
-                <strong>Gratuito:</strong>
-              </p>
-              <p>Qualidade: Até 1080p</p>
-              <p>Telas: Varia conforme dispositivo</p>
-              <p>Esse plano contém anúncios: Sim</p>
-              <p>Downloads disponíveis: Não possui</p>
-              <p>Assinantes extras: Não necessário</p>
-              <p>Valor do plano: Gratuito</p>
-              <p>
-                <strong>Indicado para:</strong> Quem quer assistir sem pagar
-                nada
-              </p>
-            </li>
-            <br />
-          </ul>{" "}
           <br />
+          <h3>Principais Recursos</h3>
+          <ul>
+            <li>🛡️ Proteção antivírus em tempo real</li>
+            <li>⚠️ Proteção contra ransomware</li>
+            <li>🌐 Navegação segura</li>
+            <li>🔒 Ferramentas de privacidade</li>
+            <li>🚀 Otimização de desempenho</li>
+            <li>📂 Limpeza de arquivos inúteis</li>
+            <li>🔄 Atualizações automáticas</li>
+            <li>☁️ Proteção baseada em nuvem</li>
+            <li>📡 Proteção contra phishing</li>
+            <li>💻 Gerenciamento centralizado</li>
+          </ul>
+          <br />
+          <h3>Recursos do Avira</h3>
+          <h4>🛡️ Antivírus em Tempo Real</h4>
+          <p>
+            Monitora constantemente o sistema para detectar e bloquear vírus,
+            trojans, spywares e ameaças digitais.
+          </p>
+          <br />
+          <h4>⚠️ Proteção Contra Ransomware</h4>
+          <p>
+            Ajuda a impedir ataques que tentam sequestrar arquivos e exigir
+            pagamento para recuperação.
+          </p>
+          <br />
+          <h4>🌐 Segurança na Internet</h4>
+          <p>
+            O Avira verifica sites, downloads e conexões online para bloquear
+            páginas perigosas e golpes virtuais.
+          </p>
+          <br />
+          <h4>🔒 Ferramentas de Privacidade</h4>
+          <p>
+            Inclui recursos voltados para proteção de dados, privacidade online
+            e redução de rastreamento digital.
+          </p>
+          <br />
+          <h4>🚀 Otimizador de Sistema</h4>
+          <p>
+            Possui ferramentas para melhorar desempenho do computador, removendo
+            arquivos desnecessários e ajustando configurações.
+          </p>
+          <br />
+          <h4>📂 Limpeza Inteligente</h4>
+          <p>
+            Remove arquivos temporários, cache e resíduos que ocupam espaço no
+            sistema.
+          </p>
+          <br />
+          <h4>☁️ Proteção Baseada em Nuvem</h4>
+          <p>
+            Utiliza inteligência em nuvem para identificar ameaças recentes
+            rapidamente.
+          </p>
+          <br />
+          <h4>📡 Atualizador de Softwares</h4>
+          <p>
+            Detecta programas desatualizados que podem apresentar falhas de
+            segurança no computador.
+          </p>
+          <br />
+          <h4>🔄 Atualizações Automáticas</h4>
+          <p>
+            Mantém o antivírus atualizado automaticamente para melhorar
+            proteção.
+          </p>
+          <br />
+          <h3>Ameaças Detectadas</h3>
+          <ul>
+            <li>🦠 Vírus</li>
+            <li>⚠️ Ransomwares</li>
+            <li>🕵️ Spywares</li>
+            <li>🐴 Trojans</li>
+            <li>🌐 Sites maliciosos</li>
+            <li>📢 Adwares</li>
+            <li>🎣 Phishing</li>
+            <li>📂 Programas suspeitos</li>
+          </ul>
+          <br />
+          <h3>Planos do Avira</h3>
+          <h4>Avira Free Security</h4>
+          <p>
+            <strong>Preço:</strong> Gratuito.
+          </p>
+          <p>
+            <strong>Dispositivos:</strong> 1 dispositivo.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🛡️ Antivírus em tempo real</li>
+            <li>🌐 Proteção web básica</li>
+            <li>🚀 Otimização do sistema</li>
+            <li>📂 Limpeza de arquivos</li>
+            <li>☁️ Segurança baseada em nuvem</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong>
+            Recursos avançados limitados na versão gratuita.
+          </p>
+          <br />
+          <h4>Avira Internet Security</h4>
+          <p>
+            <strong>Preço mensal:</strong>
+            Aproximadamente R$ 15 a R$ 25.
+          </p>
+          <p>
+            <strong>Preço anual:</strong>
+            Aproximadamente R$ 120 a R$ 200.
+          </p>
+          <p>
+            <strong>Dispositivos:</strong>
+            Pode variar conforme plano.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🛡️ Segurança avançada</li>
+            <li>🔒 Proteção de privacidade</li>
+            <li>📡 Atualizador automático</li>
+            <li>🌐 Navegação segura avançada</li>
+            <li>⚡ Melhor proteção online</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong>
+            Alguns recursos premium podem variar por região.
+          </p>
+          <br />
+          <h4>Avira Prime</h4>
+          <p>
+            <strong>Preço mensal:</strong>
+            Aproximadamente R$ 30 a R$ 50.
+          </p>
+          <p>
+            <strong>Preço anual:</strong>
+            Aproximadamente R$ 250 a R$ 450.
+          </p>
+          <p>
+            <strong>Dispositivos:</strong>
+            Até 5 ou mais dispositivos.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🛡️ Proteção premium completa</li>
+            <li>🚀 Otimização avançada</li>
+            <li>🔒 VPN integrada</li>
+            <li>🌐 Segurança online avançada</li>
+            <li>📱 Proteção multiplataforma</li>
+            <li>⚡ Recursos premium ilimitados</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong>
+            VPN pode possuir limite dependendo do plano.
+          </p>
+          <br />
+          <h3>Ferramentas Extras</h3>
+          <ul>
+            <li>🔒 VPN integrada</li>
+            <li>📂 Limpeza de arquivos</li>
+            <li>🚀 Otimizador de desempenho</li>
+            <li>📡 Atualizador de softwares</li>
+            <li>🛡️ Proteção de navegador</li>
+            <li>⚡ Monitoramento em tempo real</li>
+          </ul>
+          <br />
+          <h3>Pontos Importantes</h3>
+          <ul>
+            <li>💡 Muito popular mundialmente</li>
+            <li>⚡ Leve e eficiente</li>
+            <li>🛡️ Boa proteção gratuita</li>
+            <li>🌐 Segurança online integrada</li>
+            <li>🔒 Recursos extras de privacidade</li>
+            <li>📡 Atualizações frequentes</li>
+            <li>💻 Interface amigável</li>
+            <li>🚀 Bom equilíbrio entre segurança e desempenho</li>
+          </ul>
+          <br />
+          <h3>Disponibilidade</h3>
+          <p>
+            <strong>Plataformas:</strong>
+            Windows, Mac, Android e iOS
+          </p>
+          <p>
+            <strong>Modo de uso:</strong>
+            Online e offline
+          </p>
+          <br /> <br />
+        </div>
+
+        {/* COMODO INTERNET SECURITY */}
+        <div className="card">
+          <img
+            src="data:image/jpeg;base64,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"
+            alt="Comodo Internet Security"
+            style={{
+              display: "block",
+              margin: "20px auto",
+              width: "80px",
+              objectFit: "contain",
+            }}
+          />
+          <br />
+          <h2>COMODO INTERNET SECURITY</h2>
+          {/* BOTÕES */}
+          <a
+            href="https://www.comodo.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            ACESSAR COMODO
+          </a>
+          <a
+            href="https://antivirus.comodo.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            INSTALAR COMODO
+          </a>
+          <br />
+          <center>
+            <h4> (PRODUTO PAGO) </h4>
+          </center>
+          <br />
+          <h4 className="legenda">DESCRIÇÃO</h4>
+          <p>
+            O Comodo Internet Security é um software de segurança focado em
+            proteção avançada contra vírus, malwares, ransomwares, spywares e
+            ameaças modernas da internet.
+          </p>
+          <p>
+            Conhecido pelo seu sistema de sandbox, firewall poderoso e proteção
+            em múltiplas camadas, o Comodo é bastante utilizado por usuários que
+            desejam maior controle e segurança avançada no computador.
+          </p>
+          <br />
+          <ul>
+            <h4>Para que é usado:</h4>
+
+            <li>Proteger contra vírus e malwares</li>
+            <li>Bloquear ransomwares</li>
+            <li>Monitorar atividades suspeitas</li>
+            <li>Proteger navegação online</li>
+            <li>Controlar conexões da internet</li>
+            <li>Executar arquivos em ambiente seguro</li>
+            <li>Evitar invasões e ataques hackers</li>
+            <li>Detectar programas perigosos</li>
+            <li>Proteger dados pessoais</li>
+            <li>Fortalecer segurança do Windows</li>
+          </ul>
+          <br />
+          <h4>Diferenciais</h4>
+          <ul>
+            <li>🛡️ Firewall extremamente avançado</li>
+            <li>📦 Sistema Sandbox integrado</li>
+            <li>⚡ Boa proteção em tempo real</li>
+            <li>🔒 Proteção em múltiplas camadas</li>
+            <li>🌐 Segurança avançada de rede</li>
+            <li>🤖 Tecnologia de contenção automática</li>
+            <li>💻 Alto nível de personalização</li>
+            <li>📡 Atualizações frequentes</li>
+            <li>🚀 Recursos avançados gratuitos</li>
+            <li>🌎 Muito conhecido no setor de segurança</li>
+          </ul>
+          <br />
+          <h3>Principais Recursos</h3>
+          <ul>
+            <li>🛡️ Antivírus em tempo real</li>
+            <li>🔥 Firewall avançado</li>
+            <li>📦 Sandbox segura</li>
+            <li>⚠️ Proteção contra ransomware</li>
+            <li>🌐 Proteção web</li>
+            <li>🔍 Análise comportamental</li>
+            <li>🤖 Auto Containment</li>
+            <li>📂 Quarentena automática</li>
+            <li>🔄 Atualizações automáticas</li>
+            <li>💻 Controle avançado do sistema</li>
+          </ul>
+          <br />
+          <h3>Recursos do Comodo</h3>
+          <h4>🛡️ Antivírus em Tempo Real</h4>
+          <p>
+            Monitora constantemente o computador para detectar vírus, spywares,
+            ransomwares e outras ameaças digitais.
+          </p>
+          <br />
+          <h4>🔥 Firewall Avançado</h4>
+          <p>
+            O firewall do Comodo controla conexões de entrada e saída, ajudando
+            a bloquear invasões, ataques e acessos suspeitos.
+          </p>
+          <br />
+          <h4>📦 Sandbox Segura</h4>
+          <p>
+            Permite executar arquivos desconhecidos em um ambiente isolado,
+            impedindo que programas perigosos afetem o sistema principal.
+          </p>
+          <br />
+          <h4>🤖 Auto Containment</h4>
+          <p>
+            Arquivos suspeitos são automaticamente colocados em contenção até
+            que sejam considerados seguros.
+          </p>
+          <br />
+          <h4>⚠️ Proteção Contra Ransomware</h4>
+          <p>
+            Ajuda a impedir ataques que tentam criptografar arquivos e
+            sequestrar dados pessoais.
+          </p>
+          <br />
+          <h4>🌐 Segurança Web</h4>
+          <p>
+            Analisa páginas, downloads e conexões online para bloquear ameaças
+            virtuais.
+          </p>
+          <br />
+          <h4>🔍 Análise Comportamental</h4>
+          <p>
+            O sistema monitora comportamentos suspeitos de aplicativos para
+            detectar ameaças desconhecidas.
+          </p>
+          <br />
+          <h4>📂 Quarentena Automática</h4>
+          <p>
+            Arquivos perigosos podem ser isolados automaticamente para evitar
+            danos ao computador.
+          </p>
+          <br />
+          <h4>🔄 Atualizações Frequentes</h4>
+          <p>
+            Mantém o banco de ameaças atualizado para proteção contra vírus
+            modernos.
+          </p>
+          <br />
+          <h3>Ameaças Detectadas</h3>
+          <ul>
+            <li>🦠 Vírus</li>
+            <li>⚠️ Ransomwares</li>
+            <li>🕵️ Spywares</li>
+            <li>🐴 Trojans</li>
+            <li>🌐 Sites maliciosos</li>
+            <li>📢 Adwares</li>
+            <li>🎣 Phishing</li>
+            <li>💻 Programas suspeitos</li>
+            <li>🔓 Tentativas de invasão</li>
+          </ul>
+          <br />
+          <h3>Planos do Comodo</h3>
+          <h4>Comodo Free Antivirus</h4>
+          <p>
+            <strong>Preço:</strong> Gratuito.
+          </p>
+          <p>
+            <strong>Dispositivos:</strong> Uso pessoal.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🛡️ Antivírus em tempo real</li>
+            <li>🔥 Firewall integrado</li>
+            <li>📦 Sandbox segura</li>
+            <li>🌐 Proteção online básica</li>
+            <li>🤖 Auto Containment</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong>
+            Recursos corporativos e suporte premium limitados.
+          </p>
+          <br />
+          <h4>Comodo Internet Security Pro</h4>
+          <p>
+            <strong>Preço anual:</strong>
+            Aproximadamente R$ 150 a R$ 300.
+          </p>
+          <p>
+            <strong>Dispositivos:</strong>
+            Pode variar conforme licença.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🛡️ Proteção avançada completa</li>
+            <li>🔒 Segurança reforçada</li>
+            <li>📞 Suporte técnico premium</li>
+            <li>🌐 Proteção online avançada</li>
+            <li>⚡ Melhor gerenciamento de ameaças</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong>
+            Alguns recursos dependem do plano adquirido.
+          </p>
+          <br />
+          <h4>Comodo Complete</h4>
+          <p>
+            <strong>Preço anual:</strong>
+            Aproximadamente R$ 300 a R$ 600.
+          </p>
+          <p>
+            <strong>Dispositivos:</strong>
+            Multi-dispositivos dependendo do plano.
+          </p>
+          <p>
+            <strong>Chave Benefícios:</strong>
+          </p>
+          <ul>
+            <li>🛡️ Segurança premium completa</li>
+            <li>☁️ Backup em nuvem</li>
+            <li>🔒 Proteção de dados avançada</li>
+            <li>🌐 Segurança online reforçada</li>
+            <li>📞 Suporte especializado</li>
+            <li>💻 Proteção multicamadas</li>
+          </ul>
+          <p>
+            <strong>Restrições:</strong>
+            Valor mais elevado comparado aos planos básicos.
+          </p>
+          <br />
+          <h3>Ferramentas Extras</h3>
+          <ul>
+            <li>🔥 Firewall avançado</li>
+            <li>📦 Sandbox virtual</li>
+            <li>🤖 Auto Containment</li>
+            <li>🌐 Proteção web</li>
+            <li>📂 Quarentena automática</li>
+            <li>🔄 Atualizações automáticas</li>
+          </ul>
+          <br />
+          <h3>Pontos Importantes</h3>
+          <ul>
+            <li>💡 Muito conhecido pelo firewall avançado</li>
+            <li>📦 Sandbox é um dos grandes diferenciais</li>
+            <li>⚡ Boa proteção gratuita</li>
+            <li>🔒 Forte segurança multicamadas</li>
+            <li>🌐 Excelente para usuários avançados</li>
+            <li>📡 Atualizações frequentes</li>
+            <li>💻 Interface rica em recursos</li>
+            <li>🚀 Alto nível de personalização</li>
+          </ul>
+          <br />
+          <h3>Disponibilidade</h3>
+          <p>
+            <strong>Plataformas:</strong>
+            Windows
+          </p>
+          <p>
+            <strong>Modo de uso:</strong>
+            Online e offline
+          </p>
+          <br /> <br />
         </div>
       </div>
     </div>

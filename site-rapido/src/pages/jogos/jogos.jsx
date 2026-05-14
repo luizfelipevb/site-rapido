@@ -92,25 +92,25 @@ function Jogos({ pesquisa }) {
     window.location.href = "xbox:";
   };
 
-{
-  /* Ubisoft Connect */
-}
-const abrirUbisoft = () => {
-  const instalador = "https://ubi.li/4vxt9";
+  {
+    /* Ubisoft Connect */
+  }
+  const abrirUbisoft = () => {
+    const instalador = "https://ubi.li/4vxt9";
 
-  // tenta abrir Ubisoft Connect via protocolo
-  window.location.href = "uplay://";
+    // tenta abrir Ubisoft Connect via protocolo
+    window.location.href = "uplay://";
 
-  setTimeout(() => {
-    const escolha = window.confirm(
-      "Se o Ubisoft Connect não foi iniciado dentro de alguns segundos, pode ser que não esteja instalado. Caso ele não abra, deseja baixar o instalador oficial do Ubisoft Connect?\n\nPara baixar clique em (OK) // Para fechar clique em (Cancelar)"
-    );
+    setTimeout(() => {
+      const escolha = window.confirm(
+        "Se o Ubisoft Connect não foi iniciado dentro de alguns segundos, pode ser que não esteja instalado. Caso ele não abra, deseja baixar o instalador oficial do Ubisoft Connect?\n\nPara baixar clique em (OK) // Para fechar clique em (Cancelar)",
+      );
 
-    if (escolha) {
-      window.open(instalador, "_blank");
-    }
-  }, 2000);
-};
+      if (escolha) {
+        window.open(instalador, "_blank");
+      }
+    }, 2000);
+  };
 
   {
     /* EA App */
