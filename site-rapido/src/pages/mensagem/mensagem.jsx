@@ -7,7 +7,9 @@ function Mensagem({ pesquisa }) {
       <h1>Mensagem </h1>
 
       <div className="lista">
+
         {/* Instagram */}
+        {(!termo || "instagram rede social mensagens reels stories".includes(termo)) && (
         <div className="card">
           <img
             src="https://imgs.search.brave.com/ROHr6e0iyH6gd7JLzKMu0Inmabq20L30hGawDmf4_NE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS81/MTIvMTc0LzE3NDg1/NS5wbmc"
@@ -86,7 +88,10 @@ function Mensagem({ pesquisa }) {
           </p>{" "}
           <br /> <br />
         </div>
+        )}
 
+        {/* WhatsApp */}
+        {(!termo || "whatsapp mensagens chamadas conversa chat business".includes(termo)) && (
         <div className="card">
           <img
             src="https://imgs.search.brave.com/jdYBLUAHUDF1Ah_YMtsGhQBEuLQs3v6xfGzh6Tp_30o/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZs/YXRpY29uLmNvbS81/MTIvMTc0LzE3NDg3/OS5wbmc"
@@ -166,9 +171,11 @@ function Mensagem({ pesquisa }) {
           </p>{" "}
           <br /> <br />
         </div>
-
-        {/*Messeger*/}
-        <div className="card">
+        )}
+        
+        {/* Messenger */}
+        {(!termo || "messenger facebook meta mensagens chat chamadas".includes(termo)) && (
+          <div className="card">
           <img
             src="https://cdn-icons-png.flaticon.com/128/889/889101.png"
             alt="Messenger"
@@ -322,8 +329,10 @@ function Mensagem({ pesquisa }) {
 
           <br />
         </div>
+        )}
 
         {/* Snapchat */}
+        {(!termo || "snapchat snaps stories filtros lentes".includes(termo)) && (
         <div className="card">
           <img
             src="https://upload.wikimedia.org/wikipedia/en/c/c4/Snapchat_logo.svg"
@@ -403,8 +412,11 @@ function Mensagem({ pesquisa }) {
           </p>{" "}
           <br /> <br />
         </div>
+        )}
 
-        <div className="card">
+        {/* Telegram */}
+        {(!termo || "telegram mensagens grupos canais bots".includes(termo)) && (
+          <div className="card">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
             alt="Telegram"
@@ -563,8 +575,11 @@ function Mensagem({ pesquisa }) {
 
           <br />
         </div>
+        )}
 
-        <div className="card">
+        {/* Skype */}
+        {(!termo || "skype chamadas video reunioes mensagens".includes(termo)) && (
+          <div className="card">
           <img
             src="data:image/png;base64,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"
             alt="Skype"
@@ -717,9 +732,11 @@ function Mensagem({ pesquisa }) {
 
           <br />
         </div>
+        )}
 
         {/* Discord */}
-        <div className="card">
+        {(!termo || "discord servidores gamer voz chat comunidades".includes(termo)) && (
+          <div className="card">
           <img
             src="https://imgs.search.brave.com/6yHvHQMor_PrKrTCDAsuj2V6IW18dk2XwOiD7BUaMQ8/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jZG4t/aWNvbnMtcG5nLmZy/ZWVwaWsuY29tLzI1/Ni8yMTExLzIxMTEz/NzAucG5nP3NlbXQ9/YWlzX3doaXRlX2xh/YmVs"
             alt="Discord"
@@ -817,9 +834,11 @@ function Mensagem({ pesquisa }) {
           </p>{" "}
           <br /> <br />
         </div>
+        )}
 
         {/* Telegram */}
-        <div className="card">
+        {(!termo || "telegram premium canais grupos mensagens".includes(termo)) && (
+          <div className="card">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg"
             alt="telegram"
@@ -900,8 +919,11 @@ function Mensagem({ pesquisa }) {
           </p>{" "}
           <br /> <br />
         </div>
-
-        <div className="card">
+        )}
+        
+        {/* Google Meet */}
+        {(!termo || "google meet reunioes video chamadas aulas".includes(termo)) && (
+          <div className="card">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/9/9b/Google_Meet_icon_%282020%29.svg"
             alt="Google Meet"
@@ -1038,8 +1060,11 @@ function Mensagem({ pesquisa }) {
 
           <br />
         </div>
-
-        <div className="card">
+        )}
+        
+        {/* Zoom */}
+        {(!termo || "zoom videoconferencia reunioes chamadas online".includes(termo)) && (
+          <div className="card">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/7/7b/Zoom_Communications_Logo.svg"
             alt="Zoom"
@@ -1190,8 +1215,11 @@ function Mensagem({ pesquisa }) {
 
           <br />
         </div>
+        )}
 
-        <div className="card">
+        {/* Microsoft Teams */}
+        {(!termo || "microsoft teams office reunioes trabalho empresas".includes(termo)) && (
+          <div className="card">
           <img
             src="data:image/png;base64,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"
             alt="Microsoft Teams"
@@ -1345,6 +1373,7 @@ function Mensagem({ pesquisa }) {
 
           <br />
         </div>
+        )}
       </div>
     </div>
   );

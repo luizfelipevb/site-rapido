@@ -7,7 +7,7 @@ function Banco({ pesquisa }) {
       <h1>Bancos</h1>
 
       <div className="lista">
-        {/* YOUTUBE */}
+
         {/* ITAU */}
         <div className="card">
           <img

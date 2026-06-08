@@ -7,8 +7,10 @@ function Documento({ pesquisa }) {
       <h1>Documentos</h1>
 
       <div className="lista">
-        {/* PACOTE OFFICE */}
-        <div className="card">
+
+        {/* MICROSOFT 365 */}
+        {(!termo || "microsoft 365".includes(termo)) && (
+          <div className="card">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
             alt="Microsoft Office"
@@ -169,9 +171,11 @@ function Documento({ pesquisa }) {
 
           <br />
         </div>
+        )}
 
         {/* FOXIT PDF READER */}
-        <div className="card">
+        {(!termo || "foxit pdf reader".includes(termo)) && (
+          <div className="card">
           <img
             src="https://imgs.search.brave.com/f1kKCJD8UBxtG86BwJyOF3pJ__CqMkJeRbx7uEDg8jM/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWcu/aWNvbnM4LmNvbS9j/b2xvci8xMjAwL2Zv/eGl0LXJlYWRlci5q/cGc"
             alt="Foxit PDF Reader"
@@ -294,9 +298,11 @@ function Documento({ pesquisa }) {
 
           <br />
         </div>
+        )}
 
         {/* ADOBE ACROBAT READER */}
-        <div className="card">
+        {(!termo || "adobe acrobat reader".includes(termo)) && (
+          <div className="card">
           <img
             src="https://imgs.search.brave.com/nhueKw5y-vLJKfSvryI-RVtIrKoNss6F-w0HJ03uwDc/rs:fit:500:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy90/aHVtYi80LzQyL0Fk/b2JlX0Fjcm9iYXRf/RENfbG9nb18yMDIw/LnN2Zy8yNTBweC1B/ZG9iZV9BY3JvYmF0/X0RDX2xvZ29fMjAy/MC5zdmcucG5n"
             alt="Adobe Acrobat Reader"
@@ -436,9 +442,11 @@ function Documento({ pesquisa }) {
 
           <br />
         </div>
+        )}
 
         {/* LIBREOFFICE */}
-        <div className="card">
+        {(!termo || "libreoffice".includes(termo)) && (
+          <div className="card">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/0/02/LibreOffice_Logo_Flat.svg"
             alt="LibreOffice"
@@ -567,9 +575,11 @@ function Documento({ pesquisa }) {
 
           <br />
         </div>
+        )}
 
         {/* WPS OFFICE */}
-        <div className="card">
+        {(!termo || "wps office".includes(termo)) && (
+          <div className="card">
           <img
             src="https://imgs.search.brave.com/HfRtEzWrSV5pE-QW3Xlg4nrnimq3DufhG64M6lB8HMM/rs:fit:32:32:1:0/g:ce/aHR0cDovL2Zhdmlj/b25zLnNlYXJjaC5i/cmF2ZS5jb20vaWNv/bnMvOTc1ZDg3MmZm/NWM5OWM5MjA1Mjgx/YTczNmQyMzA3ODFm/ZDhmYzg1OTBiN2Yy/ZjU1NDYyMWY5YTY3/MWQ4NTUxZi9ici53/cHMuY29tLw"
             alt="WPS Office"
@@ -714,9 +724,11 @@ function Documento({ pesquisa }) {
 
           <br />
         </div>
-
-        {/* GOOGLE DOCUMENTOS */}
-        <div className="card">
+        )}
+        
+        {/* GOOGLE DOCS */}
+        {(!termo || "google docs documento".includes(termo)) && (
+          <div className="card">
           <img
             src="https://imgs.search.brave.com/zlsbBK_6rFRM1baiok1ZdDF_QAoY9IIlaluWTI2L0yI/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9jZG4u/aWNvbnNjb3V0LmNv/bS9pY29uL2ZyZWUv/cG5nLTI1Ni9mcmVl/LWRvY3VtZW50b3Mt/Z29vZ2xlLTQ2MTc5/OC5wbmc_Zj13ZWJw/Jnc9MTI4"
             alt="Google Documentos"
@@ -865,9 +877,11 @@ function Documento({ pesquisa }) {
 
           <br />
         </div>
-
+        )}
+        
         {/* NOTEPAD++ */}
-        <div className="card">
+        {(!termo || "notepad++".includes(termo)) && (
+          <div className="card">
           <img
             src="https://imgs.search.brave.com/H0_KBYgzbfT-GZD0xRmedMAWpyiwmcqGJRKIu3ZBlyI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZnJlZWltYWdl/cy5jb20vZmljL2lt/YWdlcy9pY29ucy8y/NTYxLzFzdF9teF9p/c180Yy8yNTYvbm90/ZXBhZC5wbmc_aA"
             alt="Notepad++"
@@ -983,6 +997,7 @@ function Documento({ pesquisa }) {
 
           <br />
         </div>
+        )}
       </div>
     </div>
   );

@@ -7,7 +7,9 @@ function Compressao({ pesquisa }) {
       <h1>Compressão</h1>
 
       <div className="lista">
+
         {/* 7-ZIP */}
+        {(!termo || "7-zip".includes(termo)) && (
         <div className="card">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/2/24/7-Zip_Icon.png?utm_source=commons.wikimedia.org&utm_campaign=index&utm_content=thumbnail_unscaled&_=20230601131405"
@@ -236,9 +238,11 @@ function Compressao({ pesquisa }) {
           </p>
           <br /> <br />
         </div>
+        )}
 
         {/* WINRAR */}
-        <div className="card">
+        {(!termo || "winrar".includes(termo)) && (
+          <div className="card">
           <img
             src="https://www.win-rar.com/fileadmin/images/winrar-archive.png"
             alt="WinRAR"
@@ -488,9 +492,11 @@ function Compressao({ pesquisa }) {
           </p>
           <br /> <br />
         </div>
+          )}
 
         {/* PEAZIP */}
-        <div className="card">
+        {(!termo || "peazip".includes(termo)) && (
+          <div className="card">
           <img src="https://peazip.github.io/peazip_ico.png" alt="PeaZip" />
           <br />
           <h2>PEAZIP</h2>
@@ -714,9 +720,11 @@ function Compressao({ pesquisa }) {
           </p>
           <br /> <br />
         </div>
+        )}
 
         {/* COMPACTGUI */}
-        <div className="card">
+        {(!termo || "compactgui".includes(termo)) && (
+          <div className="card">
           <img
             src="https://compactgui.org/wp-content/uploads/2026/03/cropped-ComapactGUI-logo-1.png"
             alt="CompactGUI"
@@ -941,9 +949,11 @@ function Compressao({ pesquisa }) {
           </p>
           <br /> <br />
         </div>
-
+        )}
+        
         {/* BANDIZIP */}
-        <div className="card">
+        {(!termo || "bandizip".includes(termo)) && (
+          <div className="card">
           <img
             src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAIAAAD8GO2jAAAABnRSTlMAAAAAAABupgeRAAAD9ElEQVR4AbWWA5RlORCGU2PPtLW2bdu2fbS2cbS2bdvmwdrWWG376t9OUqnK2tX98m5U+G6l8kaY/1msgeVu6wcZgu0PNRRNw7VE7gE8ZRfzHHftlGt5OGj75oix1gCQGxBYt/0CoKtA8FuJ+1YlvCsAsQWAPXFdddUhKnKr1Goi8IxvbKtRAZGjrAPwwUtUspMgiOAM2MWCh5+ZkHrEfV6p5OIHVs0iEZhoD4FVCF61VETOigfQBR4E244jUDSxv8IoHlZEOqjRq0FIBHkG4+gWmiQIap7eu2Lp6lHmd6Q/Kb6tT174ru++7/sNyP8VLgZAI8igjFm50GbtvyNjRw1bbeExQ/+r13Yf/1q7VeaQwmqhYCDPAj0JmR82rh0dOzurNZHuMjVjYkvbrjjxuJebYpbxS07BXAxJhsL2V6gYL3ue+6z9zLda2LRbdMEm5XuuVaZG8sznbCGQJQJNAoTGmVuqYqRs/66h1+RpIfkEuvadJjXAJAIi2O1iIPV0inBahdGiFcrhlamdVgXnoF22xaIlMvvx9K6iSHzmFUQ+lyIDrDGkFzGnZeoYUWt3Mr97IIZ+8EolR21WK90H3qu3iKJaFp3kLOV0J2taFm264ATZXzZx1LTz1vydTM0vfXbqk9+2+urFGY/IwBBZz4tfLpGPYcWa0ebPpLVr8PqXp975aQuDp4CINUqa/rIQWftLVY//UwNlk0afu+fymyzbcPC9XyJUPbASNZBwedZzbmWxKjWw3nmvzu9JpbytUjlup1WrD99qGT+70QrVuy41+4khSkDhEcUHDVkCXykkTx2mZRYsCRz653b2RaXQfFbf8VlDR83kMdutvYhfs84SJY99Od9DKLhuxlkEr92IbLp4qTzPrO9Entgi49BSWFw1RZP4ve/rkaUQDIiqaZGlHJM7I4WjtfKCk2Tz1HltJksLA97s+K5WPWn1patlzTtTm6wT7CRnk2TRoOcFYit2/+Ll6t2388J7sp8tlijfYNma/bdaSQ/5zOa5HT0Aawa/hPgchNeP4MOiNVNk/5VHbXml+V3pH0xPufUNZAnXgvjARojA0+E+XKi6xPwFmd3Qds7tr380p1lz/DeqaTYIw+fPW95y2dpvZ9T/seovfpj37jdzHv5wpmBhhEwfcbFL+BoL0y9/OfPl02fB9Qkkpcn1oxG5isGFviBOBFYfEHEVFCvumwWsBDIOXmuisgK9DbVVRCm4/hP8k9Y8bvkkxhc2G2MRqyIRomyQdVF8XzIJERB4G7hxogC5FhEF5+Is4jsZ7K3cnOokrD0eCtZhFJH++nMzIIrKdaKRaqtesNFw2f4+IkMRAUXU9voN5n+TnwBTG60VvaHeRgAAAABJRU5ErkJggg=="
             alt="Bandizip"
@@ -1171,9 +1181,11 @@ function Compressao({ pesquisa }) {
           </p>
           <br /> <br />
         </div>
+        )}
 
         {/* NANAZIP */}
-        <div className="card">
+        {(!termo || "nanazip".includes(termo)) && (
+          <div className="card">
           <img
             src="https://avatars.githubusercontent.com/u/71426998?s=200&v=4"
             alt="NanaZip"
@@ -1393,6 +1405,7 @@ function Compressao({ pesquisa }) {
           </p>
           <br /> <br />
         </div>
+        )}
       </div>
     </div>
   );

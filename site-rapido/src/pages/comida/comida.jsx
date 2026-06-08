@@ -6,7 +6,9 @@ function Comida({ pesquisa }) {
       <h1>Comida </h1>
 
       <div className="lista">
+
         {/* iFood */}
+        {(!termo || "ifood".includes(termo)) && (
         <div className="card">
           <img src="https://logopng.com.br/logos/ifood-43.svg" alt="iFood" />
 
@@ -209,9 +211,11 @@ function Comida({ pesquisa }) {
             <li>✔ Quem busca variedade de comida</li>
           </ul>
         </div>
+        )}
 
         {/* Rappi */}
-        <div className="card">
+        {(!termo || "rappi".includes(termo)) && (
+          <div className="card">
           <img
             src="https://images.seeklogo.com/logo-png/31/1/rappi-logo-png_seeklogo-312269.png"
             alt="Rappi"
@@ -423,9 +427,11 @@ function Comida({ pesquisa }) {
             <li>✔ Quem precisa de entregas rápidas de qualquer item</li>
           </ul>
         </div>
+        )}
 
         {/* Aiqfome */}
-        <div className="card">
+        {(!termo || "aiqfome".includes(termo)) && (
+          <div className="card">
           <img
             src="https://images.seeklogo.com/logo-png/44/1/aiqfome-logo-png_seeklogo-443140.png"
             alt="Aiqfome"
@@ -557,9 +563,11 @@ function Comida({ pesquisa }) {
             <li>✔ Quem prefere restaurantes locais</li>
           </ul>
         </div>
+        )}
 
         {/* Delivery Much */}
-        <div className="card">
+        {(!termo || "delivery much".includes(termo)) && (
+          <div className="card">
           <img
             src="https://www.deliverymuch.com.br/assets/whiteout-no-text-8f9e06bd.svg"
             alt="Delivery Much"
@@ -691,9 +699,11 @@ function Comida({ pesquisa }) {
             <li>✔ Quem busca delivery simples e barato</li>
           </ul>
         </div>
-
+        )}
+        
         {/* Uber Eats */}
-        <div className="card">
+        {(!termo || "uber eats".includes(termo)) && (
+          <div className="card">
           <img
             src="https://images.seeklogo.com/logo-png/29/2/uber-eats-logo-png_seeklogo-291031.png"
             alt="Uber Eats"
@@ -877,9 +887,12 @@ function Comida({ pesquisa }) {
             <li>✔ Quem busca entregas variadas</li>
           </ul>
         </div>
-
-        {/* Google Maps - Comidas em Geral */}
-        <div className="card">
+        )}
+        
+        {/* Google Maps - Comidas */}
+        {(!termo ||
+          "google maps comidas restaurantes comida perto".includes(termo)) && (
+          <div className="card">
           <img
             src="https://img.icons8.com/color/96/google-maps-new.png"
             alt="Google Maps"
@@ -960,6 +973,7 @@ function Comida({ pesquisa }) {
             será o resultado.
           </p>
         </div>
+          )}
       </div>
     </div>
   );

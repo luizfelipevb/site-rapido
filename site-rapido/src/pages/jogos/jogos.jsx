@@ -138,7 +138,9 @@ function Jogos({ pesquisa }) {
       <h1>Jogos</h1>
 
       <div className="lista">
-        {/* STEAM CARD */}
+        
+      {/* STEAM CARD */}
+      {(!termo || "steam valve".includes(termo)) && (
         <div className="card">
           <img
             src="https://store.fastly.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
@@ -372,10 +374,12 @@ function Jogos({ pesquisa }) {
             para quem quer centralizar todos os jogos em um único lugar, com
             mais controle, personalização e recursos.
           </p>
-        </div>
+          </div>
+        )}
 
         {/* EPIC GAMES CARD */}
-        <div className="card">
+        {(!termo || "epic epicgames games".includes(termo)) && (
+          <div className="card">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/3/31/Epic_Games_logo.svg"
             alt="Epic Games"
@@ -602,10 +606,12 @@ function Jogos({ pesquisa }) {
             montar uma boa biblioteca de jogos ao longo do tempo, aproveitando
             promoções e conteúdos gratuitos.
           </p>
-        </div>
+          </div>
+          )}
 
-        {/* BATTLE.NET CARD */}
-        <div className="card">
+          {/* BATTLE.NET CARD */}
+          {(!termo || "battle battle.net net".includes(termo)) && (
+            <div className="card">
           <img
             src="https://imgs.search.brave.com/al1qzfWkX-fG3FZDxVdmjjNDLZ1Fb5JyV_DbKWKM8TQ/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaWNvbi1pY29u/cy5jb20vMTUwOC9Q/TkcvNTEyL2JhdHRs/ZW5ldF8xMDQwNzAu/cG5n"
             alt="Battle.net"
@@ -825,10 +831,12 @@ function Jogos({ pesquisa }) {
             desempenho, competitividade e uma experiência mais refinada, mesmo
             com uma biblioteca limitada.
           </p>
-        </div>
+          </div>
+          )}
 
-        {/* GOOGLE PLAY GAMES (PC) CARD */}
-        <div className="card">
+          {/* GOOGLE PLAY GAMES CARD */}
+          {(!termo || "google play games ".includes(termo)) && (
+            <div className="card">
           <img
             src="https://img.icons8.com/?size=100&id=22988&format=png&color=000000"
             alt="Google Play Games"
@@ -1033,10 +1041,12 @@ function Jogos({ pesquisa }) {
             conforto, mas não substitui plataformas tradicionais como Steam ou
             Epic Games.
           </p>
-        </div>
+          </div>
+            )}
 
-        {/* XBOX GAME PASS (PC) CARD */}
-        <div className="card">
+          {/* XBOX GAME PASS CARD */}
+          {(!termo || "xbox game pass ".includes(termo)) && (
+            <div className="card">
           <img
             src="https://uhf.microsoft.com/images/xbox/RW8TP2.png"
             alt="Xbox Game Pass"
@@ -1248,10 +1258,12 @@ function Jogos({ pesquisa }) {
             É ideal para quem gosta de variedade e quer jogar sem precisar
             comprar cada jogo, funcionando como um “Netflix dos games”.
           </p>
-        </div>
+          </div>
+          )}
 
-        {/* UBISOFT CONNECT CARD */}
-        <div className="card">
+          {/* UBISOFT CONNECT CARD */}
+          {(!termo || "ubisoft connect uplay ".includes(termo)) && (
+            <div className="card">
           <img
             src="https://imgs.search.brave.com/7XrakL8l9S2KFlD_Fjw2K-yoIOQn3hFmJvgJnfbQcEo/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Z0Y2RuLm5l/dC9pbWFnZXMvdF9h/cHAtaWNvbi1zL3Av/ZWU3NjA4ZGUtOTZk/MC0xMWU2LTk5NWYt/MDAxNjNlZDgzM2U3/LzI0MzEwNTExOTYv/dWJpc29mdC1jb25u/ZWN0LWljb24ucG5n"
             alt="Ubisoft Connect"
@@ -1447,10 +1459,12 @@ function Jogos({ pesquisa }) {
             É essencial para quem joga títulos da Ubisoft, mas não substitui
             plataformas mais completas como Steam ou Epic Games.
           </p>
-        </div>
+          </div>
+)}
 
-        {/* EA APP CARD */}
-        <div className="card">
+          {/* EA APP CARD */}
+          {(!termo || "ea eaapp app origin".includes(termo)) && (
+            <div className="card">
           <img
             src="https://media.contentapi.ea.com/content/dam/eacom/common/ea-wordmark-network-nav-coral.svg"
             alt="EA App"
@@ -1641,7 +1655,8 @@ function Jogos({ pesquisa }) {
             É essencial para quem joga títulos da EA, mas não substitui
             plataformas mais completas como Steam ou Epic Games.
           </p>
-        </div>
+          </div>
+          )}
       </div>
     </div>
   );
