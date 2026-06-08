@@ -1,140 +1,291 @@
+/* ===================================
+   FUNDO DA PÁGINA
+=================================== */
+
 body {
-  height: 100vh;
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+  font-family: "Segoe UI", Arial, sans-serif;
 
-  /* fundo mais suave e moderno */
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+  background:
+    radial-gradient(circle at top left, #2563eb 0%, transparent 30%),
+    radial-gradient(circle at bottom right, #7c3aed 0%, transparent 30%),
+    linear-gradient(135deg, #0f172a, #1e293b);
+
+  overflow-x: hidden;
 }
 
-/* topo mais limpo */
+/* ===================================
+   ANIMAÇÕES
+=================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes brilho {
+  from {
+    left: -120%;
+  }
+
+  to {
+    left: 120%;
+  }
+}
+
+@keyframes flutuar {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-4px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* ===================================
+   TOPO
+=================================== */
+
 .topo {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  padding: 30px 0;
 }
 
-/* input mais moderno */
-#pesquisa {
-  width: 500px;
-  height: 90px;
-
-  text-align: center;
-
-  border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-
-  padding: 0 15px;
-  box-sizing: border-box;
-  outline: none;
-
-  background-color: rgba(255, 255, 255, 0.08);
-  color: white;
-
-  backdrop-filter: blur(10px);
-
-  transition: 0.3s;
-
-  font-size: 120%;
-}
-
-#pesquisa::placeholder {
-  color: rgba(255, 255, 255, 0.6);
-}
-
-#pesquisa:focus {
-  border-color: #60a5fa;
-  box-shadow: 0 0 10px rgba(96, 165, 250, 0.4);
-}
-
-/* grid mais equilibrado */
-.grade {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 30px;
-}
-
-/* cards mais profissionais */
-.box {
-  height: 90px;
-
-  border-radius: 16px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  color: white;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-
-  cursor: pointer;
-  transition: 0.3s ease;
-
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
-}
-
-/* hover moderno */
-.box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
-}
-
-/* cores mais harmonizadas (menos “neon agressivo”) */
-#navegador { background: #ef4444; }
-#comida { background: #f59e0b; }
-#mapa { background: #22c55e; }
-#plataforma { background: #a855f7; }
-#social { background: #3b82f6; }
-#viagem { background: #06b6d4; }
-#jogos { background: #f97316; }
-#mensagem { background: #ef4444; }
-#banco { background: #2563eb; }
-#documento { background: #fb7185; }
-#armazenamento { background: #8b5e34; }
-#midia { background: #7f1d1d; }
-#segurança { background: #111827; }
-#utilidade { background: #e5e7eb; color: #111; }
-#compressao { background: #14b8a6; }
-
-#outros {
-  grid-column: 2;
-  background: #64748b;
-}
-
-
-.topo {
-  width: 100%;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  background: transparent;
-}
+/* ===================================
+   PESQUISA
+=================================== */
 
 .pesquisa {
-  width: 60%;
-  max-width: 600px;
-  padding: 12px 20px;
+  width: 70%;
+  max-width: 700px;
 
-  border-radius: 25px;
+  height: 60px;
+
   border: none;
-
   outline: none;
 
-  font-size: 16px;
+  border-radius: 50px;
 
-  background: #1e293b;
+  padding: 0 25px;
+
+  font-size: 17px;
+
   color: white;
 
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  background: rgba(255,255,255,0.08);
+
+  backdrop-filter: blur(15px);
+
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.3);
+
+  transition: .3s;
 }
 
 .pesquisa::placeholder {
-  color: #94a3b8;
+  color: rgba(255,255,255,0.6);
 }
 
 .pesquisa:focus {
-  box-shadow: 0 0 15px rgba(37, 99, 235, 0.7);
+  transform: scale(1.02);
+
+  box-shadow:
+    0 0 25px rgba(37,99,235,0.7);
+}
+
+/* ===================================
+   GRADE DOS CARDS
+=================================== */
+
+.grade {
+  width: 92%;
+
+  margin: auto;
+
+  display: grid;
+
+  grid-template-columns: repeat(5, 1fr);
+
+  gap: 35px;
+
+  padding: 20px;
+
+  animation: fadeIn .8s ease;
+}
+
+/* ===================================
+   CARDS
+=================================== */
+
+.box {
+  position: relative;
+
+  height: 140px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+
+  font-size: 1.4rem;
+  font-weight: bold;
+
+  color: white;
+
+  border-radius: 24px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 15px 30px rgba(0,0,0,0.3);
+
+  transition: .35s ease;
+
+  animation: flutuar 4s ease-in-out infinite;
+}
+
+/* brilho passando */
+
+.box::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -120%;
+
+  width: 50%;
+  height: 100%;
+
+  transform: skewX(-25deg);
+
+  background:
+    rgba(255,255,255,0.25);
+
+}
+
+.box:hover::before {
+  animation: brilho .8s ease;
+}
+
+/* hover */
+
+.box:hover {
+  transform: translateY(-12px) scale(1.05);
+
+  box-shadow:
+    0 25px 45px rgba(0,0,0,0.45);
+}
+
+/* ===================================
+   CORES
+=================================== */
+
+#navegador {
+  background: linear-gradient(135deg,#ef4444,#dc2626);
+}
+
+#plataforma {
+  background: linear-gradient(135deg,#a855f7,#7e22ce);
+}
+
+#social {
+  background: linear-gradient(135deg,#3b82f6,#1d4ed8);
+}
+
+#viagem {
+  background: linear-gradient(135deg,#06b6d4,#0891b2);
+}
+
+#comida {
+  background: linear-gradient(135deg,#f59e0b,#d97706);
+}
+
+#jogos {
+  background: linear-gradient(135deg,#f97316,#ea580c);
+}
+
+#mapa {
+  background: linear-gradient(135deg,#22c55e,#15803d);
+}
+
+#mensagem {
+  background: linear-gradient(135deg,#f43f5e,#be123c);
+}
+
+#documento {
+  background: linear-gradient(135deg,#fb7185,#e11d48);
+}
+
+#armazenamento {
+  background: linear-gradient(135deg,#8b5e34,#6f4e37);
+}
+
+#midia {
+  background: linear-gradient(135deg,#7f1d1d,#450a0a);
+}
+
+#segurança {
+  background: linear-gradient(135deg,#111827,#374151);
+}
+
+#utilidade {
+  background: linear-gradient(135deg,#e5e7eb,#cbd5e1);
+  color: #111827;
+}
+
+#compressao {
+  background: linear-gradient(135deg,#14b8a6,#0f766e);
+}
+
+#outros {
+  background: linear-gradient(135deg,#64748b,#475569);
+}
+
+/* ===================================
+   RESPONSIVO
+=================================== */
+
+@media (max-width: 1200px) {
+  .grade {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .grade {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .grade {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .box {
+    height: 120px;
+  }
+}
+
+@media (max-width: 450px) {
+  .grade {
+    grid-template-columns: 1fr;
+  }
 }

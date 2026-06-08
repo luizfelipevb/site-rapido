@@ -1,5 +1,12 @@
 import { useState } from "react";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  useLocation,
+} from "react-router-dom";
+
 import "./App.css";
 
 import Navegador from "./pages/navegador/navegador";
@@ -10,7 +17,6 @@ import Comida from "./pages/comida/comida";
 import Jogos from "./pages/jogos/jogos";
 import Mapa from "./pages/mapa/mapa";
 import Mensagem from "./pages/mensagem/mensagem";
-import Banco from "./pages/banco/banco";
 import Documento from "./pages/documento/documento";
 import Armazenamento from "./pages/armazenamento/armazenamento";
 import Midia from "./pages/midia/midia";
@@ -19,21 +25,25 @@ import Utilidade from "./pages/utilidade/utilidade";
 import Compressao from "./pages/compressao/compressao";
 import Outros from "./pages/outro/outros";
 
-function App() {
+function AppContent() {
   const [pesquisa, setPesquisa] = useState("");
-  return (
-    <BrowserRouter>
-      <div className="topo">
-        <input
-          type="text"
-          placeholder="Digite o que busca"
-          value={pesquisa}
-          onChange={(e) => setPesquisa(e.target.value)}
-          className="pesquisa"
-        />
-      </div>
+  const location = useLocation();
 
-      {/* MENU (HOME) */}
+  return (
+    <>
+      {/* Pesquisa aparece somente fora da Home */}
+      {location.pathname !== "/" && (
+        <div className="topo">
+          <input
+            type="text"
+            placeholder="Digite o que busca"
+            value={pesquisa}
+            onChange={(e) => setPesquisa(e.target.value)}
+            className="pesquisa"
+          />
+        </div>
+      )}
+
       <Routes>
         <Route
           path="/"
@@ -44,15 +54,15 @@ function App() {
               </Link>
 
               <Link to="/plataforma" className="box" id="plataforma">
-                Plataforma de video
+                Plataforma de vídeo
               </Link>
 
               <Link to="/social" className="box" id="social">
-                Midia Social
+                Mídia Social
               </Link>
 
               <Link to="/viagem" className="box" id="viagem">
-                Viajem
+                Viagem
               </Link>
 
               <Link to="/comida" className="box" id="comida">
@@ -71,10 +81,6 @@ function App() {
                 Mensagem
               </Link>
 
-              <Link to="/banco" className="box" id="banco">
-                Banco
-              </Link>
-
               <Link to="/documento" className="box" id="documento">
                 Documento
               </Link>
@@ -87,7 +93,7 @@ function App() {
                 Mídia
               </Link>
 
-              <Link to="/seguranca" className="box" id="segurança">
+              <Link to="/seguranca" className="box" id="seguranca">
                 Segurança
               </Link>
 
@@ -106,27 +112,30 @@ function App() {
           }
         />
 
-        {/* PÁGINAS */}
         <Route path="/navegador" element={<Navegador pesquisa={pesquisa} />} />
-        <Route
-          path="/plataforma"
-          element={<Plataforma pesquisa={pesquisa} />}
-        />
+        <Route path="/plataforma" element={<Plataforma pesquisa={pesquisa} />} />
         <Route path="/social" element={<Social pesquisa={pesquisa} />} />
         <Route path="/viagem" element={<Viagem pesquisa={pesquisa} />} />
         <Route path="/comida" element={<Comida pesquisa={pesquisa} />} />
         <Route path="/jogos" element={<Jogos pesquisa={pesquisa} />} />
         <Route path="/mapa" element={<Mapa pesquisa={pesquisa} />} />
         <Route path="/mensagem" element={<Mensagem pesquisa={pesquisa} />} />
-        <Route path="/banco" element={<Banco pesquisa={pesquisa} />} />
         <Route path="/documento" element={<Documento pesquisa={pesquisa} />} />
-        <Route path="/armazenamento" element={<Armazenamento pesquisa={pesquisa} />}/>
+        <Route path="/armazenamento" element={<Armazenamento pesquisa={pesquisa} />} />
         <Route path="/midia" element={<Midia pesquisa={pesquisa} />} />
         <Route path="/seguranca" element={<Seguranca pesquisa={pesquisa} />} />
         <Route path="/utilidade" element={<Utilidade pesquisa={pesquisa} />} />
-        <Route path="/compressao" element={<Compressao pesquisa={pesquisa} />}/>
+        <Route path="/compressao" element={<Compressao pesquisa={pesquisa} />} />
         <Route path="/outros" element={<Outros pesquisa={pesquisa} />} />
       </Routes>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <BrowserRouter>
+      <AppContent />
     </BrowserRouter>
   );
 }
