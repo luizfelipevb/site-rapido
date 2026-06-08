@@ -1,140 +1,269 @@
-body {
-  height: 100vh;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+/* ==========================================================
+   CONFIGURAÇÕES GERAIS DA PÁGINA
+========================================================== */
 
-  /* fundo mais suave e moderno */
-  background: linear-gradient(135deg, #0f172a, #1e293b);
+/* Define o estilo geral do site */
+body {
+  /* Remove margens padrão do navegador */
+
+  /* Ocupa toda a altura da tela */
+  min-height: 100vh;
+  /* Impede barra horizontal */
+  overflow-x: hidden;
+  min-height: 100vh;
+  /* Fundo com gradiente moderno */
+  background:
+    radial-gradient(circle at top left, #1d4ed8 0%, transparent 40%),
+    radial-gradient(circle at bottom right, #7c3aed 0%, transparent 40%),
+    linear-gradient(135deg, #0f172a, #1e293b);
+
+  /* Fonte principal */
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-/* topo mais limpo */
+/* ==========================================================
+   TOPO DA PÁGINA
+========================================================== */
+
 .topo {
-  width: 100%;
+  /* Centraliza o conteúdo */
   display: flex;
   justify-content: center;
-  padding: 20px 0;
+  align-items: center;
+
+  /* Espaçamento interno */
+  padding: 25px 20px;
 }
 
-/* input mais moderno */
-#pesquisa {
-  width: 500px;
-  height: 90px;
+/* ==========================================================
+   CAMPO DE PESQUISA
+========================================================== */
 
-  text-align: center;
+.pesquisa {
+  /* Largura responsiva */
+  width: 70%;
+  max-width: 650px;
 
+  /* Altura confortável */
+  height: 55px;
+
+  /* Espaçamento interno */
+  padding: 0 20px;
+
+  /* Remove borda padrão */
+  border: none;
+
+  /* Cantos arredondados */
   border-radius: 50px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
 
-  padding: 0 15px;
-  box-sizing: border-box;
+  /* Remove contorno padrão */
   outline: none;
 
-  background-color: rgba(255, 255, 255, 0.08);
+  /* Cor do texto */
   color: white;
 
-  backdrop-filter: blur(10px);
+  /* Tamanho da fonte */
+  font-size: 16px;
 
-  transition: 0.3s;
+  /* Fundo estilo glassmorphism */
+  background: rgba(255, 255, 255, 0.08);
 
-  font-size: 120%;
+  /* Efeito de vidro */
+  backdrop-filter: blur(12px);
+
+  /* Borda suave */
+  border: 1px solid rgba(255, 255, 255, 0.15);
+
+  /* Sombra */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+
+  /* Animações suaves */
+  transition: all 0.3s ease;
 }
 
-#pesquisa::placeholder {
+/* Texto de exemplo */
+.pesquisa::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
 
-#pesquisa:focus {
-  border-color: #60a5fa;
-  box-shadow: 0 0 10px rgba(96, 165, 250, 0.4);
+/* Quando o usuário clica */
+.pesquisa:focus {
+  border-color: #3b82f6;
+
+  box-shadow:
+    0 0 0 4px rgba(59, 130, 246, 0.2),
+    0 8px 25px rgba(0, 0, 0, 0.35);
+
+  transform: scale(1.01);
 }
 
-/* grid mais equilibrado */
-.grade {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-  padding: 30px;
-}
-
-/* cards mais profissionais */
 .box {
-  height: 90px;
+  text-decoration: none;
+  color: white;
 
-  border-radius: 16px;
+  height: 120px;
 
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 
-  color: white;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+  font-size: 1.4rem;
+  font-weight: bold;
 
-  cursor: pointer;
-  transition: 0.3s ease;
+  border-radius: 20px;
 
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+  position: relative;
+  overflow: hidden;
+
+  transition: all 0.35s ease;
+
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.25),
+    inset 0 1px 1px rgba(255,255,255,0.15);
 }
 
-/* hover moderno */
+.box::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -100%;
+
+  width: 100%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.15),
+    transparent
+  );
+
+  transition: 0.6s;
+}
+
+.box:hover::before {
+  left: 100%;
+}
+
+/* Efeito ao passar o mouse */
 .box:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.35);
+  transform: translateY(-8px) scale(1.03);
+
+  box-shadow:
+    0 20px 40px rgba(0,0,0,0.4);
 }
 
-/* cores mais harmonizadas (menos “neon agressivo”) */
-#navegador { background: #ef4444; }
-#comida { background: #f59e0b; }
-#mapa { background: #22c55e; }
-#plataforma { background: #a855f7; }
-#social { background: #3b82f6; }
-#viagem { background: #06b6d4; }
-#jogos { background: #f97316; }
-#mensagem { background: #ef4444; }
-#banco { background: #2563eb; }
-#documento { background: #fb7185; }
-#armazenamento { background: #8b5e34; }
-#midia { background: #7f1d1d; }
-#segurança { background: #111827; }
-#utilidade { background: #e5e7eb; color: #111; }
-#compressao { background: #14b8a6; }
+/* Efeito ao clicar */
+.box:active {
+  transform: scale(0.98);
+}
+
+/* ==========================================================
+   CORES DOS CARDS
+========================================================== */
+
+#navegador {
+  background: linear-gradient(135deg, #dc2626, #ef4444);
+}
+
+#plataforma {
+  background: linear-gradient(135deg, #9333ea, #a855f7);
+}
+
+#social {
+  background: linear-gradient(135deg, #2563eb, #3b82f6);
+}
+
+#viagem {
+  background: linear-gradient(135deg, #0891b2, #06b6d4);
+}
+
+#comida {
+  background: linear-gradient(135deg, #d97706, #f59e0b);
+}
+
+#jogos {
+  background: linear-gradient(135deg, #ea580c, #f97316);
+}
+
+#mapa {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+}
+
+#mensagem {
+  background: linear-gradient(135deg, #b91c1c, #ef4444);
+}
+
+#banco {
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+}
+
+#documento {
+  background: linear-gradient(135deg, #e11d48, #fb7185);
+}
+
+#armazenamento {
+  background: linear-gradient(135deg, #6f4e37, #8b5e34);
+}
+
+#midia {
+  background: linear-gradient(135deg, #7f1d1d, #991b1b);
+}
+
+#segurança {
+  background: linear-gradient(135deg, #111827, #374151);
+}
+
+#utilidade {
+  background: linear-gradient(135deg, #d1d5db, #f3f4f6);
+  color: #111827;
+}
+
+#compressao {
+  background: linear-gradient(135deg, #0f766e, #14b8a6);
+}
 
 #outros {
-  grid-column: 2;
-  background: #64748b;
+  background: linear-gradient(135deg, #475569, #64748b);
 }
 
+/* ==========================================================
+   RESPONSIVIDADE
+========================================================== */
 
-.topo {
-  width: 100%;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  background: transparent;
+@media (max-width: 768px) {
+  .pesquisa {
+    width: 90%;
+  }
+
+  .box {
+    height: 90px;
+    font-size: 16px;
+  }
+
+  /* ==========================================================
+   GRID DOS CARDS
+  ========================================================== */
+
+  .grade {
+
+  /* Usa quase toda a largura disponível */
+  width: 95%;
+
+  /* Limita em telas gigantes */
+  max-width: 1500px;
+
+  display: grid;
+
+  /* 3 colunas fixas */
+  grid-template-columns: repeat(3, 1fr);
+
+  /* Espaçamento maior */
+  gap: 30px;
+
+  /* Espaçamento interno */
+  padding: 20px 40px;
 }
-
-.pesquisa {
-  width: 60%;
-  max-width: 600px;
-  padding: 12px 20px;
-
-  border-radius: 25px;
-  border: none;
-
-  outline: none;
-
-  font-size: 16px;
-
-  background: #1e293b;
-  color: white;
-
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
-}
-
-.pesquisa::placeholder {
-  color: #94a3b8;
-}
-
-.pesquisa:focus {
-  box-shadow: 0 0 15px rgba(37, 99, 235, 0.7);
 }
