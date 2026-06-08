@@ -19,8 +19,9 @@ function Navegador({ pesquisa }) {
       <h1>Navegadores</h1> <br />
       <br />
       <div className="lista">
+
         {/* CHROME */}
-        {(!termo || "chrome google navegador".includes(termo)) && (
+        {(!termo || "chrome google".includes(termo)) && (
           <div className="card">
             <img
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/chrome/chrome-original.svg"
@@ -125,7 +126,7 @@ function Navegador({ pesquisa }) {
         )}
 
         {/* FIREFOX */}
-        {(!termo || "firefox mozilla navegador".includes(termo)) && (
+        {(!termo || "firefox mozilla".includes(termo)) && (
           <div className="card">
             <img
               src="https://cdn-icons-png.flaticon.com/512/5968/5968827.png"
@@ -229,7 +230,7 @@ function Navegador({ pesquisa }) {
         )}
 
         {/* EDGE */}
-        {(!termo || "edge microsoft navegador".includes(termo)) && (
+        {(!termo || "edge microsoft".includes(termo)) && (
           <div className="card">
             <img
               src="https://img.icons8.com/?size=100&id=-5h34CbaUb09&format=png&color=000000"
@@ -239,8 +240,8 @@ function Navegador({ pesquisa }) {
             {/* BOTÃO INSTALAR (DOWNLOAD DIRETO) */}
             <button
               onClick={() =>
-                (window.location.href =
-                  "https://go.microsoft.com/fwlink/?LinkID=2093437")
+              (window.location.href =
+                "https://go.microsoft.com/fwlink/?LinkID=2093437")
               }
               className="instalar"
             >
@@ -331,408 +332,408 @@ function Navegador({ pesquisa }) {
           </div>
         )}
         {/* OPERA */}
-{(!termo || "opera navegador vpn browser".includes(termo)) && (
-  <div className="card">
-    <img
-      src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opera/opera-original.svg"
-      alt="Opera"
-    />
+        {(!termo || "opera".includes(termo)) && (
+          <div className="card">
+            <img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opera/opera-original.svg"
+              alt="Opera"
+            />
 
-    <h2>OPERA</h2>
+            <h2>OPERA</h2>
 
-    <a
-      href="https://download.opera.com/download/get/?partner=www&opsys=Windows"
-      target="_blank"
-      rel="noreferrer"
-    >
-      INSTALAR OPERA
-    </a>
-    <br />
+            <a
+              href="https://download.opera.com/download/get/?partner=www&opsys=Windows"
+              target="_blank"
+              rel="noreferrer"
+            >
+              INSTALAR OPERA
+            </a>
+            <br />
 
-    <p>
-      Um navegador moderno focado em praticidade, trazendo diversos
-      recursos integrados que eliminam a necessidade de extensões.
-    </p>
+            <p>
+              Um navegador moderno focado em praticidade, trazendo diversos
+              recursos integrados que eliminam a necessidade de extensões.
+            </p>
 
-    <p>
-      <strong>Motor:</strong> Blink
-    </p>
-    <p>
-      <strong>Empresa:</strong> Opera Software
-    </p>
-    <p>
-      <strong>Velocidade:</strong> Alta 🚀
-    </p>
-    <p>
-      <strong>Uso de RAM:</strong> Médio
-    </p>
-    <p>
-      <strong>Segurança:</strong> Boa
-    </p>
-    <p>
-      <strong>Privacidade:</strong> Média
-    </p>
-    <p>
-      <strong>Compatibilidade:</strong> Alta
-    </p>
-    <p>
-      <strong>Extensões:</strong> Compatível com Chrome
-    </p>
-    <p>
-      <strong>Extras:</strong> VPN integrada, bloqueador de anúncios,
-      mensageiros embutidos
-    </p>
+            <p>
+              <strong>Motor:</strong> Blink
+            </p>
+            <p>
+              <strong>Empresa:</strong> Opera Software
+            </p>
+            <p>
+              <strong>Velocidade:</strong> Alta 🚀
+            </p>
+            <p>
+              <strong>Uso de RAM:</strong> Médio
+            </p>
+            <p>
+              <strong>Segurança:</strong> Boa
+            </p>
+            <p>
+              <strong>Privacidade:</strong> Média
+            </p>
+            <p>
+              <strong>Compatibilidade:</strong> Alta
+            </p>
+            <p>
+              <strong>Extensões:</strong> Compatível com Chrome
+            </p>
+            <p>
+              <strong>Extras:</strong> VPN integrada, bloqueador de anúncios,
+              mensageiros embutidos
+            </p>
 
-    <h4>Vantagens</h4>
-    <ul>
-      <li>VPN gratuita integrada</li>
-      <li>Bloqueador de anúncios nativo</li>
-      <li>Consome menos RAM que Chrome</li>
-      <li>Recursos extras sem precisar instalar extensões</li>
-    </ul>
+            <h4>Vantagens</h4>
+            <ul>
+              <li>VPN gratuita integrada</li>
+              <li>Bloqueador de anúncios nativo</li>
+              <li>Consome menos RAM que Chrome</li>
+              <li>Recursos extras sem precisar instalar extensões</li>
+            </ul>
 
-    <h4>Desvantagens</h4>
-    <ul>
-      <li>VPN limitada</li>
-      <li>Menos popular</li>
-      <li>Privacidade não é o foco principal</li>
-    </ul>
+            <h4>Desvantagens</h4>
+            <ul>
+              <li>VPN limitada</li>
+              <li>Menos popular</li>
+              <li>Privacidade não é o foco principal</li>
+            </ul>
 
-    <h4>Diferenças</h4>
-    <ul>
-      <li>
-        <strong>Vs Chrome:</strong> Opera oferece mais recursos prontos;
-        Chrome é mais confiável e padrão
-      </li>
-      <li>
-        <strong>Vs Edge:</strong> Edge é mais leve; Opera tem mais funções
-      </li>
-      <li>
-        <strong>Vs Firefox:</strong> Opera é mais compatível; Firefox mais
-        privado
-      </li>
-      <li>
-        <strong>Vs Opera:</strong> GX é versão gamer com mais controle e
-        visual customizado
-      </li>
-      <li>
-        <strong>Vs Brave:</strong> Brave foca em segurança; Opera em
-        conveniência
-      </li>
-      <li>
-        <strong>Vs Safari:</strong> Opera é multiplataforma; Safari é
-        limitado à Apple
-      </li>
-    </ul>
+            <h4>Diferenças</h4>
+            <ul>
+              <li>
+                <strong>Vs Chrome:</strong> Opera oferece mais recursos prontos;
+                Chrome é mais confiável e padrão
+              </li>
+              <li>
+                <strong>Vs Edge:</strong> Edge é mais leve; Opera tem mais funções
+              </li>
+              <li>
+                <strong>Vs Firefox:</strong> Opera é mais compatível; Firefox mais
+                privado
+              </li>
+              <li>
+                <strong>Vs Opera:</strong> GX é versão gamer com mais controle e
+                visual customizado
+              </li>
+              <li>
+                <strong>Vs Brave:</strong> Brave foca em segurança; Opera em
+                conveniência
+              </li>
+              <li>
+                <strong>Vs Safari:</strong> Opera é multiplataforma; Safari é
+                limitado à Apple
+              </li>
+            </ul>
 
-    <h4>Resumo direto</h4>
-    <p>
-      👉 Melhor para quem quer{" "}
-      <strong>tudo pronto (VPN, adblock, etc.) sem instalar nada</strong>.
-    </p>
-  </div>
-)}
+            <h4>Resumo direto</h4>
+            <p>
+              👉 Melhor para quem quer{" "}
+              <strong>tudo pronto (VPN, adblock, etc.) sem instalar nada</strong>.
+            </p>
+          </div>
+        )}
 
         {/* OPERA GX */}
-{(!termo || "opera gx gamer navegador browser jogos".includes(termo)) && (
-  <div className="card">
-          <img
-            src="https://imgs.search.brave.com/daClEOQcAo9Oinyg2pZa3X5-yFCJt2TRDavCgITzafE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaWNvbi1pY29u/cy5jb20vMjU1Mi9Q/TkcvNTEyL29wZXJh/X2d4X2Jyb3dzZXJf/bG9nb19pY29uXzE1/Mjk3Ni5wbmc"
-            alt="Opera GX"
-          />
+        {(!termo || "opera gx gamer".includes(termo)) && (
+          <div className="card">
+            <img
+              src="https://imgs.search.brave.com/daClEOQcAo9Oinyg2pZa3X5-yFCJt2TRDavCgITzafE/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuaWNvbi1pY29u/cy5jb20vMjU1Mi9Q/TkcvNTEyL29wZXJh/X2d4X2Jyb3dzZXJf/bG9nb19pY29uXzE1/Mjk3Ni5wbmc"
+              alt="Opera GX"
+            />
 
-          <h2>OPERA GX</h2>
+            <h2>OPERA GX</h2>
 
-          <a
-            href="https://www.opera.com/pt-br/computer/thanks?ni=eapgx&os=windows"
-            target="_blank"
-            rel="noreferrer"
-          >
-            INSTALAR OPERA GX
-          </a>
-          <br />
+            <a
+              href="https://www.opera.com/pt-br/computer/thanks?ni=eapgx&os=windows"
+              target="_blank"
+              rel="noreferrer"
+            >
+              INSTALAR OPERA GX
+            </a>
+            <br />
 
-          <p>
-            Um navegador focado em gamers, com controle total de desempenho e
-            integração com plataformas de jogos.
-          </p>
+            <p>
+              Um navegador focado em gamers, com controle total de desempenho e
+              integração com plataformas de jogos.
+            </p>
 
-          <p>
-            <strong>Motor:</strong> Blink
-          </p>
-          <p>
-            <strong>Empresa:</strong> Opera Software
-          </p>
-          <p>
-            <strong>Velocidade:</strong> Alta 🚀
-          </p>
-          <p>
-            <strong>Uso de RAM:</strong> Controlável (GX Control)
-          </p>
-          <p>
-            <strong>Segurança:</strong> Boa
-          </p>
-          <p>
-            <strong>Privacidade:</strong> Média
-          </p>
-          <p>
-            <strong>Compatibilidade:</strong> Alta
-          </p>
-          <p>
-            <strong>Extensões:</strong> Compatível com Chrome
-          </p>
-          <p>
-            <strong>Extras:</strong> Limitador de RAM/CPU, integração com
-            Twitch/Discord, temas gamer RGB
-          </p>
+            <p>
+              <strong>Motor:</strong> Blink
+            </p>
+            <p>
+              <strong>Empresa:</strong> Opera Software
+            </p>
+            <p>
+              <strong>Velocidade:</strong> Alta 🚀
+            </p>
+            <p>
+              <strong>Uso de RAM:</strong> Controlável (GX Control)
+            </p>
+            <p>
+              <strong>Segurança:</strong> Boa
+            </p>
+            <p>
+              <strong>Privacidade:</strong> Média
+            </p>
+            <p>
+              <strong>Compatibilidade:</strong> Alta
+            </p>
+            <p>
+              <strong>Extensões:</strong> Compatível com Chrome
+            </p>
+            <p>
+              <strong>Extras:</strong> Limitador de RAM/CPU, integração com
+              Twitch/Discord, temas gamer RGB
+            </p>
 
-          <h4>Vantagens</h4>
-          <ul>
-            <li>Controle de uso de RAM e CPU</li>
-            <li>Visual gamer personalizável</li>
-            <li>Integração com Twitch e Discord</li>
-            <li>VPN e adblock integrados</li>
-          </ul>
+            <h4>Vantagens</h4>
+            <ul>
+              <li>Controle de uso de RAM e CPU</li>
+              <li>Visual gamer personalizável</li>
+              <li>Integração com Twitch e Discord</li>
+              <li>VPN e adblock integrados</li>
+            </ul>
 
-          <h4>Desvantagens</h4>
-          <ul>
-            <li>Consome mais recursos com efeitos visuais</li>
-            <li>Foco mais nichado (gamers)</li>
-            <li>Privacidade não é o principal destaque</li>
-          </ul>
+            <h4>Desvantagens</h4>
+            <ul>
+              <li>Consome mais recursos com efeitos visuais</li>
+              <li>Foco mais nichado (gamers)</li>
+              <li>Privacidade não é o principal destaque</li>
+            </ul>
 
-          <h4>Diferenças</h4>
-          <ul>
-            <li>
-              <strong>Vs Chrome:</strong> GX tem controle de desempenho; Chrome
-              é mais padrão
-            </li>
-            <li>
-              <strong>Vs Edge:</strong> Edge é mais leve; GX é mais
-              personalizável
-            </li>
-            <li>
-              <strong>Vs Opera:</strong> Opera GX oferece controle de RAM/CPU e
-              visual gamer; Opera é mais leve e focado em uso geral
-            </li>
-            <li>
-              <strong>Vs Firefox:</strong> GX é mais compatível; Firefox mais
-              privado
-            </li>
-            <li>
-              <strong>Vs Brave:</strong> Brave foca em privacidade; GX em
-              performance gamer
-            </li>
-            <li>
-              <strong>Vs Safari:</strong> Opera GX é mais personalizável e
-              voltado para jogos; Safari é mais otimizado e eficiente em
-              dispositivos Apple
-            </li>
-          </ul>
+            <h4>Diferenças</h4>
+            <ul>
+              <li>
+                <strong>Vs Chrome:</strong> GX tem controle de desempenho; Chrome
+                é mais padrão
+              </li>
+              <li>
+                <strong>Vs Edge:</strong> Edge é mais leve; GX é mais
+                personalizável
+              </li>
+              <li>
+                <strong>Vs Opera:</strong> Opera GX oferece controle de RAM/CPU e
+                visual gamer; Opera é mais leve e focado em uso geral
+              </li>
+              <li>
+                <strong>Vs Firefox:</strong> GX é mais compatível; Firefox mais
+                privado
+              </li>
+              <li>
+                <strong>Vs Brave:</strong> Brave foca em privacidade; GX em
+                performance gamer
+              </li>
+              <li>
+                <strong>Vs Safari:</strong> Opera GX é mais personalizável e
+                voltado para jogos; Safari é mais otimizado e eficiente em
+                dispositivos Apple
+              </li>
+            </ul>
 
-          <h4>Resumo direto</h4>
-          <p>
-            👉 Melhor para quem quer{" "}
-            <strong>controlar o desempenho do navegador enquanto joga</strong>.
-          </p>
-        </div>)}
+            <h4>Resumo direto</h4>
+            <p>
+              👉 Melhor para quem quer{" "}
+              <strong>controlar o desempenho do navegador enquanto joga</strong>.
+            </p>
+          </div>)}
 
         {/* BRAVE */}
-{(!termo || "brave navegador privacidade adblock browser".includes(termo)) && (
-  <div className="card">
-          <img
-            src="https://img.icons8.com/?size=100&id=ZAPJV5FAO4PW&format=png&color=000000"
-            alt="Brave"
-          />
-          <h2>BRAVE</h2>
+        {(!termo || "brave".includes(termo)) && (
+          <div className="card">
+            <img
+              src="https://img.icons8.com/?size=100&id=ZAPJV5FAO4PW&format=png&color=000000"
+              alt="Brave"
+            />
+            <h2>BRAVE</h2>
 
-          <a
-            href="https://laptop-updates.brave.com/latest/winx64"
-            target="_blank"
-            rel="noreferrer"
-          >
-            INSTALAR BRAVE
-          </a>
-          <br />
-          <p>
-            Um navegador focado em privacidade máxima, com bloqueio automático
-            de anúncios e rastreadores, garantindo navegação rápida e segura.
-          </p>
+            <a
+              href="https://laptop-updates.brave.com/latest/winx64"
+              target="_blank"
+              rel="noreferrer"
+            >
+              INSTALAR BRAVE
+            </a>
+            <br />
+            <p>
+              Um navegador focado em privacidade máxima, com bloqueio automático
+              de anúncios e rastreadores, garantindo navegação rápida e segura.
+            </p>
 
-          <p>
-            <strong>Motor:</strong> Blink
-          </p>
-          <p>
-            <strong>Empresa:</strong> Brave Software
-          </p>
-          <p>
-            <strong>Velocidade:</strong> Muito alta 🚀
-          </p>
-          <p>
-            <strong>Uso de RAM:</strong> Médio
-          </p>
-          <p>
-            <strong>Segurança:</strong> Muito alta 🔒
-          </p>
-          <p>
-            <strong>Privacidade:</strong> Extremamente alta 🔒
-          </p>
-          <p>
-            <strong>Compatibilidade:</strong> Alta
-          </p>
-          <p>
-            <strong>Extensões:</strong> Compatível com Chrome
-          </p>
-          <p>
-            <strong>Extras:</strong> Bloqueador de anúncios e rastreadores
-            automático
-          </p>
+            <p>
+              <strong>Motor:</strong> Blink
+            </p>
+            <p>
+              <strong>Empresa:</strong> Brave Software
+            </p>
+            <p>
+              <strong>Velocidade:</strong> Muito alta 🚀
+            </p>
+            <p>
+              <strong>Uso de RAM:</strong> Médio
+            </p>
+            <p>
+              <strong>Segurança:</strong> Muito alta 🔒
+            </p>
+            <p>
+              <strong>Privacidade:</strong> Extremamente alta 🔒
+            </p>
+            <p>
+              <strong>Compatibilidade:</strong> Alta
+            </p>
+            <p>
+              <strong>Extensões:</strong> Compatível com Chrome
+            </p>
+            <p>
+              <strong>Extras:</strong> Bloqueador de anúncios e rastreadores
+              automático
+            </p>
 
-          <h4>Vantagens</h4>
-          <ul>
-            <li>Bloqueia anúncios automaticamente</li>
-            <li>Alta velocidade por carregar menos conteúdo</li>
-            <li>Excelente privacidade</li>
-            <li>Sem necessidade de extensões de segurança</li>
-          </ul>
+            <h4>Vantagens</h4>
+            <ul>
+              <li>Bloqueia anúncios automaticamente</li>
+              <li>Alta velocidade por carregar menos conteúdo</li>
+              <li>Excelente privacidade</li>
+              <li>Sem necessidade de extensões de segurança</li>
+            </ul>
 
-          <h4>Desvantagens</h4>
-          <ul>
-            <li>Alguns sites podem quebrar devido ao bloqueio</li>
-            <li>Menos popular</li>
-          </ul>
+            <h4>Desvantagens</h4>
+            <ul>
+              <li>Alguns sites podem quebrar devido ao bloqueio</li>
+              <li>Menos popular</li>
+            </ul>
 
-          <h4>Diferenças</h4>
-          <ul>
-            <li>
-              <strong>Vs Chrome:</strong> Brave é muito mais privado
-            </li>
-            <li>
-              <strong>Vs Opera:</strong> Brave bloqueia mais rastreadores
-            </li>
-            <li>
-              <strong>Vs Firefox:</strong> Brave é mais automático, Firefox mais
-              configurável
-            </li>
-            <li>
-              <strong>Vs Opera GX:</strong> Brave prioriza privacidade e
-              bloqueio de rastreadores; Opera GX prioriza performance e
-              customização
-            </li>
-            <li>
-              <strong>Vs Safari:</strong> Brave é mais agressivo no bloqueio de
-              anúncios e rastreadores; Safari é mais otimizado e eficiente em
-              dispositivos Apple
-            </li>
-          </ul>
+            <h4>Diferenças</h4>
+            <ul>
+              <li>
+                <strong>Vs Chrome:</strong> Brave é muito mais privado
+              </li>
+              <li>
+                <strong>Vs Opera:</strong> Brave bloqueia mais rastreadores
+              </li>
+              <li>
+                <strong>Vs Firefox:</strong> Brave é mais automático, Firefox mais
+                configurável
+              </li>
+              <li>
+                <strong>Vs Opera GX:</strong> Brave prioriza privacidade e
+                bloqueio de rastreadores; Opera GX prioriza performance e
+                customização
+              </li>
+              <li>
+                <strong>Vs Safari:</strong> Brave é mais agressivo no bloqueio de
+                anúncios e rastreadores; Safari é mais otimizado e eficiente em
+                dispositivos Apple
+              </li>
+            </ul>
 
-          <h4>Resumo direto</h4>
-          <p>
-            👉 Ideal para quem quer{" "}
-            <strong>máxima privacidade e navegação sem anúncios</strong>, sem
-            precisar configurar nada.
-          </p>
-        </div>)}
+            <h4>Resumo direto</h4>
+            <p>
+              👉 Ideal para quem quer{" "}
+              <strong>máxima privacidade e navegação sem anúncios</strong>, sem
+              precisar configurar nada.
+            </p>
+          </div>)}
 
         {/* SAFARI */}
-{(!termo || "safari apple navegador ios mac browser".includes(termo)) && (
-  <div className="card">
-          <img
-            src="https://img.icons8.com/?size=100&id=63801&format=png&color=000000"
-            alt="Safari"
-          />
-          <h2>SAFARI (macOS/iOS)</h2>
+        {(!termo || "safari apple ios mac".includes(termo)) && (
+          <div className="card">
+            <img
+              src="https://img.icons8.com/?size=100&id=63801&format=png&color=000000"
+              alt="Safari"
+            />
+            <h2>SAFARI (macOS/iOS)</h2>
 
-          <a
-            href="https://www.apple.com/safari/"
-            target="_blank"
-            rel="noreferrer"
-          >
-            VER SAFARI
-          </a>
+            <a
+              href="https://www.apple.com/safari/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              VER SAFARI
+            </a>
 
-          <p>
-            O navegador oficial da Apple, focado em desempenho e eficiência
-            energética em dispositivos da marca.
-          </p>
+            <p>
+              O navegador oficial da Apple, focado em desempenho e eficiência
+              energética em dispositivos da marca.
+            </p>
 
-          <p>
-            <strong>Motor:</strong> WebKit
-          </p>
-          <p>
-            <strong>Empresa:</strong> Apple
-          </p>
-          <p>
-            <strong>Velocidade:</strong> Muito alta 🚀
-          </p>
-          <p>
-            <strong>Uso de RAM:</strong> Baixo
-          </p>
-          <p>
-            <strong>Segurança:</strong> Muito alta 🔒
-          </p>
-          <p>
-            <strong>Privacidade:</strong> Alta 🔒
-          </p>
-          <p>
-            <strong>Compatibilidade:</strong> Boa
-          </p>
-          <p>
-            <strong>Extensões:</strong> Limitadas
-          </p>
-          <p>
-            <strong>Plataforma:</strong> Exclusivo Apple (Mac, iPhone)
-          </p>
+            <p>
+              <strong>Motor:</strong> WebKit
+            </p>
+            <p>
+              <strong>Empresa:</strong> Apple
+            </p>
+            <p>
+              <strong>Velocidade:</strong> Muito alta 🚀
+            </p>
+            <p>
+              <strong>Uso de RAM:</strong> Baixo
+            </p>
+            <p>
+              <strong>Segurança:</strong> Muito alta 🔒
+            </p>
+            <p>
+              <strong>Privacidade:</strong> Alta 🔒
+            </p>
+            <p>
+              <strong>Compatibilidade:</strong> Boa
+            </p>
+            <p>
+              <strong>Extensões:</strong> Limitadas
+            </p>
+            <p>
+              <strong>Plataforma:</strong> Exclusivo Apple (Mac, iPhone)
+            </p>
 
-          <h4>Vantagens</h4>
-          <ul>
-            <li>Extremamente otimizado para dispositivos Apple</li>
-            <li>Baixo consumo de bateria</li>
-            <li>Boa privacidade</li>
-            <li>Interface fluida</li>
-          </ul>
+            <h4>Vantagens</h4>
+            <ul>
+              <li>Extremamente otimizado para dispositivos Apple</li>
+              <li>Baixo consumo de bateria</li>
+              <li>Boa privacidade</li>
+              <li>Interface fluida</li>
+            </ul>
 
-          <h4>Desvantagens</h4>
-          <ul>
-            <li>Não disponível para Windows/Android</li>
-            <li>Menos extensões</li>
-            <li>Compatibilidade menor que Chrome</li>
-          </ul>
+            <h4>Desvantagens</h4>
+            <ul>
+              <li>Não disponível para Windows/Android</li>
+              <li>Menos extensões</li>
+              <li>Compatibilidade menor que Chrome</li>
+            </ul>
 
-          <h4>Diferenças</h4>
-          <ul>
-            <li>
-              <strong>Vs Chrome:</strong> Safari consome muito menos bateria;
-              Chrome é mais compatível
-            </li>
-            <li>
-              <strong>Vs Edge:</strong> Safari é mais eficiente; Edge mais
-              universal
-            </li>
-            <li>
-              <strong>Vs Opera:</strong> Safari é mais estável; Opera mais
-              completo
-            </li>
-            <li>
-              <strong>Vs Opera GX:</strong> Safari é altamente otimizado para
-              Apple e eficiente; Opera GX é mais customizável e focado em jogos
-            </li>
-            <li>
-              <strong>Vs Firefox:</strong> Safari é mais otimizado; Firefox mais
-              flexível
-            </li>
-            <li>
-              <strong>Vs Brave:</strong> Brave é mais agressivo em privacidade;
-              Safari mais equilibrado
-            </li>
-          </ul>
+            <h4>Diferenças</h4>
+            <ul>
+              <li>
+                <strong>Vs Chrome:</strong> Safari consome muito menos bateria;
+                Chrome é mais compatível
+              </li>
+              <li>
+                <strong>Vs Edge:</strong> Safari é mais eficiente; Edge mais
+                universal
+              </li>
+              <li>
+                <strong>Vs Opera:</strong> Safari é mais estável; Opera mais
+                completo
+              </li>
+              <li>
+                <strong>Vs Opera GX:</strong> Safari é altamente otimizado para
+                Apple e eficiente; Opera GX é mais customizável e focado em jogos
+              </li>
+              <li>
+                <strong>Vs Firefox:</strong> Safari é mais otimizado; Firefox mais
+                flexível
+              </li>
+              <li>
+                <strong>Vs Brave:</strong> Brave é mais agressivo em privacidade;
+                Safari mais equilibrado
+              </li>
+            </ul>
 
-          <h4>Resumo direto</h4>
-          <p>
-            👉 Ideal para quem usa{" "}
-            <strong>Mac/iPhone e quer máximo desempenho com bateria</strong>.
-          </p>
-        </div>)}
+            <h4>Resumo direto</h4>
+            <p>
+              👉 Ideal para quem usa{" "}
+              <strong>Mac/iPhone e quer máximo desempenho com bateria</strong>.
+            </p>
+          </div>)}
       </div>
     </div>
   );

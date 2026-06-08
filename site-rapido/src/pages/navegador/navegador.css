@@ -168,9 +168,13 @@ h2 {
   /* 🔥 ISSO QUE FALTAVA */
   text-shadow:
     2px 2px 0 black,
-    /* Canto inferior direito */ -2px 2px 0 black,
-    /* Canto inferior esquerdo */ -2px -2px 0 black,
-    /* Canto superior esquerdo */ 2px -2px 0 black; /* Canto superior direito */
+    /* Canto inferior direito */
+    -2px 2px 0 black,
+    /* Canto inferior esquerdo */
+    -2px -2px 0 black,
+    /* Canto superior esquerdo */
+    2px -2px 0 black;
+  /* Canto superior direito */
 }
 
 .card button {
