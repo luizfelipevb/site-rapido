@@ -2,290 +2,315 @@
    FUNDO DA PÁGINA
 =================================== */
 
-body {
-  margin: 0;
-  min-height: 100vh;
-  font-family: "Segoe UI", Arial, sans-serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  background:
-    radial-gradient(circle at top left, #2563eb 0%, transparent 30%),
-    radial-gradient(circle at bottom right, #7c3aed 0%, transparent 30%),
-    linear-gradient(135deg, #0f172a, #1e293b);
+body{
+    min-height: 100vh;
+    font-family: "Segoe UI", Arial, sans-serif;
 
-  overflow-x: hidden;
+    background:
+    radial-gradient(circle at top left,#2563eb 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#7c3aed 0%,transparent 35%),
+    linear-gradient(135deg,#0f172a,#1e293b);
+
+    overflow-x: hidden;
 }
 
 /* ===================================
    ANIMAÇÕES
 =================================== */
 
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(40px);
-  }
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(40px);
+    }
 
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
 }
 
-@keyframes brilho {
-  from {
-    left: -120%;
-  }
+@keyframes brilho{
+    from{
+        left:-150%;
+    }
 
-  to {
-    left: 120%;
-  }
+    to{
+        left:150%;
+    }
 }
 
-@keyframes flutuar {
-  0% {
-    transform: translateY(0px);
-  }
+@keyframes flutuar{
+    0%{
+        transform:translateY(0px);
+    }
 
-  50% {
-    transform: translateY(-4px);
-  }
+    50%{
+        transform:translateY(-5px);
+    }
 
-  100% {
-    transform: translateY(0px);
-  }
+    100%{
+        transform:translateY(0px);
+    }
 }
 
 /* ===================================
    TOPO
 =================================== */
 
-.topo {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding: 30px 0;
+.topo{
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:35px 20px;
 }
 
 /* ===================================
    PESQUISA
 =================================== */
 
-.pesquisa {
-  width: 70%;
-  max-width: 700px;
+.pesquisa{
+    width:100%;
+    max-width:750px;
 
-  height: 60px;
+    height:65px;
 
-  border: none;
-  outline: none;
+    border:none;
+    outline:none;
 
-  border-radius: 50px;
+    padding:0 25px;
 
-  padding: 0 25px;
+    border-radius:50px;
 
-  font-size: 17px;
+    color:white;
+    font-size:17px;
 
-  color: white;
+    background:rgba(255,255,255,.08);
 
-  background: rgba(255,255,255,0.08);
+    backdrop-filter:blur(20px);
 
-  backdrop-filter: blur(15px);
+    box-shadow:
+    0 15px 35px rgba(0,0,0,.35);
 
-  box-shadow:
-    0 10px 30px rgba(0,0,0,0.3);
-
-  transition: .3s;
+    transition:.35s;
 }
 
-.pesquisa::placeholder {
-  color: rgba(255,255,255,0.6);
+.pesquisa::placeholder{
+    color:rgba(255,255,255,.65);
 }
 
-.pesquisa:focus {
-  transform: scale(1.02);
+.pesquisa:focus{
+    transform:scale(1.02);
 
-  box-shadow:
-    0 0 25px rgba(37,99,235,0.7);
+    box-shadow:
+    0 0 30px rgba(59,130,246,.6);
 }
 
 /* ===================================
    GRADE DOS CARDS
 =================================== */
 
-.grade {
-  width: 92%;
+.grade{
+    width:min(1400px,95%);
+    margin:auto;
 
-  margin: auto;
+    display:grid;
 
-  display: grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(250px,1fr));
 
-  grid-template-columns: repeat(5, 1fr);
+    gap:30px;
 
-  gap: 35px;
+    padding:20px 0 50px;
 
-  padding: 20px;
-
-  animation: fadeIn .8s ease;
+    animation:fadeIn .8s ease;
 }
 
 /* ===================================
    CARDS
 =================================== */
 
-.box {
-  position: relative;
+.box{
+    position:relative;
 
-  height: 140px;
+    min-height:170px;
 
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
-  text-decoration: none;
+    text-align:center;
 
-  font-size: 1.4rem;
-  font-weight: bold;
+    padding:25px;
 
-  color: white;
+    text-decoration:none;
 
-  border-radius: 24px;
+    color:white;
 
-  overflow: hidden;
+    font-size:1.2rem;
+    font-weight:700;
+    line-height:1.4;
 
-  box-shadow:
-    0 15px 30px rgba(0,0,0,0.3);
+    border-radius:24px;
 
-  transition: .35s ease;
+    overflow:hidden;
 
-  animation: flutuar 4s ease-in-out infinite;
+    backdrop-filter:blur(15px);
+
+    border:1px solid rgba(255,255,255,.12);
+
+    box-shadow:
+    0 15px 30px rgba(0,0,0,.35);
+
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease;
 }
 
-/* brilho passando */
+.box::before{
+    content:"";
 
-.box::before {
-  content: "";
+    position:absolute;
 
-  position: absolute;
+    top:0;
+    left:-150%;
 
-  top: 0;
-  left: -120%;
+    width:70%;
+    height:100%;
 
-  width: 50%;
-  height: 100%;
+    background:
+    linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,.25),
+        transparent
+    );
 
-  transform: skewX(-25deg);
-
-  background:
-    rgba(255,255,255,0.25);
-
+    transform:skewX(-25deg);
 }
 
-.box:hover::before {
-  animation: brilho .8s ease;
+.box:hover::before{
+    animation:brilho .9s ease;
 }
 
-/* hover */
+.box:hover{
+    transform:
+    translateY(-12px)
+    scale(1.04);
 
-.box:hover {
-  transform: translateY(-12px) scale(1.05);
-
-  box-shadow:
-    0 25px 45px rgba(0,0,0,0.45);
+    box-shadow:
+    0 25px 50px rgba(0,0,0,.45);
 }
 
 /* ===================================
    CORES
 =================================== */
 
-#navegador {
-  background: linear-gradient(135deg,#ef4444,#dc2626);
+#navegador{
+    background:linear-gradient(135deg,#ef4444,#dc2626);
 }
 
-#plataforma {
-  background: linear-gradient(135deg,#a855f7,#7e22ce);
+#plataforma{
+    background:linear-gradient(135deg,#a855f7,#7e22ce);
 }
 
-#social {
-  background: linear-gradient(135deg,#3b82f6,#1d4ed8);
+#social{
+    background:linear-gradient(135deg,#3b82f6,#1d4ed8);
 }
 
-#viagem {
-  background: linear-gradient(135deg,#06b6d4,#0891b2);
+#viagem{
+    background:linear-gradient(135deg,#06b6d4,#0891b2);
 }
 
-#comida {
-  background: linear-gradient(135deg,#f59e0b,#d97706);
+#comida{
+    background:linear-gradient(135deg,#f59e0b,#d97706);
 }
 
-#jogos {
-  background: linear-gradient(135deg,#f97316,#ea580c);
+#jogos{
+    background:linear-gradient(135deg,#f97316,#ea580c);
 }
 
-#mapa {
-  background: linear-gradient(135deg,#22c55e,#15803d);
+#mapa{
+    background:linear-gradient(135deg,#22c55e,#15803d);
 }
 
-#mensagem {
-  background: linear-gradient(135deg,#f43f5e,#be123c);
+#mensagem{
+    background:linear-gradient(135deg,#f43f5e,#be123c);
 }
 
-#documento {
-  background: linear-gradient(135deg,#fb7185,#e11d48);
+#documento{
+    background:linear-gradient(135deg,#fb7185,#e11d48);
 }
 
-#armazenamento {
-  background: linear-gradient(135deg,#8b5e34,#6f4e37);
+#armazenamento{
+    background:linear-gradient(135deg,#8b5e34,#6f4e37);
 }
 
-#midia {
-  background: linear-gradient(135deg,#7f1d1d,#450a0a);
+#midia{
+    background:linear-gradient(135deg,#7f1d1d,#450a0a);
 }
 
-#segurança {
-  background: linear-gradient(135deg,#111827,#374151);
+#segurança{
+    background:linear-gradient(135deg,#111827,#374151);
 }
 
-#utilidade {
-  background: linear-gradient(135deg,#e5e7eb,#cbd5e1);
-  color: #111827;
+#utilidade{
+    background:linear-gradient(135deg,#f1f5f9,#cbd5e1);
+    color:#111827;
 }
 
-#compressao {
-  background: linear-gradient(135deg,#14b8a6,#0f766e);
+#compressao{
+    background:linear-gradient(135deg,#14b8a6,#0f766e);
 }
 
-#outros {
-  background: linear-gradient(135deg,#64748b,#475569);
+#outros{
+    background:linear-gradient(135deg,#64748b,#475569);
 }
 
 /* ===================================
    RESPONSIVO
 =================================== */
 
-@media (max-width: 1200px) {
-  .grade {
-    grid-template-columns: repeat(4, 1fr);
-  }
+@media (max-width:1200px){
+
+    .grade{
+        grid-template-columns:
+        repeat(auto-fit,minmax(220px,1fr));
+    }
+
 }
 
-@media (max-width: 900px) {
-  .grade {
-    grid-template-columns: repeat(3, 1fr);
-  }
+@media (max-width:768px){
+
+    .box{
+        min-height:150px;
+        font-size:1.05rem;
+    }
+
+    .pesquisa{
+        height:60px;
+    }
+
 }
 
-@media (max-width: 650px) {
-  .grade {
-    grid-template-columns: repeat(2, 1fr);
-  }
+@media (max-width:480px){
 
-  .box {
-    height: 120px;
-  }
-}
+    .grade{
+        width:92%;
+        gap:20px;
+    }
 
-@media (max-width: 450px) {
-  .grade {
-    grid-template-columns: 1fr;
-  }
+    .box{
+        min-height:130px;
+        font-size:1rem;
+        padding:20px;
+    }
+
 }

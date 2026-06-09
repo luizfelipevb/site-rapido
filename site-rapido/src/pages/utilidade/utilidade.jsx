@@ -4,7 +4,7 @@ function Utilidade({ pesquisa }) {
   const termo = pesquisa.toLowerCase();
   return (
     <div className="container">
-      <h1>Segurança</h1>
+      <h1>Utilidade</h1>
 
       <div className="lista">
 
