@@ -883,8 +883,7 @@ function Documento({ pesquisa }) {
         {(!termo || "notepad++".includes(termo)) && (
           <div className="card">
             <img
-              src="https://imgs.search.brave.com/H0_KBYgzbfT-GZD0xRmedMAWpyiwmcqGJRKIu3ZBlyI/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuZnJlZWltYWdl/cy5jb20vZmljL2lt/YWdlcy9pY29ucy8y/NTYxLzFzdF9teF9p/c180Yy8yNTYvbm90/ZXBhZC5wbmc_aA"
-              alt="Notepad++"
+              src="https://imgs.search.brave.com/RBk2CBhYxs_SfGYGZogjDowWJrcSPORJka-ZwpujvnU/rs:fit:0:180:1:0/g:ce/aHR0cHM6Ly9pbWFn/ZXMuc2Z0Y2RuLm5l/dC9pbWFnZXMvdF9h/cHAtaWNvbi1zL3Av/M2Q0ZmQzYTAtOTEz/YS0xMWU2LWI5NzEt/MDAxNjNlZDgzM2U3/LzQwMTU4OTk1MC9u/b3RlcGFkLXBvcnRh/YmxlLWljb24ucG5n"
             />
             <br />
 
