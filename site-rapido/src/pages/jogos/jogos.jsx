@@ -145,7 +145,6 @@ function Jogos({ pesquisa }) {
             <img
               src="https://imgs.search.brave.com/nnP3QOYZDF2rjhUlaqyGwl63_jGLUJ6bpkoteiJlTn0/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9pY29u/ZXMucHJvL3dwLWNv/bnRlbnQvdXBsb2Fk/cy8yMDIyLzA1L2lj/b25lLXN0ZWFtLnBu/Zw"
               alt="Steam"
-              style={{ width: "300px" }}
             />
 
             <h2>STEAM</h2>
